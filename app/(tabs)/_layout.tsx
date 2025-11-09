@@ -1,18 +1,32 @@
-import React from 'react';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Link, Tabs } from 'expo-router';
-import { Pressable } from 'react-native';
-
-import Colors from '@/constants/Colors';
-import { useColorScheme } from '@/components/useColorScheme';
-import { useClientOnlyValue } from '@/components/useClientOnlyValue';
+import React from "react";
+import { AntDesign, Entypo } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
+import { useColorScheme } from "@/components/useColorScheme";
+import Colors from "@/constants/Colors";
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
-function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome>['name'];
+function TabBarIcon({
+  name,
+  color,
+}: {
+  name:
+    | React.ComponentProps<typeof Entypo>["name"]
+    | React.ComponentProps<typeof AntDesign>["name"];
   color: string;
 }) {
-  return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
+  return name === "question-circle" ? (
+    <AntDesign
+      name={name as React.ComponentProps<typeof AntDesign>["name"]}
+      color={color}
+      size={24}
+    />
+  ) : (
+    <Entypo
+      name={name as React.ComponentProps<typeof Entypo>["name"]}
+      color={color}
+      size={24}
+    />
+  );
 }
 
 export default function TabLayout() {
@@ -21,37 +35,57 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         // Disable the static render of the header on web
         // to prevent a hydration error in React Navigation v6.
-        headerShown: useClientOnlyValue(false, true),
-      }}>
+        headerShown: false,
+        // tabBarIconStyle: {
+        //   marginTop: 4,
+        // },
+        // tabBarLabelStyle: {
+        //   marginBottom: 4,
+        // },
+      }}
+    >
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="calculator"
+        options={{
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="calculator" color={color} />
+          ),
+        }}
+      />
+      {/* <Tabs.Screen
+        name="book"
+        options={{
+          title: t("tabs.book"),
+          tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
+        }}
+      /> */}
+      <Tabs.Screen
+        name="faq"
+        options={{
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="question-circle" color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="recipe-list"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="recipe-details"
+        options={{
+          href: null,
         }}
       />
     </Tabs>

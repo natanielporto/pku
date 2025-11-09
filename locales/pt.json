@@ -1,0 +1,35 @@
+{
+  "tabs": {
+    "home": "Início",
+    "user": "Usuário",
+    "book": "Livro",
+    "help": "FAQ",
+    "calculator": "Calculadora"
+  },
+  "home": {
+    "recipes": "Receitas",
+    "drinks-and-creams": "Bebidas e Cremes",
+    "biscuits-and-crackers": "Biscoitos e Bolachas",
+    "cakes-and-short-cakes": "Bolos e Bolinhos",
+    "sweets": "Doces",
+    "pastries": "Massas",
+    "breads": "Pães"
+  },
+  "categories": {
+    "drinks-and-creams": "Bebidas e Cremes",
+    "biscuits-and-crackers": "Biscoitos e Bolachas",
+    "cakes-and-short-cakes": "Bolos e Bolinhos",
+    "sweets": "Doces",
+    "pastries": "Massas",
+    "breads": "Pães"
+  },
+  "calculator": {
+    "leucine": "Leucina",
+    "tyrosine": "Tirosina",
+    "phenylalanine": "Fenilalanina",
+    "methionine": "Metiotina",
+    "protein": "Proteína",
+    "aminoacid": "Aminoácido",
+    "selectAminoacid": "Selecione um aminoácido"
+  }
+}

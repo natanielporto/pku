@@ -1,0 +1,35 @@
+{
+  "tabs": {
+    "home": "Home",
+    "user": "User",
+    "book": "Book",
+    "help": "FAQ",
+    "calculator": "Calculator"
+  },
+  "home": {
+    "recipes": "Recipes",
+    "drinks-and-creams": "Drinks and Creams",
+    "biscuits-and-crackers": "Biscuits and Crackers",
+    "cakes-and-short-cakes": "Cakes and Short Cakes",
+    "sweets": "Sweets",
+    "pastries": "Pastries",
+    "breads": "Breads"
+  },
+  "categories": {
+    "drinks-and-creams": "Drinks and Creams",
+    "biscuits-and-crackers": "Biscuits and Crackers",
+    "cakes-and-short-cakes": "Cakes and Short Cakes",
+    "sweets": "Sweets",
+    "pastries": "Pastries",
+    "breads": "Breads"
+  },
+  "calculator": {
+    "leucine": "Leucine",
+    "tyrosine": "Tyrosine",
+    "phenylalanine": "Phenylalanine",
+    "methionine": "Methionine",
+    "protein": "Protein",
+    "aminoacid": "Aminoacid",
+    "selectAminoacid": "Select an aminoacid"
+  }
+}

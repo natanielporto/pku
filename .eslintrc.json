@@ -1,0 +1,24 @@
+{
+  "extends": ["expo", "eslint:recommended"],
+  "plugins": ["simple-import-sort"],
+  "rules": {
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          // React e React Native primeiro
+          ["^react", "^react-native"],
+          // Packages externos
+          ["^@?\\w"],
+          // Imports internos com @ (alias)
+          ["^@/"],
+          // Imports relativos
+          ["^\\."],
+          // Imports de estilos
+          ["^.+\\.s?css$", "^.+\\.styles$"]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error"
+  }
+}
