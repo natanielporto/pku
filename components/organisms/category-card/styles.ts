@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     borderRadius: 16,
     marginBottom: 16,
     overflow: "hidden",
-    backgroundColor: "#fff",
+    backgroundColor: "#f0f0f0",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
   categoryName: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "#fff",
+    color: "#f0f0f0",
     marginBottom: 4,
   },
   recipeCount: {

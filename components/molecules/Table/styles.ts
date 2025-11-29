@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
     paddingRight: 8,
   },
   rowWhite: {
-    backgroundColor: "#fff",
+    backgroundColor: "#f0f0f0",
   },
   cellCenter: {
     flex: 1,

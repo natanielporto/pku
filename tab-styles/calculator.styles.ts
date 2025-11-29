@@ -26,7 +26,7 @@ export const calculatorStyles = StyleSheet.create({
     fontWeight: "bold",
   },
   itemTextSelected: {
-    color: "white",
+    color: "#f0f0f0",
   },
   mainContainer: {
     display: "flex",

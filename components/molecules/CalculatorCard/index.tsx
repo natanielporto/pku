@@ -23,7 +23,6 @@ export function CalculatorCard({
 }: Readonly<CalculatorCardProps>) {
   const [isInfoVisible, setIsInfoVisible] = useState<boolean>(false);
 
-  // Timer para esconder info após 10 segundos
   useEffect(() => {
     if (isInfoVisible) {
       const timer = setTimeout(() => {

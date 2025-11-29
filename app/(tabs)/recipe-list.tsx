@@ -62,6 +62,7 @@ export default function RecipeListScreen() {
       </View>
       <FlatList
         data={recipes}
+        style={styles.flatList}
         keyExtractor={(item) => String(item.id)}
         renderItem={({ item }) => (
           <View style={styles.itemContainer}>
@@ -95,5 +96,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 4,
+  },
+  flatList: {
+    marginBottom: 54,
   },
 });

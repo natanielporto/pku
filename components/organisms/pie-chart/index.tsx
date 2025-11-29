@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView, Text, View } from "react-native";
 import PieChart from "react-native-pie-chart";
+import Colors from "@/constants/Colors";
 import { GraphInfo } from "@/types/RecipeTypes/recipe";
 import { styles } from "./styles";
 
@@ -10,7 +11,12 @@ export const Chart = ({
   readonly graphInformation: GraphInfo[];
 }) => {
   const widthAndHeight = 200;
-  const sliceColor = ["#002910", "#0d7a2f", "#3dbc5f", "#5fd67f"];
+  const sliceColor = [
+    Colors.pieChart.slice1,
+    Colors.pieChart.slice2,
+    Colors.pieChart.slice3,
+    Colors.pieChart.slice4,
+  ];
   const series = [
     { value: graphInformation[0].leucine, color: sliceColor[0] },
     { value: graphInformation[1].tirosine, color: sliceColor[1] },

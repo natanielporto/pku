@@ -4,7 +4,7 @@ import { Image, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Octicons from "@expo/vector-icons/Octicons";
 import { CalculatorCard } from "@/components/molecules/CalculatorCard";
-import { calculatorStyles } from "./calculator.styles";
+import { calculatorStyles } from "../../tab-styles/calculator.styles";
 
 export default function CalculatorScreen() {
   const { t } = useTranslation();

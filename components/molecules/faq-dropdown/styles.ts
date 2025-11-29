@@ -2,13 +2,13 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    marginBottom: 16,
+    paddingTop: 16,
   },
   questionContainer: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    backgroundColor: "white",
+    backgroundColor: "#",
     borderRadius: 4,
     padding: 8,
     marginHorizontal: 24,
@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    backgroundColor: "white",
+    backgroundColor: "#",
     borderRadius: 4,
     padding: 8,
     marginHorizontal: 24,

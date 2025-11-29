@@ -88,6 +88,12 @@ export default function TabLayout() {
           href: null,
         }}
       />
+      <Tabs.Screen
+        name="test-supabase"
+        options={{
+          href: null, // Oculto da tab bar, mas acessível via rota
+        }}
+      />
     </Tabs>
   );
 }

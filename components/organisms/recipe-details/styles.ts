@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "#fafafa", // bg-bgLight
+    backgroundColor: "#f0f0f0",
     paddingVertical: 0,
   },
   container: {
@@ -45,18 +45,18 @@ export const styles = StyleSheet.create({
     marginBottom: 8,
   },
   ingredientsContainer: {
-    backgroundColor: "#fff",
+    backgroundColor: "#f0f0f0",
     padding: 16,
     borderRadius: 16,
   },
   servingsContainer: {
     marginTop: 8,
-    backgroundColor: "#fff",
+    backgroundColor: "#f0f0f0",
     padding: 16,
     borderRadius: 16,
   },
   preparationContainer: {
-    backgroundColor: "#fff",
+    backgroundColor: "#f0f0f0",
     padding: 16,
     borderRadius: 16,
   },

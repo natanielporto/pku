@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     width: 256,
     borderRadius: 16,
     textAlign: "center",
-    backgroundColor: "white",
+    backgroundColor: "#fafafa",
   },
   cardDescription: {
     fontSize: 12,
@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     marginHorizontal: 80,
     position: "absolute",
-    backgroundColor: "white",
+    backgroundColor: "#fafafa",
     padding: 8,
     borderRadius: 16,
     zIndex: 1000,

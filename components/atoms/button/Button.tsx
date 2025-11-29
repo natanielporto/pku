@@ -27,7 +27,7 @@ export function Button({
       className={customClass || defaultClass}
       accessibilityLabel={accessibilityLabel}
     >
-      <Text className="font-bold" style={{ color: color ?? "white" }}>
+      <Text className="font-bold" style={{ color: color ?? "#f0f0f0" }}>
         {action}
       </Text>
     </TouchableOpacity>

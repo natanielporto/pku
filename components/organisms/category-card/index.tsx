@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { useRouter } from "expo-router";
 import { ButtonCard } from "@/components/atoms/button-card";
 

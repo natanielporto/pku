@@ -22,24 +22,36 @@ export const styles = StyleSheet.create({
     marginTop: 32,
     marginRight: 4,
     position: "absolute",
-    right: -23,
+    right: -20,
   },
   imageContainer: {
-    // Container da imagem
+    position: "relative",
+  },
+  loaderContainer: {
+    position: "absolute",
+    width: 112,
+    height: 112,
+    borderRadius: 16,
+    marginLeft: 16,
+    marginRight: 32,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f0f0f0",
+    zIndex: 1,
   },
   image: {
-    width: 112, // w-28 = 7rem = 112px
-    height: 112, // h-28 = 7rem = 112px
-    borderRadius: 16, // rounded-2xl
-    marginLeft: 16, // ml-4
-    marginRight: 32, // mr-8
-    resizeMode: "cover", // object-fill
+    width: 112,
+    height: 112,
+    borderRadius: 16,
+    marginLeft: 16,
+    marginRight: 32,
+    resizeMode: "cover",
   },
   categoryContainer: {
     flex: 1,
     width: "50%",
   },
   categoryText: {
-    fontSize: 24, // text-2xl
+    fontSize: 24,
   },
 });

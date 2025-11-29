@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import Colors from "@/constants/Colors";
 
 export const styles = StyleSheet.create({
   scrollView: {
@@ -24,16 +25,16 @@ export const styles = StyleSheet.create({
     paddingBottom: 16,
   },
   card: {
-    backgroundColor: "#fff",
+    backgroundColor: Colors.gray.background,
     width: "48%",
     padding: 12,
     borderRadius: 8,
     borderLeftWidth: 4,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
+    shadowColor: Colors.shadow.color,
+    shadowOffset: Colors.shadow.offset,
+    shadowOpacity: Colors.shadow.opacity,
+    shadowRadius: Colors.shadow.radius,
+    elevation: Colors.shadow.elevation,
   },
   cardTitle: {
     fontWeight: "bold",

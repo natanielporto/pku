@@ -1,38 +1,30 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, Text, View } from "react-native";
-import EditScreenInfo from "@/components/EditScreenInfo";
+import { View } from "react-native";
+import { FaqDropdown } from "@/components/molecules/faq-dropdown";
 
-// import styles from "@/styles/screens/home.styles";
-
-export default function Faq() {
+export default function FaqScreen() {
   const { t } = useTranslation();
 
+  const sampleFaq = [
+    {
+      question: t("faq.question1"),
+      answer: t("faq.answer1"),
+    },
+    {
+      question: t("faq.question2"),
+      answer: t("faq.answer2"),
+    },
+    {
+      question: t("faq.question3"),
+      answer: t("faq.answer3"),
+    },
+  ];
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{t("tabs.faq")}</Text>
-      <View
-        style={styles.separator}
-        // lightColor="#eee"
-        // darkColor="rgba(255,255,255,0.1)"
-      />
-      <EditScreenInfo path="app/(tabs)/faq.tsx" />
+    <View>
+      {sampleFaq.map((faq) => (
+        <FaqDropdown key={faq.question} {...faq} />
+      ))}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
-  },
-});
