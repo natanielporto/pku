@@ -1,18 +1,13 @@
 import React from "react";
-import {
-  ActivityIndicator,
-  FlatList,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-} from "react-native";
+import { useTranslation } from "react-i18next";
+import { ActivityIndicator, FlatList, StyleSheet, Text } from "react-native";
 import { useRouter } from "expo-router";
 import { View } from "@/components/Themed";
 import { CategoryCard } from "@/components/organisms/category-card";
 import { useCategoriesWithRecipes } from "@/hooks/useRecipes";
 
 export default function Home() {
-  const router = useRouter();
+  const { t } = useTranslation();
   const {
     data: categories = [],
     isLoading,
@@ -23,7 +18,7 @@ export default function Home() {
     return (
       <View style={[styles.wrapper, styles.centerContainer]}>
         <ActivityIndicator size="large" color="#007AFF" />
-        <Text style={styles.loadingText}>Carregando receitas...</Text>
+        <Text style={styles.loadingText}>{t("home.loadingRecipes")}</Text>
       </View>
     );
   }
@@ -31,43 +26,22 @@ export default function Home() {
   if (error) {
     return (
       <View style={[styles.wrapper, styles.centerContainer]}>
-        <Text style={styles.errorText}>
-          Erro ao carregar receitas:{" "}
-          {error instanceof Error ? error.message : "Erro desconhecido"}
-        </Text>
-        <TouchableOpacity
-          style={styles.testButton}
-          onPress={() =>
-            router.push({ pathname: "/(tabs)/test-supabase" as any })
-          }
-        >
-          <Text style={styles.testButtonText}>🧪 Testar Conexão Supabase</Text>
-        </TouchableOpacity>
+        <Text style={styles.errorText}>{t("home.errorLoadingRecipes")}</Text>
       </View>
     );
   }
 
   return (
-    <View style={styles.wrapper}>
-      <TouchableOpacity
-        style={styles.testButton}
-        onPress={() =>
-          router.push({ pathname: "/(tabs)/test-supabase" as any })
-        }
-      >
-        <Text style={styles.testButtonText}>🧪 Testar Conexão Supabase</Text>
-      </TouchableOpacity>
-      <FlatList
-        data={categories}
-        keyExtractor={(item) => item.category}
-        contentContainerStyle={styles.container}
-        renderItem={({ item }) => (
-          <View style={styles.itemContainer}>
-            <CategoryCard categoryData={item} />
-          </View>
-        )}
-      />
-    </View>
+    <FlatList
+      data={categories}
+      keyExtractor={(item) => item.category}
+      contentContainerStyle={styles.container}
+      renderItem={({ item }) => (
+        <View style={styles.itemContainer}>
+          <CategoryCard categoryData={item} />
+        </View>
+      )}
+    />
   );
 }
 

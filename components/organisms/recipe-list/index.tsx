@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   ActivityIndicator,
   ScrollView,
@@ -18,6 +19,7 @@ export function RecipeLists() {
   const { category } = route.params as { category: string };
   const navigation = useNavigation<RecipeNavigatorRoutesProps>();
   const { data: list = [], isLoading, error } = useRecipesByCategory(category);
+  const { t } = useTranslation();
 
   function handleGoBack() {
     navigation.goBack();
@@ -32,7 +34,7 @@ export function RecipeLists() {
         </TouchableOpacity>
         <View style={styles.centerContainer}>
           <ActivityIndicator size="large" color="#007AFF" />
-          <Text style={styles.loadingText}>Carregando receitas...</Text>
+          <Text style={styles.loadingText}>{t("home.loadingRecipes")}</Text>
         </View>
       </SafeAreaView>
     );

@@ -7,7 +7,10 @@
     "calculator": "Calculator"
   },
   "home": {
-    "recipes": "Recipes"
+    "recipes": "Recipes",
+    "loadingRecipes": "Loading recipes...",
+    "errorLoadingRecipes": "Error loading recipes",
+    "unknownError": "Unknown error"
   },
   "categories": {
     "drinks-and-creams": "Drinks and Creams",

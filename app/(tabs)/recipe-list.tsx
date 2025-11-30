@@ -39,7 +39,7 @@ export default function RecipeListScreen() {
         </View>
         <View style={styles.centerContainer}>
           <ActivityIndicator size="large" color="#007AFF" />
-          <Text style={styles.loadingText}>Carregando receitas...</Text>
+          <Text style={styles.loadingText}>{t("home.loadingRecipes")}</Text>
         </View>
       </View>
     );
