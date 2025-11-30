@@ -1,11 +1,11 @@
 [
   {
-    "category": "drinks-and-creams",
+    "category": "Drinks and creams",
     "image": "https://images.unsplash.com/photo-1583898350727-9bf2e476c242?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
     "recipes": [
       {
         "id": 1,
-        "name": "yogurt-like-strawberry-drink",
+        "name": "Yogurt like strawberry drink",
         "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "480g de bebida vegetal a base de arroz",
@@ -72,7 +72,7 @@
       },
       {
         "id": 2,
-        "name": "vanilla-flan",
+        "name": "Vanilla flan",
         "image": "https://images.unsplash.com/photo-1586601399668-cd0c1484cd44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "250ml de água",
@@ -137,7 +137,7 @@
       },
       {
         "id": 3,
-        "name": "strawberry-flan",
+        "name": "Strawberry flan",
         "image": "https://images.unsplash.com/photo-1543264228-460e284028a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "15g de creme de leite",
@@ -203,7 +203,7 @@
       },
       {
         "id": 4,
-        "name": "chandele-desert-like-fake",
+        "name": "Chandele desert like fake",
         "image": "https://images.unsplash.com/photo-1589617492681-91b73d2e358c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "400ml de água",
@@ -269,7 +269,7 @@
       },
       {
         "id": 5,
-        "name": "inhaminho-with-jam",
+        "name": "Inhaminho with jam",
         "image": "https://images.unsplash.com/photo-1586727579295-62136fbb6082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "100g de inhame descascado e cozido",
@@ -334,7 +334,7 @@
       },
       {
         "id": 6,
-        "name": "fake-yogurt",
+        "name": "Fake yogurt",
         "image": "https://images.unsplash.com/photo-1597249511949-67fd2ca3d3da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "200g de leite de coco",
@@ -408,7 +408,7 @@
       },
       {
         "id": 7,
-        "name": "strawberry-and-banana-vitamin",
+        "name": "Strawberry and banana vitamin",
         "image": "https://images.unsplash.com/photo-1685967836529-b0e8d6938227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "250g de bebida vegetal a base de arroz",
@@ -473,12 +473,12 @@
     ]
   },
   {
-    "category": "biscuits-and-crackers",
+    "category": "Biscuits and crackers",
     "image": "https://images.unsplash.com/photo-1582231640551-2103f0b3f4bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
     "recipes": [
       {
         "id": 8,
-        "name": "crispy-tapioca-biscuit",
+        "name": "Crispy tapioca biscuit",
         "image": "https://images.unsplash.com/photo-1608070735103-35aa01048704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "80g de tapioca granulada",
@@ -549,7 +549,7 @@
       },
       {
         "id": 9,
-        "name": "coconut-sequilho",
+        "name": "Coconut sequilho",
         "image": "https://images.unsplash.com/photo-1590671886400-8f8088b97cb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "40g de açúcar refinado",
@@ -616,7 +616,7 @@
       },
       {
         "id": 10,
-        "name": "honey-biscuits",
+        "name": "Honey biscuits",
         "image": "https://plus.unsplash.com/premium_photo-1661768562001-14933dda60d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "60g de açúcar refinado",
@@ -691,7 +691,7 @@
       },
       {
         "id": 11,
-        "name": "goababa-biscuit",
+        "name": "Goababa biscuit",
         "image": "https://images.unsplash.com/photo-1498408224175-dc9dc5771027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "100g de farinha sem gluten",
@@ -764,7 +764,7 @@
       },
       {
         "id": 12,
-        "name": "oregano-cavaquinho",
+        "name": "Oregano cavaquinho",
         "image": "https://plus.unsplash.com/premium_photo-1668622419261-9ca0a4b25f51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "110ml de leite de coco",
@@ -837,7 +837,7 @@
       },
       {
         "id": 13,
-        "name": "banana-cookie",
+        "name": "Banana cookie",
         "image": "https://images.unsplash.com/photo-1588070141852-b6bed371e15f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "80g de banana nanica",
@@ -909,7 +909,7 @@
       },
       {
         "id": 14,
-        "name": "coffee-chocolate-cookie",
+        "name": "Coffee chocolate cookie",
         "image": "https://images.unsplash.com/photo-1589988802149-7f9cb13a468e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "200g de farinha sem gúten",
@@ -985,7 +985,7 @@
       },
       {
         "id": 15,
-        "name": "chocolate-cookie",
+        "name": "Chocolate cookie",
         "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "50g de chocolate em pó",
@@ -1057,7 +1057,7 @@
       },
       {
         "id": 16,
-        "name": "lemon-sequilho",
+        "name": "Lemon sequilho",
         "image": "https://images.unsplash.com/photo-1424591185129-8a73a1111adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "60g de açúcar",
@@ -1128,7 +1128,7 @@
       },
       {
         "id": 17,
-        "name": "passion-fruit-sequilho",
+        "name": "Passion fruit sequilho",
         "image": "https://images.unsplash.com/photo-1612388307727-afe00578ca21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "175g de amido de milho",
@@ -1200,12 +1200,12 @@
     ]
   },
   {
-    "category": "cakes-and-short-cakes",
+    "category": "Cakes and short cakes",
     "image": "https://images.unsplash.com/photo-1552056413-b8b5eed0170b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
     "recipes": [
       {
         "id": 18,
-        "name": "rain-little-cake",
+        "name": "Rain little cake",
         "image": "https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "160g de farinha sem glúten",
@@ -1276,7 +1276,7 @@
       },
       {
         "id": 19,
-        "name": "pineapple-cake",
+        "name": "Pineapple cake",
         "image": "https://images.unsplash.com/photo-1504802686536-b6a2ca64d77c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "150g de farinha sem glúten",
@@ -1346,7 +1346,7 @@
       },
       {
         "id": 20,
-        "name": "banana-cake-i",
+        "name": "Banana cake I",
         "image": "https://plus.unsplash.com/premium_photo-1675171527461-b785cb1a7016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "185g de açúcar refinado",
@@ -1413,7 +1413,7 @@
       },
       {
         "id": 21,
-        "name": "banana-cake-ii",
+        "name": "Banana cake II",
         "image": "https://plus.unsplash.com/premium_photo-1675171527461-b785cb1a7016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "Ingredientes parte 1",
@@ -1494,7 +1494,7 @@
       },
       {
         "id": 22,
-        "name": "carrot-cake",
+        "name": "Carrot cake",
         "image": "https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "60g de cenoura ralada",
@@ -1562,7 +1562,7 @@
       },
       {
         "id": 23,
-        "name": "carrot-chocolate-cake",
+        "name": "Carrot chocolate cake",
         "image": "https://images.unsplash.com/photo-1583592655160-47e0406b49c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "100ml de leite de coco",
@@ -1637,7 +1637,7 @@
       },
       {
         "id": 24,
-        "name": "chocolate-cake-i",
+        "name": "Chocolate cake I",
         "image": "https://images.unsplash.com/photo-1609105772057-3fa55ed2ceb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "100g de farinha hipoproteica",
@@ -1711,7 +1711,7 @@
       },
       {
         "id": 25,
-        "name": "chocolate-cake-ii",
+        "name": "Chocolate cake II",
         "image": "https://images.unsplash.com/photo-1520186097747-fd67de8ef2db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "300g de farinha sem glúten",
@@ -1783,7 +1783,7 @@
       },
       {
         "id": 26,
-        "name": "orange-mandioca-cake",
+        "name": "Orange mandioca cake",
         "image": "https://images.unsplash.com/photo-1515754164677-ec9796621bcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "140g de açúcar refinado",
@@ -1856,7 +1856,7 @@
       },
       {
         "id": 27,
-        "name": "orange-soft-cake",
+        "name": "Orange soft cake",
         "image": "https://images.unsplash.com/photo-1475855841503-917d97ca77b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "100g de açúcar refinado",
@@ -1924,7 +1924,7 @@
       },
       {
         "id": 28,
-        "name": "mixed-cake",
+        "name": "Mixed cake",
         "image": "https://images.unsplash.com/photo-1608266400306-3e699423dc53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "160g de açúcar cristal",
@@ -1994,7 +1994,7 @@
       },
       {
         "id": 29,
-        "name": "coconut-chocolate-muffin",
+        "name": "Coconut chocolate muffin",
         "image": "https://plus.unsplash.com/premium_photo-1671405925124-8a3192adec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "100g de farinha sem glúten",
@@ -2067,7 +2067,7 @@
       },
       {
         "id": 30,
-        "name": "banana-chocolate-muffin",
+        "name": "Banana chocolate muffin",
         "image": "https://images.unsplash.com/photo-1663904458739-5e2ed09582b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "90g de farinha sem glúten",
@@ -2138,12 +2138,12 @@
     ]
   },
   {
-    "category": "sweets",
+    "category": "Sweets",
     "image": "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "recipes": [
       {
         "id": 31,
-        "name": "tapioca-lime-honey-cookie",
+        "name": "Tapioca lime honey cookie",
         "image": "https://images.unsplash.com/photo-1630953899439-e1b44977d777?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "60g de açúcar refinado",
@@ -2210,7 +2210,7 @@
       },
       {
         "id": 32,
-        "name": "caratina-chocolate-truffle",
+        "name": "Caratina chocolate truffle",
         "image": "https://images.unsplash.com/photo-1565814598158-c9e60d235405?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "10g de açúcar refinado",
@@ -2278,7 +2278,7 @@
       },
       {
         "id": 33,
-        "name": "banana-tapioca-crepioca",
+        "name": "Banana tapioca crepioca",
         "image": "https://media.istockphoto.com/id/486011238/pt/foto/casabe-de-mandioca-tapioca.jpg?s=2048x2048&w=is&k=20&c=LirYDmSn682sbu36mynQz8yGdS8blCsgFLjWVb43kLU=",
         "ingredients": ["80g de banana", "75g de massa de tapioca hidratada"],
         "preparation": [
@@ -2338,7 +2338,7 @@
       },
       {
         "id": 34,
-        "name": "apple-crumble",
+        "name": "Apple crumble",
         "image": "https://images.unsplash.com/photo-1589462239133-1e04f802685d?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "Ingredientes da farofa",
@@ -2414,7 +2414,7 @@
       },
       {
         "id": 35,
-        "name": "apple-jam",
+        "name": "Apple jam",
         "image": "https://images.unsplash.com/photo-1603777953657-e57b62f12c77?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "300ml de água",
@@ -2482,7 +2482,7 @@
       },
       {
         "id": 36,
-        "name": "coconut-jam",
+        "name": "Coconut jam",
         "image": "https://images.unsplash.com/photo-1548084769-1b94d5c3168e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "Ingredientes da 1a parte",
@@ -2560,7 +2560,7 @@
       },
       {
         "id": 37,
-        "name": "lemon-mousse-i",
+        "name": "Lemon mousse I",
         "image": "https://images.unsplash.com/photo-1582834936490-9747caf8ca4a?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "205g de chantilly vegetal",
@@ -2628,7 +2628,7 @@
       },
       {
         "id": 38,
-        "name": "lemon-mousse-ii",
+        "name": "Lemon mousse II",
         "image": "https://plus.unsplash.com/premium_photo-1669880504277-1c79daa58c12?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "200ml de água",
@@ -2696,7 +2696,7 @@
       },
       {
         "id": 39,
-        "name": "passion-fruit-mousse",
+        "name": "Passion fruit mousse",
         "image": "https://media.istockphoto.com/id/1495638879/pt/foto/passion-fruit-cheesecake.jpg?s=2048x2048&w=is&k=20&c=h0qp3jwMW1SxwxMmZ5m-foJvyPTcQ4jBYR558LQrL4c=",
         "ingredients": [
           "200ml de água",
@@ -2764,7 +2764,7 @@
       },
       {
         "id": 40,
-        "name": "banana-tapioca-pudding",
+        "name": "Banana tapioca pudding",
         "image": "https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "Ingredientes da calda",
@@ -2849,7 +2849,7 @@
       },
       {
         "id": 41,
-        "name": "tapioca-pudding",
+        "name": "Tapioca pudding",
         "image": "https://media.istockphoto.com/id/676301900/pt/foto/brazilian-tapioca.jpg?s=2048x2048&w=is&k=20&c=gewKeeIpCeK670y7FtZBjX3FiozHdRV8RxGIKrmbri0=",
         "ingredients": [
           "100ml de água",
@@ -2925,12 +2925,12 @@
     ]
   },
   {
-    "category": "pastries",
+    "category": "Pastries",
     "image": "https://plus.unsplash.com/premium_photo-1666174324534-36844f5afc7e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "recipes": [
       {
         "id": 42,
-        "name": "mandioca-coxinha",
+        "name": "Mandioca coxinha",
         "image": "https://media.istockphoto.com/id/1358848345/pt/foto/traditional-fried-coxinha-on-a-black-plate-on-a-slate-background-brazilian-snack.jpg?s=2048x2048&w=is&k=20&c=i7PQjoXNiDKa8HNLqN3HVCWKjcyQp3ZBRvnp7XMdhsM=",
         "ingredients": [
           "500ml de água",
@@ -3004,7 +3004,7 @@
       },
       {
         "id": 43,
-        "name": "torta-or-empanada-pastry",
+        "name": "Torta or empanada pastry",
         "image": "https://plus.unsplash.com/premium_photo-1666174326073-327a1fcfb431?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "100g de farinha hipoproteica",
@@ -3072,7 +3072,7 @@
       },
       {
         "id": 44,
-        "name": "empanada-pastry",
+        "name": "Empanada pastry",
         "image": "https://plus.unsplash.com/premium_photo-1666174326073-327a1fcfb431?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "140g de farinha sem glúten",
@@ -3139,7 +3139,7 @@
         ]
       },
       {
-        "name": "sweet-cake",
+        "name": "Sweet cake",
         "image": "https://images.unsplash.com/photo-1705138591117-2aaf6a7e08ae?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "40ml de água morna",
@@ -3207,7 +3207,7 @@
       },
       {
         "id": 46,
-        "name": "carrot-sweet-cake",
+        "name": "Carrot sweet cake",
         "image": "https://images.unsplash.com/photo-1587131791788-ec0cb04e0a52?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "200ml de água",
@@ -3277,7 +3277,7 @@
       },
       {
         "id": 47,
-        "name": "pastel-pastry",
+        "name": "Pastel pastry",
         "image": "https://plus.unsplash.com/premium_photo-1663853495255-f43171eaf9b4?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "220g de mandioca",
@@ -3344,7 +3344,7 @@
       },
       {
         "id": 48,
-        "name": "catarina-pastel",
+        "name": "Catarina pastel",
         "image": "https://images.unsplash.com/photo-1608039783021-6116a558f0c5?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "30ml de água morna",
@@ -3414,7 +3414,7 @@
       },
       {
         "id": 49,
-        "name": "pizza-dough",
+        "name": "Pizza dough",
         "image": "https://images.unsplash.com/photo-1703317605426-815bb8b2c40a?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "90g de farinha hipoproteica",
@@ -3484,7 +3484,7 @@
       },
       {
         "id": 50,
-        "name": "spinach-ravioli",
+        "name": "Spinach ravioli",
         "image": "https://images.unsplash.com/photo-1616169775818-9f7115b8821e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "Ingredientes do recheio",
@@ -3567,7 +3567,7 @@
       },
       {
         "id": 51,
-        "name": "risoles",
+        "name": "Risoles",
         "image": "https://media.istockphoto.com/id/471026259/pt/foto/bacalhau-portugu%C3%AAs-bolos.jpg?s=2048x2048&w=is&k=20&c=V5me6LNz0a5u85ZjqlLtBF2iV0pXApgyiUPlcgmiXxs=",
         "ingredients": [
           "Ingredientes do recheio",
@@ -3652,7 +3652,7 @@
       },
       {
         "id": 52,
-        "name": "waffles",
+        "name": "Waffles",
         "image": "https://plus.unsplash.com/premium_photo-1673011775209-97272be970a2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "180ml de água morna",
@@ -3730,12 +3730,12 @@
     ]
   },
   {
-    "category": "breads",
+    "category": "Breads",
     "image": "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "recipes": [
       {
         "id": 53,
-        "name": "fine-herbs-bread",
+        "name": "Fine herbs bread",
         "image": "https://images.unsplash.com/photo-1536919011766-09449b44af40?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "130g de tapioca hidratada",
@@ -3806,7 +3806,7 @@
       },
       {
         "id": 54,
-        "name": "mixed-flour-bread",
+        "name": "Mixed flour bread",
         "image": "https://images.unsplash.com/photo-1534620808146-d33bb39128b2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "200g de amido de milho",
@@ -3882,7 +3882,7 @@
       },
       {
         "id": 55,
-        "name": "gourmet-kiss-bread",
+        "name": "Gourmet kiss bread",
         "image": "https://images.unsplash.com/photo-1559141680-d0bd7bc5af84?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "150g de abóbora cozida",
@@ -3952,7 +3952,7 @@
       },
       {
         "id": 56,
-        "name": "french-bread",
+        "name": "French bread",
         "image": "https://images.unsplash.com/photo-1582509385126-c9ab0cb0449f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "320g de farinha sem glúten",
@@ -4025,7 +4025,7 @@
       },
       {
         "id": 57,
-        "name": "cheese-bread",
+        "name": "Cheese bread",
         "image": "https://media.istockphoto.com/id/1249893961/pt/foto/brazilian-snack-traditional-cheese-bread.jpg?s=2048x2048&w=is&k=20&c=nobDyi5btyyO3bc3Zyb62X0_ScOncJJL2NSbbLTVq3M=",
         "ingredients": [
           "130g de polvilho azedo",
@@ -4093,7 +4093,7 @@
       },
       {
         "id": 58,
-        "name": "frying-pan-bread",
+        "name": "Frying pan bread",
         "image": "https://images.unsplash.com/photo-1599232288126-7dbd2127db14?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "60g de farinha sem glúten",
@@ -4163,7 +4163,7 @@
       },
       {
         "id": 59,
-        "name": "inhaminho-bread",
+        "name": "Inhaminho bread",
         "image": "https://images.unsplash.com/photo-1561043433-b0bb121aacef?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "270g de inhame cozido",

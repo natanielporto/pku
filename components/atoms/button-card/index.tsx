@@ -24,15 +24,32 @@ export const ButtonCard = ({
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
 
-  // Se skipTranslation for true, usa o texto diretamente (para receitas já traduzidas)
-  // Caso contrário, tenta traduzir (para categorias)
+  // Se skipTranslation for true, usa o texto diretamente (para receitas já traduzidas do banco)
+  // Caso contrário, tenta traduzir (para categorias ou receitas)
   const displayText = skipTranslation
     ? category
     : (() => {
-        const translationKey = `recipes.${category}`;
-        const translated = t(translationKey);
-        // Se a tradução retornar a mesma chave, significa que não encontrou
-        // Nesse caso, usa o texto original
+        // Verifica se o texto parece ser um slug (contém hífens e está em minúsculas)
+        // Se não for slug, provavelmente já está traduzido, então usa diretamente
+        const isSlug = /^[a-z0-9-]+$/.test(category);
+
+        if (!isSlug) {
+          // Já está traduzido, usa diretamente
+          return category;
+        }
+
+        // É um slug, tenta traduzir
+        // Primeiro tenta traduzir como categoria
+        let translationKey = `categories.${category}`;
+        let translated = t(translationKey);
+
+        // Se não encontrou como categoria, tenta como receita
+        if (translated === translationKey) {
+          translationKey = `recipes.${category}`;
+          translated = t(translationKey);
+        }
+
+        // Se não encontrou nenhuma tradução, usa o texto original
         return translated === translationKey ? category : translated;
       })();
 

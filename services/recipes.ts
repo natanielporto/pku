@@ -49,9 +49,21 @@ function transformRecipeFromDB(
       ? recipe.translations[translationKey]
       : null;
 
+  // Se não há tradução e o nome é um slug (kebab-case), formata para um formato legível
+  let recipeName = translation?.name || recipe.name;
+
+  // Se o nome ainda é um slug (contém hífens e está em minúsculas), formata
+  if (!translation?.name && /^[a-z0-9-]+$/.test(recipeName)) {
+    // Converte kebab-case para formato legível: "rain-little-cake" -> "Rain Little Cake"
+    recipeName = recipeName
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  }
+
   return {
     id: recipe.id,
-    name: translation?.name || recipe.name,
+    name: recipeName,
     category: recipe.category,
     image: recipe.image || "",
     ingredients: translation?.ingredients || recipe.ingredients || [],

@@ -77,6 +77,14 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="profile"
+        options={{
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="profile" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="recipe-list"
         options={{
           href: null,

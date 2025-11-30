@@ -32,7 +32,7 @@ export function RecipeCard({ recipe, ad = false, category }: Props) {
       onPress={handleRecipeSelect}
       category={recipe?.name!}
       image={recipe?.image!}
-      skipTranslation={true}
+      skipTranslation={false}
     />
   );
 }
