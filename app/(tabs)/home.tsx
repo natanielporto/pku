@@ -1,23 +1,51 @@
-import React, { useEffect, useState } from "react";
-import { FlatList, StyleSheet, Text, TouchableOpacity } from "react-native";
+import React from "react";
+import {
+  ActivityIndicator,
+  FlatList,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+} from "react-native";
 import { useRouter } from "expo-router";
 import { View } from "@/components/Themed";
 import { CategoryCard } from "@/components/organisms/category-card";
-import recipesData from "../../recipes.json";
-
-type Category = {
-  category: string;
-  image: string;
-  recipes: unknown[];
-};
+import { useCategoriesWithRecipes } from "@/hooks/useRecipes";
 
 export default function Home() {
-  const [categories, setCategories] = useState<Category[]>([]);
   const router = useRouter();
+  const {
+    data: categories = [],
+    isLoading,
+    error,
+  } = useCategoriesWithRecipes();
 
-  useEffect(() => {
-    setCategories(recipesData as Category[]);
-  }, []);
+  if (isLoading) {
+    return (
+      <View style={[styles.wrapper, styles.centerContainer]}>
+        <ActivityIndicator size="large" color="#007AFF" />
+        <Text style={styles.loadingText}>Carregando receitas...</Text>
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View style={[styles.wrapper, styles.centerContainer]}>
+        <Text style={styles.errorText}>
+          Erro ao carregar receitas:{" "}
+          {error instanceof Error ? error.message : "Erro desconhecido"}
+        </Text>
+        <TouchableOpacity
+          style={styles.testButton}
+          onPress={() =>
+            router.push({ pathname: "/(tabs)/test-supabase" as any })
+          }
+        >
+          <Text style={styles.testButtonText}>🧪 Testar Conexão Supabase</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 
   return (
     <View style={styles.wrapper}>
@@ -46,6 +74,22 @@ export default function Home() {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
+  },
+  centerContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
+  },
+  loadingText: {
+    marginTop: 12,
+    fontSize: 16,
+    color: "#666",
+  },
+  errorText: {
+    fontSize: 16,
+    color: "#d32f2f",
+    textAlign: "center",
+    marginBottom: 16,
   },
   testButton: {
     backgroundColor: "#007AFF",

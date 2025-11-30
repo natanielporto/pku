@@ -1,55 +1,67 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import { FlatList, StyleSheet, TouchableOpacity, View } from "react-native";
+import {
+  ActivityIndicator,
+  FlatList,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Title } from "@/components/atoms/Title/Title";
 import { RecipeCard } from "@/components/organisms/recipe-card";
-import recipesData from "@/recipes.json";
-import {
-  Category,
-  GraphInfo,
-  NutritionalInfo,
-} from "@/types/RecipeTypes/recipe";
-
-type CategoryData = {
-  category: string;
-  image: string;
-  recipes: unknown[];
-};
-
-type Recipe = {
-  id: string;
-  name: string;
-  image: string;
-  [key: string]: unknown;
-  category: Category;
-  ingredients: string[];
-  preparation: string;
-  servings: string;
-  nutritionalInformation: NutritionalInfo[];
-  graphInformation: GraphInfo[];
-};
+import { useRecipesByCategory } from "@/hooks/useRecipes";
 
 export default function RecipeListScreen() {
   const { category } = useLocalSearchParams<{ category: string }>();
   const router = useRouter();
-  const [recipes, setRecipes] = useState<Recipe[]>([]);
   const { t } = useTranslation();
-
-  useEffect(() => {
-    if (category) {
-      const categoryData = (recipesData as CategoryData[]).find(
-        (item) => item.category === category
-      );
-      if (categoryData) {
-        setRecipes(categoryData.recipes as Recipe[]);
-      }
-    }
-  }, [category]);
+  const {
+    data: recipes = [],
+    isLoading,
+    error,
+  } = useRecipesByCategory(category || "");
 
   function handleGoBack() {
     router.back();
+  }
+
+  if (isLoading) {
+    return (
+      <View style={styles.container}>
+        <View style={styles.headerRow}>
+          <TouchableOpacity onPress={handleGoBack} style={styles.backButton}>
+            <Feather name="arrow-left" size={16} color="#888" />
+            <Title title={t(`tabs.home`)} />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.centerContainer}>
+          <ActivityIndicator size="large" color="#007AFF" />
+          <Text style={styles.loadingText}>Carregando receitas...</Text>
+        </View>
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View style={styles.container}>
+        <View style={styles.headerRow}>
+          <TouchableOpacity onPress={handleGoBack} style={styles.backButton}>
+            <Feather name="arrow-left" size={16} color="#888" />
+            <Title title={t(`tabs.home`)} />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.centerContainer}>
+          <Text style={styles.errorText}>
+            Erro ao carregar receitas:{" "}
+            {error instanceof Error ? error.message : "Erro desconhecido"}
+          </Text>
+        </View>
+      </View>
+    );
   }
 
   return (
@@ -78,6 +90,22 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#f9f9f9",
+  },
+  centerContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
+  },
+  loadingText: {
+    marginTop: 12,
+    fontSize: 16,
+    color: "#666",
+  },
+  errorText: {
+    fontSize: 16,
+    color: "#d32f2f",
+    textAlign: "center",
   },
   backText: {
     color: "#888",

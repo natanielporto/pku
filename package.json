@@ -21,13 +21,18 @@
     "db:link": "supabase link",
     "db:status": "supabase status",
     "db:seed:generate": "node scripts/generate-seed.js",
-    "db:seed": "supabase db reset"
+    "db:seed": "supabase db reset",
+    "db:inserts:generate": "node scripts/generate-inserts.js",
+    "db:translations:template": "node scripts/create-en-template.js",
+    "db:translations:auto": "node scripts/translate-recipes.js",
+    "db:translations:update": "node scripts/update-translations.js"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
     "@react-navigation/native": "^7.1.8",
     "@shopify/react-native-skia": "~2.2.12",
     "@supabase/supabase-js": "^2.86.0",
+    "@tanstack/react-query": "^5.90.11",
     "expo": "~54.0.23",
     "expo-constants": "~18.0.10",
     "expo-font": "~14.0.9",

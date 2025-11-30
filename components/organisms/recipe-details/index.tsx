@@ -1,5 +1,13 @@
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import {
+  Animated,
+  Image,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
@@ -17,6 +25,38 @@ type Props = {
 export function RecipeDetail({ recipe, category }: Props) {
   const router = useRouter();
   const { t } = useTranslation();
+  const scrollViewRef = useRef<ScrollView>(null);
+  const [isImageLoading, setIsImageLoading] = useState(true);
+  const shimmerAnim = useRef(new Animated.Value(0)).current;
+
+  // Garante que o scroll comece no topo quando a receita mudar
+  useEffect(() => {
+    scrollViewRef.current?.scrollTo({ y: 0, animated: false });
+    // Reseta o estado de loading quando a receita mudar
+    setIsImageLoading(true);
+  }, [recipe.id]);
+
+  // Animação de shimmer para o skeleton
+  useEffect(() => {
+    if (isImageLoading) {
+      const shimmerAnimation = Animated.loop(
+        Animated.sequence([
+          Animated.timing(shimmerAnim, {
+            toValue: 1,
+            duration: 1000,
+            useNativeDriver: true,
+          }),
+          Animated.timing(shimmerAnim, {
+            toValue: 0,
+            duration: 1000,
+            useNativeDriver: true,
+          }),
+        ])
+      );
+      shimmerAnimation.start();
+      return () => shimmerAnimation.stop();
+    }
+  }, [isImageLoading, shimmerAnim]);
 
   function handleGoBack() {
     router.push({
@@ -40,17 +80,39 @@ export function RecipeDetail({ recipe, category }: Props) {
               </TouchableOpacity>
             </View>
             <View style={styles.imageContainer}>
+              {isImageLoading && (
+                <View style={styles.skeletonContainer}>
+                  <Animated.View
+                    style={[
+                      styles.skeleton,
+                      {
+                        opacity: shimmerAnim.interpolate({
+                          inputRange: [0, 1],
+                          outputRange: [0.5, 0.8],
+                        }),
+                      },
+                    ]}
+                  />
+                </View>
+              )}
               <Image
                 source={{ uri: recipe.image || "" }}
-                style={styles.image}
+                style={[styles.image, isImageLoading && styles.imageHidden]}
+                onLoadStart={() => setIsImageLoading(true)}
+                onLoadEnd={() => setIsImageLoading(false)}
+                onError={() => setIsImageLoading(false)}
               />
             </View>
           </View>
-          <ScrollView style={styles.scrollView}>
+          <ScrollView
+            ref={scrollViewRef}
+            style={styles.scrollView}
+            contentOffset={{ x: 0, y: 0 }}
+          >
             <Title title="Ingredientes" underline />
             <View style={styles.ingredientsContainer}>
-              {recipe.ingredients.map((item) => (
-                <Text style={styles.text} key={item}>
+              {recipe.ingredients.map((item, index) => (
+                <Text style={styles.text} key={`${recipe.id}-ingredient-${index}`}>
                   {item}
                 </Text>
               ))}
@@ -69,8 +131,8 @@ export function RecipeDetail({ recipe, category }: Props) {
 
             <Title title="Modo de preparo" underline />
             <View style={styles.preparationContainer}>
-              {recipe.preparation.map((item) => (
-                <Text style={styles.text} key={item}>
+              {recipe.preparation.map((item, index) => (
+                <Text style={styles.text} key={`${recipe.id}-preparation-${index}`}>
                   {item}
                 </Text>
               ))}

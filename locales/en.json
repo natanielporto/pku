@@ -32,7 +32,9 @@
     "question2": "Where do the images on the recipescome from? Are they real?",
     "answer2": "The images are purely illustrative and come from the www.unsplash.com website. They are a way to illustrate the recipes, but not perfectly equal to the final result. They can be used as a suggestion for preparation, for example. But never forget: always put your personal touch on the presentation of the dishes and drinks.",
     "question3": "Suggestions and criticisms?",
-    "answer3": "Send an email with your recipe, what you thought of the app, if it is useful for you, or anything you want to: xxxxx@gmail.com"
+    "answer3": "Send an email with your recipe, what you thought of the app, if it is useful for you, or anything you want to: xxxxx@gmail.com",
+    "question4": "How was the app translated to English?",
+    "answer4": "We used AI to translate the app to English. So if you find any mistakes, please let us know."
   },
   "recipes": {
     "drinks-and-creams": "Drinks and Creams",

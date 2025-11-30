@@ -1,30 +1,58 @@
-import { useLayoutEffect, useState } from "react";
-import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import {
+  ActivityIndicator,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import recipes from "@/recipes.json";
+import { useRecipesByCategory } from "@/hooks/useRecipes";
 import { RecipeNavigatorRoutesProps } from "@/types/RecipeRoute/recipe-route";
-import { Recipe } from "@/types/RecipeTypes/recipe";
 import { RecipeCard } from "../recipe-card/index";
 import { styles } from "./styles";
 
 export function RecipeLists() {
-  const [list, setList] = useState<Recipe[]>([]);
   const route = useRoute();
   const { category } = route.params as { category: string };
   const navigation = useNavigation<RecipeNavigatorRoutesProps>();
-
-  const result = recipes.find((item) => item.category === category);
-
-  useLayoutEffect(() => {
-    if (result?.recipes) {
-      setList(result.recipes as unknown as Recipe[]);
-    }
-  }, [result]);
+  const { data: list = [], isLoading, error } = useRecipesByCategory(category);
 
   function handleGoBack() {
     navigation.goBack();
+  }
+
+  if (isLoading) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <TouchableOpacity onPress={handleGoBack} style={styles.backButton}>
+          <Feather name="arrow-left" size={24} color="#888" />
+          <Text style={styles.backText}>Retornar</Text>
+        </TouchableOpacity>
+        <View style={styles.centerContainer}>
+          <ActivityIndicator size="large" color="#007AFF" />
+          <Text style={styles.loadingText}>Carregando receitas...</Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (error) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <TouchableOpacity onPress={handleGoBack} style={styles.backButton}>
+          <Feather name="arrow-left" size={24} color="#888" />
+          <Text style={styles.backText}>Retornar</Text>
+        </TouchableOpacity>
+        <View style={styles.centerContainer}>
+          <Text style={styles.errorText}>
+            Erro ao carregar receitas:{" "}
+            {error instanceof Error ? error.message : "Erro desconhecido"}
+          </Text>
+        </View>
+      </SafeAreaView>
+    );
   }
 
   return (
@@ -39,7 +67,7 @@ export function RecipeLists() {
             {index === 0 ? (
               <RecipeCard ad={true} />
             ) : (
-              <RecipeCard recipe={item} />
+              <RecipeCard recipe={item} category={category} />
             )}
           </View>
         ))}

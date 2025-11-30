@@ -18,6 +18,10 @@ export default function FaqScreen() {
       question: t("faq.question3"),
       answer: t("faq.answer3"),
     },
+    {
+      question: t("faq.question4"),
+      answer: t("faq.answer4"),
+    },
   ];
 
   return (

@@ -32,7 +32,9 @@
     "question2": "De onde vêm as imagens das receitas? Elas são reais?",
     "answer2": "As imagens são meramente ilustrativas e vêm do site www.unsplash.com. Elas são uma forma de ilustrar as receitas, porém, não perfeitamente igual ao resultado final. Elas podem ser usadas como sugestão de preparo, por exemplo. Mas nunca se esqueça: sempre coloque seu toque pessoal à apresentação dos pratos e bebidas.",
     "question3": "Sugestões e críticas?",
-    "answer3": "Mande um e-mail com sua receita, o que você achou do app, se está sendo útil para você, ou seja o que você quiser para: xxxxx@gmail.com"
+    "answer3": "Mande um e-mail com sua receita, o que você achou do app, se está sendo útil para você, ou seja o que você quiser para: xxxxx@gmail.com",
+    "question4": "Como o app foi traduzido para o inglês?",
+    "answer4": "Usamos IA para traduzir o app para o inglês. Então, se você encontrar algum erro, por favor, nos avise."
   },
   "recipes": {
     "drinks-and-creams": "Bebidas e Cremes",

@@ -14,13 +14,27 @@ export const ButtonCard = ({
   image,
   category,
   onPress,
+  skipTranslation = false,
 }: {
   image: string;
   category: string;
   onPress: Function;
+  skipTranslation?: boolean;
 }) => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
+
+  // Se skipTranslation for true, usa o texto diretamente (para receitas já traduzidas)
+  // Caso contrário, tenta traduzir (para categorias)
+  const displayText = skipTranslation
+    ? category
+    : (() => {
+        const translationKey = `recipes.${category}`;
+        const translated = t(translationKey);
+        // Se a tradução retornar a mesma chave, significa que não encontrou
+        // Nesse caso, usa o texto original
+        return translated === translationKey ? category : translated;
+      })();
 
   return (
     <TouchableOpacity
@@ -45,7 +59,7 @@ export const ButtonCard = ({
         />
       </View>
       <View style={styles.categoryContainer}>
-        <Text style={styles.categoryText}>{t(`recipes.${category}`)}</Text>
+        <Text style={styles.categoryText}>{displayText}</Text>
       </View>
     </TouchableOpacity>
   );

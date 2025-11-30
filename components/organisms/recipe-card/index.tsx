@@ -1,11 +1,11 @@
 import React from "react";
 import { useRouter } from "expo-router";
-import { Recipe } from "@/types/RecipeTypes/recipe";
+import { FullRecipe } from "@/types/RecipeTypes/recipe";
 import { AdCard } from "../../atoms/ad-card/index";
 import { ButtonCard } from "../../atoms/button-card";
 
 type Props = {
-  recipe?: Recipe;
+  recipe?: FullRecipe & { category?: string };
   ad?: boolean;
   category?: string;
 };
@@ -19,7 +19,7 @@ export function RecipeCard({ recipe, ad = false, category }: Props) {
         pathname: "/(tabs)/recipe-details",
         params: {
           recipe: JSON.stringify(recipe),
-          category: category || recipe.category,
+          category: category || recipe.category || "",
         },
       });
     }
@@ -32,6 +32,7 @@ export function RecipeCard({ recipe, ad = false, category }: Props) {
       onPress={handleRecipeSelect}
       category={recipe?.name!}
       image={recipe?.image!}
+      skipTranslation={true}
     />
   );
 }

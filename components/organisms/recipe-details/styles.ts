@@ -30,12 +30,31 @@ export const styles = StyleSheet.create({
     gap: 4,
   },
   imageContainer: {
-    // Container da imagem
+    position: "relative",
   },
   image: {
     width: "100%",
     height: 200,
     objectFit: "cover",
+    borderRadius: 16,
+  },
+  imageHidden: {
+    opacity: 0,
+  },
+  skeletonContainer: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    width: "100%",
+    height: 200,
+    borderRadius: 16,
+    overflow: "hidden",
+  },
+  skeleton: {
+    width: "100%",
+    height: "100%",
+    backgroundColor: "#e0e0e0",
     borderRadius: 16,
   },
   scrollView: {
