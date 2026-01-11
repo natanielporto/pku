@@ -1,13 +1,13 @@
 -- INSERT statements for recipes table
 -- Generated from recipes.json
 -- Total recipes: 59
--- Generated at: 2025-11-30T00:33:15.793Z
+-- Generated at: 2026-01-11T14:17:53.773Z
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   1,
-  'yogurt-like-strawberry-drink',
-  'drinks-and-creams',
+  'Yogurt like strawberry drink',
+  'Drinks and creams',
   'https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["480g de bebida vegetal a base de arroz","60g de açúcar demerara","50g de morango congelado","15g de suco de limão","5g de ágar-ágar"]'::jsonb,
   '["1 - Em uma panela, misture 380g da bebida vegetal junto com o açúcar e o ágar-ágar, deixe ferver por uns 2 minutos mexendo sempre;","2 - Leve à geladeira por aproximadamente uma hora para gelatinizar;","3 - Corte os morangos em pedaços e bata junto com creme gelado, o suco de limão e o restante da bebida vegetal com o auxílio de um mixer ou liquidificador;","4 - Coloque em tacinhas para servir."]'::jsonb,
@@ -30,8 +30,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   2,
-  'vanilla-flan',
-  'drinks-and-creams',
+  'Vanilla flan',
+  'Drinks and creams',
   'https://images.unsplash.com/photo-1586601399668-cd0c1484cd44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["250ml de água","50g de açúcar","40g de creme de leite","30g de flan de baunilha em pó"]'::jsonb,
   '["1 - Coloque todos os ingredientes em uma panela pequena e leve ao fogo baixo, mexa até engrossar;","2 - Distribua a mistura em tacinhas e leve para gelar;","3 - Faça uma calda de caramelo à parte, se desejar."]'::jsonb,
@@ -54,8 +54,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   3,
-  'strawberry-flan',
-  'drinks-and-creams',
+  'Strawberry flan',
+  'Drinks and creams',
   'https://images.unsplash.com/photo-1543264228-460e284028a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["15g de creme de leite","50ml de água","20g de açúcar","75g de morango","4g de ágar-ágar"]'::jsonb,
   '["1 - Em uma panela pequena, coloque a água e o ágar-ágar para ferver mexendo sempre;","2 - Bata os morangos picados, o creme de leite, o açúcar e a água gelatinizada em um copo com o auxílio de um mixer;","3 - Disponha em potinhos individuais para servir"]'::jsonb,
@@ -78,8 +78,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   4,
-  'chandele-desert-like-fake',
-  'drinks-and-creams',
+  'Chandele desert like fake',
+  'Drinks and creams',
   'https://images.unsplash.com/photo-1589617492681-91b73d2e358c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["400ml de água","40g de açúcar demerara","30g de achocolatado em pó","15g de amido de milho","3g de ágar-ágar"]'::jsonb,
   '["1 - Em uma panela, misture todos os ingredientes e cozinhe até levantar fervura. Deixe esfriar;","2 - Bata a mistura no liquidificador até obter um creme homogêneo;","3 - Disponha em taças individuais e leve à geladeira."]'::jsonb,
@@ -102,8 +102,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   5,
-  'inhaminho-with-jam',
-  'drinks-and-creams',
+  'Inhaminho with jam',
+  'Drinks and creams',
   'https://images.unsplash.com/photo-1586727579295-62136fbb6082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["100g de inhame descascado e cozido","50g de morango congelado","45g de geleia de morango","30g de açúcar refinado"]'::jsonb,
   '["1 - Cozinhe o inhame e bata no liquidificador com os morangos e o açúcar;","2 - Em potinhos faça uma camada com o creme e coloque a geleia por cima;","3 - Leve para gelar e sirva."]'::jsonb,
@@ -126,8 +126,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   6,
-  'fake-yogurt',
-  'drinks-and-creams',
+  'Fake yogurt',
+  'Drinks and creams',
   'https://images.unsplash.com/photo-1597249511949-67fd2ca3d3da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["200g de leite de coco","50ml de água","40g de açúcar","20g de pó para preparo de bebida sabor morango","10g de amido de milho","2g de essência de baunilha","0,5g de ágar-ágar"]'::jsonb,
   '["Modo de preparo do creme","1 - Em uma panela, misture todos os ingredientes. Leve ao fogo e cozinhe até engrossar;","2 - Leve à geladeira até gelar.","Modo de preparo da calda","3 - Em uma panela, coloque os morangos picados, o açúcar, a água e o ágar-ágar;","4 - Leve ao fogo até adquirir consistência;","5 - Leve à geladeira até gelar.","Montagem","Após gelados, distribua o creme e calda em 5 taças individuais. A calda pode ficar por cima do creme ou por baixo do creme."]'::jsonb,
@@ -150,8 +150,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   7,
-  'strawberry-and-banana-vitamin',
-  'drinks-and-creams',
+  'Strawberry and banana vitamin',
+  'Drinks and creams',
   'https://images.unsplash.com/photo-1685967836529-b0e8d6938227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["250g de bebida vegetal a base de arroz","70g de morango","60g de banana prata"]'::jsonb,
   '["1 - No liquidificador, coloque a bebida de arroz, os morangos e banana picados;","2 - Bata até obter uma mistura homogênea","3 - Sirva gelado, se preferir"]'::jsonb,
@@ -174,8 +174,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   8,
-  'crispy-tapioca-biscuit',
-  'biscuits-and-crackers',
+  'Crispy tapioca biscuit',
+  'Biscuits and crackers',
   'https://images.unsplash.com/photo-1608070735103-35aa01048704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["80g de tapioca granulada","20g de açúcar","20g de achocolatado","10g de margarina sem sal","10g de creme de leite","55ml de água quente","120g de gotas de chocolate "]'::jsonb,
   '["1 - Misture todos os ingredientes, exceto as gotas de chocolate, e deixe hidratando por cerca de 10 minutos para que a tapioca fique mais macia;","2 - Abra a massa entre papel manteiga e use um copo para formatar os biscoitos;","3 - Unte uma forma com margarina e disponha os biscoitos;","4 - Leve para assar no forno a 200°C por aproximadamente 20 minutos;","5 - Derreta as gotas de chocolate em banho-maria;","6 - Mergulhe os biscoitos já frios no chocolate e coloque sobre um pedaço de papel manteiga para não grudar"]'::jsonb,
@@ -198,8 +198,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   9,
-  'coconut-sequilho',
-  'biscuits-and-crackers',
+  'Coconut sequilho',
+  'Biscuits and crackers',
   'https://images.unsplash.com/photo-1590671886400-8f8088b97cb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["40g de açúcar refinado","180g de amido de milho","40g de farinha sem glúten","150g de margarina sem sal","12g de coco seco ralado"]'::jsonb,
   '["1 - Em um recipiente, junte todos os ingredientes e amasse com as mãos até obter uma massa homogênea;","2 - Abra a massa por cima de um plástico e com o auxílio de um rolo;","3 - Corte no formato que desejar e disponha em uma assadeira;","4 - Asse a 180°C por aproximadamente 30 minutos ou até os biscoitos ficarem dourados."]'::jsonb,
@@ -222,8 +222,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   10,
-  'honey-biscuits',
-  'biscuits-and-crackers',
+  'Honey biscuits',
+  'Biscuits and crackers',
   'https://plus.unsplash.com/premium_photo-1661768562001-14933dda60d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["60g de açúcar refinado","15g de achocolatado em pó","180g de farinha hipoproteica","80g de amido de milho","5g de canela em pó","36g de mel","60g de margarina sem sal","14g de óleo vegetal","10g de uva passa picada","5g fermento químico em pó","8g de vinagre de maçã"]'::jsonb,
   '["1 - Misture a margarina com o óleo e acrescente os ingredientes secos;","2 - Misture o vinagre com o fermento e adicione aos demais ingredientes;","3 - Sove a massa até ficar homogênea;","4 - Abra a massa entre dois plásticos com o auxílio de um rolo e corte do formato que desejar;","5 - Asse em forno pré-aquecido, não muito quente, até dourar embaixo;","6 - Deixe esfriar cerca de 15 minutos antes de servir."]'::jsonb,
@@ -246,8 +246,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   11,
-  'goababa-biscuit',
-  'biscuits-and-crackers',
+  'Goababa biscuit',
+  'Biscuits and crackers',
   'https://images.unsplash.com/photo-1498408224175-dc9dc5771027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["100g de farinha sem gluten","55g de açúcar demerara","50g de margarina sem sal","30g de creme de leite","5g de fermento químico em pó","40g de amido de milho","5g de emulsificante","3g de liga neutra","1g de essência de baunilha","42g de goiabada em quadradinhos"]'::jsonb,
   '["1 - Em um recipiente coloque todos os ingredientes e misture com uma espátula e depois amasse com as mãos até a massa desgrudar das mãos;","2 - Coloque a massa entre 2 plásticos e abra-a com o auxílio de um rolo;","3 - Para fazer beliscões, corte a massa com um cortador redondo, coloque um pedaço de goiabada no meio e junte as laterais;","4 - Outra opção é moldar a massa em bolinhas e achatar levemente colocando o pedaço de goiabada no centro;","5 - Disponha os biscoitos em uma assadeira e asse em forno a 180°C por aproximadamente 15 minutos."]'::jsonb,
@@ -270,8 +270,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   12,
-  'oregano-cavaquinho',
-  'biscuits-and-crackers',
+  'Oregano cavaquinho',
+  'Biscuits and crackers',
   'https://plus.unsplash.com/premium_photo-1668622419261-9ca0a4b25f51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["110ml de leite de coco","50ml de água","20g de óleo vegetal","15g de açúcar","5g de sal","0,5g de orégano seco","3g de vinagre de maçã","5g de emulsificante","5g de fermento químico em pó","250g de farinha hipoproteica","Óleo para fritar os biscoitos"]'::jsonb,
   '["1 - Em um recipiente, adicione os ingredientes e coloque a farinha aos poucos até dar o ponto de sovar;","2 - Molde os biscoitos e leve para fritar em óleo bem quente, virando para dourar de ambos os lados;","3 - Retire da panela e envolva em papel absorvente para retirar o excesso de óleo;","4 - Sirva quente."]'::jsonb,
@@ -294,8 +294,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   13,
-  'banana-cookie',
-  'biscuits-and-crackers',
+  'Banana cookie',
+  'Biscuits and crackers',
   'https://images.unsplash.com/photo-1588070141852-b6bed371e15f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["80g de banana nanica","65g de açúcar demerara","125g de amido de milho","65g de margarina sem sal","40g de farinha sem glúten","1g de essência de baunilha","10g de fermento químico em pó","0,5g de canela em pó","30g de uva passa"]'::jsonb,
   '["1 - Amasse a banana e acrescente os demais ingredientes, deixe as uvas passas por último;","2 - Misture com uma colher e depois amasse com as mãos até que a massa fique homogênea;","3 - Separe a massa em 20 bolinhas;","4 - Coloque as bolinhas em uma assadeira e achate levemente com um garfo;","5 - Asse a 200°C por aproximadamente 20 minutos ou até dourar embaixo. "]'::jsonb,
@@ -318,8 +318,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   14,
-  'coffee-chocolate-cookie',
-  'biscuits-and-crackers',
+  'Coffee chocolate cookie',
+  'Biscuits and crackers',
   'https://images.unsplash.com/photo-1589988802149-7f9cb13a468e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["200g de farinha sem gúten","100g de margarina sem sal","50g de açúcar mascavo","30g de açúcar refinado","5g de café solúvel em pó","1g de essência de baunilha","1g de fermento químico em pó","1g de bicarbonato de sódio","50g de gotas de chocolate"]'::jsonb,
   '["1 - Em um recipiente, coloque o açúcar mascavo peneirado, o açúcar refinado, o café solúvel peneirado, a essência de baunilha e a margarina, mexa com uma colher até ficar homogêneo. É importante peneirar os ingredientes para evitar que se formem grumos na massa;","2 - Adicione a farinha, misture com uma colher e depois amasse com as mãos;","3 - Adicione o fermento, o bicarbonato e por último as gotas de chocolate, evitando manipular demais para não derreter as gotas com o calor das mãos;","4 - Formate os cookies pegando cerca de 40 gramas da massa, fazendo bolinhas e achatando na palma da mão.","5 - Coloque em uma forma retangular (não é necessário untar);","6 - Decore com gotas de chocolate por cima;","7 - Se o dia estiver muito quente, coloque a forma dentro da geladeira por uns 15 minutos antes de assar;","8 - Leve para assar em forno pré-aquecido a 200°C, por aproximadamente 20 minutos;","9 - Retire e espere esfriar para que os cookies fiquem mais firmes."]'::jsonb,
@@ -342,8 +342,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   15,
-  'chocolate-cookie',
-  'biscuits-and-crackers',
+  'Chocolate cookie',
+  'Biscuits and crackers',
   'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["50g de chocolate em pó","60g de farinha sem glúten","180g de amido de milho","1g de café solúvel em pó","30g de açúcar refinado","30g de açúcar mascavo","3g de fermento químico em pó","150g de margarina sem sal","20g de gotas e chocolate"]'::jsonb,
   '["1 - Em um recipiente, misture todos os ingredientes secos;","2 - Acrescente a margarina, misture bem e amasse com as mãos até atingir o ponto que seja possível modelar;","3 - Faça bolinhas, achate e decore com gotas de chocolate;","4 - Disponha em uma assadeira e asse em forno pré-aquecido a 200°C por aproximadamente 15 a 20 minutos;","5 - Atenção para não assar demais e os cookies ficarem duros."]'::jsonb,
@@ -366,8 +366,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   16,
-  'lemon-sequilho',
-  'biscuits-and-crackers',
+  'Lemon sequilho',
+  'Biscuits and crackers',
   'https://images.unsplash.com/photo-1424591185129-8a73a1111adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["60g de açúcar","160g de amido de milho","100g de margarina sem sal","2g de essência de baunilha","8g de suco de limão","5g de raspas de limão"]'::jsonb,
   '["1 - Pré-aqueça o forno à 200°C.","2 - Misture a margarina com o açúcar até que fique homogêneo e adicione o suco de limão, as raspas de limão, a essência de baunilha e o amido de milho;","3 - Com as mãos, amasse bem até formar uma massa;","4 - Faça bolinhas e passe o garfo levemente por cima para formar um desenho;","5 - Disponha em uma forma (não é necessário untar) e leve ao freezer por 5 minutos ou até ficarem mais firmes;","6 - Asse por cerca de 20 a 25 minutos ou até dourar levemente embaixo;","7 - Retire do forno e espere esfriar."]'::jsonb,
@@ -390,8 +390,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   17,
-  'passion-fruit-sequilho',
-  'biscuits-and-crackers',
+  'Passion fruit sequilho',
+  'Biscuits and crackers',
   'https://images.unsplash.com/photo-1612388307727-afe00578ca21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["175g de amido de milho","100g de margarina sem sal","60g de açúcar refinado","20g de suco concentrado de maracujá","1g de essência de baunilha","Corante alimentício amarelo damasco (opcional)"]'::jsonb,
   '["1 - Misture bem a margarina com o açúcar;","2 - Adicione a essência, o suco de maracujá e o corante;","3 - Adicione o amido e amasse com as mãos até que a massa fique homogênea;","4 - Faça bolinhas de 15 gramas cada e disponha em uma assadeira (não é necessário untar);","5 - Passe levemente o garfo por cima de cada uma das bolinhas, formando um desenho;","6 - Leve para assar em forno pré-aquecido a 200°C por 20 a 25 minutos até dourar levemente embaixo;","7 - Retire do forno e espere esfriar."]'::jsonb,
@@ -414,8 +414,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   18,
-  'rain-little-cake',
-  'cakes-and-short-cakes',
+  'Rain little cake',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["160g de farinha sem glúten","120g de creme de leite","50ml de água","100g de açúcar refinado","4g de liga neutra","10g de fermento químico em pó","Óleo vegetal para fritar","Canela em pó e açúcar para cobrir (opcional)"]'::jsonb,
   '["1 - Em um recipiente misture o creme de leite com a água;","2 - Acrescente os demais ingredientes até ficar homogêneo. A massa não deve ficar muito mole;","3 - Em uma panela ou frigideira, aquecer o óleo;","4 - Pegar a massa com uma colher de chá bem cheia e frite em óleo quente até dourar;","5 - Passe os bolinhos ainda quentes no açúcar e canela, se desejar."]'::jsonb,
@@ -438,8 +438,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   19,
-  'pineapple-cake',
-  'cakes-and-short-cakes',
+  'Pineapple cake',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1504802686536-b6a2ca64d77c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["150g de farinha sem glúten","80g de açúcar refinado","120ml de suco de abacaxi","10g de emulsificante","3g de goma xantana ou liga neutra","15g de óleo vegetal","10g de fermento químico em pó"]'::jsonb,
   '["1 - Pré-aqueça o forno a 150°C","2-Noliquidificadorbata todosos ingredientes, excetoa farinha e o fermento;","3 - Em um recipiente a parte, despeje a mistura do liquidificador e adicione a farinha aos poucos com o auxílio de um fuê para não empelotar e até que fique homogêneo;","4 - Acrescente o fermento e mexa levemente;","5 - Despeje a massa em uma assadeira untada e leve ao forno ajustado a 180°C até assar por completo. "]'::jsonb,
@@ -462,8 +462,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   20,
-  'banana-cake-i',
-  'cakes-and-short-cakes',
+  'Banana cake I',
+  'Cakes and short cakes',
   'https://plus.unsplash.com/premium_photo-1675171527461-b785cb1a7016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["185g de açúcar refinado","38g de óleo vegetal","185g de farinha sem glúten","300g de banana nanica","18g de fermento químico em pó"]'::jsonb,
   '["1 - Em uma vasilha, amasse as bananas e misture aos demais ingredientes com o auxílio de um fuê deixando o fermento por último;","2 - Unte uma forma de bolo inglês com margarina e farinha hipoproteica;","3 - Despeje a massa na forma;","4 - Asse em forno pré-aquecido a 180°C até dourar e o palito sair seco ao espetar."]'::jsonb,
@@ -486,8 +486,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   21,
-  'banana-cake-ii',
-  'cakes-and-short-cakes',
+  'Banana cake II',
+  'Cakes and short cakes',
   'https://plus.unsplash.com/premium_photo-1675171527461-b785cb1a7016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["Ingredientes parte 1","70g de açúcar refinado","80g de água","100g de banana em rodelas","3g de canela em pó","Ingredientes parte 2","21g de óleo vegetal","20g de margarina","24g de creme de leite","140g de água","50g de amido de milho","140g de farinha sem glúten","5g de vinagre de maçã","4g de fermento químico em pó","5g de bicarbonato de sódio"]'::jsonb,
   '["1 - Em uma panela, faça uma calda de caramelo com o açúcar, adicione a água aos poucos, a canela, mexendo até desmanchar os grumos do açúcar. Em seguida, acrescente as rodelas de banana e continue mexendo, deixe cozinhar por 5 minutos em fogo médio; ","2 - Espere a calda amornar e bata a mistura no liquidificador junto com o óleo, margarina, açúcar e creme de leite, bata até desmanchar as bananas; ","3 - Despeje a mistura em uma vasilha, adicione o amido de milho e a farinha peneirados para não formar grumos e acrescente a água (deve ser passada nos resíduos da panela que cozinhou as bananas e no liquidificador, assim pegando todo o sabor residual que ficou); ","4 - Misture bem  como auxílio de um fuê atéque amassa fiquehomogênea; ","5 - Adicione o vinagre, o bicarbonato e o fermento e misture delicadamente; ","6 - Despeje a massa em uma forma untada com margarina e farinha hipoprotéica (forma de 14,5 cm de diâmetro x 6 cm de altura ou forma de pão de forma); ","7 - Leve ao forno pré-aquecido a 200°C por cerca de 30 minutos ou até dourar;","8 - Espere esfriar para cortar e decorar a gosto."]'::jsonb,
@@ -510,8 +510,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   22,
-  'carrot-cake',
-  'cakes-and-short-cakes',
+  'Carrot cake',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["60g de cenoura ralada","70g de farinha sem glúten","60g de amido de milho","70g de óleo de canola","50ml de água","5g de fermento químico em pó"]'::jsonb,
   '["1 - Bata todos os ingredientes no liquidificador, exceto o fermento;","2 - Adicione o fermento e misture delicadamente com o auxílio de uma colher;","3 - Disponha a massa em forminhas de cupcake ou em uma forma pequena de aproximadamente 20 centímetros de diâmetro untada com margarina e farinha hipoprotéica ou spray antiaderente;","4 - Asse em forno médio até o palito sair seco. "]'::jsonb,
@@ -534,8 +534,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   23,
-  'carrot-chocolate-cake',
-  'cakes-and-short-cakes',
+  'Carrot chocolate cake',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1583592655160-47e0406b49c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["100ml de leite de coco","180g de açúcar refinado","100g de farinha hipoproteica","10g de fermento químico em pó","235g de cenoura crua ralada","80g de óleo vegetal","1g de sal","1g de ágar-ágar","0,5g de goma xantana ou liga neutra","15g de achocolatado em pó","15g de gotas de chocolate"]'::jsonb,
   '["1 - Bata no liquidificador todos os ingredientes, com exceção da farinha e do fermento;","2 - Em um recipiente, coloque a mistura do liquidificador e misture com a farinha, depois acrescente o fermento e mexa levemente;","3 - Separe a massa em duas porções iguais e em uma das partes adicione o achocolatado e as gotas de chocolate;","4 - Unte uma forma pequena com margarina e farinha hipoprotéica e despeje a massa branca e em seguida a massa de chocolate;","5 - Com o auxílio de um garfo misture levemente as massas, formando um desenho;","6 - Asse em forno pré-aquecido a 180- 200° por aproximadamente 45 minutos ou até dourar."]'::jsonb,
@@ -558,8 +558,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   24,
-  'chocolate-cake-i',
-  'cakes-and-short-cakes',
+  'Chocolate cake I',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1609105772057-3fa55ed2ceb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["100g de farinha hipoproteica","25g de amido de milho","50g de açúcar refinado","25g de açúcar mascavo","25g de achocolatado","4g de fermento químico em pó","2g de bicarbonato de sódio","125ml de água","40g de óleo vegetal","4g de vinagre de maçã","10g de confeitos para decorar"]'::jsonb,
   '["1 - Em um recipiente, peneire os ingredientes secos exceto o fermento e o bicarbonato de sódio;","2 - Adicione a água, óleo e o vinagre;","3 - Misturar bem com um fuê até que fique homogêneo;","4 - Colocar em uma forma tipo pudim, untada com margarina e farinha hipoprotéica;","5 - Asse em forno pré-aquecido por aproximadamente 40 min ou até que o palito saia seco."]'::jsonb,
@@ -582,8 +582,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   25,
-  'chocolate-cake-ii',
-  'cakes-and-short-cakes',
+  'Chocolate cake II',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1520186097747-fd67de8ef2db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["300g de farinha sem glúten","70g de açúcar orgânico","100g de açúcar mascavo","40g de achocolatado em pó","250ml de água","80g de óleo vegetal","15g de fermento químico em pó","6g de vinagre de maçã"]'::jsonb,
   '["1 - Em um recipiente misture todos os ingredientes secos;","2 - Acrescente a água, o óleo, o vinagre e por fim o fermento;","3 - Misture bem com o auxílio de um fuê até a massa ficar homogênea;","4 - Unte uma forma de pudim com margarina e farinha hipoprotéica;","5 - Leve para assar em forno pré-aquecido a 200°C;","6 - Retire do forno quando o palito sair seco após testado na massa."]'::jsonb,
@@ -606,8 +606,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   26,
-  'orange-mandioca-cake',
-  'cakes-and-short-cakes',
+  'Orange mandioca cake',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1515754164677-ec9796621bcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["140g de açúcar refinado","30g de amido de milho","100g de mandioca crua","5g fermento químico para bolo","5g de emulsificante","140g de gomos de laranja pêra descascada","1g de raspas de laranja"]'::jsonb,
   '["1 - Em um liquidificador, bata a laranja descascada junto com a mandioca e o açúcar;","2 - Adicione o emulsificante, o amido e por último o fermento com as raspas da laranja;","3 - Disponha a massa em uma forma untada;","4 - Asse em forno pré-aquecido a 200°C por 25 minutos;","5 - Desenforme quando estiver frio e se gostar aplique a cobertura abaixo","Cobertura de açúcar e suco de limão","1 - Misture os dois ingredientes e espalhe a cobertura por cima do bolo;","2 - Decore com raspas da casca do limão."]'::jsonb,
@@ -630,8 +630,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   27,
-  'orange-soft-cake',
-  'cakes-and-short-cakes',
+  'Orange soft cake',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1475855841503-917d97ca77b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["100g de açúcar refinado","140g de farinha sem glúten","100ml de suco de laranja","40g de creme de leite","5g de liga neutra","10g de fermento químico em pó"]'::jsonb,
   '["1 - Em um recipiente, misture o suco de laranja, o creme de leite, o óleo e liga neutra;","2 - Adicione a farinha, o açúcar e misture bem até ficar homogêneo. Adicione o fermento e misture delicadamente;","3 - Transfira a massa para forminhas de cupcake untadas;","4 - Leve ao forno a 180°C por aproximadamente 35 minutos ou até que esteja assado por completo."]'::jsonb,
@@ -654,8 +654,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   28,
-  'mixed-cake',
-  'cakes-and-short-cakes',
+  'Mixed cake',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1608266400306-3e699423dc53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["160g de açúcar cristal","170ml de água","60g de creme de leite","240g de farinha sem glúten","10g de fermento químico em pó","15g de achocolatado em pó","10g de óleo de coco"]'::jsonb,
   '["1 - Coloque todos os ingredientes na batedeira, exceto o fermento, e bata até obter uma massa homogênea;","2 - Retire da batedeira e acrescente o fermento, misturando delicadamente;","3 - Divida a massa em duas partes e em uma delas, coloque o achocolatado;","4 - Em uma assadeira untada, coloque a massa branca e por cima o restante da massa de chocolate;","5 - Leve para assar em forno pré- aquecido a 180°C por aproximadamente 40 minutos ou até que esteja assado por completo. "]'::jsonb,
@@ -678,8 +678,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   29,
-  'coconut-chocolate-muffin',
-  'cakes-and-short-cakes',
+  'Coconut chocolate muffin',
+  'Cakes and short cakes',
   'https://plus.unsplash.com/premium_photo-1671405925124-8a3192adec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["100g de farinha sem glúten","180g de bebida vegetal a base de arroz","100g de amido de milho","35g de margarina sem sal","2g de essência de baunilha","10g de fermento químico em pó","25g de gotas de chocolate","145g de açúcar demerara","45g de leite de coco","7g de emulsificante","5g de liga neutra"]'::jsonb,
   '["1 - Em um recipiente, misture todos os ingredientes secos, exceto o fermento;","2 - Acrescente os demais ingredientes, deixando o fermento e o chocolate para o final;","3 - Disponha a massa em forminhas de cupcake","4 - Asse em forno pré-aquecido a 200°C por aproximadamente 20 a 25 minutos. "]'::jsonb,
@@ -702,8 +702,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   30,
-  'banana-chocolate-muffin',
-  'cakes-and-short-cakes',
+  'Banana chocolate muffin',
+  'Cakes and short cakes',
   'https://images.unsplash.com/photo-1663904458739-5e2ed09582b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["90g de farinha sem glúten","10g de achocolatado","30g de açúcar orgânico","6g óleo vegetal","60g de creme de leite","3g de fermento químico em pó","150g de banana prata"]'::jsonb,
   '["1 - Em um recipiente, misture todos os ingredientes, exceto o achocolatado e o fermento;","2 - Adicione o fermento e mexa delicadamente;","3 - Divida a massa em duas partes iguais e em uma delas adicione o achocolatado;","4 - Disponha a massa em uma forma de pão de forma ou forminhas de cupcake, colocando a massa branca embaixo e a massa de chocolate por cima;","5 - Asse em forno pré-aquecido a 180°C por aproximadamente 40 minutos ou até o palito sair limpo. "]'::jsonb,
@@ -726,8 +726,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   31,
-  'tapioca-lime-honey-cookie',
-  'sweets',
+  'Tapioca lime honey cookie',
+  'Sweets',
   'https://images.unsplash.com/photo-1630953899439-e1b44977d777?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["60g de açúcar refinado","26g de tapioca desidratada","30g de coco seco ralado","45g de leite de coco","6g de margarina sem sal","3g de suco de limão"]'::jsonb,
   '["1 - Em uma panela, misture todos os ingredientes;","2 - Leve ao fogo, mexendo sempre, e cozinhe até desgrudar do fundo da panela;","3 - Deixe esfriar e formate os docinhos."]'::jsonb,
@@ -750,8 +750,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   32,
-  'caratina-chocolate-truffle',
-  'sweets',
+  'Caratina chocolate truffle',
+  'Sweets',
   'https://images.unsplash.com/photo-1565814598158-c9e60d235405?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["10g de açúcar refinado","50g de achocolatado em pó","30g de gotas de chocolate","15g de creme de leite","5g de margarina sem sal","80g de tapioca hidratada","30g de confeito granulado"]'::jsonb,
   '["1 - Coloque todos os ingredientes em uma panela;","2 - Mexa em fogo baixo até conseguir um ponto elástico, desgrudando do fundo da panela;","3 - Deixe esfriar em geladeira por alguns minutos; 4- Enrole passando em confeitos de granulado."]'::jsonb,
@@ -774,8 +774,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   33,
-  'banana-tapioca-crepioca',
-  'sweets',
+  'Banana tapioca crepioca',
+  'Sweets',
   'https://media.istockphoto.com/id/486011238/pt/foto/casabe-de-mandioca-tapioca.jpg?s=2048x2048&w=is&k=20&c=LirYDmSn682sbu36mynQz8yGdS8blCsgFLjWVb43kLU=',
   '["80g de banana","75g de massa de tapioca hidratada"]'::jsonb,
   '["1 - Amasse a banana com o auxílio de um garfo e junte com a massa de tapioca já hidratada;","2 - Em uma frigideira antiaderente, disponha a mistura e cozinhe de ambos os lados;","3 - Sirva quente"]'::jsonb,
@@ -798,8 +798,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   34,
-  'apple-crumble',
-  'sweets',
+  'Apple crumble',
+  'Sweets',
   'https://images.unsplash.com/photo-1589462239133-1e04f802685d?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["Ingredientes da farofa","220g de farinha sem glúten","75g de margarina sem sal","80g de açúcar refinado ou mascavo","Ingredientes do recheio","500g de maçã com casca","100g de açúcar refinado ou mascavo","120g de creme de leite","0,5g de canela em pó"]'::jsonb,
   '["Modo de preparo da farofa","1 - Misture a farinha e o açúcar;","2 - Adicione a margarina aos poucos e com as pontas dos dedos misture até formar uma farofa, reserve.","Modo de preparo do recheio","1 - Lave bem as maçãs e corte em fatias dentro de uma bacia com água e limão para não escurecer;","2 - Escorra bem as fatias e disponha num refratário baixo;","3 - Polvilhe o açúcar, espalhe o creme de leite e salpique a canela por cima das maçãs;","4 - Disponha a farofa por cima do recheio;","5 - Asse em forno pré-aquecido a 200°C por aproximadamente 40 minutos ou até dourar."]'::jsonb,
@@ -822,8 +822,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   35,
-  'apple-jam',
-  'sweets',
+  'Apple jam',
+  'Sweets',
   'https://images.unsplash.com/photo-1603777953657-e57b62f12c77?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["300ml de água","100g de açúcar refinado","550g de maçã","60g de suco de polpa de maracujá batido e coado 2g de cravo","5g de canela em pau"]'::jsonb,
   '["1 - Higienize as maçãs, retire as semente e corte em cubos grandes com ou sem casca;","2 - Em uma panela de pressão, adicione as maçãs e os demais ingredientes;","3 - Leve ao fogo e conte 3 minutos a partir do momento que começar a chiar;","4 - Desligue e a pressão da panela;","5 - Despeje o doce em um refratário e leve para gelar."]'::jsonb,
@@ -846,8 +846,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   36,
-  'coconut-jam',
-  'sweets',
+  'Coconut jam',
+  'Sweets',
   'https://images.unsplash.com/photo-1548084769-1b94d5c3168e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["Ingredientes da 1a parte","60g de açúcar refinado","210g de leite de coco","15g de coco seco ralado","Ingredientes da 2a parte","100g de creme de leite","100ml de água","15g de amido de milho","Ingredientes da calda","160g de geleia de frutas","3g de amido de milho","50ml de água"]'::jsonb,
   '["1 - Em uma panela, despeje o leite de coco, o açúcar e o coco ralado. Misture bem e leve ao fogo;","2 - Em um outro recipiente, misture o creme de leite com a água e o amido de milho;","3 - Assim que o leite de coco começar a ferver, abaixe o fogo e adicione a mistura de creme de leite, água e amido de milho;","4 - Mexa sem parar até engrossar, cerca de 5 minutos;","5 - Esfrie a panela com o manjar em uma bacia com água fria;","6 - Enquanto isso, faça a geleia. Em uma panela, misture a geleia, a água e o amido de milho, leve ao fogo até engrossar;","6 - Porcione o manjar em taças e despeje a calda por cima;","7 - Sirva gelado."]'::jsonb,
@@ -870,8 +870,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   37,
-  'lemon-mousse-i',
-  'sweets',
+  'Lemon mousse I',
+  'Sweets',
   'https://images.unsplash.com/photo-1582834936490-9747caf8ca4a?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["205g de chantilly vegetal","50g de creme de leite","40g de suco de limão","5g de raspas de limão","75 gotas de chocolate branco"]'::jsonb,
   '["1 - Em uma batedeira, bata o chantilly vegetal em ponto firme;","2 - Misture com o suco de limão e reserve;","3 - Derreta o chocolate e misture o creme de leite;","4 - Adicione o chocolate à mistura de chantilly com limão;","5 - Leve à geladeira para gelar e sirva com raspas de limão por cima."]'::jsonb,
@@ -894,8 +894,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   38,
-  'lemon-mousse-ii',
-  'sweets',
+  'Lemon mousse II',
+  'Sweets',
   'https://plus.unsplash.com/premium_photo-1669880504277-1c79daa58c12?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["200ml de água","30g de amido de milho","100g de açúcar refinado","50g de suco de limão","65g de chantilly vegetal"]'::jsonb,
   '["1 - Em uma panela pequena, misture a água, o amido de milho e o suco de limão;","2 - Cozinhe em fogo baixo até engrossar;","3 - Retire do fogo, adicione o açúcar e reserve;","4 - Após esfriar, bata na batedeira junto com o chantilly vegetal para dar cremosidade;","5 - Distribua em tacinhas e leve à geladeira até ficar firme."]'::jsonb,
@@ -918,8 +918,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   39,
-  'passion-fruit-mousse',
-  'sweets',
+  'Passion fruit mousse',
+  'Sweets',
   'https://media.istockphoto.com/id/1495638879/pt/foto/passion-fruit-cheesecake.jpg?s=2048x2048&w=is&k=20&c=h0qp3jwMW1SxwxMmZ5m-foJvyPTcQ4jBYR558LQrL4c=',
   '["200ml de água","30g de amido de milho","100g de açúcar refinado","70g de suco de maracujá","100g de chantilly vegetal"]'::jsonb,
   '["1 - Em uma panela pequena, misture a água, o amido de milho e o suco de maracujá;","2 - Cozinhe em fogo baixo até engrossar;","3 - Retire do fogo, adicione o açúcar e reserve;","4 - Após esfriar, bata na batedeira junto com o chantilly vegetal para dar cremosidade;","5 - Distribua em tacinhas e leve à geladeira até ficar firme."]'::jsonb,
@@ -942,8 +942,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   40,
-  'banana-tapioca-pudding',
-  'sweets',
+  'Banana tapioca pudding',
+  'Sweets',
   'https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["Ingredientes da calda","300g de açúcar refinado","180ml de água","Ingredientes do pudim","200ml de água","60g de creme de leite ou leite de coco","70g de tapioca granulada","Demais ingredientes","120g de banana nanica","60g de farinha hipoproteica","150ml de água","60g de creme de leite ou leite de coco","1g de essência de baunilha","0,5g de canela em pó"]'::jsonb,
   '["Modo de preparo da calda","1 - Em uma panela, derreta o açúcar em fogo baixo até caramelizar;","2 - Com cuidado, adicione a água aos poucos e misture até desmanchar os grumos de caramelo;","3 - É possível fazer a calda antecipadamente e deixar na geladeira para que fique mais consistente.","Modo de preparo do pudim","1 - Aqueça a água com creme de leite ou leite de coco e jogue por cima da tapioca;","2 - Misture bem e deixe hidratar em geladeira por aproximadamente 2 horas até que fique inchada e macia;","3 - No liquidificador, bata a tapioca já hidratada com o restante dos ingredientes por cerca de 2 minutos;","4 - Espalhe a calda no fundo e laterais de uma forma e despeje a massa;","5 - Asse em forno pré-aquecido a 200°C por aproximadamente 45 minutos;","6 - Retire do forno e deixe esfriar antes de desenformar;","7 - Aqueça o fundo da forma na chama do fogão e desenforme com ajuda de uma faca soltando as laterais;","8 - Espalhe a calda por cima e sirva bem gelado."]'::jsonb,
@@ -966,8 +966,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   41,
-  'tapioca-pudding',
-  'sweets',
+  'Tapioca pudding',
+  'Sweets',
   'https://media.istockphoto.com/id/676301900/pt/foto/brazilian-tapioca.jpg?s=2048x2048&w=is&k=20&c=gewKeeIpCeK670y7FtZBjX3FiozHdRV8RxGIKrmbri0=',
   '["100ml de água","160g de açúcar refinado","200g de leite de coco diluído em 100ml de água","100g de tapioca desidratada","25g de margarina sem sal","30g de amido de milho","125g de creme de leite","10g de coco ralado","10g de pó para preparo de flan sabor baunilha"]'::jsonb,
   '["Modo de preparo da calda","1 - Em uma panela, derreta o quanto baste de açúcar e faça um caramelo;","2 - Envolva uma forma com a calda de caramelo ainda quente e reserve.","Modo de preparo do pudim","1 - Em uma vasilha, coloque a tapioca de molho no leite de coco diluído em água por alguns minutos;","2 - Bata no liquidificador a tapioca já hidratada com os demais ingredientes, exceto o coco ralado;","3 - Adicione o coco na mistura e coloque na forma caramelizada;","4 - Asse em banho maria no forno ou panela por aproximadamente 40 minutos."]'::jsonb,
@@ -990,8 +990,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   42,
-  'mandioca-coxinha',
-  'pastries',
+  'Mandioca coxinha',
+  'Pastries',
   'https://media.istockphoto.com/id/1358848345/pt/foto/traditional-fried-coxinha-on-a-black-plate-on-a-slate-background-brazilian-snack.jpg?s=2048x2048&w=is&k=20&c=i7PQjoXNiDKa8HNLqN3HVCWKjcyQp3ZBRvnp7XMdhsM=',
   '["500ml de água","400g de mandioca","100g de farinha hipoproteica","70g de farinha de mandioca","25g de margarina sem sal","6g de sal","1g de páprica doce","1g de orégano seco"]'::jsonb,
   '["1 - Cozinhe a mandioca, amasse até obter um purê e reserve;","2 - Em uma panela, ferva a água com a margarina, o sal, a páprica e o orégano;","3 - Acrescente o purê de mandioca e dissolva bem até ficar uma massa homogênea;","4 - Acrescente a farinha hipoproteica e cozinhe por 5 minutos, mexendo sempre;","5 - Retire a massa da panela e coloque em uma bancada, amasse com auxílio de uma colher e depois com as mãos até ficar bem lisinha e firme. Deixar esfriar para moldar;","6 - Recheie com legumes cozidos e temperados a gosto;","7 - Para empanar passe na água e em seguida na farinha de mandioca peneirada;","8 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
@@ -1014,8 +1014,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   43,
-  'torta-or-empanada-pastry',
-  'pastries',
+  'Torta or empanada pastry',
+  'Pastries',
   'https://plus.unsplash.com/premium_photo-1666174326073-327a1fcfb431?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["100g de farinha hipoproteica","70g de margarina sem sal","5g de emulsificante","3g de sal","1g de fermento químico em pó","0,5g de açafrão em pó"]'::jsonb,
   '["1 - Misture todos os ingredientes, exceto a farinha;","2 - Adicione a farinha aos poucos até dar o ponto da massa, que deve ficar parecida com massa de pastel;","3 - Coloque em forminhas e recheie com legumes a gosto;","4 - Leve ao forno pré-aquecido a 200°C até dourarem."]'::jsonb,
@@ -1038,8 +1038,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   44,
-  'empanada-pastry',
-  'pastries',
+  'Empanada pastry',
+  'Pastries',
   'https://plus.unsplash.com/premium_photo-1666174326073-327a1fcfb431?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["140g de farinha sem glúten","1g de goma xantana","2g de sal","2g de açúcar refinado","60g de margarina sem sal","40ml de água"]'::jsonb,
   '["1 - Em um recipiente, misture todos os ingredientes até obter uma massa lisa que não grude nas mãos;","2 - Abra a massa com o auxílio de um rolo e disponha em forminhas individuais;","3 - Recheie com o recheio de sua preferência;","4 - Leve ao forno pré-aquecido a 180°C por aproximadamente 20 minutos."]'::jsonb,
@@ -1061,33 +1061,9 @@ ON CONFLICT (id) DO UPDATE SET
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
-  undefined,
-  'sweet-cake',
-  'pastries',
-  'https://images.unsplash.com/photo-1705138591117-2aaf6a7e08ae?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  '["40ml de água morna","20g de creme de leite","50g de farinha sem glúten","4g de óleo vegetal","5g de fermento químico em pó","30g de açúcar refinado"]'::jsonb,
-  '["1 - Em um recipiente, misture todos os ingredientes e bata com o auxílio de um fuê ou mixer até que fique uma massa homogênea;","2 - Pegue porções da massa com uma concha e coloque em uma frigideira pré-aquecida e untada com óleo;","3 - Doure a massa de ambos os lados","4 - Recheie a gosto."]'::jsonb,
-  '2 unidades',
-  '[{"totalEnergy":196,"servingEnergy":39},{"totalCarbs":77,"servingCarbs":38},{"totalProteins":1.5,"servingProteins":0.7},{"totalLipids":9,"servingLipids":5},{"totalSodium":9,"servingSodium":5},{"totalPotassium":24,"servingPotassium":12}]'::jsonb,
-  '[{"leucine":46,"totalLeucine":150,"servingLeucine":75},{"tirosine":18,"totalTirosine":60,"servingTirosine":30},{"fenil":24,"totalFenil":80,"servingFenil":40},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
-  '{"en-US":{"name":"Sweet Cake","ingredients":["40ml of warm water","20g of milk cream","50g of gluten-free flour","4g of vegetable oil","5g of chemical yeast powder","30g of refined sugar"],"preparation":["1 - In a container, mix all the ingredients and beat with the help of a fuê or mixer until you get a homogeneous dough;","2 - Take portions of dough with a spoon and place in a pre-heated frying pan and grease with oil;","3 - Brown the dough on both sides","4 - Fill with the desired filling."],"servings":"2 servings"}}'::jsonb
-)
-ON CONFLICT (id) DO UPDATE SET
-  name = EXCLUDED.name,
-  category = EXCLUDED.category,
-  image = EXCLUDED.image,
-  ingredients = EXCLUDED.ingredients,
-  preparation = EXCLUDED.preparation,
-  servings = EXCLUDED.servings,
-  nutritional_information = EXCLUDED.nutritional_information,
-  graph_information = EXCLUDED.graph_information,
-  updated_at = NOW();
-
-INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
-VALUES (
   46,
-  'carrot-sweet-cake',
-  'pastries',
+  'Carrot sweet cake',
+  'Pastries',
   'https://images.unsplash.com/photo-1587131791788-ec0cb04e0a52?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["200ml de água","15g de creme de leite","6g de óleo vegetal","2g de sal","3g de fermento químico em pó 20g de cenoura","70g de farinha sem glúten"]'::jsonb,
   '["1 - Bata todos os ingredientes no liquidificador e reserve;","2 - Unte uma frigideira com um fio de óleo e leve ao fogo até aquecer;","3 - Divida a massa em 3 porções iguais e com auxílio de uma concha pegue uma porção de massa e coloque na frigideira, gire a frigideira para espalhar bem a massa;","4 - Abaixe o fogo e deixe dourar por baixo, em seguida vire do outro lado e deixe dourar;","5 - Repita o processo com toda massa;","6 - Recheie a gosto."]'::jsonb,
@@ -1110,8 +1086,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   47,
-  'pastel-pastry',
-  'pastries',
+  'Pastel pastry',
+  'Pastries',
   'https://plus.unsplash.com/premium_photo-1663853495255-f43171eaf9b4?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["220g de mandioca","120g de farinha sem glúten","20g de creme de leite","3g de sal"]'::jsonb,
   '["1 - Cozinhe a mandioca e passe no espremedor ou amasse bem com o garfo ainda quente;","2 - Em um recipiente, coloque o purê de mandioca, acrescente o creme de leite, o sal e os poucos a farinha até obter uma massa homogênea;","3 - Abra a massa com o auxílio de um rolo e molde os pastéis;","4 - Coloque o recheio de sua preferência;","5 - Asse em forno pré-aquecido por aproxi- madamente 20 minutos."]'::jsonb,
@@ -1134,8 +1110,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   48,
-  'catarina-pastel',
-  'pastries',
+  'Catarina pastel',
+  'Pastries',
   'https://images.unsplash.com/photo-1608039783021-6116a558f0c5?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["30ml de água morna","40g de creme de leite","30g de maionese","3g de mostarda","6g de vinagre de maçã","2g de sal","150g de farinha sem glúten"]'::jsonb,
   '["1 - Em um recipiente misture todos os ingredientes, exceto a farinha;","2 - Misture bem e acrescente a farinha aos poucos até a massa desgrudar das mãos;","3 - Abra a massa com o auxílio de um rolo e corte em círculos;","4 - Recheie a gosto e dobre os meio, fechando bem as laterais;","5 - Leve para assar ou fritar até ficar mais crocante."]'::jsonb,
@@ -1158,8 +1134,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   49,
-  'pizza-dough',
-  'pastries',
+  'Pizza dough',
+  'Pastries',
   'https://images.unsplash.com/photo-1703317605426-815bb8b2c40a?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["90g de farinha hipoproteica","90g de amido de milho","50ml de água morna","30g de creme de leite","30g de maionese","4g de fermento químico para bolo","3g de sal"]'::jsonb,
   '["1 - Em um recipiente, coloque a farinha, o amido de milho e o fermento e reserve;","2 - Misture o creme de leite com a água e despeje na mistura seca;","3 - Misture com uma colher até dar o ponto de amassar com as mãos;","4 - Abra a massa e divida em duas porções em formato de pizza;","5 - Adicione o recheio desejado e asse em forno pré-aquecido a 200°C por aproximadamente 25 minutos."]'::jsonb,
@@ -1182,8 +1158,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   50,
-  'spinach-ravioli',
-  'pastries',
+  'Spinach ravioli',
+  'Pastries',
   'https://images.unsplash.com/photo-1616169775818-9f7115b8821e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["Ingredientes do recheio","40g de mandioquinha","10g de margarina sem sal","2g de sal","1g de salsinha ou cebolinha","Ingredientes da massa","150g de farinha sem glúten 100ml de água","7g de banha","10g de espinafre cru","5g de CMC ou goma xantana","2g de sal"]'::jsonb,
   '["Modo de preparo do recheio","1 - Descasque e cozinhe a mandioquinha até ficarem macias;","2 - Amasse até virar um purê e adicione os demais ingredientes, reserve.","Modo de preparo da massa","1 - Lave as folhas de espinafre;","2 - Triture no liquidificador com o mínimo de água possível;","3 - Em uma tigela, coloque a farinha, o CMC ou goma xantana, o sal e a banha;","4 - Faça uma farofinha e aos poucos adicione o conteúdo do liquidificador até obter uma massa lisa e homogênea.","Montagem","1 - Abra a massa com o auxílio de rolo;","2 - Disponha o recheio, dobre a massa e corte do formato de sua preferência;","3 - Cozinhe em água fervente com um fio de óleo;","4 - Retire da água quando começarem a boiar;","5 - Sirva com o molho de sua preferência."]'::jsonb,
@@ -1206,8 +1182,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   51,
-  'risoles',
-  'pastries',
+  'Risoles',
+  'Pastries',
   'https://media.istockphoto.com/id/471026259/pt/foto/bacalhau-portugu%C3%AAs-bolos.jpg?s=2048x2048&w=is&k=20&c=V5me6LNz0a5u85ZjqlLtBF2iV0pXApgyiUPlcgmiXxs=',
   '["Ingredientes do recheio","25g de palmito","30g de cogumelos champignon 60g de tomate","15g de cebola","10g de milho","3g de salsinha","0,5g de orégano seco","5g de azeite de oliva","Ingredientes da massa","200ml de água","7,5g de caldo de legumes em sachê 30g de margarina sem sal","2g de goma xantana ou liga neutra 100g de farinha hipoproteica","20g de farinha sem glúten","Para empanar: 20g de farinha de mandioca"]'::jsonb,
   '["Modo de preparo da massa","1 - Em uma panela, coloque a água com o sal, o orégano e a margarina para ferver;","2 - Quando levantar fervura, adicione as farinhas aos poucos, mexa e cozinhe por alguns minutos. A massa deve ficar em consistência de polenta;","3 - Retire a massa ainda quente da panela e amasse com auxílio de uma colher, depois com as mãos, até obter uma massa lisa para moldar;","4 - Abra a massa e corte em 10 círculos para fazer os risoles, reserve.","Modo de preparo do recheio","1 - Em uma panela, refogue a cebola no azeite;","2 - Adicione os demais ingredientes e cozinhe;","3 - Divida o recheio em 10 porções iguais e reserve.","Montagem","1 - Recheie a massa e feche os risoles apertando bem as bordas;","2 - Passe os risoles prontos na água e em seguida na farinha de mandioca peneirada para empanar;","3 - Frite rapidamente em óleo quente e coloque no papel absorvente."]'::jsonb,
@@ -1230,8 +1206,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   52,
-  'waffles',
-  'pastries',
+  'Waffles',
+  'Pastries',
   'https://plus.unsplash.com/premium_photo-1673011775209-97272be970a2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["180ml de água morna","50g de açúcar refinado","50g de banana amassada","100g de farinha sem glúten","5g de óleo de girassol","20g de creme de leite","5g de emulsificante","8g de vinagre de maçã","0,5g de essência de baunilha","2g de fermento químico em pó","1g de sal","1g de goma xantana","1g de ágar-ágar"]'::jsonb,
   '["1 - Misture a banana amassada com o açúcar e o emulsificante, reserve;","2 - Misture o vinagre e os demais ingredientes;","3 - Adicione a farinha e o fermento químico, bata tudo com o auxílio de um fuê;","4 - Ligue o grill para waffle na temperatura máxima e espere esquentar;","5 - Coloque uma porção de massa no centro do grill e asse por 15 minutos ou até que esteja dourado e assado. Não abra antes de 10 minutos;","6 - Sirva com margarina, mel ou geleia."]'::jsonb,
@@ -1254,8 +1230,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   53,
-  'fine-herbs-bread',
-  'breads',
+  'Fine herbs bread',
+  'Breads',
   'https://images.unsplash.com/photo-1536919011766-09449b44af40?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["130g de tapioca hidratada","250g de batata cozida","5g de óleo vegetal","6g de sal","3g de fermento químico em pó","15ml de água","0,5g de ervas secas (orégano, alecrim)"]'::jsonb,
   '["1 - Amasse a batata até obter um purê;","2 - Em um recipiente, misture o purê com os demais ingredientes;","3 - Amasse até obter uma massa moldável;","4 - Enrole em bolinhas com as mãos ou no formato que desejar;","5 - Disponha em uma assadeira untada;","6 - Asse em forno pré-aquecido a 200° C por aproximadamente 40 minutos."]'::jsonb,
@@ -1278,8 +1254,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   54,
-  'mixed-flour-bread',
-  'breads',
+  'Mixed flour bread',
+  'Breads',
   'https://images.unsplash.com/photo-1534620808146-d33bb39128b2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["200g de amido de milho","200g de polvilho doce","100g de fécula de batata","100g de farinha de arroz","50g de liga neutra","200ml de água","60g de açúcar refinado","10g de fermento biológico seco em pó 10g de sal","20g de emulsificante","90g de margarina sem sal","75g de creme de leite","15g de óleo vegetal"]'::jsonb,
   '["1 - Em um recipiente coloque 100ml de água quente, o açúcar, a margarina, o óleo e o emulsificante. Mexa bem até que a margarina derreta;","2 - Acrescente o restante da água fria e o fermento, deixe descansar por 5 minutos;","3 - Acrescente a mistura as farinhas, o sal, o creme de leite e bata na batedeira por alguns minutos;","4 - Coloque a massa em um recipiente, deixe crescer e bata novamente;","5 - Divida a massa em duas formas de pão untadas e deixe crescer novamente;","6 - Asse em forno pré-aquecido 220°C até ficar dourado."]'::jsonb,
@@ -1302,8 +1278,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   55,
-  'gourmet-kiss-bread',
-  'breads',
+  'Gourmet kiss bread',
+  'Breads',
   'https://images.unsplash.com/photo-1559141680-d0bd7bc5af84?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["150g de abóbora cozida","240g de batata cozida","90g de polvilho doce","200g de polvilho azedo","10g de fermento químico em pó 70ml de água","30g de óleo vegetal 5g de sal","2g de alho amassado 5g de salsinha"]'::jsonb,
   '["1 - Misture a batata com abóbora e amasse até obter um purê;","2 - Acrescente a água e depois os demais ingredientes, deixando o fermento por último;","3 - Misture tudo até obter uma massa lisa e conseguir amassar com as mãos;","4 - Faça bolinhas e disponha em uma assadeira;","5 - Asse em forno pré-aquecido a 180°C por aproximadamente 1 hora."]'::jsonb,
@@ -1326,8 +1302,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   56,
-  'french-bread',
-  'breads',
+  'French bread',
+  'Breads',
   'https://images.unsplash.com/photo-1582509385126-c9ab0cb0449f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["320g de farinha sem glúten","50g de polvilho doce","9g de sal","30g de açúcar refinado ou mascavo 10g de fermento biológico seco","5g e liga neutra ou goma xantana 6g de azeite de oliva","6g de vinagre de maçã","240ml de água","0,1g de açafrão em pó"]'::jsonb,
   '["1 - Em um recipiente, misture o vinagre, o azeite e a água;","2 - Adicione os demais ingredientes, misture com uma colher e depois com as mãos;","3 - Sove bem, a massa fica um pouco pegajosa;","4 - Separe a massa em 8 partes iguais e modele os pães com as mãos untadas com óleo, não é necessário deixar a massa crescer;","5 - Disponha em uma assadeira untada com margarina e faça um corte de uma extremidade a outra em cima de cada um dos pães;","6 - Asse em forno pré-aquecido a 220°C por 25 a 30 minutos. Não exceder o tempo de cozimento para não ficar duro, os pães ficam brancos;","7 - É possível congelar depois de prontos e aquecer em micro-ondas por 30 segundos."]'::jsonb,
@@ -1350,8 +1326,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   57,
-  'cheese-bread',
-  'breads',
+  'Cheese bread',
+  'Breads',
   'https://media.istockphoto.com/id/1249893961/pt/foto/brazilian-snack-traditional-cheese-bread.jpg?s=2048x2048&w=is&k=20&c=nobDyi5btyyO3bc3Zyb62X0_ScOncJJL2NSbbLTVq3M=',
   '["130g de polvilho azedo","60g de polvilho doce","90g de queijo vegano ralado 220g de creme de leite","5g de sal"]'::jsonb,
   '["1 - Em uma vasilha, misture todos os ingredientes exceto o polvilho doce;","2 - Acrescente o polvilho doce e misture novamente, a consistência da massa é pegajosa;","3 - É possível utilizar somente o polvilho azedo, se preferir;","4 - Modele os pães com o auxílio de duas colheres;","5 - Disponha as porções em uma assadeira untada com margarina;","6 - Leve ao forno pré-aquecido a 200°C até assar por completo."]'::jsonb,
@@ -1374,8 +1350,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   58,
-  'frying-pan-bread',
-  'breads',
+  'Frying pan bread',
+  'Breads',
   'https://images.unsplash.com/photo-1599232288126-7dbd2127db14?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["60g de farinha sem glúten","15g de açúcar refinado","6g de óleo vegetal","30g de banana amassada","0,5g de goma xantana ou liga neutra 35ml de água morna","25g de creme de leite","8g de vinagre de maçã","1g de fermento químico em pó 1g de sal"]'::jsonb,
   '["1 - Em um recipiente, misture todos os ingredientes exceto a água.","2 - Adicione a água aos poucos até obter uma mistura homogênea;","3 - Em uma frigideira antiaderente untada, disponha metade da massa, tampe e doure de ambos os lados;","4 - Repita o processo com a outra metade da massa."]'::jsonb,
@@ -1398,8 +1374,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   59,
-  'inhaminho-bread',
-  'breads',
+  'Inhaminho bread',
+  'Breads',
   'https://images.unsplash.com/photo-1561043433-b0bb121aacef?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["270g de inhame cozido","100g de polvilho doce","100g de polvilho azedo","30g de óleo de girassol","7g de sal","1g de orégano seco"]'::jsonb,
   '["1 - Cozinhe o inhame e amasse até virar um purê;","2 - Em um recipiente, coloque o purê de inhame e acrescente os demais ingredientes;","3 - Misture tudo e amasse com a mão até virar uma massa lisa e homogênea;","4 - Caso a massa fique seca, adicione um pouco de água quente para dar o ponto;","5 - Faça bolinhas e disponha em uma assadeira;","6 - Asse em forno pré-aquecido a 200°C até que o fundo fique dourado."]'::jsonb,

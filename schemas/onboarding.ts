@@ -1,10 +1,10 @@
 import { z } from "zod";
 
 export const onboardingSchema = z.object({
-  name: z
+  email: z
     .string()
-    .min(2, "O nome deve ter pelo menos 2 caracteres")
-    .max(50, "O nome deve ter no máximo 50 caracteres"),
+    .email("Digite um email válido")
+    .min(1, "O email é obrigatório"),
   password: z
     .string()
     .min(8, "A senha deve ter pelo menos 8 caracteres")

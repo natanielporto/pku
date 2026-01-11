@@ -10,6 +10,21 @@ export default {
     scheme: "mrpkunew",
     userInterfaceStyle: "automatic",
     newArchEnabled: true,
+    // Deep linking configuration for OAuth
+    intentFilters: [
+      {
+        action: "VIEW",
+        autoVerify: true,
+        data: [
+          {
+            scheme: "mrpkunew",
+            host: "auth",
+            pathPrefix: "/callback",
+          },
+        ],
+        category: ["BROWSABLE", "DEFAULT"],
+      },
+    ],
     splash: {
       image: "./assets/images/splash-icon.png",
       resizeMode: "contain",

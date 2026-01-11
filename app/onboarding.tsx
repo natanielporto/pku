@@ -3,6 +3,7 @@ import { Controller, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import {
   ActivityIndicator,
+  Alert,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
@@ -16,15 +17,20 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useRouter } from "expo-router";
 import { OnboardingFormData, onboardingSchema } from "@/schemas/onboarding";
-import { setOnboardingCompleted } from "@/services/onboarding";
+import {
+  signInWithEmail,
+  signInWithFacebook,
+  signInWithGoogle,
+  signUpWithEmail,
+} from "@/services/auth";
 
 export default function OnboardingScreen() {
-  const router = useRouter();
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingOAuth, setIsLoadingOAuth] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [isSignIn, setIsSignIn] = useState(false); // Toggle entre login e cadastro
 
   const {
     control,
@@ -35,17 +41,81 @@ export default function OnboardingScreen() {
     mode: "onChange", // Valida em tempo real
   });
 
+  async function handleGoogleSignIn() {
+    setIsLoadingOAuth(true);
+    try {
+      const { error } = await signInWithGoogle();
+
+      if (error) {
+        Alert.alert(
+          "Erro",
+          "Não foi possível fazer login com Google. Tente novamente."
+        );
+        console.error(error);
+      }
+      // O redirecionamento é feito automaticamente pelo AuthContext
+    } catch (error) {
+      console.error("Erro ao fazer login com Google:", error);
+      Alert.alert("Erro", "Ocorreu um erro inesperado.");
+    } finally {
+      setIsLoadingOAuth(false);
+    }
+  }
+
+  async function handleFacebookSignIn() {
+    setIsLoadingOAuth(true);
+    try {
+      const { error } = await signInWithFacebook();
+
+      if (error) {
+        Alert.alert(
+          "Erro",
+          "Não foi possível fazer login com Facebook. Tente novamente."
+        );
+        console.error(error);
+      }
+      // O redirecionamento é feito automaticamente pelo AuthContext
+    } catch (error) {
+      console.error("Erro ao fazer login com Facebook:", error);
+      Alert.alert("Erro", "Ocorreu um erro inesperado.");
+    } finally {
+      setIsLoadingOAuth(false);
+    }
+  }
+
   async function onSubmit(data: OnboardingFormData) {
     setIsLoading(true);
     try {
-      // Aqui você pode salvar o nome do usuário e senha se necessário
-      // Por enquanto, apenas marca o onboarding como completo
-      await setOnboardingCompleted();
+      let result;
 
-      // Navega para a tela principal
-      router.replace("/(tabs)/home");
+      if (isSignIn) {
+        // Login com email e senha
+        result = await signInWithEmail(data.email, data.password);
+      } else {
+        // Cadastro com email e senha
+        result = await signUpWithEmail(data.email, data.password);
+      }
+
+      if (result.error) {
+        const errorMessage = isSignIn
+          ? "Email ou senha incorretos. Tente novamente."
+          : "Não foi possível criar sua conta. Tente novamente.";
+
+        Alert.alert("Erro", errorMessage);
+        console.error(result.error);
+        return;
+      }
+
+      // O redirecionamento é feito automaticamente pelo AuthContext
+      if (!isSignIn) {
+        Alert.alert(
+          "Sucesso!",
+          "Conta criada com sucesso! Você já pode começar a usar o app."
+        );
+      }
     } catch (error) {
-      console.error("Erro ao completar onboarding:", error);
+      console.error("Erro ao autenticar:", error);
+      Alert.alert("Erro", "Ocorreu um erro inesperado.");
     } finally {
       setIsLoading(false);
     }
@@ -65,40 +135,75 @@ export default function OnboardingScreen() {
             <Text style={styles.title}>{t("onboarding.welcome")}</Text>
             <Text style={styles.subtitle}>{t("onboarding.subtitle")}</Text>
 
-            <TouchableOpacity style={styles.socialButton}>
-              <FontAwesome name="google" size={24} color="white" />
-              <Text style={{ color: "white" }}>{t("onboarding.google")}</Text>
+            <TouchableOpacity
+              style={styles.socialButton}
+              onPress={handleGoogleSignIn}
+              disabled={isLoadingOAuth}
+            >
+              {isLoadingOAuth ? (
+                <ActivityIndicator color="#fff" />
+              ) : (
+                <>
+                  <FontAwesome name="google" size={24} color="white" />
+                  <Text style={{ color: "white" }}>
+                    {t("onboarding.google")}
+                  </Text>
+                </>
+              )}
             </TouchableOpacity>
-            <TouchableOpacity style={{ ...styles.socialButton, marginTop: 16 }}>
-              <FontAwesome name="facebook-square" size={24} color="white" />
-              <Text style={{ color: "white" }}>{t("onboarding.facebook")}</Text>
+
+            <TouchableOpacity
+              style={{ ...styles.socialButton, marginTop: 16 }}
+              onPress={handleFacebookSignIn}
+              disabled={isLoadingOAuth}
+            >
+              {isLoadingOAuth ? (
+                <ActivityIndicator color="#fff" />
+              ) : (
+                <>
+                  <FontAwesome name="facebook-square" size={24} color="white" />
+                  <Text style={{ color: "white" }}>
+                    {t("onboarding.facebook")}
+                  </Text>
+                </>
+              )}
             </TouchableOpacity>
 
             <View style={styles.form}>
-              <Text style={styles.label}>{t("onboarding.nameLabel")}</Text>
+              <Text style={styles.formLabel}>{t("onboarding.formLabel")}</Text>
+
+              {/* Campo de Email */}
+              <Text style={styles.label}>{t("onboarding.emailLabel")}</Text>
               <Controller
                 control={control}
-                name="name"
+                name="email"
                 render={({ field: { onChange, onBlur, value } }) => (
                   <>
                     <TextInput
-                      style={[styles.input, errors.name && styles.inputError]}
-                      placeholder={t("onboarding.usernamePlaceholder")}
+                      style={[styles.input, errors.email && styles.inputError]}
+                      placeholder={t("onboarding.emailPlaceholder")}
                       value={value}
                       onChangeText={onChange}
                       onBlur={onBlur}
-                      autoCapitalize="words"
+                      autoCapitalize="none"
+                      autoCorrect={false}
+                      keyboardType="email-address"
+                      textContentType="emailAddress"
                       autoFocus
                     />
-                    {errors.name && (
+                    {errors.email && (
                       <Text style={styles.errorText}>
-                        {errors.name.message}
+                        {errors.email.message}
                       </Text>
                     )}
                   </>
                 )}
               />
 
+              {/* Campo de Senha */}
+              <Text style={[styles.label, { marginTop: 16, marginBottom: 0 }]}>
+                {t("onboarding.passwordLabel")}
+              </Text>
               <Controller
                 control={control}
                 name="password"
@@ -107,6 +212,7 @@ export default function OnboardingScreen() {
                     <View
                       style={[
                         styles.passwordContainer,
+                        { marginTop: 8 },
                         errors.password && styles.inputError,
                       ]}
                     >
@@ -138,7 +244,7 @@ export default function OnboardingScreen() {
                       </Text>
                     )}
                     {/* Indicadores de validação da senha */}
-                    {value && (
+                    {Boolean(value) && (
                       <View style={styles.passwordRules}>
                         <PasswordRule
                           isValid={value.length >= 8}
@@ -176,9 +282,21 @@ export default function OnboardingScreen() {
                 <ActivityIndicator color="#fff" />
               ) : (
                 <Text style={styles.buttonText}>
-                  {t("onboarding.continue")}
+                  {isSignIn ? t("onboarding.signIn") : t("onboarding.signUp")}
                 </Text>
               )}
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.toggleButton}
+              onPress={() => setIsSignIn(!isSignIn)}
+              disabled={isLoading}
+            >
+              <Text style={styles.toggleButtonText}>
+                {isSignIn
+                  ? t("onboarding.toggleSignUp")
+                  : t("onboarding.toggleSignIn")}
+              </Text>
             </TouchableOpacity>
           </View>
         </ScrollView>
@@ -220,6 +338,13 @@ const styles = StyleSheet.create({
   },
   form: {
     marginVertical: 30,
+  },
+  formLabel: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#666",
+    marginBottom: 16,
+    textAlign: "center",
   },
   label: {
     fontSize: 16,
@@ -270,6 +395,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
   },
+  toggleButton: {
+    marginTop: 16,
+    padding: 12,
+    alignItems: "center",
+  },
+  toggleButtonText: {
+    color: "#0C6941",
+    fontSize: 14,
+    fontWeight: "600",
+  },
   socialButton: {
     borderRadius: 12,
     padding: 16,
@@ -310,7 +445,13 @@ const styles = StyleSheet.create({
 });
 
 // Componente auxiliar para mostrar regras de senha
-function PasswordRule({ isValid, text }: { isValid: boolean; text: string }) {
+function PasswordRule({
+  isValid,
+  text,
+}: {
+  readonly isValid: boolean;
+  readonly text: string;
+}) {
   return (
     <View style={styles.passwordRule}>
       <Feather

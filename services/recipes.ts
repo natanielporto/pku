@@ -78,15 +78,18 @@ function transformRecipeFromDB(
 export async function fetchAllRecipes(): Promise<
   (FullRecipe & { category: string })[]
 > {
+  console.log("🔍 Buscando receitas do Supabase...");
   const { data, error } = await supabase
     .from("recipes")
     .select("*")
     .order("id", { ascending: true });
 
   if (error) {
-    throw new Error(`Erro ao buscar receitas: ${error.message}`);
+    console.error("❌ Erro ao buscar receitas:", error);
+    throw new Error(`Erro ao buscar receitas: ${error.message} (code: ${error.code || "N/A"})`);
   }
 
+  console.log(`✅ ${data?.length || 0} receitas encontradas`);
   return (data || []).map(transformRecipeFromDB);
 }
 

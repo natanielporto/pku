@@ -73,6 +73,12 @@ recipesData.forEach((categoryData, catIndex) => {
       }
     }
 
+    // Valida se o ID existe
+    if (recipe.id === undefined || recipe.id === null) {
+      console.warn(`⚠️  Receita sem ID ignorada: ${recipe.name} (categoria: ${category})`);
+      return; // Pula esta receita
+    }
+
     allInserts.push(`INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   ${recipe.id},

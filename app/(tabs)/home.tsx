@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { ActivityIndicator, FlatList, StyleSheet, Text } from "react-native";
-import { useRouter } from "expo-router";
 import { View } from "@/components/Themed";
 import { CategoryCard } from "@/components/organisms/category-card";
 import { useCategoriesWithRecipes } from "@/hooks/useRecipes";
@@ -24,6 +23,7 @@ export default function Home() {
   }
 
   if (error) {
+    console.error("Erro ao carregar receitas:", error);
     return (
       <View style={[styles.wrapper, styles.centerContainer]}>
         <Text style={styles.errorText}>{t("home.errorLoadingRecipes")}</Text>

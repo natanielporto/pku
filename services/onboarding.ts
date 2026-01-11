@@ -36,3 +36,16 @@ export async function resetOnboarding(): Promise<void> {
     console.error("Erro ao resetar onboarding:", error);
   }
 }
+
+/**
+ * Limpa todo o AsyncStorage (útil para testes e desenvolvimento)
+ * ATENÇÃO: Isso remove TODOS os dados salvos no AsyncStorage!
+ */
+export async function clearAllStorage(): Promise<void> {
+  try {
+    await AsyncStorage.clear();
+    console.log("AsyncStorage limpo com sucesso");
+  } catch (error) {
+    console.error("Erro ao limpar AsyncStorage:", error);
+  }
+}
