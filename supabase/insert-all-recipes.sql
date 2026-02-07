@@ -1,7 +1,7 @@
 -- INSERT statements for recipes table
 -- Generated from recipes.json
 -- Total recipes: 97
--- Generated at: 2026-01-23T19:21:25.051Z
+-- Generated at: 2026-02-07T20:45:39.190Z
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
@@ -1047,6 +1047,30 @@ VALUES (
   '[{"totalEnergy":716,"servingEnergy":236},{"totalCarbs":126,"servingCarbs":42},{"totalProteins":2.8,"servingProteins":0.9},{"totalLipids":22,"servingLipids":7},{"totalSodium":1139,"servingSodium":380},{"totalPotassium":0,"servingPotassium":0}]'::jsonb,
   '[{"leucine":44,"totalLeucine":270,"servingLeucine":90},{"tirosine":18,"totalTirosine":110,"servingTirosine":37},{"fenil":26,"totalFenil":160,"servingFenil":53},{"metiotine":12,"totalMetiotine":70,"servingMetiotine":23}]'::jsonb,
   '{"en-US":{"name":"Empanada Pastry","ingredients":["140g of gluten-free flour","1g of xanthan gum","2g of salt","2g of refined sugar","60g of margarine without salt","40ml of water"],"preparation":["1 - In a container, mix all the ingredients until you get a smooth dough that does not stick to the hands;","2 - Open the dough with the help of a roll and place in individual forms;","3 - Fill with the desired filling;","4 - Bake in pre-heated oven at 180°C for approximately 20 minutes."],"servings":"5 servings"}}'::jsonb
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  category = EXCLUDED.category,
+  image = EXCLUDED.image,
+  ingredients = EXCLUDED.ingredients,
+  preparation = EXCLUDED.preparation,
+  servings = EXCLUDED.servings,
+  nutritional_information = EXCLUDED.nutritional_information,
+  graph_information = EXCLUDED.graph_information,
+  updated_at = NOW();
+
+INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+VALUES (
+  45,
+  'Panqueca docinha',
+  'Massas',
+  'https://images.unsplash.com/photo-1705138591117-2aaf6a7e08ae?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  '["40ml de água morna","20g de creme de leite","50g de farinha sem glúten","4g de óleo vegetal","5g de fermento químico em pó","30g de açúcar refinado"]'::jsonb,
+  '["1 - Em um recipiente, misture todos os ingredientes e bata com o auxílio de um fuê ou mixer até que fique uma massa homogênea;","2 - Pegue porções da massa com uma concha e coloque em uma frigideira pré-aquecida e untada com óleo;","3 - Doure a massa de ambos os lados","4 - Recheie a gosto."]'::jsonb,
+  '2 unidades',
+  '[{"totalEnergy":196,"servingEnergy":39},{"totalCarbs":77,"servingCarbs":38},{"totalProteins":1.5,"servingProteins":0.7},{"totalLipids":9,"servingLipids":5},{"totalSodium":9,"servingSodium":5},{"totalPotassium":24,"servingPotassium":12}]'::jsonb,
+  '[{"leucine":46,"totalLeucine":150,"servingLeucine":75},{"tirosine":18,"totalTirosine":60,"servingTirosine":30},{"fenil":24,"totalFenil":80,"servingFenil":40},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
+  '{"en-US":{"name":"Sweet Cake","ingredients":["40ml of warm water","20g of milk cream","50g of gluten-free flour","4g of vegetable oil","5g of chemical yeast powder","30g of refined sugar"],"preparation":["1 - In a container, mix all the ingredients and beat with the help of a fuê or mixer until you get a homogeneous dough;","2 - Take portions of dough with a spoon and place in a pre-heated frying pan and grease with oil;","3 - Brown the dough on both sides","4 - Fill with the desired filling."],"servings":"2 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

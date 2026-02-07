@@ -1,4 +1,28 @@
--- Batch 10 (recipes 91 to 96)
+-- Batch 10 (recipes 91 to 97)
+
+INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+VALUES (
+  91,
+  'Nuggets sem segredo',
+  'Prato principal e vegetais',
+  '[URL_DA_IMAGEM]',
+  '["150g de abobrinha ralada","135g de batata","100g de cenoura","120g de farinha sem glúten","5g de sal","18g de azeite de oliva","55g de cebola","0.5g de orégano seco","25g de farinha de mandioca"]'::jsonb,
+  '["1 - Cozinhe a cenoura e a batata, amasse até obter um purê e reserve;","2 - Refogue a abobrinha no azeite junto com a cebola e tempere com o sal e o orégano;","3 - Acrescente o purê de batata e cenoura na panela;","4 - Desligue o fogo e adicione a farinha aos poucos, mexendo sempre;","5 - Retire da panela e coloque em outro recipiente para amornar;","6 - Molde a massa em formato de nuggets, passe na farinha de mandioca para empanar e disponha em uma assadeira;","7 - Asse em forno pré-aquecido a 200°C por alguns minutos até dourar."]'::jsonb,
+  '16 unidades',
+  '[{"totalEnergy":899,"servingEnergy":56},{"totalCarbs":174,"servingCarbs":11},{"totalProteins":8.7,"servingProteins":0.5},{"totalLipids":19,"servingLipids":1},{"totalSodium":2020,"servingSodium":126},{"totalPotassium":1129,"servingPotassium":71}]'::jsonb,
+  '[{"leucine":42,"totalLeucine":570,"servingLeucine":36},{"fenil":27,"totalFenil":370,"servingFenil":23},{"tirosine":21,"totalTirosine":290,"servingTirosine":18},{"metiotine":10,"totalMetiotine":140,"servingMetiotine":9}]'::jsonb,
+  NULL
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  category = EXCLUDED.category,
+  image = EXCLUDED.image,
+  ingredients = EXCLUDED.ingredients,
+  preparation = EXCLUDED.preparation,
+  servings = EXCLUDED.servings,
+  nutritional_information = EXCLUDED.nutritional_information,
+  graph_information = EXCLUDED.graph_information,
+  updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (

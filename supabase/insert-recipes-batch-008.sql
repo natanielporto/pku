@@ -2,6 +2,30 @@
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
+  71,
+  'Bolinho de abobrinha com cenoura',
+  'Prato principal e vegetais',
+  '[URL_DA_IMAGEM]',
+  '["130g de abobrinha ralada","45g de cenoura ralada","30g de amido de milho","20g de farinha de arroz","50g de cebola picada","3g de alho","10g de salsinha picada","10g de cebolinha picada","2g de orégano"]'::jsonb,
+  '["1 - Em um refratário, coloque a abobrinha ralada e misture os demais ingredientes, exceto o amido de milho e farinha de arroz;","2 - Adicione o amido e a farinha aos poucos até a massa ficar consistente e firme na colher;","3 - Separe a massa em 10 porções de 32 g, aproximadamente;","4 - Com uma colher pegue as porções e coloque-as em óleo quente para fritar um pouco de cada vez;","5 - Retire com uma escumadeira quando estiverem douradas;","6 - Coloque em papel absorvente."]'::jsonb,
+  '10 unidades',
+  '[{"totalEnergy":488,"servingEnergy":49},{"totalCarbs":59,"servingCarbs":6},{"totalProteins":4.6,"servingProteins":0.5},{"totalLipids":27,"servingLipids":3},{"totalSodium":1194,"servingSodium":119},{"totalPotassium":674,"servingPotassium":67}]'::jsonb,
+  '[{"leucine":41,"totalLeucine":280,"servingLeucine":28},{"fenil":27,"totalFenil":179,"servingFenil":18},{"tirosine":22,"totalTirosine":150,"servingTirosine":15},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":7}]'::jsonb,
+  NULL
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  category = EXCLUDED.category,
+  image = EXCLUDED.image,
+  ingredients = EXCLUDED.ingredients,
+  preparation = EXCLUDED.preparation,
+  servings = EXCLUDED.servings,
+  nutritional_information = EXCLUDED.nutritional_information,
+  graph_information = EXCLUDED.graph_information,
+  updated_at = NOW();
+
+INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+VALUES (
   72,
   'Bolinho de aipim',
   'Prato principal e vegetais',
@@ -203,30 +227,6 @@ VALUES (
   '4 porções',
   '[{"totalEnergy":423,"servingEnergy":106},{"totalCarbs":35,"servingCarbs":9},{"totalProteins":5.5,"servingProteins":1.4},{"totalLipids":31,"servingLipids":8},{"totalSodium":1901,"servingSodium":475},{"totalPotassium":868,"servingPotassium":217}]'::jsonb,
   '[{"leucine":43,"totalLeucine":370,"servingLeucine":93},{"fenil":26,"totalFenil":230,"servingFenil":58},{"tirosine":22,"totalTirosine":190,"servingTirosine":48},{"metiotine":9,"totalMetiotine":80,"servingMetiotine":20}]'::jsonb,
-  NULL
-)
-ON CONFLICT (id) DO UPDATE SET
-  name = EXCLUDED.name,
-  category = EXCLUDED.category,
-  image = EXCLUDED.image,
-  ingredients = EXCLUDED.ingredients,
-  preparation = EXCLUDED.preparation,
-  servings = EXCLUDED.servings,
-  nutritional_information = EXCLUDED.nutritional_information,
-  graph_information = EXCLUDED.graph_information,
-  updated_at = NOW();
-
-INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
-VALUES (
-  81,
-  'Farofa',
-  'Prato principal e vegetais',
-  '[URL_DA_IMAGEM]',
-  '["50g de cenoura ralada","80g de tomate sem semente","40g de cebola ralada","5g de salsinha","25g de azeitona picada","4g de sal","15g de óleo vegetal","25g de uva passa preta","25g de farinha de mandioca torrada"]'::jsonb,
-  '["1 - Em uma panela, refogue a cebola no óleo e acrescente a cenoura e o tomate;","2 - Deixe murchar e acrescente os demais ingredientes, exceto a farinha;","3 - Adicione a farinha e cozinhe por alguns minutos."]'::jsonb,
-  '6 porções',
-  '[{"totalEnergy":1178,"servingEnergy":196},{"totalCarbs":160,"servingCarbs":27},{"totalProteins":5.2,"servingProteins":0.9},{"totalLipids":19,"servingLipids":3},{"totalSodium":1770,"servingSodium":295},{"totalPotassium":637,"servingPotassium":106}]'::jsonb,
-  '[{"leucine":38,"totalLeucine":270,"servingLeucine":45},{"fenil":28,"totalFenil":200,"servingFenil":33},{"tirosine":28,"totalTirosine":200,"servingTirosine":33},{"metiotine":6,"totalMetiotine":40,"servingMetiotine":7}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET

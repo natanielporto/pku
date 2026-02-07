@@ -98,6 +98,30 @@ ON CONFLICT (id) DO UPDATE SET
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
+  45,
+  'Panqueca docinha',
+  'Massas',
+  'https://images.unsplash.com/photo-1705138591117-2aaf6a7e08ae?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  '["40ml de água morna","20g de creme de leite","50g de farinha sem glúten","4g de óleo vegetal","5g de fermento químico em pó","30g de açúcar refinado"]'::jsonb,
+  '["1 - Em um recipiente, misture todos os ingredientes e bata com o auxílio de um fuê ou mixer até que fique uma massa homogênea;","2 - Pegue porções da massa com uma concha e coloque em uma frigideira pré-aquecida e untada com óleo;","3 - Doure a massa de ambos os lados","4 - Recheie a gosto."]'::jsonb,
+  '2 unidades',
+  '[{"totalEnergy":196,"servingEnergy":39},{"totalCarbs":77,"servingCarbs":38},{"totalProteins":1.5,"servingProteins":0.7},{"totalLipids":9,"servingLipids":5},{"totalSodium":9,"servingSodium":5},{"totalPotassium":24,"servingPotassium":12}]'::jsonb,
+  '[{"leucine":46,"totalLeucine":150,"servingLeucine":75},{"tirosine":18,"totalTirosine":60,"servingTirosine":30},{"fenil":24,"totalFenil":80,"servingFenil":40},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
+  '{"en-US":{"name":"Sweet Cake","ingredients":["40ml of warm water","20g of milk cream","50g of gluten-free flour","4g of vegetable oil","5g of chemical yeast powder","30g of refined sugar"],"preparation":["1 - In a container, mix all the ingredients and beat with the help of a fuê or mixer until you get a homogeneous dough;","2 - Take portions of dough with a spoon and place in a pre-heated frying pan and grease with oil;","3 - Brown the dough on both sides","4 - Fill with the desired filling."],"servings":"2 servings"}}'::jsonb
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  category = EXCLUDED.category,
+  image = EXCLUDED.image,
+  ingredients = EXCLUDED.ingredients,
+  preparation = EXCLUDED.preparation,
+  servings = EXCLUDED.servings,
+  nutritional_information = EXCLUDED.nutritional_information,
+  graph_information = EXCLUDED.graph_information,
+  updated_at = NOW();
+
+INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+VALUES (
   46,
   'Panqueca de cenoura',
   'Massas',
@@ -204,30 +228,6 @@ VALUES (
   '[{"totalEnergy":694,"servingEnergy":87},{"totalCarbs":145,"servingCarbs":18},{"totalProteins":3.6,"servingProteins":0.4},{"totalLipids":11,"servingLipids":1},{"totalSodium":1623,"servingSodium":203},{"totalPotassium":85,"servingPotassium":11}]'::jsonb,
   '[{"leucine":44,"totalLeucine":330,"servingLeucine":41},{"tirosine":19,"totalTirosine":140,"servingTirosine":18},{"fenil":27,"totalFenil":200,"servingFenil":25},{"metiotine":10,"totalMetiotine":80,"servingMetiotine":10}]'::jsonb,
   '{"en-US":{"name":"Spinach Ravioli","ingredients":["Ingredients of the filling","40g of mandioquinha","10g of margarine without salt","2g of salt","1g of parsley or onion","Ingredients of the dough","150g of gluten-free flour 100ml of water","7g of fat","10g of spinach","5g of CMC or xanthan gum","2g of salt"],"preparation":["Mode of preparation of the filling:","1 - Peel and cook the mandioca until they are soft;","2 - Mash until it becomes a puré and add the other ingredients, reserve.","Mode of preparation of the dough:","1 - Wash the spinach leaves;","2 - Blend with the minimum of water possible;","3 - In a bowl, place the flour, the CMC or xanthan gum, the salt and the fat;","4 - Make a farofinha and add the content of the blender a little at a time until you get a smooth and homogeneous dough.","Assembly:","1 - Open the dough with the help of a roll;","2 - Displace the filling, double the dough and cut in the shape of your preference;","3 - Cook in boiling water with a little oil;","4 - Remove from the water when they start to boil;","5 - Serve with the sauce of your preference."],"servings":"8 servings"}}'::jsonb
-)
-ON CONFLICT (id) DO UPDATE SET
-  name = EXCLUDED.name,
-  category = EXCLUDED.category,
-  image = EXCLUDED.image,
-  ingredients = EXCLUDED.ingredients,
-  preparation = EXCLUDED.preparation,
-  servings = EXCLUDED.servings,
-  nutritional_information = EXCLUDED.nutritional_information,
-  graph_information = EXCLUDED.graph_information,
-  updated_at = NOW();
-
-INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
-VALUES (
-  51,
-  'Risoles',
-  'Massas',
-  'https://media.istockphoto.com/id/471026259/pt/foto/bacalhau-portugu%C3%AAs-bolos.jpg?s=2048x2048&w=is&k=20&c=V5me6LNz0a5u85ZjqlLtBF2iV0pXApgyiUPlcgmiXxs=',
-  '["Ingredientes do recheio","25g de palmito","30g de cogumelos champignon 60g de tomate","15g de cebola","10g de milho","3g de salsinha","0,5g de orégano seco","5g de azeite de oliva","Ingredientes da massa","200ml de água","7,5g de caldo de legumes em sachê 30g de margarina sem sal","2g de goma xantana ou liga neutra 100g de farinha hipoproteica","20g de farinha sem glúten","Para empanar: 20g de farinha de mandioca"]'::jsonb,
-  '["Modo de preparo da massa","1 - Em uma panela, coloque a água com o sal, o orégano e a margarina para ferver;","2 - Quando levantar fervura, adicione as farinhas aos poucos, mexa e cozinhe por alguns minutos. A massa deve ficar em consistência de polenta;","3 - Retire a massa ainda quente da panela e amasse com auxílio de uma colher, depois com as mãos, até obter uma massa lisa para moldar;","4 - Abra a massa e corte em 10 círculos para fazer os risoles, reserve.","Modo de preparo do recheio","1 - Em uma panela, refogue a cebola no azeite;","2 - Adicione os demais ingredientes e cozinhe;","3 - Divida o recheio em 10 porções iguais e reserve.","Montagem","1 - Recheie a massa e feche os risoles apertando bem as bordas;","2 - Passe os risoles prontos na água e em seguida na farinha de mandioca peneirada para empanar;","3 - Frite rapidamente em óleo quente e coloque no papel absorvente."]'::jsonb,
-  '10 unidades',
-  '[{"totalEnergy":1036,"servingEnergy":104},{"totalCarbs":130,"servingCarbs":13},{"totalProteins":3.5,"servingProteins":0.4},{"totalLipids":57,"servingLipids":6},{"totalSodium":4571,"servingSodium":457},{"totalPotassium":276,"servingPotassium":28}]'::jsonb,
-  '[{"leucine":44,"totalLeucine":240,"servingLeucine":24},{"tirosine":19,"totalTirosine":100,"servingTirosine":10},{"fenil":26,"totalFenil":140,"servingFenil":14},{"metiotine":11,"totalMetiotine":60,"servingMetiotine":6}]'::jsonb,
-  '{"en-US":{"name":"Risoles","ingredients":["Ingredients of the filling","25g of palmito","30g of champignon mushrooms 60g of tomato","15g of onion","10g of corn","3g of parsley","0,5g of dried oregano","5g of olive oil","Ingredients of the dough","200ml of water","7,5g of vegetable broth in sachet 30g of margarine without salt","2g of xanthan gum or neutral glue 100g of gluten-free flour","20g of gluten-free flour","To empanar: 20g of cassava flour"],"preparation":["Mode of preparation of the dough:","1 - In a pan, place the water with the salt, the oregano and the margarine to boil;","2 - When it starts to boil, add the flour a little at a time, mix and cook for a few minutes. The dough should be in consistency of polenta;","3 - Remove the dough still hot from the pan and mash with the help of a spoon, then with the hands, until you get a smooth dough to mold;","4 - Open the dough and cut into 10 circles to make the risoles, reserve.","Mode of preparation of the filling:","1 - In a pan, sauté the onion in the olive oil;","2 - Add the other ingredients and cook;","3 - Divide the filling into 10 equal portions and reserve.","Assembly:","1 - Fill the dough and close the risoles pressing well the edges;","2 - Pass the ready risoles in water and then in the cassava flour sieved to empanar;","3 - Fry quickly in hot oil and place on a paper towel."],"servings":"10 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

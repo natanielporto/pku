@@ -2,6 +2,30 @@
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
+  61,
+  'Pãozinho de mandioquinha',
+  'Pães',
+  '[URL_DA_IMAGEM]',
+  '["400g de mandioquinha","400g de polvilho doce","100g de polvilho azedo","250ml de água quente"]'::jsonb,
+  '["1 - Cozinhe a mandioquinha e amasse até obter um purê;","2 - Adicione os polvilhos e adicione a água aos poucos;","3 - Misture bem e depois amasse com as mãos até formar uma massa firme e homogênea;","4 - Faça bolinhas e disponha em uma assadeira;","5 - Asse em forno pré-aquecido a 200°C até crescer igual pãozinho de queijo convencional e dourar levemente."]'::jsonb,
+  '30 unidades',
+  '[{"totalEnergy":2021,"servingEnergy":67},{"totalCarbs":561,"servingCarbs":19},{"totalProteins":4.7,"servingProteins":0.2},{"totalLipids":2,"servingLipids":0},{"totalSodium":3110,"servingSodium":104},{"totalPotassium":288,"servingPotassium":10}]'::jsonb,
+  '[{"leucine":42,"totalLeucine":170,"servingLeucine":6},{"fenil":28,"totalFenil":110,"servingFenil":4},{"tirosine":20,"totalTirosine":80,"servingTirosine":3},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":1}]'::jsonb,
+  NULL
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  category = EXCLUDED.category,
+  image = EXCLUDED.image,
+  ingredients = EXCLUDED.ingredients,
+  preparation = EXCLUDED.preparation,
+  servings = EXCLUDED.servings,
+  nutritional_information = EXCLUDED.nutritional_information,
+  graph_information = EXCLUDED.graph_information,
+  updated_at = NOW();
+
+INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+VALUES (
   62,
   'Pãozinho de beijo',
   'Pães',
@@ -203,30 +227,6 @@ VALUES (
   '5 unidades',
   '[{"totalEnergy":445,"servingEnergy":89},{"totalCarbs":46,"servingCarbs":9},{"totalProteins":2.9,"servingProteins":0.6},{"totalLipids":27,"servingLipids":5},{"totalSodium":1168,"servingSodium":234},{"totalPotassium":423,"servingPotassium":85}]'::jsonb,
   '[{"leucine":40,"totalLeucine":170,"servingLeucine":34},{"fenil":26,"totalFenil":110,"servingFenil":22},{"tirosine":24,"totalTirosine":100,"servingTirosine":20},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":8}]'::jsonb,
-  NULL
-)
-ON CONFLICT (id) DO UPDATE SET
-  name = EXCLUDED.name,
-  category = EXCLUDED.category,
-  image = EXCLUDED.image,
-  ingredients = EXCLUDED.ingredients,
-  preparation = EXCLUDED.preparation,
-  servings = EXCLUDED.servings,
-  nutritional_information = EXCLUDED.nutritional_information,
-  graph_information = EXCLUDED.graph_information,
-  updated_at = NOW();
-
-INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
-VALUES (
-  71,
-  'Bolinho de abobrinha com cenoura',
-  'Prato principal e vegetais',
-  '[URL_DA_IMAGEM]',
-  '["130g de abobrinha ralada","45g de cenoura ralada","30g de amido de milho","20g de farinha de arroz","50g de cebola picada","3g de alho","10g de salsinha picada","10g de cebolinha picada","2g de orégano"]'::jsonb,
-  '["1 - Em um refratário, coloque a abobrinha ralada e misture os demais ingredientes, exceto o amido de milho e farinha de arroz;","2 - Adicione o amido e a farinha aos poucos até a massa ficar consistente e firme na colher;","3 - Separe a massa em 10 porções de 32 g, aproximadamente;","4 - Com uma colher pegue as porções e coloque-as em óleo quente para fritar um pouco de cada vez;","5 - Retire com uma escumadeira quando estiverem douradas;","6 - Coloque em papel absorvente."]'::jsonb,
-  '10 unidades',
-  '[{"totalEnergy":488,"servingEnergy":49},{"totalCarbs":59,"servingCarbs":6},{"totalProteins":4.6,"servingProteins":0.5},{"totalLipids":27,"servingLipids":3},{"totalSodium":1194,"servingSodium":119},{"totalPotassium":674,"servingPotassium":67}]'::jsonb,
-  '[{"leucine":41,"totalLeucine":280,"servingLeucine":28},{"fenil":27,"totalFenil":179,"servingFenil":18},{"tirosine":22,"totalTirosine":150,"servingTirosine":15},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":7}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET

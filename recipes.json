@@ -3139,6 +3139,7 @@
         ]
       },
       {
+        "id": 45,
         "name": "Panqueca docinha",
         "image": "https://images.unsplash.com/photo-1705138591117-2aaf6a7e08ae?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
@@ -4234,7 +4235,7 @@
       {
         "id": 60,
         "name": "Pão de mandioquinha",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1684893265739-a88b30c33e92?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "600g de mandioquinha cozida",
           "300g de polvilho azedo",
@@ -4302,7 +4303,7 @@
       {
         "id": 61,
         "name": "Pãozinho de mandioquinha",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1725467480335-bae427eb198a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "400g de mandioquinha",
           "400g de polvilho doce",
@@ -4369,7 +4370,7 @@
       {
         "id": 62,
         "name": "Pãozinho de beijo",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1605189361149-8db06ad7baf6?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "200g de polvilho doce",
           "50g de polvilho azedo",
@@ -4441,7 +4442,7 @@
       {
         "id": 63,
         "name": "Pão sem glúten",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1653550027228-e3202a24ccc1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "300g de farinha sem glúten",
           "65g de açúcar orgânico",
@@ -4588,7 +4589,7 @@
       {
         "id": 65,
         "name": "Almôndegas de berinjela",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1601477572224-cb15a76f30f4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "200g de berinjela sem casca",
           "30g de cebola",
@@ -4663,7 +4664,7 @@
       {
         "id": 66,
         "name": "Batata recheada",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1628236879201-783fa93fe7bd?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "490g de batatas grandes",
           "5g de alho amassado",
@@ -4735,7 +4736,7 @@
       {
         "id": 67,
         "name": "Batatas ao forno",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1695224545124-3ef48642ec92?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "200g de batata",
           "90g de tomate cereja",
@@ -4803,7 +4804,7 @@
       {
         "id": 68,
         "name": "Berinjela à milanesa",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1664647841204-ecbdd9f93bc4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "300g de berinjela",
           "70g de amido de milho",
@@ -4870,7 +4871,7 @@
       {
         "id": 69,
         "name": "Berinjela à parmegiana",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1621852003739-b54d49ff3431?q=80&w=1398&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "240g de tomate pelado",
           "5g de azeite de oliva",
@@ -4945,7 +4946,7 @@
       {
         "id": 70,
         "name": "Bife de abobrinha",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1693422663845-5922b9dd1489?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "150g de abobrinha",
           "30g de cebola",
@@ -5018,7 +5019,7 @@
       {
         "id": 71,
         "name": "Bolinho de abobrinha com cenoura",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1741791415742-61aa540b4d86?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "130g de abobrinha ralada",
           "45g de cenoura ralada",
@@ -5091,7 +5092,7 @@
       {
         "id": 72,
         "name": "Bolinho de aipim",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1725467479101-556af13a7220?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "220g de aipim descascado e cozido",
           "50g de farinha de mandioca",
@@ -5162,7 +5163,7 @@
       {
         "id": 73,
         "name": "Bolinho de arroz com cenoura",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1699519510499-41b626d8522e?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "80g de arroz cozido",
           "100g de cenoura ralada",
@@ -5234,7 +5235,7 @@
       {
         "id": 74,
         "name": "Bolinho de arroz com milho",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1706467563677-d7980d75b58a?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "250g de arroz cozido",
           "30g de amido de milho",
@@ -5307,7 +5308,7 @@
       {
         "id": 75,
         "name": "Bolinho de batata salsa e berinjela",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1675227977042-a572dac762be?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "150g de mandioquinha cozida",
           "20g de tomate picado",
@@ -5378,7 +5379,7 @@
       {
         "id": 76,
         "name": "Bolinho de batata doce",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1580324613870-e860033906eb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "300g de batata doce (massa)",
           "60g de polvilho doce (massa)",
@@ -5460,7 +5461,7 @@
       {
         "id": 77,
         "name": "Ceviche de banana da terra",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1543218024-57a70143c369?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "150g de banana da terra",
           "80g de tomate",
@@ -5529,7 +5530,7 @@
       {
         "id": 78,
         "name": "Chuchu empanado",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1757332914630-12ea5bb701c0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "170g de chuchu",
           "30g de amido de milho",
@@ -5596,7 +5597,7 @@
       {
         "id": 79,
         "name": "Estrogonofe de couve-flor",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1719505503702-59b61de20907?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "300g de couve-flor",
           "45g de azeitona picada",
@@ -5671,7 +5672,7 @@
       {
         "id": 80,
         "name": "Estrogonofe de legumes",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1726805103493-58d7eaafbf3e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "40g de cebola",
           "2g de alho",
@@ -5750,7 +5751,7 @@
       {
         "id": 81,
         "name": "Farofa",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1633940125385-4e1aeccd2d6c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "50g de cenoura ralada",
           "80g de tomate sem semente",
@@ -5820,7 +5821,7 @@
       {
         "id": 82,
         "name": "Hambúrguer de legumes",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1664648063522-6b4f1ee7b7be?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "300g de cenoura ralada",
           "280g de abobrinha ralada",
@@ -5890,7 +5891,7 @@
       {
         "id": 83,
         "name": "Hambúrguer de berinjela",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1664648063519-b11d91a2345d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "280g de berinjela",
           "60g de cebola",
@@ -5967,7 +5968,7 @@
       {
         "id": 84,
         "name": "Hambúrguer de couve-flor",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1550152472-3a60c1705d06?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "300g de couve-flor",
           "5g de alho",
@@ -6039,7 +6040,7 @@
       {
         "id": 85,
         "name": "Kibe de berinjela",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1667546202642-e3c506786caa?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "300g de polpa de berinjela",
           "30g de cebola",
@@ -6114,7 +6115,7 @@
       {
         "id": 86,
         "name": "Mandioca frita cremosa",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://images.unsplash.com/photo-1721942893909-d3b59335bfdc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "130g de mandioca",
           "3g de sal",
@@ -6180,7 +6181,7 @@
       {
         "id": 87,
         "name": "Molho de legumes",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1675798983878-604c09f6d154?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "60g de abobrinha crua",
           "20g de brócolis cru",
@@ -6252,7 +6253,7 @@
       {
         "id": 88,
         "name": "Molho de tomate caseiro",
-        "image": "[URL_DA_IMAGEM]",
+        "image": "https://plus.unsplash.com/premium_photo-1671395501275-630ae5ea02c4?q=80&w=677&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ingredients": [
           "480g de tomate sem casca",
           "15g de azeite de oliva",

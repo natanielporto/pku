@@ -23,6 +23,7 @@
     "db:seed:generate": "node scripts/generate-seed.js",
     "db:seed": "supabase db reset",
     "db:inserts:generate": "node scripts/generate-inserts.js",
+    "db:inserts:run": "node scripts/insert-recipes.js",
     "db:translations:template": "node scripts/create-en-template.js",
     "db:translations:auto": "node scripts/translate-recipes.js",
     "db:translations:update": "node scripts/update-translations.js",
