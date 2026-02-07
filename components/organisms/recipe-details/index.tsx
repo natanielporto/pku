@@ -96,11 +96,19 @@ export function RecipeDetail({ recipe, category }: Props) {
                 </View>
               )}
               <Image
-                source={{ uri: recipe.image || "" }}
+                source={{
+                  uri: recipe.image || "",
+                  cache: 'default'
+                }}
                 style={[styles.image, isImageLoading && styles.imageHidden]}
+                resizeMode="cover"
                 onLoadStart={() => setIsImageLoading(true)}
                 onLoadEnd={() => setIsImageLoading(false)}
-                onError={() => setIsImageLoading(false)}
+                onError={(error) => {
+                  console.warn("❌ Erro ao carregar imagem da receita:", recipe.image);
+                  console.warn("Erro detalhado:", error.nativeEvent?.error || error);
+                  setIsImageLoading(false);
+                }}
               />
             </View>
           </View>
@@ -112,7 +120,10 @@ export function RecipeDetail({ recipe, category }: Props) {
             <Title title="Ingredientes" underline />
             <View style={styles.ingredientsContainer}>
               {recipe.ingredients.map((item, index) => (
-                <Text style={styles.text} key={`${recipe.id}-ingredient-${index}`}>
+                <Text
+                  style={styles.text}
+                  key={`${recipe.id}-ingredient-${index}`}
+                >
                   {item}
                 </Text>
               ))}
@@ -132,7 +143,10 @@ export function RecipeDetail({ recipe, category }: Props) {
             <Title title="Modo de preparo" underline />
             <View style={styles.preparationContainer}>
               {recipe.preparation.map((item, index) => (
-                <Text style={styles.text} key={`${recipe.id}-preparation-${index}`}>
+                <Text
+                  style={styles.text}
+                  key={`${recipe.id}-preparation-${index}`}
+                >
                   {item}
                 </Text>
               ))}

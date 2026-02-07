@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 2,
     elevation: 2,
+    paddingRight: 8,
   },
   leafIcon: {
     transform: [{ rotate: "20deg" }],

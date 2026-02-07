@@ -1,10 +1,10 @@
--- Batch 6 (recipes 51 to 58)
+-- Batch 6 (recipes 51 to 60)
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   52,
   'Waffles',
-  'Pastries',
+  'Massas',
   'https://plus.unsplash.com/premium_photo-1673011775209-97272be970a2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["180ml de água morna","50g de açúcar refinado","50g de banana amassada","100g de farinha sem glúten","5g de óleo de girassol","20g de creme de leite","5g de emulsificante","8g de vinagre de maçã","0,5g de essência de baunilha","2g de fermento químico em pó","1g de sal","1g de goma xantana","1g de ágar-ágar"]'::jsonb,
   '["1 - Misture a banana amassada com o açúcar e o emulsificante, reserve;","2 - Misture o vinagre e os demais ingredientes;","3 - Adicione a farinha e o fermento químico, bata tudo com o auxílio de um fuê;","4 - Ligue o grill para waffle na temperatura máxima e espere esquentar;","5 - Coloque uma porção de massa no centro do grill e asse por 15 minutos ou até que esteja dourado e assado. Não abra antes de 10 minutos;","6 - Sirva com margarina, mel ou geleia."]'::jsonb,
@@ -27,8 +27,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   53,
-  'Fine herbs bread',
-  'Breads',
+  'Pãezinhos de ervas finas',
+  'Pães',
   'https://images.unsplash.com/photo-1536919011766-09449b44af40?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["130g de tapioca hidratada","250g de batata cozida","5g de óleo vegetal","6g de sal","3g de fermento químico em pó","15ml de água","0,5g de ervas secas (orégano, alecrim)"]'::jsonb,
   '["1 - Amasse a batata até obter um purê;","2 - Em um recipiente, misture o purê com os demais ingredientes;","3 - Amasse até obter uma massa moldável;","4 - Enrole em bolinhas com as mãos ou no formato que desejar;","5 - Disponha em uma assadeira untada;","6 - Asse em forno pré-aquecido a 200° C por aproximadamente 40 minutos."]'::jsonb,
@@ -51,8 +51,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   54,
-  'Mixed flour bread',
-  'Breads',
+  'Pão com mistura de farinhas',
+  'Pães',
   'https://images.unsplash.com/photo-1534620808146-d33bb39128b2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["200g de amido de milho","200g de polvilho doce","100g de fécula de batata","100g de farinha de arroz","50g de liga neutra","200ml de água","60g de açúcar refinado","10g de fermento biológico seco em pó 10g de sal","20g de emulsificante","90g de margarina sem sal","75g de creme de leite","15g de óleo vegetal"]'::jsonb,
   '["1 - Em um recipiente coloque 100ml de água quente, o açúcar, a margarina, o óleo e o emulsificante. Mexa bem até que a margarina derreta;","2 - Acrescente o restante da água fria e o fermento, deixe descansar por 5 minutos;","3 - Acrescente a mistura as farinhas, o sal, o creme de leite e bata na batedeira por alguns minutos;","4 - Coloque a massa em um recipiente, deixe crescer e bata novamente;","5 - Divida a massa em duas formas de pão untadas e deixe crescer novamente;","6 - Asse em forno pré-aquecido 220°C até ficar dourado."]'::jsonb,
@@ -75,8 +75,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   55,
-  'Gourmet kiss bread',
-  'Breads',
+  'Pão de beijo gourmet',
+  'Pães',
   'https://images.unsplash.com/photo-1559141680-d0bd7bc5af84?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["150g de abóbora cozida","240g de batata cozida","90g de polvilho doce","200g de polvilho azedo","10g de fermento químico em pó 70ml de água","30g de óleo vegetal 5g de sal","2g de alho amassado 5g de salsinha"]'::jsonb,
   '["1 - Misture a batata com abóbora e amasse até obter um purê;","2 - Acrescente a água e depois os demais ingredientes, deixando o fermento por último;","3 - Misture tudo até obter uma massa lisa e conseguir amassar com as mãos;","4 - Faça bolinhas e disponha em uma assadeira;","5 - Asse em forno pré-aquecido a 180°C por aproximadamente 1 hora."]'::jsonb,
@@ -99,8 +99,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   56,
-  'French bread',
-  'Breads',
+  'Pão francês',
+  'Pães',
   'https://images.unsplash.com/photo-1582509385126-c9ab0cb0449f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["320g de farinha sem glúten","50g de polvilho doce","9g de sal","30g de açúcar refinado ou mascavo 10g de fermento biológico seco","5g e liga neutra ou goma xantana 6g de azeite de oliva","6g de vinagre de maçã","240ml de água","0,1g de açafrão em pó"]'::jsonb,
   '["1 - Em um recipiente, misture o vinagre, o azeite e a água;","2 - Adicione os demais ingredientes, misture com uma colher e depois com as mãos;","3 - Sove bem, a massa fica um pouco pegajosa;","4 - Separe a massa em 8 partes iguais e modele os pães com as mãos untadas com óleo, não é necessário deixar a massa crescer;","5 - Disponha em uma assadeira untada com margarina e faça um corte de uma extremidade a outra em cima de cada um dos pães;","6 - Asse em forno pré-aquecido a 220°C por 25 a 30 minutos. Não exceder o tempo de cozimento para não ficar duro, os pães ficam brancos;","7 - É possível congelar depois de prontos e aquecer em micro-ondas por 30 segundos."]'::jsonb,
@@ -123,8 +123,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   57,
-  'Cheese bread',
-  'Breads',
+  'Pão sabor queijo',
+  'Pães',
   'https://media.istockphoto.com/id/1249893961/pt/foto/brazilian-snack-traditional-cheese-bread.jpg?s=2048x2048&w=is&k=20&c=nobDyi5btyyO3bc3Zyb62X0_ScOncJJL2NSbbLTVq3M=',
   '["130g de polvilho azedo","60g de polvilho doce","90g de queijo vegano ralado 220g de creme de leite","5g de sal"]'::jsonb,
   '["1 - Em uma vasilha, misture todos os ingredientes exceto o polvilho doce;","2 - Acrescente o polvilho doce e misture novamente, a consistência da massa é pegajosa;","3 - É possível utilizar somente o polvilho azedo, se preferir;","4 - Modele os pães com o auxílio de duas colheres;","5 - Disponha as porções em uma assadeira untada com margarina;","6 - Leve ao forno pré-aquecido a 200°C até assar por completo."]'::jsonb,
@@ -147,8 +147,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   58,
-  'Frying pan bread',
-  'Breads',
+  'Pão de frigideira',
+  'Pães',
   'https://images.unsplash.com/photo-1599232288126-7dbd2127db14?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["60g de farinha sem glúten","15g de açúcar refinado","6g de óleo vegetal","30g de banana amassada","0,5g de goma xantana ou liga neutra 35ml de água morna","25g de creme de leite","8g de vinagre de maçã","1g de fermento químico em pó 1g de sal"]'::jsonb,
   '["1 - Em um recipiente, misture todos os ingredientes exceto a água.","2 - Adicione a água aos poucos até obter uma mistura homogênea;","3 - Em uma frigideira antiaderente untada, disponha metade da massa, tampe e doure de ambos os lados;","4 - Repita o processo com a outra metade da massa."]'::jsonb,
@@ -171,8 +171,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   59,
-  'Inhaminho bread',
-  'Breads',
+  'Pãozinho de inhame',
+  'Pães',
   'https://images.unsplash.com/photo-1561043433-b0bb121aacef?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["270g de inhame cozido","100g de polvilho doce","100g de polvilho azedo","30g de óleo de girassol","7g de sal","1g de orégano seco"]'::jsonb,
   '["1 - Cozinhe o inhame e amasse até virar um purê;","2 - Em um recipiente, coloque o purê de inhame e acrescente os demais ingredientes;","3 - Misture tudo e amasse com a mão até virar uma massa lisa e homogênea;","4 - Caso a massa fique seca, adicione um pouco de água quente para dar o ponto;","5 - Faça bolinhas e disponha em uma assadeira;","6 - Asse em forno pré-aquecido a 200°C até que o fundo fique dourado."]'::jsonb,
@@ -180,6 +180,54 @@ VALUES (
   '[{"totalEnergy":1327,"servingEnergy":44},{"totalCarbs":259,"servingCarbs":9},{"totalProteins":5.1,"servingProteins":0.2},{"totalLipids":31,"servingLipids":1},{"totalSodium":2741,"servingSodium":91},{"totalPotassium":2033,"servingPotassium":68}]'::jsonb,
   '[{"leucine":42,"totalLeucine":280,"servingLeucine":9},{"tirosine":18,"totalTirosine":120,"servingTirosine":4},{"fenil":31,"totalFenil":210,"servingFenil":7},{"metiotine":9,"totalMetiotine":60,"servingMetiotine":2}]'::jsonb,
   '{"en-US":{"name":"Inhaminho Bread","ingredients":["270g of cooked inhame","100g of sweet potato starch","100g of sour potato starch","30g of sunflower oil","7g of salt","1g of dried oregano"],"preparation":["1 - Cook the inhame and mash until it becomes a puré;","2 - In a container, place the puré of inhame and add the other ingredients;","3 - Mix everything and mash with the hands until you get a smooth and homogeneous dough;","4 - If the dough is dry, add a little warm water to give the point;","5 - Make balls and place on a baking sheet;","6 - Bake in pre-heated oven at 200°C until the bottom is golden."],"servings":"30 servings"}}'::jsonb
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  category = EXCLUDED.category,
+  image = EXCLUDED.image,
+  ingredients = EXCLUDED.ingredients,
+  preparation = EXCLUDED.preparation,
+  servings = EXCLUDED.servings,
+  nutritional_information = EXCLUDED.nutritional_information,
+  graph_information = EXCLUDED.graph_information,
+  updated_at = NOW();
+
+INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+VALUES (
+  60,
+  'Pão de mandioquinha',
+  'Pães',
+  '[URL_DA_IMAGEM]',
+  '["600g de mandioquinha cozida","300g de polvilho azedo","200g de polvilho doce","150ml de azeite ou óleo","5g de sal","175ml de água morna"]'::jsonb,
+  '["1 - Em um recipiente, amasse a mandioquinha ainda quente até obter um purê;","2 - Acrescente os demais ingredientes e por último a água;","3 - Amasse bem até que fique homogêneo;","4 - Faça bolinhas e asse em forno pré-aquecido a 180°C até dourar."]'::jsonb,
+  '23 unidades',
+  '[{"totalEnergy":3543,"servingEnergy":154},{"totalCarbs":556,"servingCarbs":24},{"totalProteins":5.1,"servingProteins":0.2},{"totalLipids":151,"servingLipids":7},{"totalSodium":1948,"servingSodium":85},{"totalPotassium":403,"servingPotassium":18}]'::jsonb,
+  '[{"leucine":35,"totalLeucine":240,"servingLeucine":10},{"tirosine":35,"totalTirosine":240,"servingTirosine":10},{"fenil":26,"totalFenil":180,"servingFenil":8},{"metiotine":4,"totalMetiotine":30,"servingMetiotine":1}]'::jsonb,
+  NULL
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  category = EXCLUDED.category,
+  image = EXCLUDED.image,
+  ingredients = EXCLUDED.ingredients,
+  preparation = EXCLUDED.preparation,
+  servings = EXCLUDED.servings,
+  nutritional_information = EXCLUDED.nutritional_information,
+  graph_information = EXCLUDED.graph_information,
+  updated_at = NOW();
+
+INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+VALUES (
+  61,
+  'Pãozinho de mandioquinha',
+  'Pães',
+  '[URL_DA_IMAGEM]',
+  '["400g de mandioquinha","400g de polvilho doce","100g de polvilho azedo","250ml de água quente"]'::jsonb,
+  '["1 - Cozinhe a mandioquinha e amasse até obter um purê;","2 - Adicione os polvilhos e adicione a água aos poucos;","3 - Misture bem e depois amasse com as mãos até formar uma massa firme e homogênea;","4 - Faça bolinhas e disponha em uma assadeira;","5 - Asse em forno pré-aquecido a 200°C até crescer igual pãozinho de queijo convencional e dourar levemente."]'::jsonb,
+  '30 unidades',
+  '[{"totalEnergy":2021,"servingEnergy":67},{"totalCarbs":561,"servingCarbs":19},{"totalProteins":4.7,"servingProteins":0.2},{"totalLipids":2,"servingLipids":0},{"totalSodium":3110,"servingSodium":104},{"totalPotassium":288,"servingPotassium":10}]'::jsonb,
+  '[{"leucine":42,"totalLeucine":170,"servingLeucine":6},{"fenil":28,"totalFenil":110,"servingFenil":4},{"tirosine":20,"totalTirosine":80,"servingTirosine":3},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":1}]'::jsonb,
+  NULL
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

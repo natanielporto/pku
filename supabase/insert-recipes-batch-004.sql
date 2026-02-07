@@ -3,8 +3,8 @@
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   31,
-  'Tapioca lime honey cookie',
-  'Sweets',
+  'Beijinho de tapioca sabor limão',
+  'Doces',
   'https://images.unsplash.com/photo-1630953899439-e1b44977d777?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["60g de açúcar refinado","26g de tapioca desidratada","30g de coco seco ralado","45g de leite de coco","6g de margarina sem sal","3g de suco de limão"]'::jsonb,
   '["1 - Em uma panela, misture todos os ingredientes;","2 - Leve ao fogo, mexendo sempre, e cozinhe até desgrudar do fundo da panela;","3 - Deixe esfriar e formate os docinhos."]'::jsonb,
@@ -27,8 +27,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   32,
-  'Caratina chocolate truffle',
-  'Sweets',
+  'Brigadeiro Catarina',
+  'Doces',
   'https://images.unsplash.com/photo-1565814598158-c9e60d235405?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["10g de açúcar refinado","50g de achocolatado em pó","30g de gotas de chocolate","15g de creme de leite","5g de margarina sem sal","80g de tapioca hidratada","30g de confeito granulado"]'::jsonb,
   '["1 - Coloque todos os ingredientes em uma panela;","2 - Mexa em fogo baixo até conseguir um ponto elástico, desgrudando do fundo da panela;","3 - Deixe esfriar em geladeira por alguns minutos; 4- Enrole passando em confeitos de granulado."]'::jsonb,
@@ -51,8 +51,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   33,
-  'Banana tapioca crepioca',
-  'Sweets',
+  'Crepioca de banana',
+  'Doces',
   'https://media.istockphoto.com/id/486011238/pt/foto/casabe-de-mandioca-tapioca.jpg?s=2048x2048&w=is&k=20&c=LirYDmSn682sbu36mynQz8yGdS8blCsgFLjWVb43kLU=',
   '["80g de banana","75g de massa de tapioca hidratada"]'::jsonb,
   '["1 - Amasse a banana com o auxílio de um garfo e junte com a massa de tapioca já hidratada;","2 - Em uma frigideira antiaderente, disponha a mistura e cozinhe de ambos os lados;","3 - Sirva quente"]'::jsonb,
@@ -75,8 +75,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   34,
-  'Apple crumble',
-  'Sweets',
+  'Crumble de maçã',
+  'Doces',
   'https://images.unsplash.com/photo-1589462239133-1e04f802685d?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["Ingredientes da farofa","220g de farinha sem glúten","75g de margarina sem sal","80g de açúcar refinado ou mascavo","Ingredientes do recheio","500g de maçã com casca","100g de açúcar refinado ou mascavo","120g de creme de leite","0,5g de canela em pó"]'::jsonb,
   '["Modo de preparo da farofa","1 - Misture a farinha e o açúcar;","2 - Adicione a margarina aos poucos e com as pontas dos dedos misture até formar uma farofa, reserve.","Modo de preparo do recheio","1 - Lave bem as maçãs e corte em fatias dentro de uma bacia com água e limão para não escurecer;","2 - Escorra bem as fatias e disponha num refratário baixo;","3 - Polvilhe o açúcar, espalhe o creme de leite e salpique a canela por cima das maçãs;","4 - Disponha a farofa por cima do recheio;","5 - Asse em forno pré-aquecido a 200°C por aproximadamente 40 minutos ou até dourar."]'::jsonb,
@@ -99,8 +99,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   35,
-  'Apple jam',
-  'Sweets',
+  'Doce de maçã',
+  'Doces',
   'https://images.unsplash.com/photo-1603777953657-e57b62f12c77?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["300ml de água","100g de açúcar refinado","550g de maçã","60g de suco de polpa de maracujá batido e coado 2g de cravo","5g de canela em pau"]'::jsonb,
   '["1 - Higienize as maçãs, retire as semente e corte em cubos grandes com ou sem casca;","2 - Em uma panela de pressão, adicione as maçãs e os demais ingredientes;","3 - Leve ao fogo e conte 3 minutos a partir do momento que começar a chiar;","4 - Desligue e a pressão da panela;","5 - Despeje o doce em um refratário e leve para gelar."]'::jsonb,
@@ -123,8 +123,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   36,
-  'Coconut jam',
-  'Sweets',
+  'Manjar de coco',
+  'Doces',
   'https://images.unsplash.com/photo-1548084769-1b94d5c3168e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["Ingredientes da 1a parte","60g de açúcar refinado","210g de leite de coco","15g de coco seco ralado","Ingredientes da 2a parte","100g de creme de leite","100ml de água","15g de amido de milho","Ingredientes da calda","160g de geleia de frutas","3g de amido de milho","50ml de água"]'::jsonb,
   '["1 - Em uma panela, despeje o leite de coco, o açúcar e o coco ralado. Misture bem e leve ao fogo;","2 - Em um outro recipiente, misture o creme de leite com a água e o amido de milho;","3 - Assim que o leite de coco começar a ferver, abaixe o fogo e adicione a mistura de creme de leite, água e amido de milho;","4 - Mexa sem parar até engrossar, cerca de 5 minutos;","5 - Esfrie a panela com o manjar em uma bacia com água fria;","6 - Enquanto isso, faça a geleia. Em uma panela, misture a geleia, a água e o amido de milho, leve ao fogo até engrossar;","6 - Porcione o manjar em taças e despeje a calda por cima;","7 - Sirva gelado."]'::jsonb,
@@ -147,8 +147,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   37,
-  'Lemon mousse I',
-  'Sweets',
+  'Mousse de limão I',
+  'Doces',
   'https://images.unsplash.com/photo-1582834936490-9747caf8ca4a?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["205g de chantilly vegetal","50g de creme de leite","40g de suco de limão","5g de raspas de limão","75 gotas de chocolate branco"]'::jsonb,
   '["1 - Em uma batedeira, bata o chantilly vegetal em ponto firme;","2 - Misture com o suco de limão e reserve;","3 - Derreta o chocolate e misture o creme de leite;","4 - Adicione o chocolate à mistura de chantilly com limão;","5 - Leve à geladeira para gelar e sirva com raspas de limão por cima."]'::jsonb,
@@ -171,8 +171,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   38,
-  'Lemon mousse II',
-  'Sweets',
+  'Mousse de limão II',
+  'Doces',
   'https://plus.unsplash.com/premium_photo-1669880504277-1c79daa58c12?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["200ml de água","30g de amido de milho","100g de açúcar refinado","50g de suco de limão","65g de chantilly vegetal"]'::jsonb,
   '["1 - Em uma panela pequena, misture a água, o amido de milho e o suco de limão;","2 - Cozinhe em fogo baixo até engrossar;","3 - Retire do fogo, adicione o açúcar e reserve;","4 - Após esfriar, bata na batedeira junto com o chantilly vegetal para dar cremosidade;","5 - Distribua em tacinhas e leve à geladeira até ficar firme."]'::jsonb,
@@ -195,8 +195,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   39,
-  'Passion fruit mousse',
-  'Sweets',
+  'Mousse de maracujá',
+  'Doces',
   'https://media.istockphoto.com/id/1495638879/pt/foto/passion-fruit-cheesecake.jpg?s=2048x2048&w=is&k=20&c=h0qp3jwMW1SxwxMmZ5m-foJvyPTcQ4jBYR558LQrL4c=',
   '["200ml de água","30g de amido de milho","100g de açúcar refinado","70g de suco de maracujá","100g de chantilly vegetal"]'::jsonb,
   '["1 - Em uma panela pequena, misture a água, o amido de milho e o suco de maracujá;","2 - Cozinhe em fogo baixo até engrossar;","3 - Retire do fogo, adicione o açúcar e reserve;","4 - Após esfriar, bata na batedeira junto com o chantilly vegetal para dar cremosidade;","5 - Distribua em tacinhas e leve à geladeira até ficar firme."]'::jsonb,
@@ -219,8 +219,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   40,
-  'Banana tapioca pudding',
-  'Sweets',
+  'Pudim de banana com tapioca',
+  'Doces',
   'https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["Ingredientes da calda","300g de açúcar refinado","180ml de água","Ingredientes do pudim","200ml de água","60g de creme de leite ou leite de coco","70g de tapioca granulada","Demais ingredientes","120g de banana nanica","60g de farinha hipoproteica","150ml de água","60g de creme de leite ou leite de coco","1g de essência de baunilha","0,5g de canela em pó"]'::jsonb,
   '["Modo de preparo da calda","1 - Em uma panela, derreta o açúcar em fogo baixo até caramelizar;","2 - Com cuidado, adicione a água aos poucos e misture até desmanchar os grumos de caramelo;","3 - É possível fazer a calda antecipadamente e deixar na geladeira para que fique mais consistente.","Modo de preparo do pudim","1 - Aqueça a água com creme de leite ou leite de coco e jogue por cima da tapioca;","2 - Misture bem e deixe hidratar em geladeira por aproximadamente 2 horas até que fique inchada e macia;","3 - No liquidificador, bata a tapioca já hidratada com o restante dos ingredientes por cerca de 2 minutos;","4 - Espalhe a calda no fundo e laterais de uma forma e despeje a massa;","5 - Asse em forno pré-aquecido a 200°C por aproximadamente 45 minutos;","6 - Retire do forno e deixe esfriar antes de desenformar;","7 - Aqueça o fundo da forma na chama do fogão e desenforme com ajuda de uma faca soltando as laterais;","8 - Espalhe a calda por cima e sirva bem gelado."]'::jsonb,
