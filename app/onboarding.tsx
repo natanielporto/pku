@@ -24,6 +24,7 @@ import {
   signInWithGoogle,
   signUpWithEmail,
 } from "@/services/auth";
+import { PasswordRule } from "@/components/molecules/PasswordRule";
 
 export default function OnboardingScreen() {
   const { t } = useTranslation();
@@ -429,44 +430,6 @@ const styles = StyleSheet.create({
   passwordRules: {
     marginTop: 8,
     gap: 4,
-  },
-  passwordRule: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-  },
-  passwordRuleText: {
-    fontSize: 12,
-    color: "#666",
-  },
-  passwordRuleTextValid: {
-    color: "#0C6941",
-  },
+  }
 });
 
-// Componente auxiliar para mostrar regras de senha
-function PasswordRule({
-  isValid,
-  text,
-}: {
-  readonly isValid: boolean;
-  readonly text: string;
-}) {
-  return (
-    <View style={styles.passwordRule}>
-      <Feather
-        name={isValid ? "check-circle" : "circle"}
-        size={14}
-        color={isValid ? "#0C6941" : "#ccc"}
-      />
-      <Text
-        style={[
-          styles.passwordRuleText,
-          isValid && styles.passwordRuleTextValid,
-        ]}
-      >
-        {text}
-      </Text>
-    </View>
-  );
-}
