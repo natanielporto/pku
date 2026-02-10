@@ -85,6 +85,7 @@ export default function OnboardingScreen() {
   }
 
   async function onSubmit(data: OnboardingFormData) {
+    console.log("Email:", data.email, "Password:", data.password);
     setIsLoading(true);
     try {
       let result;

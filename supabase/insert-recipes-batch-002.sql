@@ -3,8 +3,8 @@
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   11,
-  'Goababa biscuit',
-  'Biscuits and crackers',
+  'Bolachinhas com goiabada',
+  'Biscoitos e bolachas',
   'https://images.unsplash.com/photo-1498408224175-dc9dc5771027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["100g de farinha sem gluten","55g de açúcar demerara","50g de margarina sem sal","30g de creme de leite","5g de fermento químico em pó","40g de amido de milho","5g de emulsificante","3g de liga neutra","1g de essência de baunilha","42g de goiabada em quadradinhos"]'::jsonb,
   '["1 - Em um recipiente coloque todos os ingredientes e misture com uma espátula e depois amasse com as mãos até a massa desgrudar das mãos;","2 - Coloque a massa entre 2 plásticos e abra-a com o auxílio de um rolo;","3 - Para fazer beliscões, corte a massa com um cortador redondo, coloque um pedaço de goiabada no meio e junte as laterais;","4 - Outra opção é moldar a massa em bolinhas e achatar levemente colocando o pedaço de goiabada no centro;","5 - Disponha os biscoitos em uma assadeira e asse em forno a 180°C por aproximadamente 15 minutos."]'::jsonb,
@@ -27,8 +27,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   12,
-  'Oregano cavaquinho',
-  'Biscuits and crackers',
+  'Cavaquinho sabor orégano',
+  'Biscoitos e bolachas',
   'https://plus.unsplash.com/premium_photo-1668622419261-9ca0a4b25f51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["110ml de leite de coco","50ml de água","20g de óleo vegetal","15g de açúcar","5g de sal","0,5g de orégano seco","3g de vinagre de maçã","5g de emulsificante","5g de fermento químico em pó","250g de farinha hipoproteica","Óleo para fritar os biscoitos"]'::jsonb,
   '["1 - Em um recipiente, adicione os ingredientes e coloque a farinha aos poucos até dar o ponto de sovar;","2 - Molde os biscoitos e leve para fritar em óleo bem quente, virando para dourar de ambos os lados;","3 - Retire da panela e envolva em papel absorvente para retirar o excesso de óleo;","4 - Sirva quente."]'::jsonb,
@@ -51,8 +51,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   13,
-  'Banana cookie',
-  'Biscuits and crackers',
+  'Cookie de banana',
+  'Biscoitos e bolachas',
   'https://images.unsplash.com/photo-1588070141852-b6bed371e15f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["80g de banana nanica","65g de açúcar demerara","125g de amido de milho","65g de margarina sem sal","40g de farinha sem glúten","1g de essência de baunilha","10g de fermento químico em pó","0,5g de canela em pó","30g de uva passa"]'::jsonb,
   '["1 - Amasse a banana e acrescente os demais ingredientes, deixe as uvas passas por último;","2 - Misture com uma colher e depois amasse com as mãos até que a massa fique homogênea;","3 - Separe a massa em 20 bolinhas;","4 - Coloque as bolinhas em uma assadeira e achate levemente com um garfo;","5 - Asse a 200°C por aproximadamente 20 minutos ou até dourar embaixo. "]'::jsonb,
@@ -75,8 +75,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   14,
-  'Coffee chocolate cookie',
-  'Biscuits and crackers',
+  'Cookie de café com gotas de chocolate',
+  'Biscoitos e bolachas',
   'https://images.unsplash.com/photo-1589988802149-7f9cb13a468e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["200g de farinha sem gúten","100g de margarina sem sal","50g de açúcar mascavo","30g de açúcar refinado","5g de café solúvel em pó","1g de essência de baunilha","1g de fermento químico em pó","1g de bicarbonato de sódio","50g de gotas de chocolate"]'::jsonb,
   '["1 - Em um recipiente, coloque o açúcar mascavo peneirado, o açúcar refinado, o café solúvel peneirado, a essência de baunilha e a margarina, mexa com uma colher até ficar homogêneo. É importante peneirar os ingredientes para evitar que se formem grumos na massa;","2 - Adicione a farinha, misture com uma colher e depois amasse com as mãos;","3 - Adicione o fermento, o bicarbonato e por último as gotas de chocolate, evitando manipular demais para não derreter as gotas com o calor das mãos;","4 - Formate os cookies pegando cerca de 40 gramas da massa, fazendo bolinhas e achatando na palma da mão.","5 - Coloque em uma forma retangular (não é necessário untar);","6 - Decore com gotas de chocolate por cima;","7 - Se o dia estiver muito quente, coloque a forma dentro da geladeira por uns 15 minutos antes de assar;","8 - Leve para assar em forno pré-aquecido a 200°C, por aproximadamente 20 minutos;","9 - Retire e espere esfriar para que os cookies fiquem mais firmes."]'::jsonb,
@@ -99,8 +99,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   15,
-  'Chocolate cookie',
-  'Biscuits and crackers',
+  'Cookie de chocolate',
+  'Biscoitos e bolachas',
   'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["50g de chocolate em pó","60g de farinha sem glúten","180g de amido de milho","1g de café solúvel em pó","30g de açúcar refinado","30g de açúcar mascavo","3g de fermento químico em pó","150g de margarina sem sal","20g de gotas e chocolate"]'::jsonb,
   '["1 - Em um recipiente, misture todos os ingredientes secos;","2 - Acrescente a margarina, misture bem e amasse com as mãos até atingir o ponto que seja possível modelar;","3 - Faça bolinhas, achate e decore com gotas de chocolate;","4 - Disponha em uma assadeira e asse em forno pré-aquecido a 200°C por aproximadamente 15 a 20 minutos;","5 - Atenção para não assar demais e os cookies ficarem duros."]'::jsonb,
@@ -123,8 +123,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   16,
-  'Lemon sequilho',
-  'Biscuits and crackers',
+  'Sequilho de limão',
+  'Biscoitos e bolachas',
   'https://images.unsplash.com/photo-1424591185129-8a73a1111adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["60g de açúcar","160g de amido de milho","100g de margarina sem sal","2g de essência de baunilha","8g de suco de limão","5g de raspas de limão"]'::jsonb,
   '["1 - Pré-aqueça o forno à 200°C.","2 - Misture a margarina com o açúcar até que fique homogêneo e adicione o suco de limão, as raspas de limão, a essência de baunilha e o amido de milho;","3 - Com as mãos, amasse bem até formar uma massa;","4 - Faça bolinhas e passe o garfo levemente por cima para formar um desenho;","5 - Disponha em uma forma (não é necessário untar) e leve ao freezer por 5 minutos ou até ficarem mais firmes;","6 - Asse por cerca de 20 a 25 minutos ou até dourar levemente embaixo;","7 - Retire do forno e espere esfriar."]'::jsonb,
@@ -147,8 +147,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   17,
-  'Passion fruit sequilho',
-  'Biscuits and crackers',
+  'Sequilho de maracujá',
+  'Biscoitos e bolachas',
   'https://images.unsplash.com/photo-1612388307727-afe00578ca21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["175g de amido de milho","100g de margarina sem sal","60g de açúcar refinado","20g de suco concentrado de maracujá","1g de essência de baunilha","Corante alimentício amarelo damasco (opcional)"]'::jsonb,
   '["1 - Misture bem a margarina com o açúcar;","2 - Adicione a essência, o suco de maracujá e o corante;","3 - Adicione o amido e amasse com as mãos até que a massa fique homogênea;","4 - Faça bolinhas de 15 gramas cada e disponha em uma assadeira (não é necessário untar);","5 - Passe levemente o garfo por cima de cada uma das bolinhas, formando um desenho;","6 - Leve para assar em forno pré-aquecido a 200°C por 20 a 25 minutos até dourar levemente embaixo;","7 - Retire do forno e espere esfriar."]'::jsonb,
@@ -171,8 +171,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   18,
-  'Rain little cake',
-  'Cakes and short cakes',
+  'Bolinho de chuva',
+  'Bolos e bolinhos',
   'https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["160g de farinha sem glúten","120g de creme de leite","50ml de água","100g de açúcar refinado","4g de liga neutra","10g de fermento químico em pó","Óleo vegetal para fritar","Canela em pó e açúcar para cobrir (opcional)"]'::jsonb,
   '["1 - Em um recipiente misture o creme de leite com a água;","2 - Acrescente os demais ingredientes até ficar homogêneo. A massa não deve ficar muito mole;","3 - Em uma panela ou frigideira, aquecer o óleo;","4 - Pegar a massa com uma colher de chá bem cheia e frite em óleo quente até dourar;","5 - Passe os bolinhos ainda quentes no açúcar e canela, se desejar."]'::jsonb,
@@ -195,8 +195,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   19,
-  'Pineapple cake',
-  'Cakes and short cakes',
+  'Bolo de abacaxi',
+  'Bolos e bolinhos',
   'https://images.unsplash.com/photo-1504802686536-b6a2ca64d77c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["150g de farinha sem glúten","80g de açúcar refinado","120ml de suco de abacaxi","10g de emulsificante","3g de goma xantana ou liga neutra","15g de óleo vegetal","10g de fermento químico em pó"]'::jsonb,
   '["1 - Pré-aqueça o forno a 150°C","2-Noliquidificadorbata todosos ingredientes, excetoa farinha e o fermento;","3 - Em um recipiente a parte, despeje a mistura do liquidificador e adicione a farinha aos poucos com o auxílio de um fuê para não empelotar e até que fique homogêneo;","4 - Acrescente o fermento e mexa levemente;","5 - Despeje a massa em uma assadeira untada e leve ao forno ajustado a 180°C até assar por completo. "]'::jsonb,
@@ -219,8 +219,8 @@ ON CONFLICT (id) DO UPDATE SET
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   20,
-  'Banana cake I',
-  'Cakes and short cakes',
+  'Bolo de banana I',
+  'Bolos e bolinhos',
   'https://plus.unsplash.com/premium_photo-1675171527461-b785cb1a7016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["185g de açúcar refinado","38g de óleo vegetal","185g de farinha sem glúten","300g de banana nanica","18g de fermento químico em pó"]'::jsonb,
   '["1 - Em uma vasilha, amasse as bananas e misture aos demais ingredientes com o auxílio de um fuê deixando o fermento por último;","2 - Unte uma forma de bolo inglês com margarina e farinha hipoproteica;","3 - Despeje a massa na forma;","4 - Asse em forno pré-aquecido a 180°C até dourar e o palito sair seco ao espetar."]'::jsonb,

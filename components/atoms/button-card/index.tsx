@@ -68,11 +68,19 @@ export const ButtonCard = ({
           </View>
         )}
         <Image
-          source={{ uri: image }}
+          source={{
+            uri: image,
+            cache: 'default'
+          }}
           style={styles.image}
+          resizeMode="cover"
           onLoadStart={() => setIsLoading(true)}
           onLoadEnd={() => setIsLoading(false)}
-          onError={() => setIsLoading(false)}
+          onError={(error) => {
+            console.warn("❌ Erro ao carregar imagem:", image);
+            console.warn("Erro detalhado:", error.nativeEvent?.error || error);
+            setIsLoading(false);
+          }}
         />
       </View>
       <View style={styles.categoryContainer}>
