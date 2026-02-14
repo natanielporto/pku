@@ -28,7 +28,8 @@
     "db:translations:auto": "node scripts/translate-recipes.js",
     "db:translations:update": "node scripts/update-translations.js",
     "db:setup-local": "node scripts/setup-local-supabase.js",
-    "db:update-cli": "bash scripts/update-supabase-cli.sh"
+    "db:update-cli": "bash scripts/update-supabase-cli.sh",
+    "db:populate": "node scripts/insert-recipes.js"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
@@ -76,7 +77,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "prettier": "^3.6.2",
     "react-test-renderer": "19.1.0",
-    "supabase": "^2.76.3",
+    "supabase": "^2.76.8",
     "typescript": "~5.9.2"
   },
   "private": true

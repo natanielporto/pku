@@ -239,3 +239,27 @@ ON CONFLICT (id) DO UPDATE SET
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
   updated_at = NOW();
+
+INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+VALUES (
+  61,
+  'Pãozinho de mandioquinha',
+  'Pães',
+  '[URL_DA_IMAGEM]',
+  '["400g de mandioquinha","400g de polvilho doce","100g de polvilho azedo","250ml de água quente"]'::jsonb,
+  '["1 - Cozinhe a mandioquinha e amasse até obter um purê;","2 - Adicione os polvilhos e adicione a água aos poucos;","3 - Misture bem e depois amasse com as mãos até formar uma massa firme e homogênea;","4 - Faça bolinhas e disponha em uma assadeira;","5 - Asse em forno pré-aquecido a 200°C até crescer igual pãozinho de queijo convencional e dourar levemente."]'::jsonb,
+  '30 unidades',
+  '[{"totalEnergy":2021,"servingEnergy":67},{"totalCarbs":561,"servingCarbs":19},{"totalProteins":4.7,"servingProteins":0.2},{"totalLipids":2,"servingLipids":0},{"totalSodium":3110,"servingSodium":104},{"totalPotassium":288,"servingPotassium":10}]'::jsonb,
+  '[{"leucine":42,"totalLeucine":170,"servingLeucine":6},{"fenil":28,"totalFenil":110,"servingFenil":4},{"tirosine":20,"totalTirosine":80,"servingTirosine":3},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":1}]'::jsonb,
+  NULL
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  category = EXCLUDED.category,
+  image = EXCLUDED.image,
+  ingredients = EXCLUDED.ingredients,
+  preparation = EXCLUDED.preparation,
+  servings = EXCLUDED.servings,
+  nutritional_information = EXCLUDED.nutritional_information,
+  graph_information = EXCLUDED.graph_information,
+  updated_at = NOW();

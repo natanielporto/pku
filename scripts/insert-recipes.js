@@ -53,9 +53,7 @@ try {
     console.log("   Usando Docker para executar SQL...\n");
 
     // Encontra o container do Supabase
-    const containers = execSync("docker ps --format '{{.Names}}'", {
-      encoding: "utf-8",
-    });
+    const containers = execSync('docker ps --format "{{.Names}}"', { encoding: "utf-8" });
     const supabaseContainer = containers
       .split("\n")
       .find((name) => name.includes("supabase_db_"));

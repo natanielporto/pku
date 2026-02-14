@@ -1,7 +1,7 @@
 -- INSERT statements for recipes table
 -- Generated from recipes.json
 -- Total recipes: 97
--- Generated at: 2026-02-07T20:45:39.190Z
+-- Generated at: 2026-02-13T23:16:48.449Z
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
