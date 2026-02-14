@@ -9,7 +9,7 @@
     "strings": "on"
   },
   "editor.suggest.showStatusBar": true,
-  "editor.hover.enabled": true,
+  "editor.hover.enabled": "on",
   "editor.hover.delay": 300,
   "problems.showCurrentInStatus": true,
   "typescript.tsserver.experimental.enableProjectDiagnostics": true,
