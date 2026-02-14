@@ -34,7 +34,6 @@ try {
 
 try {
   console.log("📖 Lendo arquivo SQL...");
-  const sql = fs.readFileSync(sqlFilePath, "utf-8");
 
   console.log("💾 Inserindo receitas no banco de dados...");
   console.log("   (Isso pode demorar alguns segundos...)\n");
@@ -43,45 +42,32 @@ try {
   // O Supabase local expõe o PostgreSQL na porta 54322
   const dbUrl = "postgresql://postgres:postgres@127.0.0.1:54322/postgres";
 
-  // Tenta usar psql se disponível, senão usa docker exec
+  // Tenta usar psql -f (arquivo) se disponível - mais confiável para SQL longo
   try {
-    execSync(`psql "${dbUrl}" -c "${sql.replace(/"/g, '\\"').replace(/\n/g, ' ')}"`, {
+    execSync(`psql "${dbUrl}" -f "${sqlFilePath}"`, {
       encoding: "utf-8",
-      stdio: "inherit"
+      stdio: "inherit",
     });
   } catch (psqlError) {
     // Se psql não estiver disponível, usa docker exec
     console.log("   Usando Docker para executar SQL...\n");
 
     // Encontra o container do Supabase
-    const containers = execSync("docker ps --format '{{.Names}}'", { encoding: "utf-8" });
+    const containers = execSync("docker ps --format '{{.Names}}'", {
+      encoding: "utf-8",
+    });
     const supabaseContainer = containers
       .split("\n")
-      .find(name => name.includes("supabase_db_"));
+      .find((name) => name.includes("supabase_db_"));
 
     if (!supabaseContainer) {
       throw new Error("Container do Supabase não encontrado");
     }
 
-    // Salva SQL em arquivo temporário e executa via docker
-    const tempSqlFile = path.join(__dirname, "../supabase/.temp-insert.sql");
-    fs.writeFileSync(tempSqlFile, sql, "utf-8");
-
-    try {
-      execSync(
-        `docker exec -i ${supabaseContainer.trim()} psql -U postgres -d postgres < "${tempSqlFile}"`,
-        { encoding: "utf-8", stdio: "inherit" }
-      );
-
-      // Remove arquivo temporário
-      fs.unlinkSync(tempSqlFile);
-    } catch (dockerError) {
-      // Remove arquivo temporário mesmo em caso de erro
-      if (fs.existsSync(tempSqlFile)) {
-        fs.unlinkSync(tempSqlFile);
-      }
-      throw dockerError;
-    }
+    execSync(
+      `docker exec -i ${supabaseContainer.trim()} psql -U postgres -d postgres -f - < "${sqlFilePath}"`,
+      { encoding: "utf-8", stdio: "inherit" }
+    );
   }
 
   console.log("\n✅ Receitas inseridas com sucesso!");
