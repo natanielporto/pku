@@ -61,5 +61,27 @@
     "passwordRule3": "1 letra minúscula",
     "passwordRule4": "1 número",
     "passwordRule5": "1 caractere especial"
+  },
+  "account": {
+    "loadingProfile": "Carregando perfil...",
+    "myProfile": "Meu perfil",
+    "name": "Nome",
+    "email": "Email",
+    "likedRecipies": "Numero de receitas que gostou",
+    "dislikedRecipies": "Numero de receitas que não gostou",
+    "registeredSince": "Cadastrado no app desde",
+    "logout": "Sair da Conta",
+    "personalize": {
+      "typeYourName": "Digite seu nome",
+      "notInformed": "Não informado"
+    },
+    "error": {
+      "logout": "Erro ao fazer logout",
+      "updateName": "Erro ao atualizar nome",
+      "updateNameDescription": "Erro ao salvar nome. Por favor, tente novamente mais tarde.",
+      "savingName": "Erro ao salvar nome",
+      "savingNameDescription": "Erro ao salvar nome. Por favor, tente novamente mais tarde."
+    }
+
   }
 }

@@ -221,36 +221,12 @@ VALUES (
   60,
   'Pão de mandioquinha',
   'Pães',
-  '[URL_DA_IMAGEM]',
+  'https://images.unsplash.com/photo-1684893265739-a88b30c33e92?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["600g de mandioquinha cozida","300g de polvilho azedo","200g de polvilho doce","150ml de azeite ou óleo","5g de sal","175ml de água morna"]'::jsonb,
   '["1 - Em um recipiente, amasse a mandioquinha ainda quente até obter um purê;","2 - Acrescente os demais ingredientes e por último a água;","3 - Amasse bem até que fique homogêneo;","4 - Faça bolinhas e asse em forno pré-aquecido a 180°C até dourar."]'::jsonb,
   '23 unidades',
   '[{"totalEnergy":3543,"servingEnergy":154},{"totalCarbs":556,"servingCarbs":24},{"totalProteins":5.1,"servingProteins":0.2},{"totalLipids":151,"servingLipids":7},{"totalSodium":1948,"servingSodium":85},{"totalPotassium":403,"servingPotassium":18}]'::jsonb,
   '[{"leucine":35,"totalLeucine":240,"servingLeucine":10},{"tirosine":35,"totalTirosine":240,"servingTirosine":10},{"fenil":26,"totalFenil":180,"servingFenil":8},{"metiotine":4,"totalMetiotine":30,"servingMetiotine":1}]'::jsonb,
-  NULL
-)
-ON CONFLICT (id) DO UPDATE SET
-  name = EXCLUDED.name,
-  category = EXCLUDED.category,
-  image = EXCLUDED.image,
-  ingredients = EXCLUDED.ingredients,
-  preparation = EXCLUDED.preparation,
-  servings = EXCLUDED.servings,
-  nutritional_information = EXCLUDED.nutritional_information,
-  graph_information = EXCLUDED.graph_information,
-  updated_at = NOW();
-
-INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
-VALUES (
-  61,
-  'Pãozinho de mandioquinha',
-  'Pães',
-  '[URL_DA_IMAGEM]',
-  '["400g de mandioquinha","400g de polvilho doce","100g de polvilho azedo","250ml de água quente"]'::jsonb,
-  '["1 - Cozinhe a mandioquinha e amasse até obter um purê;","2 - Adicione os polvilhos e adicione a água aos poucos;","3 - Misture bem e depois amasse com as mãos até formar uma massa firme e homogênea;","4 - Faça bolinhas e disponha em uma assadeira;","5 - Asse em forno pré-aquecido a 200°C até crescer igual pãozinho de queijo convencional e dourar levemente."]'::jsonb,
-  '30 unidades',
-  '[{"totalEnergy":2021,"servingEnergy":67},{"totalCarbs":561,"servingCarbs":19},{"totalProteins":4.7,"servingProteins":0.2},{"totalLipids":2,"servingLipids":0},{"totalSodium":3110,"servingSodium":104},{"totalPotassium":288,"servingPotassium":10}]'::jsonb,
-  '[{"leucine":42,"totalLeucine":170,"servingLeucine":6},{"fenil":28,"totalFenil":110,"servingFenil":4},{"tirosine":20,"totalTirosine":80,"servingTirosine":3},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":1}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET

@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
   },
   questionText: {
     flex: 1,
+    fontWeight: "bold",
   },
   iconContainer: {
     backgroundColor: "#90EE90",

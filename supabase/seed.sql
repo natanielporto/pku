@@ -1171,7 +1171,7 @@ VALUES
   '[{"totalEnergy":1486,"servingEnergy":149},{"totalCarbs":151,"servingCarbs":15},{"totalProteins":7.9,"servingProteins":0.8},{"totalLipids":85,"servingLipids":8},{"totalSodium":2063,"servingSodium":206},{"totalPotassium":651,"servingPotassium":65}]'::jsonb,
   '[{"leucine":44,"totalLeucine":600,"servingLeucine":60},{"fenil":26,"totalFenil":350,"servingFenil":35},{"tirosine":19,"totalTirosine":250,"servingTirosine":25},{"metiotine":11,"totalMetiotine":150,"servingMetiotine":15}]'::jsonb,
   NULL
-);
+)
 
 -- Update on conflict (idempotent)
 ON CONFLICT (id) DO UPDATE SET

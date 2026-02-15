@@ -30,8 +30,8 @@ export const calculatorStyles = StyleSheet.create({
   },
   mainContainer: {
     display: "flex",
+    justifyContent: "space-between",
     width: "100%",
-    justifyContent: "center",
   },
   inputCard: {
     backgroundColor: "#f0fdf4",
@@ -87,6 +87,7 @@ export const calculatorStyles = StyleSheet.create({
   iconContainer: {
     justifyContent: "center",
     alignItems: "center",
+    marginVertical: 48,
   },
   logoCard: {
     backgroundColor: "#f0fdf4",

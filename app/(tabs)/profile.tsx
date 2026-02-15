@@ -12,8 +12,11 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 import { useAuth } from "@/contexts/AuthContext";
+import { useTranslation } from "react-i18next";
 
 export default function ProfileScreen() {
+  const { t } = useTranslation();
+
   const { user, profile, loading, signOut, refreshProfile } = useAuth();
   const [isLoggingOut, setIsLoggingOut] = React.useState(false);
   const [isEditingName, setIsEditingName] = React.useState(false);
@@ -26,7 +29,7 @@ export default function ProfileScreen() {
     try {
       await signOut();
     } catch (error) {
-      console.error("Erro ao fazer logout:", error);
+      console.error(t('account.error.logout'), error);
     } finally {
       setIsLoggingOut(false);
     }
@@ -46,16 +49,16 @@ export default function ProfileScreen() {
       const { error } = await updateProfile(user.id, { full_name: newName });
 
       if (error) {
-        console.error("Erro ao atualizar nome:", error);
-        alert("Erro ao salvar nome. Tente novamente.");
+        console.error(t('account.error.updateName'), error);
+        alert("account.error.updateNameDescription");
         return;
       }
 
       await refreshProfile();
       setIsEditingName(false);
     } catch (error) {
-      console.error("Erro ao salvar nome:", error);
-      alert("Erro ao salvar nome. Tente novamente.");
+      console.error(t('account.error.savingName'), error);
+      alert(t('account.error.saveNameDescription'));
     } finally {
       setIsSavingName(false);
     }
@@ -97,7 +100,7 @@ export default function ProfileScreen() {
       <SafeAreaView style={styles.container}>
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color="#0C6941" />
-          <Text style={styles.loadingText}>Carregando perfil...</Text>
+          <Text style={styles.loadingText}>{t('account.loadingProfile')}</Text>
         </View>
       </SafeAreaView>
     );
@@ -113,23 +116,23 @@ export default function ProfileScreen() {
             disabled={isUploadingAvatar}
           >
             <View style={styles.avatarCircle}>{renderAvatarContent()}</View>
-            <View style={styles.avatarOverlay}>
+            {/* <View style={styles.avatarOverlay}>
               <Feather name="camera" size={24} color="#fff" />
-            </View>
+            </View> */}
           </TouchableOpacity>
-          <Text style={styles.title}>Meu Perfil</Text>
-          <Text style={styles.subtitle}>Toque no avatar para alterar</Text>
+          <Text style={styles.title}>{t('account.myProfile')}</Text>
+          {/* <Text style={styles.subtitle}>Toque no avatar para alterar</Text> */}
         </View>
 
         <View style={styles.infoSection}>
           <View style={styles.infoItem}>
-            <Text style={styles.label}>Email</Text>
+            <Text style={styles.label}>{t('account.email')}</Text>
             <Text style={styles.value}>{user?.email || "Não informado"}</Text>
           </View>
 
           <View style={styles.infoItemName}>
             <View style={{ flex: 1, marginRight: 12 }}>
-              <Text style={styles.label}>Nome</Text>
+              <Text style={styles.label}>{t('account.name')}</Text>
               {isEditingName ? (
                 <TextInput
                   style={[
@@ -144,11 +147,11 @@ export default function ProfileScreen() {
                   ]}
                   value={newName}
                   onChangeText={setNewName}
-                  placeholder="Digite seu nome"
+                  placeholder={t('account.personalize.typeYourName')}
                 />
               ) : (
                 <Text style={styles.value}>
-                  {profile?.full_name || "Não informado"}
+                  {profile?.full_name || t('account.personalize.notInformed')}
                 </Text>
               )}
             </View>
@@ -182,12 +185,17 @@ export default function ProfileScreen() {
           </View>
 
           <View style={styles.infoItem}>
-            <Text style={styles.label}>Número de receitas que gostou</Text>
+            <Text style={styles.label}>{t('account.likedRecipies')}</Text>
             <Text style={styles.value}>0</Text>
           </View>
 
           <View style={styles.infoItem}>
-            <Text style={styles.label}>Cadastrado no app desde</Text>
+            <Text style={styles.label}>{t('account.dislikedRecipies')}</Text>
+            <Text style={styles.value}>0</Text>
+          </View>
+
+          <View style={styles.infoItem}>
+            <Text style={styles.label}>{t('account.registeredSince')}</Text>
             <Text style={styles.value}>
               {profile?.created_at
                 ? new Date(profile.created_at).toLocaleDateString("pt-BR")
@@ -206,7 +214,7 @@ export default function ProfileScreen() {
           ) : (
             <>
               <Feather name="log-out" size={20} color="#fff" />
-              <Text style={styles.logoutButtonText}>Sair da Conta</Text>
+              <Text style={styles.logoutButtonText}>{t('account.logout')}</Text>
             </>
           )}
         </TouchableOpacity>
@@ -305,6 +313,10 @@ const styles = StyleSheet.create({
   editButtons: {
     flexDirection: "row",
     gap: 8,
+    height: '100%',
+    alignItems: 'flex-end',
+    justifyContent: 'center',
+    marginBottom: 8
   },
   cancelButton: {
     width: 36,
