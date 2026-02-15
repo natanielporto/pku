@@ -5,6 +5,7 @@
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
+    "emulator:reset": "powershell -ExecutionPolicy Bypass -File scripts/reset-emulator.ps1",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "eslint .",
@@ -25,13 +26,12 @@
     "db:seed:generate": "node scripts/generate-seed.js",
     "db:seed": "supabase db reset",
     "db:inserts:generate": "node scripts/generate-inserts.js",
-    "db:inserts:run": "node scripts/insert-recipes.js",
+    "db:inserts:populate": "node scripts/insert-recipes.js",
     "db:translations:template": "node scripts/create-en-template.js",
     "db:translations:auto": "node scripts/translate-recipes.js",
     "db:translations:update": "node scripts/update-translations.js",
     "db:setup-local": "node scripts/setup-local-supabase.js",
-    "db:update-cli": "bash scripts/update-supabase-cli.sh",
-    "db:populate": "node scripts/insert-recipes.js"
+    "db:update-cli": "bash scripts/update-supabase-cli.sh"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
@@ -73,6 +73,7 @@
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^6.0.0",
     "@types/react": "~19.1.0",
+    "cross-env": "^10.1.0",
     "dotenv": "^17.2.3",
     "eslint": "^9.39.1",
     "eslint-plugin-import": "^2.32.0",
