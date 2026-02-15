@@ -105,8 +105,8 @@ export function RecipeDetail({ recipe, category }: Props) {
                 onLoadStart={() => setIsImageLoading(true)}
                 onLoadEnd={() => setIsImageLoading(false)}
                 onError={(error) => {
-                  console.warn("❌ Erro ao carregar imagem da receita:", recipe.image);
-                  console.warn("Erro detalhado:", error.nativeEvent?.error || error);
+                  console.warn(t("recipeDetails.error.imageLoading"), recipe.image);
+                  console.warn(t("recipeDetails.error.detailedError"), error.nativeEvent?.error || error);
                   setIsImageLoading(false);
                 }}
               />
@@ -117,11 +117,11 @@ export function RecipeDetail({ recipe, category }: Props) {
             style={styles.scrollView}
             contentOffset={{ x: 0, y: 0 }}
           >
-            <Title title="Ingredientes" underline />
+            <Title title={t("recipeDetails.ingredients")} underline />
             <View style={styles.ingredientsContainer}>
               {recipe.ingredients.map((item, index) => (
                 <Text
-                  style={styles.text}
+                  style={index % 2 === 0 ? styles.textWhite : styles.text}
                   key={`${recipe.id}-ingredient-${index}`}
                 >
                   {item}
@@ -132,7 +132,7 @@ export function RecipeDetail({ recipe, category }: Props) {
             <View style={styles.sectionContainer} />
 
             <View>
-              <Title title={"Rendimento"} underline />
+              <Title title={t("recipeDetails.servings")} underline />
               <View style={styles.servingsContainer}>
                 <Text>{recipe.servings}</Text>
               </View>
@@ -140,11 +140,11 @@ export function RecipeDetail({ recipe, category }: Props) {
 
             <View style={styles.sectionContainer} />
 
-            <Title title="Modo de preparo" underline />
+            <Title title={t("recipeDetails.preparation")} underline />
             <View style={styles.preparationContainer}>
               {recipe.preparation.map((item, index) => (
                 <Text
-                  style={styles.text}
+                  style={index % 2 === 0 ? styles.textWhite : styles.text}
                   key={`${recipe.id}-preparation-${index}`}
                 >
                   {item}

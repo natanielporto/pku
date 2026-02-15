@@ -65,22 +65,27 @@ export const styles = StyleSheet.create({
   },
   ingredientsContainer: {
     backgroundColor: "#f0f0f0",
-    padding: 16,
     borderRadius: 16,
+    marginTop: 8,
   },
   servingsContainer: {
     marginTop: 8,
-    backgroundColor: "#f0f0f0",
-    padding: 16,
-    borderRadius: 16,
+    backgroundColor: "white",
+    paddingInline: 16,
   },
   preparationContainer: {
     backgroundColor: "#f0f0f0",
-    padding: 16,
+    paddingTop: 8,
     borderRadius: 16,
   },
   text: {
-    marginBottom: 8,
+    paddingInline: 16,
+    marginBottom: 4,
+  },
+  textWhite: {
+    paddingInline: 16,
+    marginBottom: 4,
+    backgroundColor: "#fff",
   },
   tableContainer: {
     marginVertical: 8,

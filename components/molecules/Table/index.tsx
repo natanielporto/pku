@@ -2,22 +2,26 @@ import { Text, View } from "react-native";
 import { NutritionalInfo } from "@/types/RecipeTypes/recipe";
 import { Title } from "../../atoms/Title/Title";
 import { styles } from "./styles";
+import { useTranslation } from "react-i18next";
 
 export const Table = ({
   nutritionalInformation,
 }: {
   readonly nutritionalInformation: NutritionalInfo[];
 }) => {
+
+  const {t} = useTranslation();
+
   return (
     <View style={styles.container}>
-      <Title title={"Informações nutricionais"} underline />
+      <Title title={t("nutritionalInformationTable.header")} underline />
       <View style={styles.headerRow}>
         <Text style={styles.headerCell}></Text>
-        <Text style={styles.headerCellCenter}>Total</Text>
-        <Text style={styles.headerCellRight}>Unidade</Text>
+        <Text style={styles.headerCellCenter}>{t("nutritionalInformationTable.total")}</Text>
+        <Text style={styles.headerCellRight}>{t("nutritionalInformationTable.serving")}</Text>
       </View>
       <View style={styles.rowWhite}>
-        <Text style={styles.cellCenter}>Calorias</Text>
+        <Text style={styles.cellCenter}>{t("nutritionalInformationTable.calories")}</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[0].totalEnergy}
         </Text>
@@ -26,7 +30,7 @@ export const Table = ({
         </Text>
       </View>
       <View style={styles.row}>
-        <Text style={styles.cellCenter}>Carboidratos</Text>
+        <Text style={styles.cellCenter}>{t("nutritionalInformationTable.carbs")}</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[1].totalCarbs}
         </Text>
@@ -35,7 +39,7 @@ export const Table = ({
         </Text>
       </View>
       <View style={styles.rowWhite}>
-        <Text style={styles.cellCenter}>Proteinas</Text>
+        <Text style={styles.cellCenter}>{t("nutritionalInformationTable.protein")}</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[2].totalProteins}
         </Text>
@@ -44,7 +48,7 @@ export const Table = ({
         </Text>
       </View>
       <View style={styles.row}>
-        <Text style={styles.cellCenter}>Lipídios</Text>
+        <Text style={styles.cellCenter}>{t("nutritionalInformationTable.lipids")}</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[3].totalLipids}
         </Text>
@@ -53,7 +57,7 @@ export const Table = ({
         </Text>
       </View>
       <View style={styles.rowWhite}>
-        <Text style={styles.cellCenter}>Sódio</Text>
+        <Text style={styles.cellCenter}>{t("nutritionalInformationTable.sodium")}</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[4].totalSodium}
         </Text>
@@ -62,7 +66,7 @@ export const Table = ({
         </Text>
       </View>
       <View style={styles.row}>
-        <Text style={styles.cellCenter}>Potássio</Text>
+        <Text style={styles.cellCenter}>{t("nutritionalInformationTable.potassium")}</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[5].totalPotassium}
         </Text>

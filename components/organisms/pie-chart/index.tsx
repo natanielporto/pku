@@ -4,12 +4,14 @@ import PieChart from "react-native-pie-chart";
 import Colors from "@/constants/Colors";
 import { GraphInfo } from "@/types/RecipeTypes/recipe";
 import { styles } from "./styles";
+import { useTranslation } from "react-i18next";
 
 export const Chart = ({
   graphInformation,
 }: {
   readonly graphInformation: GraphInfo[];
 }) => {
+  const { t } = useTranslation();
   const widthAndHeight = 200;
   const sliceColor = [
     Colors.pieChart.slice1,
@@ -28,38 +30,38 @@ export const Chart = ({
     <View>
       <ScrollView style={styles.scrollView}>
         <View style={styles.chartContainer}>
-          <Text style={styles.chartTitle}>Aminoácidos</Text>
+          <Text style={styles.chartTitle}>{t("pieChart.title")}</Text>
           <PieChart widthAndHeight={widthAndHeight} series={series} />
         </View>
 
         <View style={styles.cardsContainer}>
           <View style={[styles.card, { borderLeftColor: sliceColor[0] }]}>
             <Text style={[styles.cardTitle, { color: sliceColor[0] }]}>
-              Leucina: {graphInformation[0].leucine}%
+              {t("pieChart.leucine")}: {graphInformation[0].leucine}%
             </Text>
-            <Text>{graphInformation[0].totalLeucine}mg total</Text>
-            <Text>{graphInformation[0].servingLeucine}mg a porção</Text>
+            <Text>{graphInformation[0].totalLeucine} {t("pieChart.total")}</Text>
+            <Text>{graphInformation[0].servingLeucine} {t("pieChart.serving")}</Text>
           </View>
           <View style={[styles.card, { borderLeftColor: sliceColor[1] }]}>
             <Text style={[styles.cardTitle, { color: sliceColor[1] }]}>
-              Tirosina: {graphInformation[1].tirosine}%
+              {t("pieChart.tirosine")}: {graphInformation[1].tirosine}%
             </Text>
-            <Text>{graphInformation[1].totalTirosine}mg total</Text>
-            <Text>{graphInformation[1].servingTirosine}mg a porção</Text>
+            <Text>{graphInformation[1].totalTirosine} {t("pieChart.total")}</Text>
+            <Text>{graphInformation[1].servingTirosine} {t("pieChart.serving")}</Text>
           </View>
           <View style={[styles.card, { borderLeftColor: sliceColor[2] }]}>
             <Text style={[styles.cardTitle, { color: sliceColor[2] }]}>
-              Fenilalanina: {graphInformation[2].fenil}%
+              {t("pieChart.fenil")}: {graphInformation[2].fenil}%
             </Text>
-            <Text>{graphInformation[2].totalFenil}mg total</Text>
-            <Text>{graphInformation[2].servingFenil}mg a porção</Text>
+            <Text>{graphInformation[2].totalFenil} {t("pieChart.total")}</Text>
+            <Text>{graphInformation[2].servingFenil} {t("pieChart.serving")}</Text>
           </View>
           <View style={[styles.card, { borderLeftColor: sliceColor[3] }]}>
             <Text style={[styles.cardTitle, { color: sliceColor[3] }]}>
-              Metiotina: {graphInformation[3].metiotine}%
+              {t("pieChart.metiotine")}: {graphInformation[3].metiotine}%
             </Text>
-            <Text>{graphInformation[3].totalMetiotine}mg total</Text>
-            <Text>{graphInformation[3].servingMetiotine}mg a porção</Text>
+            <Text>{graphInformation[3].totalMetiotine} {t("pieChart.total")}</Text>
+            <Text>{graphInformation[3].servingMetiotine} {t("pieChart.serving")}</Text>
           </View>
         </View>
       </ScrollView>

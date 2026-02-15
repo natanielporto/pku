@@ -82,6 +82,38 @@
       "savingName": "Erro ao salvar nome",
       "savingNameDescription": "Erro ao salvar nome. Por favor, tente novamente mais tarde."
     }
-
+  },
+  "nutritionalInformationTable": {
+    "header": "Informações nutricionais",
+    "total": "Total",
+    "serving": "Unidade",
+    "calories": "Calorias",
+    "carbs": "Carboidratos",
+    "protein": "Proteínas",
+    "lipids": "Lípidos",
+    "sodium": "Sódio",
+    "potassium": "Potássio"
+  },
+  "pieChart": {
+    "title": "Aminoácidos",
+    "total": "mg total",
+    "serving": "mg a porção",
+    "leucine": "Leucina",
+    "metiotine": "Metionina",
+    "fenil": "Fenilalanina",
+    "tirosine": "Tiroxina"
+  },
+  "recipeDetails": {
+    "ingredients": "Ingredientes",
+    "servings": "Rendimento",
+    "preparation": "Modo de preparo",
+    "nutritionalInformation": "Informações nutricionais",
+    "pieChart": "Gráfico de aminoácidos",
+    "like": "Gostei",
+    "dislike": "Não gostei",
+    "error": {
+      "imageLoading": "Erro ao carregar imagem da receita:",
+      "detailedError": "Erro detalhado:"
+    }
   }
 }
