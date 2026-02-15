@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 
 interface Props {
   title: string;
@@ -15,10 +15,15 @@ export function Title({ title, underline = false, customClass }: Props) {
   );
 
   return underline ? (
-    <View className="border-b-4 border-b-green mt-fifty mb-ten">
-      {titleComponent}
-    </View>
+    <View style={styles.underline}>{titleComponent}</View>
   ) : (
     titleComponent
   );
 }
+
+const styles = StyleSheet.create({
+  underline: {
+    borderBottomWidth: 2,
+    borderBottomColor: "green",
+  },
+});

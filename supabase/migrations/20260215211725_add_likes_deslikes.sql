@@ -1,0 +1,4 @@
+ALTER TABLE recipes ADD COLUMN likes INTEGER DEFAULT 0;
+ALTER TABLE recipes ADD COLUMN dislikes INTEGER DEFAULT 0;
+ALTER TABLE profiles ADD COLUMN liked_recipes INTEGER[] DEFAULT '{}';
+ALTER TABLE profiles ADD COLUMN disliked_recipes INTEGER[] DEFAULT '{}';

@@ -33,6 +33,11 @@ export const styles = StyleSheet.create({
   },
   rowWhite: {
     backgroundColor: "#f0f0f0",
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "100%",
+    paddingRight: 8,
   },
   cellCenter: {
     flex: 1,

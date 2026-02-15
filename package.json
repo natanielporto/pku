@@ -13,6 +13,8 @@
     "format:check": "prettier --check .",
     "db:migration:new": "supabase migration new",
     "db:migration:list": "supabase migration list",
+    "db:migration:up": "supabase migration up",
+    "db:migration:down": "supabase migration down",
     "db:push": "supabase db push",
     "db:pull": "supabase db pull",
     "db:reset": "supabase db reset",

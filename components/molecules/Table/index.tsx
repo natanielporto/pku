@@ -16,7 +16,7 @@ export const Table = ({
         <Text style={styles.headerCellCenter}>Total</Text>
         <Text style={styles.headerCellRight}>Unidade</Text>
       </View>
-      <View style={[styles.row, styles.rowWhite]}>
+      <View style={styles.rowWhite}>
         <Text style={styles.cellCenter}>Calorias</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[0].totalEnergy}
@@ -25,7 +25,7 @@ export const Table = ({
           {nutritionalInformation[0].servingEnergy}
         </Text>
       </View>
-      <View style={styles.row}>
+      <View style={styles.rowWhite}>
         <Text style={styles.cellCenter}>Carboidratos</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[1].totalCarbs}
@@ -34,7 +34,7 @@ export const Table = ({
           {nutritionalInformation[1].servingCarbs}
         </Text>
       </View>
-      <View style={[styles.row, styles.rowWhite]}>
+      <View style={styles.row}>
         <Text style={styles.cellCenter}>Proteinas</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[2].totalProteins}
@@ -43,7 +43,7 @@ export const Table = ({
           {nutritionalInformation[2].servingProteins}
         </Text>
       </View>
-      <View style={styles.row}>
+      <View style={styles.rowWhite}>
         <Text style={styles.cellCenter}>Lipídios</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[3].totalLipids}
@@ -52,7 +52,7 @@ export const Table = ({
           {nutritionalInformation[3].servingLipids}
         </Text>
       </View>
-      <View style={[styles.row, styles.rowWhite]}>
+      <View style={styles.row}>
         <Text style={styles.cellCenter}>Sódio</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[4].totalSodium}
@@ -61,7 +61,7 @@ export const Table = ({
           {nutritionalInformation[4].servingSodium}
         </Text>
       </View>
-      <View style={styles.row}>
+      <View style={styles.rowWhite}>
         <Text style={styles.cellCenter}>Potássio</Text>
         <Text style={styles.cellRight}>
           {nutritionalInformation[5].totalPotassium}

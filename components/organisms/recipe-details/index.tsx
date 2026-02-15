@@ -76,7 +76,7 @@ export function RecipeDetail({ recipe, category }: Props) {
                 style={styles.backButton}
               >
                 <Feather name="arrow-left" size={16} color="#888" />
-                <Title title={t(`categories.${category}`)} />
+                <Title title={category + " - " + recipe.name} />
               </TouchableOpacity>
             </View>
             <View style={styles.imageContainer}>
