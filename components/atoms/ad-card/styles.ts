@@ -18,6 +18,5 @@ export const styles = StyleSheet.create({
     elevation: 2,
   },
   image: {
-    // espaço para estilos da imagem se necessário
   },
 });

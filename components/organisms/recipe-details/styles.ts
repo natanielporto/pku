@@ -91,7 +91,7 @@ export const styles = StyleSheet.create({
   },
   chartContainer: {
   },
-  likeButton: {
+  likeButtonActive: {
     position: "absolute",
     bottom: 16,
     right: 72,
@@ -102,7 +102,19 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  deslikeButton: {
+  likeButtonInactive: {
+    position: "absolute",
+    bottom: 16,
+    right: 72,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: "gray",
+    justifyContent: "center",
+    alignItems: "center",
+    opacity: 0.3,
+  },
+  deslikeButtonActive: {
     position: "absolute",
     bottom: 16,
     right: 16,
@@ -112,5 +124,27 @@ export const styles = StyleSheet.create({
     backgroundColor: "red",
     justifyContent: "center",
     alignItems: "center",
+  },
+  deslikeButtonInactive: {
+    position: "absolute",
+    bottom: 16,
+    right: 16,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: "gray",
+    justifyContent: "center",
+    alignItems: "center",
+    opacity: 0.3,
+  },
+  recipeName: {
+    position: "absolute",
+    top: 16,
+    left: 16,
+    fontWeight: "bold",
+    color: "white",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    padding: 8,
+    borderRadius: 8,
   },
 });

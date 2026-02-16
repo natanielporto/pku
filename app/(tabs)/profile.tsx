@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ActivityIndicator,
   Image,
@@ -13,6 +13,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "react-i18next";
+import { supabase } from "@/services/supabase";
 
 export default function ProfileScreen() {
   const { t } = useTranslation();
@@ -23,6 +24,56 @@ export default function ProfileScreen() {
   const [newName, setNewName] = React.useState(profile?.full_name ?? "");
   const [isSavingName, setIsSavingName] = React.useState(false);
   const [isUploadingAvatar, setIsUploadingAvatar] = React.useState(false);
+  const [numberOfLikes, setNumberOfLikes] = React.useState(0);
+  const [numberOfDislikes, setNumberOfDislikes] = React.useState(0);
+
+  const handleNumberOfLikes = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('recipe_likes')
+        .select('recipe_id')
+        .eq('user_id', user?.id);
+
+        console.log(data)
+      if (error) {
+        console.error(t('account.error.numberOfLikes'), error);
+        alert(t('account.error.numberOfLikesDescription'));
+        return;
+      }
+
+      setNumberOfLikes(data?.length);
+    } catch (error) {
+      console.error(t('account.error.numberOfLikes'), error);
+      alert(t('account.error.numberOfLikesDescription'));
+      return 0;
+    }
+  }
+
+    const handleNumberOfDislikes = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('recipe_dislikes')
+        .select('recipe_id')
+        .eq('user_id', user?.id);
+
+      if (error) {
+        console.error(t('account.error.numberOfDislikes'), error);
+        alert(t('account.error.numberOfDislikesDescription'));
+        return;
+      }
+
+      setNumberOfDislikes(data?.length);
+    } catch (error) {
+      console.error(t('account.error.numberOfDislikes'), error);
+      alert(t('account.error.numberOfDislikesDescription'));
+      return 0;
+    }
+  }
+
+  useEffect(() => {
+    handleNumberOfLikes();
+    handleNumberOfDislikes();
+  }, [user]);
 
   const handleLogout = async () => {
     setIsLoggingOut(true);
@@ -69,17 +120,17 @@ export default function ProfileScreen() {
     setIsEditingName(false);
   };
 
-  const handleChangeAvatar = async () => {
-    // Por enquanto, vamos apenas mostrar um alerta
-    // Para implementar upload de imagem, precisamos de:
-    // 1. expo-image-picker (selecionar foto)
-    // 2. Supabase Storage (hospedar a imagem)
-    // 3. Atualizar avatar_url no perfil
+  // const handleChangeAvatar = async () => {
+  //   // Por enquanto, vamos apenas mostrar um alerta
+  //   // Para implementar upload de imagem, precisamos de:
+  //   // 1. expo-image-picker (selecionar foto)
+  //   // 2. Supabase Storage (hospedar a imagem)
+  //   // 3. Atualizar avatar_url no perfil
 
-    alert(
-      "Funcionalidade de upload de avatar será implementada em breve!\n\nPrecisa configurar:\n1. expo-image-picker\n2. Supabase Storage"
-    );
-  };
+  //   alert(
+  //     "Funcionalidade de upload de avatar será implementada em breve!\n\nPrecisa configurar:\n1. expo-image-picker\n2. Supabase Storage"
+  //   );
+  // };
 
   const renderAvatarContent = () => {
     if (isUploadingAvatar) {
@@ -112,7 +163,7 @@ export default function ProfileScreen() {
         <View style={styles.header}>
           <TouchableOpacity
             style={styles.avatarContainer}
-            onPress={handleChangeAvatar}
+            // onPress={handleChangeAvatar}
             disabled={isUploadingAvatar}
           >
             <View style={styles.avatarCircle}>{renderAvatarContent()}</View>
@@ -186,12 +237,12 @@ export default function ProfileScreen() {
 
           <View style={styles.infoItem}>
             <Text style={styles.label}>{t('account.likedRecipies')}</Text>
-            <Text style={styles.value}>0</Text>
+            <Text style={styles.value}>{numberOfLikes}</Text>
           </View>
 
           <View style={styles.infoItem}>
             <Text style={styles.label}>{t('account.dislikedRecipies')}</Text>
-            <Text style={styles.value}>0</Text>
+            <Text style={styles.value}>{numberOfDislikes}</Text>
           </View>
 
           <View style={styles.infoItem}>

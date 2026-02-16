@@ -29,58 +29,146 @@ export function RecipeDetail({ recipe, category }: Props) {
   const scrollViewRef = useRef<ScrollView>(null);
   const [isImageLoading, setIsImageLoading] = useState(true);
   const shimmerAnim = useRef(new Animated.Value(0)).current;
+  const [userVote, setUserVote] = useState<"like" | "dislike" | null>(null);
 
-  const likeRecipe = async () => {
+  useEffect(() => {
+    fetchInteractionState();
+  }, [recipe.id]);
+
+  const fetchInteractionState = async () => {
     try {
-      // First get current likes
-      const { data, error: fetchError } = await supabase
-        .from('recipes')
-        .select('likes')
-        .eq('id', recipe.id)
-        .single();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
 
-      if (fetchError) throw fetchError;
+      // Get Counts
+      const { count: lCount, error: lError } = await supabase
+        .from("recipe_likes")
+        .select("*", { count: "exact", head: true })
+        .eq("recipe_id", recipe.id);
 
-      const currentLikes = data?.likes || 0;
+      const { count: dCount, error: dError } = await supabase
+        .from("recipe_deslikes")
+        .select("*", { count: "exact", head: true })
+        .eq("recipe_id", recipe.id);
 
-      // Increment by 1
-      const { error: updateError } = await supabase
-        .from('recipes')
-        .update({ likes: currentLikes + 1 })
-        .eq('id', recipe.id);
+      if (lError) throw lError;
+      if (dError) throw dError;
 
-      if (updateError) throw updateError;
+      if (user) {
+        // Check if user liked
+        const { data: liked, error: likeCheckError } = await supabase
+          .from("recipe_likes")
+          .select("user_id")
+          .eq("recipe_id", recipe.id)
+          .eq("user_id", user.id)
+          .maybeSingle();
 
-      console.log("✅ Like registrado para a receita:", recipe.id);
+        if (likeCheckError) throw likeCheckError;
+
+        if (liked) {
+          setUserVote("like");
+          return;
+        }
+
+        // Check if user desliked
+        const { data: desliked, error: deslikeCheckError } = await supabase
+          .from("recipe_deslikes")
+          .select("user_id")
+          .eq("recipe_id", recipe.id)
+          .eq("user_id", user.id)
+          .maybeSingle();
+
+        if (deslikeCheckError) throw deslikeCheckError;
+
+        if (desliked) {
+          setUserVote("dislike");
+        } else {
+          setUserVote(null);
+        }
+      }
     } catch (error) {
-      console.error("❌ Erro ao dar like:", error);
+      console.error("Error fetching interaction state:", error);
     }
   };
 
-  const deslikeRecipe = async () => {
+  const likeRecipe = async () => {
     try {
-      // First get current dislikes
-      const { data, error: fetchError } = await supabase
-        .from('recipes')
-        .select('dislikes')
-        .eq('id', recipe.id)
-        .single();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (!user) return; // TODO: Handle unauthenticated case (maybe redirect to login)
 
-      if (fetchError) throw fetchError;
+      if (userVote === "like") {
+        // Remove like
+        const { error } = await supabase
+          .from("recipe_likes")
+          .delete()
+          .eq("recipe_id", recipe.id)
+          .eq("user_id", user.id);
+        if (error) throw error;
+        setUserVote(null);
+      } else {
+        // Add like
+        const { error } = await supabase
+          .from("recipe_likes")
+          .insert({ recipe_id: recipe.id, user_id: user.id });
+        if (error) throw error;
 
-      const currentDislikes = data?.dislikes || 0;
+        // If was desliked, remove deslike
+        if (userVote === "dislike") {
+          const { error: delError } = await supabase
+            .from("recipe_deslikes")
+            .delete()
+            .eq("recipe_id", recipe.id)
+            .eq("user_id", user.id);
+          if (delError) throw delError;
+        }
 
-      // Increment by 1
-      const { error: updateError } = await supabase
-        .from('recipes')
-        .update({ dislikes: currentDislikes + 1 })
-        .eq('id', recipe.id);
-
-      if (updateError) throw updateError;
-
-      console.log("✅ Deslike registrado para a receita:", recipe.id);
+        setUserVote("like");
+      }
     } catch (error) {
-      console.error("❌ Erro ao dar deslike:", error);
+      console.error("Error toggling like:", error);
+    }
+  };
+
+  const dislikeRecipe = async () => {
+    try {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (!user) return;
+
+      if (userVote === "dislike") {
+        // Remove deslike
+        const { error } = await supabase
+          .from("recipe_deslikes")
+          .delete()
+          .eq("recipe_id", recipe.id)
+          .eq("user_id", user.id);
+        if (error) throw error;
+        setUserVote(null);
+      } else {
+        // Add deslike
+        const { error } = await supabase
+          .from("recipe_deslikes")
+          .insert({ recipe_id: recipe.id, user_id: user.id });
+        if (error) throw error;
+
+        // If was liked, remove like
+        if (userVote === "like") {
+          const { error: delError } = await supabase
+            .from("recipe_likes")
+            .delete()
+            .eq("recipe_id", recipe.id)
+            .eq("user_id", user.id);
+          if (delError) throw delError;
+        }
+
+        setUserVote("dislike");
+      }
+    } catch (error) {
+      console.error("Error toggling dislike:", error);
     }
   };
 
@@ -120,6 +208,20 @@ export function RecipeDetail({ recipe, category }: Props) {
     });
   }
 
+  const getLikeStyles = () => {
+    if (userVote === "like" || userVote === null) {
+      return styles.likeButtonActive;
+    }
+    return styles.likeButtonInactive;
+  }
+
+  const getDislikeStyles = () => {
+    if (userVote === "dislike" || userVote === null) {
+      return styles.deslikeButtonActive;
+    }
+    return styles.deslikeButtonInactive;
+  }
+
   return (
     <SafeAreaView style={styles.safeArea}>
       {recipe ? (
@@ -131,7 +233,7 @@ export function RecipeDetail({ recipe, category }: Props) {
                 style={styles.backButton}
               >
                 <Feather name="arrow-left" size={16} color="#888" />
-                <Title title={category + " - " + recipe.name} />
+                <Title title={category} />
               </TouchableOpacity>
             </View>
             <View style={styles.imageContainer}>
@@ -160,16 +262,28 @@ export function RecipeDetail({ recipe, category }: Props) {
                 onLoadStart={() => setIsImageLoading(true)}
                 onLoadEnd={() => setIsImageLoading(false)}
                 onError={(error) => {
-                  console.warn(t("recipeDetails.error.imageLoading"), recipe.image);
-                  console.warn(t("recipeDetails.error.detailedError"), error.nativeEvent?.error || error);
+                  console.log(t("recipeDetails.error.imageLoading"), recipe.image);
+                  console.log(t("recipeDetails.error.detailedError"), error.nativeEvent?.error || error);
                   setIsImageLoading(false);
                 }}
               />
-              <TouchableOpacity onPress={likeRecipe} style={styles.likeButton}>
-                <Feather name="thumbs-up" size={16} color="white" />
+              <Text style={styles.recipeName}>{recipe.name}</Text>
+              <TouchableOpacity onPress={likeRecipe} style={getLikeStyles()}>
+                <Feather
+                  name="thumbs-up"
+                  size={16}
+                  color="white"
+                />
               </TouchableOpacity>
-              <TouchableOpacity onPress={deslikeRecipe} style={styles.deslikeButton}>
-                <Feather name="thumbs-down" size={16} color="white" />
+              <TouchableOpacity
+                onPress={dislikeRecipe}
+                style={getDislikeStyles()}
+              >
+                <Feather
+                  name="thumbs-down"
+                  size={16}
+                  color="white"
+                />
               </TouchableOpacity>
             </View>
           </View>

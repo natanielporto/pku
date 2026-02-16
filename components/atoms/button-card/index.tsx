@@ -24,32 +24,32 @@ export const ButtonCard = ({
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
 
-  // Se skipTranslation for true, usa o texto diretamente (para receitas já traduzidas do banco)
-  // Caso contrário, tenta traduzir (para categorias ou receitas)
+  // If skipTranslation is true, uses the text directly (for recipes already translated from the database)
+  // Otherwise, tries to translate (for categories or recipes)
   const displayText = skipTranslation
     ? category
     : (() => {
-        // Verifica se o texto parece ser um slug (contém hífens e está em minúsculas)
-        // Se não for slug, provavelmente já está traduzido, então usa diretamente
+        // Checks if the text looks like a slug (contains hyphens and is in lowercase)
+        // If it's not a slug, it's probably already translated, so use it directly
         const isSlug = /^[a-z0-9-]+$/.test(category);
 
         if (!isSlug) {
-          // Já está traduzido, usa diretamente
+          // Already translated, use it directly
           return category;
         }
 
-        // É um slug, tenta traduzir
-        // Primeiro tenta traduzir como categoria
+        // It's a slug, try to translate
+        // First try to translate as a category
         let translationKey = `categories.${category}`;
         let translated = t(translationKey);
 
-        // Se não encontrou como categoria, tenta como receita
+        // If not found as a category, try as a recipe
         if (translated === translationKey) {
           translationKey = `recipes.${category}`;
           translated = t(translationKey);
         }
 
-        // Se não encontrou nenhuma tradução, usa o texto original
+        // If not found any translation, use the original text
         return translated === translationKey ? category : translated;
       })();
 
@@ -77,8 +77,8 @@ export const ButtonCard = ({
           onLoadStart={() => setIsLoading(true)}
           onLoadEnd={() => setIsLoading(false)}
           onError={(error) => {
-            console.warn("❌ Erro ao carregar imagem:", image);
-            console.warn("Erro detalhado:", error.nativeEvent?.error || error);
+            console.log("Erro ao carregar imagem:", image);
+            console.log("Erro detalhado:", error.nativeEvent?.error || error);
             setIsLoading(false);
           }}
         />
