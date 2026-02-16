@@ -114,7 +114,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     opacity: 0.3,
   },
-  deslikeButtonActive: {
+  dislikeButtonActive: {
     position: "absolute",
     bottom: 16,
     right: 16,
@@ -125,7 +125,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  deslikeButtonInactive: {
+  dislikeButtonInactive: {
     position: "absolute",
     bottom: 16,
     right: 16,

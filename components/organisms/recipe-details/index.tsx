@@ -48,7 +48,7 @@ export function RecipeDetail({ recipe, category }: Props) {
         .eq("recipe_id", recipe.id);
 
       const { count: dCount, error: dError } = await supabase
-        .from("recipe_deslikes")
+        .from("recipe_dislikes")
         .select("*", { count: "exact", head: true })
         .eq("recipe_id", recipe.id);
 
@@ -71,17 +71,17 @@ export function RecipeDetail({ recipe, category }: Props) {
           return;
         }
 
-        // Check if user desliked
-        const { data: desliked, error: deslikeCheckError } = await supabase
-          .from("recipe_deslikes")
+        // Check if user disliked
+        const { data: disliked, error: dislikeCheckError } = await supabase
+          .from("recipe_dislikes")
           .select("user_id")
           .eq("recipe_id", recipe.id)
           .eq("user_id", user.id)
           .maybeSingle();
 
-        if (deslikeCheckError) throw deslikeCheckError;
+        if (dislikeCheckError) throw dislikeCheckError;
 
-        if (desliked) {
+        if (disliked) {
           setUserVote("dislike");
         } else {
           setUserVote(null);
@@ -115,10 +115,10 @@ export function RecipeDetail({ recipe, category }: Props) {
           .insert({ recipe_id: recipe.id, user_id: user.id });
         if (error) throw error;
 
-        // If was desliked, remove deslike
+        // If was disliked, remove dislike
         if (userVote === "dislike") {
           const { error: delError } = await supabase
-            .from("recipe_deslikes")
+            .from("recipe_dislikes")
             .delete()
             .eq("recipe_id", recipe.id)
             .eq("user_id", user.id);
@@ -140,18 +140,18 @@ export function RecipeDetail({ recipe, category }: Props) {
       if (!user) return;
 
       if (userVote === "dislike") {
-        // Remove deslike
+        // Remove dislike
         const { error } = await supabase
-          .from("recipe_deslikes")
+          .from("recipe_dislikes")
           .delete()
           .eq("recipe_id", recipe.id)
           .eq("user_id", user.id);
         if (error) throw error;
         setUserVote(null);
       } else {
-        // Add deslike
+        // Add dislike
         const { error } = await supabase
-          .from("recipe_deslikes")
+          .from("recipe_dislikes")
           .insert({ recipe_id: recipe.id, user_id: user.id });
         if (error) throw error;
 
@@ -217,9 +217,9 @@ export function RecipeDetail({ recipe, category }: Props) {
 
   const getDislikeStyles = () => {
     if (userVote === "dislike" || userVote === null) {
-      return styles.deslikeButtonActive;
+      return styles.dislikeButtonActive;
     }
-    return styles.deslikeButtonInactive;
+    return styles.dislikeButtonInactive;
   }
 
   return (
