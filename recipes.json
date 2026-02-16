@@ -96,7 +96,7 @@
             "servingCarbs": 27
           },
           {
-            "totalProteins": 1.0,
+            "totalProteins": 1,
             "servingProteins": 0.3
           },
           {
@@ -2280,7 +2280,10 @@
         "id": 33,
         "name": "Crepioca de banana",
         "image": "https://media.istockphoto.com/id/486011238/pt/foto/casabe-de-mandioca-tapioca.jpg?s=2048x2048&w=is&k=20&c=LirYDmSn682sbu36mynQz8yGdS8blCsgFLjWVb43kLU=",
-        "ingredients": ["80g de banana", "75g de massa de tapioca hidratada"],
+        "ingredients": [
+          "80g de banana",
+          "75g de massa de tapioca hidratada"
+        ],
         "preparation": [
           "1 - Amasse a banana com o auxílio de um garfo e junte com a massa de tapioca já hidratada;",
           "2 - Em uma frigideira antiaderente, disponha a mistura e cozinhe de ambos os lados;",
@@ -4351,14 +4354,14 @@
             "servingLeucine": 6
           },
           {
-            "fenil": 28,
-            "totalFenil": 110,
-            "servingFenil": 4
-          },
-          {
             "tirosine": 20,
             "totalTirosine": 80,
             "servingTirosine": 3
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 110,
+            "servingFenil": 4
           },
           {
             "metiotine": 10,
@@ -4423,14 +4426,14 @@
             "servingLeucine": 7
           },
           {
-            "fenil": 29,
-            "totalFenil": 100,
-            "servingFenil": 5
-          },
-          {
             "tirosine": 18,
             "totalTirosine": 60,
             "servingTirosine": 3
+          },
+          {
+            "fenil": 29,
+            "totalFenil": 100,
+            "servingFenil": 5
           },
           {
             "metiotine": 12,
@@ -4497,14 +4500,14 @@
             "servingLeucine": 84
           },
           {
-            "fenil": 26,
-            "totalFenil": 680,
-            "servingFenil": 49
-          },
-          {
             "tirosine": 19,
             "totalTirosine": 490,
             "servingTirosine": 35
+          },
+          {
+            "fenil": 26,
+            "totalFenil": 680,
+            "servingFenil": 49
           },
           {
             "metiotine": 11,
@@ -4570,14 +4573,14 @@
             "servingLeucine": 45
           },
           {
-            "fenil": 25,
-            "totalFenil": 50,
-            "servingFenil": 25
-          },
-          {
             "tirosine": 20,
             "totalTirosine": 40,
             "servingTirosine": 20
+          },
+          {
+            "fenil": 25,
+            "totalFenil": 50,
+            "servingFenil": 25
           },
           {
             "metiotine": 10,
@@ -4645,14 +4648,14 @@
             "servingLeucine": 24
           },
           {
-            "fenil": 28,
-            "totalFenil": 160,
-            "servingFenil": 16
-          },
-          {
             "tirosine": 23,
             "totalTirosine": 130,
             "servingTirosine": 13
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 160,
+            "servingFenil": 16
           },
           {
             "metiotine": 7,
@@ -4717,14 +4720,14 @@
             "servingLeucine": 108
           },
           {
-            "fenil": 27,
-            "totalFenil": 590,
-            "servingFenil": 74
-          },
-          {
             "tirosine": 23,
             "totalTirosine": 510,
             "servingTirosine": 64
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 590,
+            "servingFenil": 74
           },
           {
             "metiotine": 10,
@@ -4785,14 +4788,14 @@
             "servingLeucine": 150
           },
           {
-            "fenil": 28,
-            "totalFenil": 220,
-            "servingFenil": 110
-          },
-          {
             "tirosine": 23,
             "totalTirosine": 180,
             "servingTirosine": 90
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 220,
+            "servingFenil": 110
           },
           {
             "metiotine": 10,
@@ -4852,14 +4855,14 @@
             "servingLeucine": 115
           },
           {
-            "fenil": 28,
-            "totalFenil": 140,
-            "servingFenil": 70
-          },
-          {
             "tirosine": 18,
             "totalTirosine": 90,
             "servingTirosine": 45
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 140,
+            "servingFenil": 70
           },
           {
             "metiotine": 8,
@@ -4927,14 +4930,14 @@
             "servingLeucine": 63
           },
           {
-            "fenil": 29,
-            "totalFenil": 180,
-            "servingFenil": 45
-          },
-          {
             "tirosine": 23,
             "totalTirosine": 140,
             "servingTirosine": 35
+          },
+          {
+            "fenil": 29,
+            "totalFenil": 180,
+            "servingFenil": 45
           },
           {
             "metiotine": 7,
@@ -5000,14 +5003,14 @@
             "servingLeucine": 34
           },
           {
-            "fenil": 26,
-            "totalFenil": 110,
-            "servingFenil": 22
-          },
-          {
             "tirosine": 24,
             "totalTirosine": 100,
             "servingTirosine": 20
+          },
+          {
+            "fenil": 26,
+            "totalFenil": 110,
+            "servingFenil": 22
           },
           {
             "metiotine": 10,
@@ -5073,14 +5076,14 @@
             "servingLeucine": 28
           },
           {
-            "fenil": 27,
-            "totalFenil": 179,
-            "servingFenil": 18
-          },
-          {
             "tirosine": 22,
             "totalTirosine": 150,
             "servingTirosine": 15
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 179,
+            "servingFenil": 18
           },
           {
             "metiotine": 10,
@@ -5144,14 +5147,14 @@
             "servingLeucine": 19
           },
           {
-            "fenil": 26,
-            "totalFenil": 120,
-            "servingFenil": 12
-          },
-          {
             "tirosine": 24,
             "totalTirosine": 110,
             "servingTirosine": 11
+          },
+          {
+            "fenil": 26,
+            "totalFenil": 120,
+            "servingFenil": 12
           },
           {
             "metiotine": 9,
@@ -5216,14 +5219,14 @@
             "servingLeucine": 21
           },
           {
-            "fenil": 27,
-            "totalFenil": 260,
-            "servingFenil": 13
-          },
-          {
             "tirosine": 19,
             "totalTirosine": 180,
             "servingTirosine": 9
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 260,
+            "servingFenil": 13
           },
           {
             "metiotine": 11,
@@ -5289,14 +5292,14 @@
             "servingLeucine": 38
           },
           {
-            "fenil": 26,
-            "totalFenil": 450,
-            "servingFenil": 23
-          },
-          {
             "tirosine": 18,
             "totalTirosine": 310,
             "servingTirosine": 16
+          },
+          {
+            "fenil": 26,
+            "totalFenil": 450,
+            "servingFenil": 23
           },
           {
             "metiotine": 12,
@@ -5360,14 +5363,14 @@
             "servingLeucine": 16
           },
           {
-            "fenil": 28,
-            "totalFenil": 110,
-            "servingFenil": 11
-          },
-          {
             "tirosine": 23,
             "totalTirosine": 90,
             "servingTirosine": 9
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 110,
+            "servingFenil": 11
           },
           {
             "metiotine": 8,
@@ -5442,14 +5445,14 @@
             "servingLeucine": 47
           },
           {
-            "fenil": 28,
-            "totalFenil": 430,
-            "servingFenil": 33
-          },
-          {
             "tirosine": 21,
             "totalTirosine": 320,
             "servingTirosine": 25
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 430,
+            "servingFenil": 33
           },
           {
             "metiotine": 12,
@@ -5511,14 +5514,14 @@
             "servingLeucine": 70
           },
           {
-            "fenil": 30,
-            "totalFenil": 110,
-            "servingFenil": 55
-          },
-          {
             "tirosine": 21,
             "totalTirosine": 80,
             "servingTirosine": 40
+          },
+          {
+            "fenil": 30,
+            "totalFenil": 110,
+            "servingFenil": 55
           },
           {
             "metiotine": 11,
@@ -5578,14 +5581,14 @@
             "servingLeucine": 75
           },
           {
-            "fenil": 29,
-            "totalFenil": 90,
-            "servingFenil": 45
-          },
-          {
             "tirosine": 19,
             "totalTirosine": 60,
             "servingTirosine": 30
+          },
+          {
+            "fenil": 29,
+            "totalFenil": 90,
+            "servingFenil": 45
           },
           {
             "metiotine": 5,
@@ -5653,14 +5656,14 @@
             "servingLeucine": 126
           },
           {
-            "fenil": 27,
-            "totalFenil": 380,
-            "servingFenil": 76
-          },
-          {
             "tirosine": 18,
             "totalTirosine": 260,
             "servingTirosine": 52
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 380,
+            "servingFenil": 76
           },
           {
             "metiotine": 11,
@@ -5732,14 +5735,14 @@
             "servingLeucine": 93
           },
           {
-            "fenil": 26,
-            "totalFenil": 230,
-            "servingFenil": 58
-          },
-          {
             "tirosine": 22,
             "totalTirosine": 190,
             "servingTirosine": 48
+          },
+          {
+            "fenil": 26,
+            "totalFenil": 230,
+            "servingFenil": 58
           },
           {
             "metiotine": 9,
@@ -5802,14 +5805,14 @@
             "servingLeucine": 45
           },
           {
-            "fenil": 28,
-            "totalFenil": 200,
-            "servingFenil": 33
-          },
-          {
             "tirosine": 28,
             "totalTirosine": 200,
             "servingTirosine": 33
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 200,
+            "servingFenil": 33
           },
           {
             "metiotine": 6,
@@ -5872,14 +5875,14 @@
             "servingLeucine": 39
           },
           {
-            "fenil": 28,
-            "totalFenil": 412,
-            "servingFenil": 27
-          },
-          {
             "tirosine": 24,
             "totalTirosine": 358,
             "servingTirosine": 24
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 412,
+            "servingFenil": 27
           },
           {
             "metiotine": 8,
@@ -5949,14 +5952,14 @@
             "servingLeucine": 50
           },
           {
-            "fenil": 29,
-            "totalFenil": 200,
-            "servingFenil": 33
-          },
-          {
             "tirosine": 19,
             "totalTirosine": 130,
             "servingTirosine": 22
+          },
+          {
+            "fenil": 29,
+            "totalFenil": 200,
+            "servingFenil": 33
           },
           {
             "metiotine": 9,
@@ -6021,14 +6024,14 @@
             "servingLeucine": 43
           },
           {
-            "fenil": 27,
-            "totalFenil": 260,
-            "servingFenil": 26
-          },
-          {
             "tirosine": 17,
             "totalTirosine": 160,
             "servingTirosine": 16
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 260,
+            "servingFenil": 26
           },
           {
             "metiotine": 11,
@@ -6096,14 +6099,14 @@
             "servingLeucine": 27
           },
           {
-            "fenil": 29,
-            "totalFenil": 180,
-            "servingFenil": 18
-          },
-          {
             "tirosine": 22,
             "totalTirosine": 140,
             "servingTirosine": 14
+          },
+          {
+            "fenil": 29,
+            "totalFenil": 180,
+            "servingFenil": 18
           },
           {
             "metiotine": 6,
@@ -6162,14 +6165,14 @@
             "servingLeucine": 30
           },
           {
-            "fenil": 29,
-            "totalFenil": 40,
-            "servingFenil": 20
-          },
-          {
             "tirosine": 14,
             "totalTirosine": 20,
             "servingTirosine": 10
+          },
+          {
+            "fenil": 29,
+            "totalFenil": 40,
+            "servingFenil": 20
           },
           {
             "metiotine": 14,
@@ -6234,14 +6237,14 @@
             "servingLeucine": 40
           },
           {
-            "fenil": 28,
-            "totalFenil": 80,
-            "servingFenil": 27
-          },
-          {
             "tirosine": 21,
             "totalTirosine": 60,
             "servingTirosine": 20
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 80,
+            "servingFenil": 27
           },
           {
             "metiotine": 10,
@@ -6307,14 +6310,14 @@
             "servingLeucine": 60
           },
           {
-            "fenil": 30,
-            "totalFenil": 130,
-            "servingFenil": 43
-          },
-          {
             "tirosine": 19,
             "totalTirosine": 80,
             "servingTirosine": 27
+          },
+          {
+            "fenil": 30,
+            "totalFenil": 130,
+            "servingFenil": 43
           },
           {
             "metiotine": 9,
@@ -6378,14 +6381,14 @@
             "servingLeucine": 115
           },
           {
-            "fenil": 27,
-            "totalFenil": 140,
-            "servingFenil": 70
-          },
-          {
             "tirosine": 19,
             "totalTirosine": 100,
             "servingTirosine": 50
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 140,
+            "servingFenil": 70
           },
           {
             "metiotine": 11,
@@ -6454,14 +6457,14 @@
             "servingLeucine": 185
           },
           {
-            "fenil": 28,
-            "totalFenil": 260,
-            "servingFenil": 130
-          },
-          {
             "tirosine": 20,
             "totalTirosine": 190,
             "servingTirosine": 95
+          },
+          {
+            "fenil": 28,
+            "totalFenil": 260,
+            "servingFenil": 130
           },
           {
             "metiotine": 12,
@@ -6528,14 +6531,14 @@
             "servingLeucine": 36
           },
           {
-            "fenil": 27,
-            "totalFenil": 370,
-            "servingFenil": 23
-          },
-          {
             "tirosine": 21,
             "totalTirosine": 290,
             "servingTirosine": 18
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 370,
+            "servingFenil": 23
           },
           {
             "metiotine": 10,
@@ -6602,14 +6605,14 @@
             "servingLeucine": 45
           },
           {
-            "fenil": 27,
-            "totalFenil": 110,
-            "servingFenil": 18
-          },
-          {
             "tirosine": 19,
             "totalTirosine": 80,
             "servingTirosine": 20
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 110,
+            "servingFenil": 18
           },
           {
             "metiotine": 10,
@@ -6671,14 +6674,14 @@
             "servingLeucine": 14
           },
           {
-            "fenil": 26,
-            "totalFenil": 90,
-            "servingFenil": 9
-          },
-          {
             "tirosine": 21,
             "totalTirosine": 70,
             "servingTirosine": 7
+          },
+          {
+            "fenil": 26,
+            "totalFenil": 90,
+            "servingFenil": 9
           },
           {
             "metiotine": 12,
@@ -6736,14 +6739,14 @@
             "servingLeucine": 30
           },
           {
-            "fenil": 27,
-            "totalFenil": 40,
-            "servingFenil": 20
-          },
-          {
             "tirosine": 20,
             "totalTirosine": 30,
             "servingTirosine": 15
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 40,
+            "servingFenil": 20
           },
           {
             "metiotine": 13,
@@ -6815,14 +6818,14 @@
             "servingLeucine": 190
           },
           {
-            "fenil": 27,
-            "totalFenil": 340,
-            "servingFenil": 113
-          },
-          {
             "tirosine": 17,
             "totalTirosine": 220,
             "servingTirosine": 73
+          },
+          {
+            "fenil": 27,
+            "totalFenil": 340,
+            "servingFenil": 113
           },
           {
             "metiotine": 11,
@@ -6897,14 +6900,14 @@
             "servingLeucine": 46
           },
           {
-            "fenil": 26,
-            "totalFenil": 270,
-            "servingFenil": 27
-          },
-          {
             "tirosine": 20,
             "totalTirosine": 210,
             "servingTirosine": 21
+          },
+          {
+            "fenil": 26,
+            "totalFenil": 270,
+            "servingFenil": 27
           },
           {
             "metiotine": 11,
@@ -6974,14 +6977,14 @@
             "servingLeucine": 60
           },
           {
-            "fenil": 26,
-            "totalFenil": 350,
-            "servingFenil": 35
-          },
-          {
             "tirosine": 19,
             "totalTirosine": 250,
             "servingTirosine": 25
+          },
+          {
+            "fenil": 26,
+            "totalFenil": 350,
+            "servingFenil": 35
           },
           {
             "metiotine": 11,

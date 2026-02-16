@@ -58,7 +58,6 @@ export const styles = StyleSheet.create({
     borderRadius: 16,
   },
   scrollView: {
-    // ScrollView
   },
   sectionContainer: {
     marginBottom: 8,
@@ -91,6 +90,27 @@ export const styles = StyleSheet.create({
     marginVertical: 8,
   },
   chartContainer: {
-    // Container do chart
+  },
+  likeButton: {
+    position: "absolute",
+    bottom: 16,
+    right: 72,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: "green",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  deslikeButton: {
+    position: "absolute",
+    bottom: 16,
+    right: 16,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: "red",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

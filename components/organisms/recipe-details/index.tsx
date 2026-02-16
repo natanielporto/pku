@@ -16,6 +16,7 @@ import { Title } from "../../atoms/Title/Title";
 import { Table } from "../../molecules/Table";
 import { Chart } from "../pie-chart";
 import { styles } from "./styles";
+import { supabase } from "@/services/supabase";
 
 type Props = {
   readonly recipe: FullRecipe;
@@ -29,14 +30,68 @@ export function RecipeDetail({ recipe, category }: Props) {
   const [isImageLoading, setIsImageLoading] = useState(true);
   const shimmerAnim = useRef(new Animated.Value(0)).current;
 
-  // Garante que o scroll comece no topo quando a receita mudar
+  const likeRecipe = async () => {
+    try {
+      // First get current likes
+      const { data, error: fetchError } = await supabase
+        .from('recipes')
+        .select('likes')
+        .eq('id', recipe.id)
+        .single();
+
+      if (fetchError) throw fetchError;
+
+      const currentLikes = data?.likes || 0;
+
+      // Increment by 1
+      const { error: updateError } = await supabase
+        .from('recipes')
+        .update({ likes: currentLikes + 1 })
+        .eq('id', recipe.id);
+
+      if (updateError) throw updateError;
+
+      console.log("✅ Like registrado para a receita:", recipe.id);
+    } catch (error) {
+      console.error("❌ Erro ao dar like:", error);
+    }
+  };
+
+  const deslikeRecipe = async () => {
+    try {
+      // First get current dislikes
+      const { data, error: fetchError } = await supabase
+        .from('recipes')
+        .select('dislikes')
+        .eq('id', recipe.id)
+        .single();
+
+      if (fetchError) throw fetchError;
+
+      const currentDislikes = data?.dislikes || 0;
+
+      // Increment by 1
+      const { error: updateError } = await supabase
+        .from('recipes')
+        .update({ dislikes: currentDislikes + 1 })
+        .eq('id', recipe.id);
+
+      if (updateError) throw updateError;
+
+      console.log("✅ Deslike registrado para a receita:", recipe.id);
+    } catch (error) {
+      console.error("❌ Erro ao dar deslike:", error);
+    }
+  };
+
+  // ensures that the scroll starts at the top when the recipe changes
   useEffect(() => {
     scrollViewRef.current?.scrollTo({ y: 0, animated: false });
-    // Reseta o estado de loading quando a receita mudar
+    // resets the loading state when the recipe changes
     setIsImageLoading(true);
   }, [recipe.id]);
 
-  // Animação de shimmer para o skeleton
+  // shimmer animation for the skeleton
   useEffect(() => {
     if (isImageLoading) {
       const shimmerAnimation = Animated.loop(
@@ -110,6 +165,12 @@ export function RecipeDetail({ recipe, category }: Props) {
                   setIsImageLoading(false);
                 }}
               />
+              <TouchableOpacity onPress={likeRecipe} style={styles.likeButton}>
+                <Feather name="thumbs-up" size={16} color="white" />
+              </TouchableOpacity>
+              <TouchableOpacity onPress={deslikeRecipe} style={styles.deslikeButton}>
+                <Feather name="thumbs-down" size={16} color="white" />
+              </TouchableOpacity>
             </View>
           </View>
           <ScrollView
@@ -119,7 +180,7 @@ export function RecipeDetail({ recipe, category }: Props) {
           >
             <Title title={t("recipeDetails.ingredients")} underline />
             <View style={styles.ingredientsContainer}>
-              {recipe.ingredients.map((item, index) => (
+              {recipe.ingredients.map((item: string, index: number) => (
                 <Text
                   style={index % 2 === 0 ? styles.textWhite : styles.text}
                   key={`${recipe.id}-ingredient-${index}`}
@@ -142,7 +203,7 @@ export function RecipeDetail({ recipe, category }: Props) {
 
             <Title title={t("recipeDetails.preparation")} underline />
             <View style={styles.preparationContainer}>
-              {recipe.preparation.map((item, index) => (
+              {recipe.preparation.map((item: string, index: number) => (
                 <Text
                   style={index % 2 === 0 ? styles.textWhite : styles.text}
                   key={`${recipe.id}-preparation-${index}`}

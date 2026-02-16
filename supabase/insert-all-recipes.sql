@@ -1,7 +1,7 @@
 -- INSERT statements for recipes table
 -- Generated from recipes.json
 -- Total recipes: 97
--- Generated at: 2026-02-15T20:09:54.498Z
+-- Generated at: 2026-02-15T23:43:46.412Z
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
@@ -1453,7 +1453,7 @@ VALUES (
   '["1 - Cozinhe a mandioquinha e amasse até obter um purê;","2 - Adicione os polvilhos e adicione a água aos poucos;","3 - Misture bem e depois amasse com as mãos até formar uma massa firme e homogênea;","4 - Faça bolinhas e disponha em uma assadeira;","5 - Asse em forno pré-aquecido a 200°C até crescer igual pãozinho de queijo convencional e dourar levemente."]'::jsonb,
   '30 unidades',
   '[{"totalEnergy":2021,"servingEnergy":67},{"totalCarbs":561,"servingCarbs":19},{"totalProteins":4.7,"servingProteins":0.2},{"totalLipids":2,"servingLipids":0},{"totalSodium":3110,"servingSodium":104},{"totalPotassium":288,"servingPotassium":10}]'::jsonb,
-  '[{"leucine":42,"totalLeucine":170,"servingLeucine":6},{"fenil":28,"totalFenil":110,"servingFenil":4},{"tirosine":20,"totalTirosine":80,"servingTirosine":3},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":1}]'::jsonb,
+  '[{"leucine":42,"totalLeucine":170,"servingLeucine":6},{"tirosine":20,"totalTirosine":80,"servingTirosine":3},{"fenil":28,"totalFenil":110,"servingFenil":4},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":1}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1477,7 +1477,7 @@ VALUES (
   '["1 - Amasse a mandioca cozida ainda quente até obter um purê e reserve;","2 - Em uma panela ferva a água, o óleo e o sal;","3 - Em outro recipiente misturar os polvilhos e adicione a água temperada;","4 - Misture bem e adicione o purê de mandioca aos poucos, até obter uma massa lisa que não grude nas mãos;","5 - Faça bolinhas e disponha em uma assadeira untada com margarina;","6 - Asse em forno pré-aquecido a 180°C até dourar."]'::jsonb,
   '20 unidades',
   '[{"totalEnergy":1832,"servingEnergy":92},{"totalCarbs":360,"servingCarbs":18},{"totalProteins":5.7,"servingProteins":0.3},{"totalLipids":41,"servingLipids":2},{"totalSodium":1606,"servingSodium":80},{"totalPotassium":1003,"servingPotassium":50}]'::jsonb,
-  '[{"leucine":41,"totalLeucine":140,"servingLeucine":7},{"fenil":29,"totalFenil":100,"servingFenil":5},{"tirosine":18,"totalTirosine":60,"servingTirosine":3},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":2}]'::jsonb,
+  '[{"leucine":41,"totalLeucine":140,"servingLeucine":7},{"tirosine":18,"totalTirosine":60,"servingTirosine":3},{"fenil":29,"totalFenil":100,"servingFenil":5},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":2}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1501,7 +1501,7 @@ VALUES (
   '["1 - Em um recipiente, misture bem a farinha, o açúcar o emulsificante, a liga neutra e o fermento, reserve;","2 - Aqueça a margarina junto com o creme de leite no micro-ondas por 25 segundos;","3 - Adicione essa mistura à massa anterior e mexa com o auxílio de um fuê;","4 - Adicione a água morna aos poucos até a massa ficar em ponto de sovar, não muito é mole;","5 - Coloque a massa na batedeira e bata em velocidade mínima por 5 minutos;","6 - Disponha a massa em forma de bolo inglês e deixe crescer por 20 minutos;","7 - Asse em forno pré-aquecido a 230°C por aproximadamente 35 minutos ou até que fique assado por completo."]'::jsonb,
   '14 fatias',
   '[{"totalEnergy":1707,"servingEnergy":122},{"totalCarbs":309,"servingCarbs":22},{"totalProteins":13.1,"servingProteins":0.9},{"totalLipids":42,"servingLipids":3},{"totalSodium":2632,"servingSodium":188},{"totalPotassium":70,"servingPotassium":5}]'::jsonb,
-  '[{"leucine":44,"totalLeucine":1170,"servingLeucine":84},{"fenil":26,"totalFenil":680,"servingFenil":49},{"tirosine":19,"totalTirosine":490,"servingTirosine":35},{"metiotine":11,"totalMetiotine":300,"servingMetiotine":21}]'::jsonb,
+  '[{"leucine":44,"totalLeucine":1170,"servingLeucine":84},{"tirosine":19,"totalTirosine":490,"servingTirosine":35},{"fenil":26,"totalFenil":680,"servingFenil":49},{"metiotine":11,"totalMetiotine":300,"servingMetiotine":21}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1525,7 +1525,7 @@ VALUES (
   '["1 - Lave e corte as abobrinhas em rodelas, reserve;","2 - Em um recipiente, misture o amido de milho com o sal e o orégano;","3 - Passe as rodelas de abobrinha nessa mistura;","4 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":886,"servingEnergy":443},{"totalCarbs":45,"servingCarbs":22},{"totalProteins":1.5,"servingProteins":0.7},{"totalLipids":79,"servingLipids":40},{"totalSodium":1172,"servingSodium":586},{"totalPotassium":507,"servingPotassium":254}]'::jsonb,
-  '[{"leucine":45,"totalLeucine":90,"servingLeucine":45},{"fenil":25,"totalFenil":50,"servingFenil":25},{"tirosine":20,"totalTirosine":40,"servingTirosine":20},{"metiotine":10,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":45,"totalLeucine":90,"servingLeucine":45},{"tirosine":20,"totalTirosine":40,"servingTirosine":20},{"fenil":25,"totalFenil":50,"servingFenil":25},{"metiotine":10,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1549,7 +1549,7 @@ VALUES (
   '["1 - Corte a berinjela em pedaços bem pequenos e deixe de molho na água;","2 - Em uma panela, refogue o alho e a cebola no azeite;","3 - Escorra a berinjela e junte à panela, acerte o sal;","4 - Tampe a panela e abaixe o fogo, a berinjela vai soltar água que será necessário para o cozimento, mexa de vez em quando até secar a água e a berinjela estiver molinha;","5 - Se necessário coloque mais um pouco de água;","6 - Adicione a salsinha e desligue o fogo;","7 - Deixe esfriar e amasse bem o garfo até ficar bem triturado;","8 - Coloque a farinha de mandioca até ficar no ponto de conseguir moldar em bolinhas;","9 - Disponha em uma assadeira e asse em forno pré-aquecido até dourar."]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":309,"servingEnergy":31},{"totalCarbs":62,"servingCarbs":6},{"totalProteins":4.1,"servingProteins":0.4},{"totalLipids":5,"servingLipids":0},{"totalSodium":1562,"servingSodium":156},{"totalPotassium":549,"servingPotassium":55}]'::jsonb,
-  '[{"leucine":42,"totalLeucine":240,"servingLeucine":24},{"fenil":28,"totalFenil":160,"servingFenil":16},{"tirosine":23,"totalTirosine":130,"servingTirosine":13},{"metiotine":7,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
+  '[{"leucine":42,"totalLeucine":240,"servingLeucine":24},{"tirosine":23,"totalTirosine":130,"servingTirosine":13},{"fenil":28,"totalFenil":160,"servingFenil":16},{"metiotine":7,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1573,7 +1573,7 @@ VALUES (
   '["1 - Lave as batatas, corte as duas extremidades para que as batatas fiquem em pé e corte-as ao meio ou longitudinalmente, se preferir;","2 - Em uma panela de pressão, cozinhe por cerca de 10 minutos após começar a chiar;","3 - Com as batatas ainda quentes, retire o centro preservando o fundo e laterais;","4 - Amasse a porção retirada das batatas e tempere com a margarina, alho, creme de leite, sal e ervas a gosto;","5 - Disponha as batatas em um refratário, salpique sal e coloque o purê temperado dentro das batatas;","6 - À parte, misture os ingredientes do gratinado de queijo e coloque por cima das batatas;","7 - Leve ao forno a 200°C até gratinar."]'::jsonb,
   '8 unidades',
   '[{"totalEnergy":980,"servingEnergy":122},{"totalCarbs":104,"servingCarbs":13},{"totalProteins":13.1,"servingProteins":1.6},{"totalLipids":59,"servingLipids":7},{"totalSodium":1574,"servingSodium":197},{"totalPotassium":2763,"servingPotassium":345}]'::jsonb,
-  '[{"leucine":40,"totalLeucine":860,"servingLeucine":108},{"fenil":27,"totalFenil":590,"servingFenil":74},{"tirosine":23,"totalTirosine":510,"servingTirosine":64},{"metiotine":10,"totalMetiotine":220,"servingMetiotine":28}]'::jsonb,
+  '[{"leucine":40,"totalLeucine":860,"servingLeucine":108},{"tirosine":23,"totalTirosine":510,"servingTirosine":64},{"fenil":27,"totalFenil":590,"servingFenil":74},{"metiotine":10,"totalMetiotine":220,"servingMetiotine":28}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1597,7 +1597,7 @@ VALUES (
   '["1 - Em uma panela com água e sal, pré cozinhe as batatas já cortadas;","2 - Disponha as batatas em um refratário e adicione os tomates, alho, alecrim e a páprica;","3 - Asse em forno pré-aquecido a 200°C até que fiquem douradas."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":325,"servingEnergy":162},{"totalCarbs":43,"servingCarbs":22},{"totalProteins":5.5,"servingProteins":2.8},{"totalLipids":16,"servingLipids":8},{"totalSodium":1184,"servingSodium":592},{"totalPotassium":1330,"servingPotassium":665}]'::jsonb,
-  '[{"leucine":39,"totalLeucine":300,"servingLeucine":150},{"fenil":28,"totalFenil":220,"servingFenil":110},{"tirosine":23,"totalTirosine":180,"servingTirosine":90},{"metiotine":10,"totalMetiotine":80,"servingMetiotine":40}]'::jsonb,
+  '[{"leucine":39,"totalLeucine":300,"servingLeucine":150},{"tirosine":23,"totalTirosine":180,"servingTirosine":90},{"fenil":28,"totalFenil":220,"servingFenil":110},{"metiotine":10,"totalMetiotine":80,"servingMetiotine":40}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1621,7 +1621,7 @@ VALUES (
   '["1 - Pique a berinjela e deixe de molho na água com o vinagre;","2 - Retire da água e tempere a berinjela com sal e chimichurri ou orégano;","3 - Empane com o amido de milho;","4 - Frite no óleo bem quente e coloque em papel absorvente."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":687,"servingEnergy":344},{"totalCarbs":83,"servingCarbs":41},{"totalProteins":3.4,"servingProteins":1.7},{"totalLipids":39,"servingLipids":19},{"totalSodium":1178,"servingSodium":589},{"totalPotassium":653,"servingPotassium":327}]'::jsonb,
-  '[{"leucine":46,"totalLeucine":230,"servingLeucine":115},{"fenil":28,"totalFenil":140,"servingFenil":70},{"tirosine":18,"totalTirosine":90,"servingTirosine":45},{"metiotine":8,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
+  '[{"leucine":46,"totalLeucine":230,"servingLeucine":115},{"tirosine":18,"totalTirosine":90,"servingTirosine":45},{"fenil":28,"totalFenil":140,"servingFenil":70},{"metiotine":8,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1645,7 +1645,7 @@ VALUES (
   '["1 - Lave a berinjela, corte-a em rodelas de aproximadamente 1 cm e deixe de molho na água;","2 - Misture o sal na farinha de mandioca e retire as fatias de berinjela da água;","3 - Uma a uma, passe as fatias de berinjela dos dois lados na farinha de mandioca;","4 - Frite-as em óleo bem quente e reserve (utilizar 200g de óleo para fritura em imersão);","5 - Bata os tomates com o alho, sal e azeite e coloque em uma panela em fogo baixo até ferver;","6 - Em uma travessa de vidro, coloque um pouco de molho, e coloque as rodelas de berinjela em cima, cubra com o restante do molho;","7 - Rale o queijo na parte mais grossa do ralador e distribua por cima da preparação;","8 - Leve ao forno até derreter o queijo, sirva quente."]'::jsonb,
   '4 porções',
   '[{"totalEnergy":1161,"servingEnergy":290},{"totalCarbs":61,"servingCarbs":15},{"totalProteins":4.9,"servingProteins":1.2},{"totalLipids":103,"servingLipids":26},{"totalSodium":2070,"servingSodium":518},{"totalPotassium":860,"servingPotassium":215}]'::jsonb,
-  '[{"leucine":41,"totalLeucine":250,"servingLeucine":63},{"fenil":29,"totalFenil":180,"servingFenil":45},{"tirosine":23,"totalTirosine":140,"servingTirosine":35},{"metiotine":7,"totalMetiotine":40,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":41,"totalLeucine":250,"servingLeucine":63},{"tirosine":23,"totalTirosine":140,"servingTirosine":35},{"fenil":29,"totalFenil":180,"servingFenil":45},{"metiotine":7,"totalMetiotine":40,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1669,7 +1669,7 @@ VALUES (
   '["1 - Refogue a abobrinha no óleo com os demais temperos até que fique transparente;","2 - Adicione a farinha de mandioca ainda com a panela no fogo;","3 - Mexa vigorosamente por 3 minutos para que a farinha incorpore bem;","4 - Espere esfriar e molde os hambúrgueres com as mãos untadas de óleo;","5 - Passe na farinha de mandioca para empanar;","6 - Frite em fogo médio e coloque em papel absorvente."]'::jsonb,
   '5 unidades',
   '[{"totalEnergy":445,"servingEnergy":89},{"totalCarbs":46,"servingCarbs":9},{"totalProteins":2.9,"servingProteins":0.6},{"totalLipids":27,"servingLipids":5},{"totalSodium":1168,"servingSodium":234},{"totalPotassium":423,"servingPotassium":85}]'::jsonb,
-  '[{"leucine":40,"totalLeucine":170,"servingLeucine":34},{"fenil":26,"totalFenil":110,"servingFenil":22},{"tirosine":24,"totalTirosine":100,"servingTirosine":20},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":8}]'::jsonb,
+  '[{"leucine":40,"totalLeucine":170,"servingLeucine":34},{"tirosine":24,"totalTirosine":100,"servingTirosine":20},{"fenil":26,"totalFenil":110,"servingFenil":22},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":8}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1693,7 +1693,7 @@ VALUES (
   '["1 - Em um refratário, coloque a abobrinha ralada e misture os demais ingredientes, exceto o amido de milho e farinha de arroz;","2 - Adicione o amido e a farinha aos poucos até a massa ficar consistente e firme na colher;","3 - Separe a massa em 10 porções de 32 g, aproximadamente;","4 - Com uma colher pegue as porções e coloque-as em óleo quente para fritar um pouco de cada vez;","5 - Retire com uma escumadeira quando estiverem douradas;","6 - Coloque em papel absorvente."]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":488,"servingEnergy":49},{"totalCarbs":59,"servingCarbs":6},{"totalProteins":4.6,"servingProteins":0.5},{"totalLipids":27,"servingLipids":3},{"totalSodium":1194,"servingSodium":119},{"totalPotassium":674,"servingPotassium":67}]'::jsonb,
-  '[{"leucine":41,"totalLeucine":280,"servingLeucine":28},{"fenil":27,"totalFenil":179,"servingFenil":18},{"tirosine":22,"totalTirosine":150,"servingTirosine":15},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":7}]'::jsonb,
+  '[{"leucine":41,"totalLeucine":280,"servingLeucine":28},{"tirosine":22,"totalTirosine":150,"servingTirosine":15},{"fenil":27,"totalFenil":179,"servingFenil":18},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":7}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1717,7 +1717,7 @@ VALUES (
   '["1 - Amasse o aipim ainda quente com um pouco da água do cozimento para facilitar;","2 - Acrescente o creme de leite, a margarina e coloque a farinha de mandioca aos poucos;","3 - Misture até formar uma massa moldável com as mãos;","4 - Faça os bolinhos no formato que preferir e passe na farinha de mandioca torrada;","5 - Frite em óleo quente rapidamente para não abrir e estourar."]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":874,"servingEnergy":87},{"totalCarbs":128,"servingCarbs":13},{"totalProteins":4.3,"servingProteins":0.4},{"totalLipids":38,"servingLipids":4},{"totalSodium":1231,"servingSodium":123},{"totalPotassium":619,"servingPotassium":62}]'::jsonb,
-  '[{"leucine":41,"totalLeucine":190,"servingLeucine":19},{"fenil":26,"totalFenil":120,"servingFenil":12},{"tirosine":24,"totalTirosine":110,"servingTirosine":11},{"metiotine":9,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
+  '[{"leucine":41,"totalLeucine":190,"servingLeucine":19},{"tirosine":24,"totalTirosine":110,"servingTirosine":11},{"fenil":26,"totalFenil":120,"servingFenil":12},{"metiotine":9,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1741,7 +1741,7 @@ VALUES (
   '["1 - Em um recipiente, coloque a farinha e adicione a água morna. Misture até formar uma massa firme;","2 - Junte o arroz cozido e os demais ingredientes, misture bem;","3 - Com auxílio de uma colher porcione a massa;","4 - Frite em óleo quente e retire quando estiverem dourados, coloque em papel absorvente."]'::jsonb,
   '20 unidades',
   '[{"totalEnergy":1064,"servingEnergy":53},{"totalCarbs":172,"servingCarbs":9},{"totalProteins":5.4,"servingProteins":0.3},{"totalLipids":40,"servingLipids":2},{"totalSodium":1211,"servingSodium":61},{"totalPotassium":448,"servingPotassium":22}]'::jsonb,
-  '[{"leucine":43,"totalLeucine":420,"servingLeucine":21},{"fenil":27,"totalFenil":260,"servingFenil":13},{"tirosine":19,"totalTirosine":180,"servingTirosine":9},{"metiotine":11,"totalMetiotine":110,"servingMetiotine":6}]'::jsonb,
+  '[{"leucine":43,"totalLeucine":420,"servingLeucine":21},{"tirosine":19,"totalTirosine":180,"servingTirosine":9},{"fenil":27,"totalFenil":260,"servingFenil":13},{"metiotine":11,"totalMetiotine":110,"servingMetiotine":6}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1765,7 +1765,7 @@ VALUES (
   '["1 - Em um recipiente, misture o arroz cozido e os demais ingredientes;","2 - Se preferir, coloque a mistura no processador para obter uma massa mais homogênea;","3 - Com auxílio de uma colher ou com as mãos, molde os bolinhos;","4 - Frite em óleo quente até dourar e coloque em papel absorvente."]'::jsonb,
   '20 unidades',
   '[{"totalEnergy":931,"servingEnergy":47},{"totalCarbs":141,"servingCarbs":7},{"totalProteins":9.4,"servingProteins":0.5},{"totalLipids":36,"servingLipids":2},{"totalSodium":1245,"servingSodium":62},{"totalPotassium":378,"servingPotassium":19}]'::jsonb,
-  '[{"leucine":44,"totalLeucine":750,"servingLeucine":38},{"fenil":26,"totalFenil":450,"servingFenil":23},{"tirosine":18,"totalTirosine":310,"servingTirosine":16},{"metiotine":12,"totalMetiotine":200,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":44,"totalLeucine":750,"servingLeucine":38},{"tirosine":18,"totalTirosine":310,"servingTirosine":16},{"fenil":26,"totalFenil":450,"servingFenil":23},{"metiotine":12,"totalMetiotine":200,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1789,7 +1789,7 @@ VALUES (
   '["1 - Amasse a mandioquinha até obter um purê e reserve;","2 - Refogue a berinjela com a cebola, o alho o tomate e acrescente o cheiro verde;","3 - Misture o refogado ao purê de mandioquinha e acrescente a farinha de mandioca para dar ponto;","4 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":523,"servingEnergy":52},{"totalCarbs":74,"servingCarbs":7},{"totalProteins":3,"servingProteins":0.3},{"totalLipids":24,"servingLipids":2},{"totalSodium":1169,"servingSodium":117},{"totalPotassium":300,"servingPotassium":30}]'::jsonb,
-  '[{"leucine":41,"totalLeucine":160,"servingLeucine":16},{"fenil":28,"totalFenil":110,"servingFenil":11},{"tirosine":23,"totalTirosine":90,"servingTirosine":9},{"metiotine":8,"totalMetiotine":30,"servingMetiotine":3}]'::jsonb,
+  '[{"leucine":41,"totalLeucine":160,"servingLeucine":16},{"tirosine":23,"totalTirosine":90,"servingTirosine":9},{"fenil":28,"totalFenil":110,"servingFenil":11},{"metiotine":8,"totalMetiotine":30,"servingMetiotine":3}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1813,7 +1813,7 @@ VALUES (
   '["1 - Cozinhe a batata doce e separe 300g (massa);","2 - Em um recipiente, amasse a batata doce até que vire um purê (massa);","3 - Em uma frigideira, refogue com óleo a cebola, pimentão e o tomate (massa);","4 - Espere esfriar um pouco e misture na batata doce (massa);","5 - Acrescente o polvilho aos poucos, mexendo com uma colher e depois com as mãos até que fique uma massa homogênea que possa ser modelada (massa);","6 - Divida a massa em 13 porções iguais de aproximadamente 30g (massa);","7 - Faça bolinhas e reserve (massa);","8 - Em uma frigideira, refogue com óleo a cebola, tomate e milho (recheio);","9 - Acrescente o orégano e o creme de leite, deixe ferver um pouco (recheio);","10 - Retire do fogo e divida o recheio em 13 porções iguais (recheio);","11 - Em cada bolinha de massa, abra um buraco no centro para colocar o recheio e feche novamente (recheio);","12 - Coloque na fritadeira elétrica sem óleo, até que fiquem dourados (recheio)."]'::jsonb,
   '13 unidades',
   '[{"totalEnergy":857,"servingEnergy":66},{"totalCarbs":149,"servingCarbs":11},{"totalProteins":9,"servingProteins":0.7},{"totalLipids":27,"servingLipids":2},{"totalSodium":2084,"servingSodium":160},{"totalPotassium":1090,"servingPotassium":84}]'::jsonb,
-  '[{"leucine":39,"totalLeucine":610,"servingLeucine":47},{"fenil":28,"totalFenil":430,"servingFenil":33},{"tirosine":21,"totalTirosine":320,"servingTirosine":25},{"metiotine":12,"totalMetiotine":180,"servingMetiotine":14}]'::jsonb,
+  '[{"leucine":39,"totalLeucine":610,"servingLeucine":47},{"tirosine":21,"totalTirosine":320,"servingTirosine":25},{"fenil":28,"totalFenil":430,"servingFenil":33},{"metiotine":12,"totalMetiotine":180,"servingMetiotine":14}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1837,7 +1837,7 @@ VALUES (
   '["1 - Pique as bananas em rodelas finas e espalhe em um prato;","2 - Adicione os demais ingredientes picados por cima;","3 - Tempere com o azeite, o sal, o suco de limão e a pimenta do reino, se preferir."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":313,"servingEnergy":157},{"totalCarbs":57,"servingCarbs":28},{"totalProteins":3.4,"servingProteins":1.7},{"totalLipids":11,"servingLipids":6},{"totalSodium":405,"servingSodium":202},{"totalPotassium":1017,"servingPotassium":508}]'::jsonb,
-  '[{"leucine":38,"totalLeucine":140,"servingLeucine":70},{"fenil":30,"totalFenil":110,"servingFenil":55},{"tirosine":21,"totalTirosine":80,"servingTirosine":40},{"metiotine":11,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
+  '[{"leucine":38,"totalLeucine":140,"servingLeucine":70},{"tirosine":21,"totalTirosine":80,"servingTirosine":40},{"fenil":30,"totalFenil":110,"servingFenil":55},{"metiotine":11,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1861,7 +1861,7 @@ VALUES (
   '["1 - Descasque o chuchu e corte em fatias finas no sentido do comprimento, reserve;","2 - Em um recipiente, misture o amido de milho com o sal e o orégano;","3 - Passe as fatias de chuchu na água e em seguida no amido;","4 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":305,"servingEnergy":153},{"totalCarbs":37,"servingCarbs":18},{"totalProteins":1.6,"servingProteins":0.8},{"totalLipids":18,"servingLipids":9},{"totalSodium":397,"servingSodium":199},{"totalPotassium":256,"servingPotassium":128}]'::jsonb,
-  '[{"leucine":47,"totalLeucine":150,"servingLeucine":75},{"fenil":29,"totalFenil":90,"servingFenil":45},{"tirosine":19,"totalTirosine":60,"servingTirosine":30},{"metiotine":5,"totalMetiotine":17,"servingMetiotine":9}]'::jsonb,
+  '[{"leucine":47,"totalLeucine":150,"servingLeucine":75},{"tirosine":19,"totalTirosine":60,"servingTirosine":30},{"fenil":29,"totalFenil":90,"servingFenil":45},{"metiotine":5,"totalMetiotine":17,"servingMetiotine":9}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1885,7 +1885,7 @@ VALUES (
   '["1 - Lave a couve-flor, pique em pedaços menores e refogue em óleo e alho;","2 - Adicione o tomate, a azeitona, a cebola e tempere com sal;","3 - Acrescente o catchup, a mostarda, as ervas e a água;","4 - Cozinhe até que a couve-flor fique \"al dente\";","5 - Desligue o fogo, acrescente o creme de leite e o cheiro verde."]'::jsonb,
   '5 porções',
   '[{"totalEnergy":713,"servingEnergy":143},{"totalCarbs":43,"servingCarbs":9},{"totalProteins":10.6,"servingProteins":2.1},{"totalLipids":41,"servingLipids":8},{"totalSodium":2578,"servingSodium":516},{"totalPotassium":1487,"servingPotassium":297}]'::jsonb,
-  '[{"leucine":44,"totalLeucine":630,"servingLeucine":126},{"fenil":27,"totalFenil":380,"servingFenil":76},{"tirosine":18,"totalTirosine":260,"servingTirosine":52},{"metiotine":11,"totalMetiotine":150,"servingMetiotine":30}]'::jsonb,
+  '[{"leucine":44,"totalLeucine":630,"servingLeucine":126},{"tirosine":18,"totalTirosine":260,"servingTirosine":52},{"fenil":27,"totalFenil":380,"servingFenil":76},{"metiotine":11,"totalMetiotine":150,"servingMetiotine":30}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1909,7 +1909,7 @@ VALUES (
   '["1 - Refogue a cebola e alho no azeite, coloque os legumes picados e o orégano;","2 - Mexa bem e acrescente o sal;","3 - Adicione a água, tampe a panela e abaixe o fogo;","4 - Cozinhe os legumes até ficarem macios;","5 - Acrescente a mostarda e catchup;","6 - Desligue o fogo, adicione o creme de leite e mexa delicadamente."]'::jsonb,
   '4 porções',
   '[{"totalEnergy":423,"servingEnergy":106},{"totalCarbs":35,"servingCarbs":9},{"totalProteins":5.5,"servingProteins":1.4},{"totalLipids":31,"servingLipids":8},{"totalSodium":1901,"servingSodium":475},{"totalPotassium":868,"servingPotassium":217}]'::jsonb,
-  '[{"leucine":43,"totalLeucine":370,"servingLeucine":93},{"fenil":26,"totalFenil":230,"servingFenil":58},{"tirosine":22,"totalTirosine":190,"servingTirosine":48},{"metiotine":9,"totalMetiotine":80,"servingMetiotine":20}]'::jsonb,
+  '[{"leucine":43,"totalLeucine":370,"servingLeucine":93},{"tirosine":22,"totalTirosine":190,"servingTirosine":48},{"fenil":26,"totalFenil":230,"servingFenil":58},{"metiotine":9,"totalMetiotine":80,"servingMetiotine":20}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1933,7 +1933,7 @@ VALUES (
   '["1 - Em uma panela, refogue a cebola no óleo e acrescente a cenoura e o tomate;","2 - Deixe murchar e acrescente os demais ingredientes, exceto a farinha;","3 - Adicione a farinha e cozinhe por alguns minutos."]'::jsonb,
   '6 porções',
   '[{"totalEnergy":1178,"servingEnergy":196},{"totalCarbs":160,"servingCarbs":27},{"totalProteins":5.2,"servingProteins":0.9},{"totalLipids":19,"servingLipids":3},{"totalSodium":1770,"servingSodium":295},{"totalPotassium":637,"servingPotassium":106}]'::jsonb,
-  '[{"leucine":38,"totalLeucine":270,"servingLeucine":45},{"fenil":28,"totalFenil":200,"servingFenil":33},{"tirosine":28,"totalTirosine":200,"servingTirosine":33},{"metiotine":6,"totalMetiotine":40,"servingMetiotine":7}]'::jsonb,
+  '[{"leucine":38,"totalLeucine":270,"servingLeucine":45},{"tirosine":28,"totalTirosine":200,"servingTirosine":33},{"fenil":28,"totalFenil":200,"servingFenil":33},{"metiotine":6,"totalMetiotine":40,"servingMetiotine":7}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1957,7 +1957,7 @@ VALUES (
   '["1 - Em uma panela, refogue os legumes com a cebola e o óleo até ficarem bem macios;","2 - Acrescente a água e a farinha de mandioca e mexa para engrossar em fogo baixo;","3 - Deixe cozinhar bastante. Espere esfriar e modele os hambúrgueres;","4 - Divida a massa em quinze porções iguais."]'::jsonb,
   '15 unidades',
   '[{"totalEnergy":924,"servingEnergy":62},{"totalCarbs":185,"servingCarbs":12},{"totalProteins":11.4,"servingProteins":0.8},{"totalLipids":14,"servingLipids":1},{"totalSodium":2131,"servingSodium":142},{"totalPotassium":2114,"servingPotassium":141}]'::jsonb,
-  '[{"leucine":40,"totalLeucine":591,"servingLeucine":39},{"fenil":28,"totalFenil":412,"servingFenil":27},{"tirosine":24,"totalTirosine":358,"servingTirosine":24},{"metiotine":8,"totalMetiotine":117,"servingMetiotine":8}]'::jsonb,
+  '[{"leucine":40,"totalLeucine":591,"servingLeucine":39},{"tirosine":24,"totalTirosine":358,"servingTirosine":24},{"fenil":28,"totalFenil":412,"servingFenil":27},{"metiotine":8,"totalMetiotine":117,"servingMetiotine":8}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -1981,7 +1981,7 @@ VALUES (
   '["1 - Corte a berinjela em cubos pequenos, deixe de molho em água com sal por duas horas, escorra;","2 - Refogue a cebola até ficar macia, adicione o alho, a berinjela e a liga neutra ou goma xantana, e cozinhe;","3 - No processador, bata a mistura;","4 - Adicione as farinhas e a salsinha;","5 - Leve à geladeira até ficar completamente frio;","6 - Abra a massa entre dois plásticos;","7 - Com um copo, modele os hambúrgueres no tamanho desejado;","8 - Grelhe em uma frigideira com um fio de óleo;","9 - É possível congelar, e ao usar, deixe na geladeira um pouco antes de grelhar."]'::jsonb,
   '6 unidades',
   '[{"totalEnergy":645,"servingEnergy":108},{"totalCarbs":131,"servingCarbs":22},{"totalProteins":6.8,"servingProteins":1.1},{"totalLipids":11,"servingLipids":2},{"totalSodium":1178,"servingSodium":196},{"totalPotassium":770,"servingPotassium":128}]'::jsonb,
-  '[{"leucine":43,"totalLeucine":300,"servingLeucine":50},{"fenil":29,"totalFenil":200,"servingFenil":33},{"tirosine":19,"totalTirosine":130,"servingTirosine":22},{"metiotine":9,"totalMetiotine":62,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":43,"totalLeucine":300,"servingLeucine":50},{"tirosine":19,"totalTirosine":130,"servingTirosine":22},{"fenil":29,"totalFenil":200,"servingFenil":33},{"metiotine":9,"totalMetiotine":62,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2005,7 +2005,7 @@ VALUES (
   '["1 - Lave e cozinhe a couve-flor até ficar bem macia;","2 - Amasse a couve-flor e refogue em uma panela com os demais temperos;","3 - Acrescente a liga neutra, o sal e a farinha aos poucos;","4 - Mexa em fogo baixo até formar uma massa mais seca;","5 - Espere esfriar e molde os hambúrgueres;","6 - Grelhe rapidamente na frigideira com um fio de óleo."]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":281,"servingEnergy":28},{"totalCarbs":64,"servingCarbs":6},{"totalProteins":7.1,"servingProteins":0.7},{"totalLipids":2,"servingLipids":0},{"totalSodium":869,"servingSodium":87},{"totalPotassium":978,"servingPotassium":98}]'::jsonb,
-  '[{"leucine":45,"totalLeucine":430,"servingLeucine":43},{"fenil":27,"totalFenil":260,"servingFenil":26},{"tirosine":17,"totalTirosine":160,"servingTirosine":16},{"metiotine":11,"totalMetiotine":100,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":45,"totalLeucine":430,"servingLeucine":43},{"tirosine":17,"totalTirosine":160,"servingTirosine":16},{"fenil":27,"totalFenil":260,"servingFenil":26},{"metiotine":11,"totalMetiotine":100,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2029,7 +2029,7 @@ VALUES (
   '["1 - Corte as berinjelas no sentido do comprimento, dividindo em duas partes;","2 - Disponha em uma assadeira e faça um quadriculado com a faca em cada uma delas;","3 - Tempere com pimenta do reino, sal e azeite;","4 - Leve ao forno até que amoleça, aproximadamente 40 minutos;","5 - Raspe a polpa com uma colher e pese 300g, reserve;","6 - Amasse ou bata a polpa de berinjela no mixer com os demais ingredientes, exceto a farinha;","7 - Acrescente a farinha até obter uma massa moldável;","8 - Modele em formato de kibe;","9 - Asse em forno pré-aquecido a 200°C até que fique mais sequinho."]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":419,"servingEnergy":42},{"totalCarbs":65,"servingCarbs":6},{"totalProteins":4.4,"servingProteins":0.4},{"totalLipids":16,"servingLipids":2},{"totalSodium":1948,"servingSodium":195},{"totalPotassium":710,"servingPotassium":71}]'::jsonb,
-  '[{"leucine":43,"totalLeucine":270,"servingLeucine":27},{"fenil":29,"totalFenil":180,"servingFenil":18},{"tirosine":22,"totalTirosine":140,"servingTirosine":14},{"metiotine":6,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
+  '[{"leucine":43,"totalLeucine":270,"servingLeucine":27},{"tirosine":22,"totalTirosine":140,"servingTirosine":14},{"fenil":29,"totalFenil":180,"servingFenil":18},{"metiotine":6,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2053,7 +2053,7 @@ VALUES (
   '["1 - Cozinhe a mandioca e coloque em um refratário, amassando um pouco;","2 - Deixe na geladeira por 20 minutos;","3 - Corte a mandioca em cubos;","4 - Frite em óleo bem quente e tempere."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":386,"servingEnergy":193},{"totalCarbs":50,"servingCarbs":25},{"totalProteins":1.9,"servingProteins":0.9},{"totalLipids":20,"servingLipids":10},{"totalSodium":794,"servingSodium":397},{"totalPotassium":366,"servingPotassium":183}]'::jsonb,
-  '[{"leucine":43,"totalLeucine":60,"servingLeucine":30},{"fenil":29,"totalFenil":40,"servingFenil":20},{"tirosine":14,"totalTirosine":20,"servingTirosine":10},{"metiotine":14,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":43,"totalLeucine":60,"servingLeucine":30},{"tirosine":14,"totalTirosine":20,"servingTirosine":10},{"fenil":29,"totalFenil":40,"servingFenil":20},{"metiotine":14,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2077,7 +2077,7 @@ VALUES (
   '["1 - Pique os legumes e reserve;","2 - Refogue a cebola e o alho no azeite e adicione os legumes e o sal;","3 - Adicione a água e deixe cozinhar até ficarem macios;","4 - À parte, cozinhe macarrão ou utilize arroz já pronto;","5 - Utilize uma porção do molho de legumes e misture em uma porção de macarrão ou arroz."]'::jsonb,
   '3 porções',
   '[{"totalEnergy":147,"servingEnergy":49},{"totalCarbs":13,"servingCarbs":4},{"totalProteins":2.6,"servingProteins":0.9},{"totalLipids":10,"servingLipids":3},{"totalSodium":1196,"servingSodium":399},{"totalPotassium":550,"servingPotassium":183}]'::jsonb,
-  '[{"leucine":41,"totalLeucine":120,"servingLeucine":40},{"fenil":28,"totalFenil":80,"servingFenil":27},{"tirosine":21,"totalTirosine":60,"servingTirosine":20},{"metiotine":10,"totalMetiotine":30,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":41,"totalLeucine":120,"servingLeucine":40},{"tirosine":21,"totalTirosine":60,"servingTirosine":20},{"fenil":28,"totalFenil":80,"servingFenil":27},{"metiotine":10,"totalMetiotine":30,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2101,7 +2101,7 @@ VALUES (
   '["1 - Corte os tomates em cruz na parte de baixo e coloque em água fervente para retirar a pele;","2 - Coloque a mais do que a quantidade indicada, pois ao tirar a pele vai reduzir;","3 - Retire da água quente e coloque no gelo para soltar a pele;","4 - Corte ao meio para retirar as sementes, se desejar;","5 - Pique os tomates já pelados;","6 - Refogue no azeite com alho, açúcar, o sal e a pimenta;","7 - Bata com um mixer e deixe apurar;","8 - Adicione o manjericão fresco para finalizar."]'::jsonb,
   '3 porções',
   '[{"totalEnergy":261,"servingEnergy":87},{"totalCarbs":29,"servingCarbs":10},{"totalProteins":4.8,"servingProteins":1.6},{"totalLipids":17,"servingLipids":6},{"totalSodium":1208,"servingSodium":403},{"totalPotassium":113,"servingPotassium":38}]'::jsonb,
-  '[{"leucine":42,"totalLeucine":180,"servingLeucine":60},{"fenil":30,"totalFenil":130,"servingFenil":43},{"tirosine":19,"totalTirosine":80,"servingTirosine":27},{"metiotine":9,"totalMetiotine":40,"servingMetiotine":13}]'::jsonb,
+  '[{"leucine":42,"totalLeucine":180,"servingLeucine":60},{"tirosine":19,"totalTirosine":80,"servingTirosine":27},{"fenil":30,"totalFenil":130,"servingFenil":43},{"metiotine":9,"totalMetiotine":40,"servingMetiotine":13}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2125,7 +2125,7 @@ VALUES (
   '["1 - Amasse a mandioquinha cozida com um garfo ou espremedor de batata até obter um purê;","2 - Acrescente os demais ingredientes, deixe a farinha por último;","3 - Amasse bem até ficar uma massa lisa;","4 - Faça bolinhas e depois rolinhos para cortar em formato de nhoque;","5 - Cozinhe o nhoque na água fervente;","6 - Retire com uma escumadeira quando subirem à superfície;","7 - Sirva com margarina ou molho de tomate e polvilhe salsinha por cima."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":595,"servingEnergy":297},{"totalCarbs":109,"servingCarbs":54},{"totalProteins":3.3,"servingProteins":1.7},{"totalLipids":17,"servingLipids":8},{"totalSodium":1280,"servingSodium":640},{"totalPotassium":173,"servingPotassium":86}]'::jsonb,
-  '[{"leucine":43,"totalLeucine":230,"servingLeucine":115},{"fenil":27,"totalFenil":140,"servingFenil":70},{"tirosine":19,"totalTirosine":100,"servingTirosine":50},{"metiotine":11,"totalMetiotine":60,"servingMetiotine":30}]'::jsonb,
+  '[{"leucine":43,"totalLeucine":230,"servingLeucine":115},{"tirosine":19,"totalTirosine":100,"servingTirosine":50},{"fenil":27,"totalFenil":140,"servingFenil":70},{"metiotine":11,"totalMetiotine":60,"servingMetiotine":30}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2149,7 +2149,7 @@ VALUES (
   '["1 - Descasque e cozinhe os tubérculos até ficarem macios;","2 - Escorra bem e com o auxílio de um garfo amasse até obter um purê e adicione a margarina;","3 - Deixe esfriar, adicione o sal e a farinha até dar ponto na massa;","4 - Faça bolinhas com a massa;","5 - Cozinhe em uma panela com água fervente e um fio de óleo até que venham a superfície;","6 - Escorra com o auxílio de uma escumadeira;","7 - Pique o tomate em pedaços pequenos;","8 - Em uma panela, refogue com a cebola, tempere e deixe apurar;","9 - Sirva com molho de tomate."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":488,"servingEnergy":244},{"totalCarbs":102,"servingCarbs":51},{"totalProteins":6.9,"servingProteins":3.4},{"totalLipids":6,"servingLipids":3},{"totalSodium":1276,"servingSodium":638},{"totalPotassium":1341,"servingPotassium":670}]'::jsonb,
-  '[{"leucine":40,"totalLeucine":370,"servingLeucine":185},{"fenil":28,"totalFenil":260,"servingFenil":130},{"tirosine":20,"totalTirosine":190,"servingTirosine":95},{"metiotine":12,"totalMetiotine":110,"servingMetiotine":55}]'::jsonb,
+  '[{"leucine":40,"totalLeucine":370,"servingLeucine":185},{"tirosine":20,"totalTirosine":190,"servingTirosine":95},{"fenil":28,"totalFenil":260,"servingFenil":130},{"metiotine":12,"totalMetiotine":110,"servingMetiotine":55}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2173,7 +2173,7 @@ VALUES (
   '["1 - Cozinhe a cenoura e a batata, amasse até obter um purê e reserve;","2 - Refogue a abobrinha no azeite junto com a cebola e tempere com o sal e o orégano;","3 - Acrescente o purê de batata e cenoura na panela;","4 - Desligue o fogo e adicione a farinha aos poucos, mexendo sempre;","5 - Retire da panela e coloque em outro recipiente para amornar;","6 - Molde a massa em formato de nuggets, passe na farinha de mandioca para empanar e disponha em uma assadeira;","7 - Asse em forno pré-aquecido a 200°C por alguns minutos até dourar."]'::jsonb,
   '16 unidades',
   '[{"totalEnergy":899,"servingEnergy":56},{"totalCarbs":174,"servingCarbs":11},{"totalProteins":8.7,"servingProteins":0.5},{"totalLipids":19,"servingLipids":1},{"totalSodium":2020,"servingSodium":126},{"totalPotassium":1129,"servingPotassium":71}]'::jsonb,
-  '[{"leucine":42,"totalLeucine":570,"servingLeucine":36},{"fenil":27,"totalFenil":370,"servingFenil":23},{"tirosine":21,"totalTirosine":290,"servingTirosine":18},{"metiotine":10,"totalMetiotine":140,"servingMetiotine":9}]'::jsonb,
+  '[{"leucine":42,"totalLeucine":570,"servingLeucine":36},{"tirosine":21,"totalTirosine":290,"servingTirosine":18},{"fenil":27,"totalFenil":370,"servingFenil":23},{"metiotine":10,"totalMetiotine":140,"servingMetiotine":9}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2197,7 +2197,7 @@ VALUES (
   '["1 - Bata todos os ingredientes da massa no liquidificador e reserve;","2 - Em um recipiente, misture todos os ingredientes do recheio na massa;","3 - Unte uma frigideira com óleo e despeje a mistura;","4 - Cozinhe em fogo baixo e doure de ambos os lados."]'::jsonb,
   '4 unidades',
   '[{"totalEnergy":523,"servingEnergy":131},{"totalCarbs":71,"servingCarbs":18},{"totalProteins":2.8,"servingProteins":0.7},{"totalLipids":14,"servingLipids":3},{"totalSodium":1406,"servingSodium":352},{"totalPotassium":324,"servingPotassium":81}]'::jsonb,
-  '[{"leucine":44,"totalLeucine":180,"servingLeucine":45},{"fenil":27,"totalFenil":110,"servingFenil":18},{"tirosine":19,"totalTirosine":80,"servingTirosine":20},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":44,"totalLeucine":180,"servingLeucine":45},{"tirosine":19,"totalTirosine":80,"servingTirosine":20},{"fenil":27,"totalFenil":110,"servingFenil":18},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2221,7 +2221,7 @@ VALUES (
   '["1 - Em um recipiente, misture todos os ingredientes com auxílio de uma colher;","2 - Caso prefira um patê mais homogêneo, bata no processador ou liquidificador;","3 - Sirva gelado."]'::jsonb,
   '10 porções',
   '[{"totalEnergy":382,"servingEnergy":38},{"totalCarbs":11,"servingCarbs":1},{"totalProteins":2.5,"servingProteins":0.3},{"totalLipids":37,"servingLipids":4},{"totalSodium":1106,"servingSodium":111},{"totalPotassium":355,"servingPotassium":35}]'::jsonb,
-  '[{"leucine":41,"totalLeucine":140,"servingLeucine":14},{"fenil":26,"totalFenil":90,"servingFenil":9},{"tirosine":21,"totalTirosine":70,"servingTirosine":7},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
+  '[{"leucine":41,"totalLeucine":140,"servingLeucine":14},{"tirosine":21,"totalTirosine":70,"servingTirosine":7},{"fenil":26,"totalFenil":90,"servingFenil":9},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2245,7 +2245,7 @@ VALUES (
   '["1 - Cozinhe a mandioca e amasse com auxílio de um garfo;","2 - Adicione o sal e a margarina, misture bem;","3 - Espalhe a mistura sob uma frigideira antiaderente, não deixe a massa muito fina;","4 - Cozinhe de ambos os lados e sirva com o recheio de sua preferência."]'::jsonb,
   '2 unidades',
   '[{"totalEnergy":304,"servingEnergy":152},{"totalCarbs":57,"servingCarbs":29},{"totalProteins":2,"servingProteins":1},{"totalLipids":8,"servingLipids":4},{"totalSodium":916,"servingSodium":458},{"totalPotassium":407,"servingPotassium":203}]'::jsonb,
-  '[{"leucine":40,"totalLeucine":60,"servingLeucine":30},{"fenil":27,"totalFenil":40,"servingFenil":20},{"tirosine":20,"totalTirosine":30,"servingTirosine":15},{"metiotine":13,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
+  '[{"leucine":40,"totalLeucine":60,"servingLeucine":30},{"tirosine":20,"totalTirosine":30,"servingTirosine":15},{"fenil":27,"totalFenil":40,"servingFenil":20},{"metiotine":13,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2269,7 +2269,7 @@ VALUES (
   '["1 - Lave os tomate e corte uma tampinha da parte superior de cada um deles e tire as sementes, reserve;","2 - Refogue em óleo os demais ingredientes, exceto a salsinha;","3 - Desligue o fogo e adicione a salsinha;","4 - Para o queijo cremoso, misture a maionese, orégano, creme de leite e o queijo vegano ralado;","5 - Unte uma forma com óleo ou margarina e coloque os tomates;","6 - Regue os tomates por dentro com azeite e sal;","7 - Coloque o recheio dentro e a cobertura de queijo por cima;","8 - Asse em forno pré-aquecido a 220°C por aproximadamente 25 minutos ou até gratinar."]'::jsonb,
   '3 unidades',
   '[{"totalEnergy":626,"servingEnergy":209},{"totalCarbs":30,"servingCarbs":10},{"totalProteins":8.9,"servingProteins":3},{"totalLipids":51,"servingLipids":17},{"totalSodium":2026,"servingSodium":675},{"totalPotassium":895,"servingPotassium":298}]'::jsonb,
-  '[{"leucine":45,"totalLeucine":570,"servingLeucine":190},{"fenil":27,"totalFenil":340,"servingFenil":113},{"tirosine":17,"totalTirosine":220,"servingTirosine":73},{"metiotine":11,"totalMetiotine":140,"servingMetiotine":47}]'::jsonb,
+  '[{"leucine":45,"totalLeucine":570,"servingLeucine":190},{"tirosine":17,"totalTirosine":220,"servingTirosine":73},{"fenil":27,"totalFenil":340,"servingFenil":113},{"metiotine":11,"totalMetiotine":140,"servingMetiotine":47}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2293,7 +2293,7 @@ VALUES (
   '["1 - Misture todos os ingredientes do recheio e reserve;","2 - Misture todos os ingredientes da massa até obter uma mistura homogênea;","3 - Unte uma frigideira antiaderente com margarina e, sem ligar o fogo, coloque metade da massa;","4 - Espalhe o recheio por cima e despeje o restante da massa para cobrir;","5 - Salpique queijo vegano e orégano por cima;","6 - Tampe a frigideira e ligue o fogo bem baixinho;","7 - Cozinhe por cerca de 8 a 10 minutos de um lado;","8 - Vire com ajuda de prato e deixe cozinhar pelo mesmo tempo do outro lado."]'::jsonb,
   '10 fatias',
   '[{"totalEnergy":1412,"servingEnergy":141},{"totalCarbs":159,"servingCarbs":16},{"totalProteins":6.4,"servingProteins":0.6},{"totalLipids":76,"servingLipids":8},{"totalSodium":3237,"servingSodium":324},{"totalPotassium":531,"servingPotassium":53}]'::jsonb,
-  '[{"leucine":43,"totalLeucine":460,"servingLeucine":46},{"fenil":26,"totalFenil":270,"servingFenil":27},{"tirosine":20,"totalTirosine":210,"servingTirosine":21},{"metiotine":11,"totalMetiotine":120,"servingMetiotine":12}]'::jsonb,
+  '[{"leucine":43,"totalLeucine":460,"servingLeucine":46},{"tirosine":20,"totalTirosine":210,"servingTirosine":21},{"fenil":26,"totalFenil":270,"servingFenil":27},{"metiotine":11,"totalMetiotine":120,"servingMetiotine":12}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -2317,7 +2317,7 @@ VALUES (
   '["1 - Bata todos os ingredientes da massa no liquidificador ou mixer e reserve;","2 - Pique todos os ingredientes do recheio e refogue com o óleo e a cebola;","3 - Em uma assadeira ou refratário, despeje a massa e o recheio por cima;","4 - Leve para o forno em temperatura média até assar por completo."]'::jsonb,
   '10 fatias',
   '[{"totalEnergy":1486,"servingEnergy":149},{"totalCarbs":151,"servingCarbs":15},{"totalProteins":7.9,"servingProteins":0.8},{"totalLipids":85,"servingLipids":8},{"totalSodium":2063,"servingSodium":206},{"totalPotassium":651,"servingPotassium":65}]'::jsonb,
-  '[{"leucine":44,"totalLeucine":600,"servingLeucine":60},{"fenil":26,"totalFenil":350,"servingFenil":35},{"tirosine":19,"totalTirosine":250,"servingTirosine":25},{"metiotine":11,"totalMetiotine":150,"servingMetiotine":15}]'::jsonb,
+  '[{"leucine":44,"totalLeucine":600,"servingLeucine":60},{"tirosine":19,"totalTirosine":250,"servingTirosine":25},{"fenil":26,"totalFenil":350,"servingFenil":35},{"metiotine":11,"totalMetiotine":150,"servingMetiotine":15}]'::jsonb,
   NULL
 )
 ON CONFLICT (id) DO UPDATE SET
