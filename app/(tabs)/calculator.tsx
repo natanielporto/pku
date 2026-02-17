@@ -63,7 +63,52 @@ export default function CalculatorScreen() {
   };
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      flex: 1
+    }}>
+      <Text style={calculatorStyles.header}>{t("calculator.header")}</Text>
+      <View style={calculatorStyles.mainContainer}>
+        <View>
+          {/* <View style={calculatorStyles.logoCard}>
+            <Image source={require("../../assets/images/danone-logo.webp")} />
+          </View> */}
+          <CalculatorCard
+            value={String(protein)}
+            onChangeText={onChangeProtein}
+            onPressIn={() => [setProtein(""), setAminoacid("")]}
+            title={`${t("calculator.protein")}/g`}
+            infoText={t("calculator.fromProteinToAminoacid")}
+          />
+        </View>
+
+        <View style={calculatorStyles.iconContainer}>
+          <Octicons
+            name="arrow-switch"
+            size={48}
+            color="black"
+            style={calculatorStyles.icon}
+          />
+        </View>
+
+        <CalculatorCard
+          value={String(aminoacid)}
+          onChangeText={onChangeAminoacid}
+          onPressIn={() => [setProtein(""), setAminoacid("")]}
+          title={
+            selectedItem
+              ? `${selectedItem}/mg`
+              : t("calculator.selectAminoacid")
+          }
+          infoText={t("calculator.fromAminoacidToProtein")}
+          isInputError={
+            selectedItem === undefined && aminoacid !== "" && protein == ""
+          }
+        />
+      </View>
+
       <View style={calculatorStyles.container}>
         {items.map((item) => (
           <TouchableOpacity
@@ -88,43 +133,6 @@ export default function CalculatorScreen() {
             </Text>
           </TouchableOpacity>
         ))}
-      </View>
-
-      <View style={calculatorStyles.mainContainer}>
-        <CalculatorCard
-          value={String(aminoacid)}
-          onChangeText={onChangeAminoacid}
-          onPressIn={() => [setProtein(""), setAminoacid("")]}
-          title={
-            selectedItem
-              ? `${selectedItem}/mg`
-              : t("calculator.selectAminoacid")
-          }
-          infoText="From amino acid to protein, fill first here. Results will be displayed on the protein field."
-          isInputError={
-            selectedItem === undefined && aminoacid !== "" && protein == ""
-          }
-        />
-        <View style={calculatorStyles.iconContainer}>
-          <Octicons
-            name="arrow-switch"
-            size={48}
-            color="black"
-            style={calculatorStyles.icon}
-          />
-        </View>
-        <View>
-          <CalculatorCard
-            value={String(protein)}
-            onChangeText={onChangeProtein}
-            onPressIn={() => [setProtein(""), setAminoacid("")]}
-            title={`${t("calculator.protein")}/g`}
-            infoText="From protein to amino acid, fill first here. Results will be displayed on the amino acid field."
-          />
-          <View style={calculatorStyles.logoCard}>
-            <Image source={require("../../assets/images/danone-logo.webp")} />
-          </View>
-        </View>
       </View>
     </SafeAreaView>
   );

@@ -27,7 +27,10 @@
     "methionine": "Metiotina",
     "protein": "Proteína",
     "aminoacid": "Aminoácido",
-    "selectAminoacid": "Selecione um aminoácido"
+    "selectAminoacid": "Selecione um aminoácido",
+    "header": "Certifique-se de escolher um dos itens abaixo antes de fazer a conversão de proteína para aminoácido desejado.",
+    "fromProteinToAminoacid": "De proteína para aminoácido, preencha primeiro aqui. Os resultados serão exibidos no campo de aminoácido.",
+    "fromAminoacidToProtein": "De aminoácido para proteína, preencha primeiro aqui. Os resultados serão exibidos no campo de proteína."
   },
   "faq": {
     "question1": "O que é PKU?",

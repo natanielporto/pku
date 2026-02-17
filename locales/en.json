@@ -27,7 +27,10 @@
     "methionine": "Methionine",
     "protein": "Protein",
     "aminoacid": "Aminoacid",
-    "selectAminoacid": "Select an aminoacid"
+    "selectAminoacid": "Select an aminoacid",
+    "header": "Make sure to select one of the items below before converting protein to the desired amino acid.",
+    "fromProteinToAminoacid": "From protein to amino acid, fill first here. Results will be displayed on the amino acid field.",
+    "fromAminoacidToProtein": "From amino acid to protein, fill first here. Results will be displayed on the protein field."
   },
   "faq": {
     "question1": "What is PKU?",

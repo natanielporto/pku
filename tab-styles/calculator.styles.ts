@@ -100,4 +100,11 @@ export const calculatorStyles = StyleSheet.create({
   icon: {
     transform: [{ rotate: "270deg" }, { scaleY: -1 }],
   },
+  header: {
+    textAlign: 'center',
+    marginHorizontal: 16,
+    marginVertical: 16,
+    fontWeight: 'bold',
+    fontSize: 16
+  }
 });
