@@ -60,7 +60,23 @@
     "passwordRule2": "1 uppercase letter",
     "passwordRule3": "1 lowercase letter",
     "passwordRule4": "1 number",
-    "passwordRule5": "1 special character"
+    "passwordRule5": "1 special character",
+    "error": {
+      "error": "Error",
+      "google": "Error signing in with Google. Please try again.",
+      "googleUnexpected": "Unexpected error signing in with Google. Please try again.",
+      "facebook": "Error signing in with Facebook. Please try again.",
+      "facebookUnexpected": "Unexpected error signing in with Facebook. Please try again.",
+      "email": "Error signing in with email. Please try again.",
+      "authenticationError": "Fail to authenticate.",
+      "authenticationErrorDescription": "There was an unexpected error. Please try again later.",
+      "signIn": "Email or password incorrect. Please try again.",
+      "signUp": "User already exists. Please try again with another email or sign in."
+    }, 
+    "success": {
+      "success": "Success",
+      "signUp": "User created successfully! You can start to use the app."
+    }
   },
   "account": {
     "myProfile": "My Profile",
@@ -79,7 +95,11 @@
       "updateName": "Error updating name",
       "updateNameDescription": "Error updating name. Please try again later.",
       "savingName": "Error saving name",
-      "savingNameDescription": "Error saving name. Please try again later."
+      "savingNameDescription": "Error saving name. Please try again later.",
+      "numberOfLikes": "Error loading number of likes",
+      "numberOfLikesDescription": "There was an error loading the number of likes. Please try again later.",
+      "numberOfDislikes": "Error loading number of dislikes",
+      "numberOfDislikesDescription": "There was an error loading the number of dislikes. Please try again later."
     }
   },
   "nutritionalInformationTable": {

@@ -60,7 +60,21 @@
     "passwordRule2": "1 letra maiúscula",
     "passwordRule3": "1 letra minúscula",
     "passwordRule4": "1 número",
-    "passwordRule5": "1 caractere especial"
+    "passwordRule5": "1 caractere especial",
+    "error": {
+      "error": "Erro",
+      "authenticationError": "Falha ao autenticar.",
+      "authenticationErrorDescription": "Ocorreu um erro inesperado. Por favor, tente novamente mais tarde.",
+      "facebook": "Erro ao fazer login com o Facebook. Por favor, tente novamente.",
+      "facebookUnexpected": "Erro inesperado ao fazer login com o Facebook. Por favor, tente novamente.",
+      "email": "Erro ao fazer login com o email. Por favor, tente novamente.",
+      "signIn": "Email ou senha incorretos. Por favor, tente novamente.",
+      "signUp": "Usuário já existe. Por favor, tente novamente com outro email ou faça login."
+    }, 
+    "success": {
+      "success": "Sucesso",
+      "signUp": "Usuário criado com sucesso! Você já pode começar a usar o app."
+    }
   },
   "account": {
     "loadingProfile": "Carregando perfil...",
@@ -80,7 +94,11 @@
       "updateName": "Erro ao atualizar nome",
       "updateNameDescription": "Erro ao salvar nome. Por favor, tente novamente mais tarde.",
       "savingName": "Erro ao salvar nome",
-      "savingNameDescription": "Erro ao salvar nome. Por favor, tente novamente mais tarde."
+      "savingNameDescription": "Erro ao salvar nome. Por favor, tente novamente mais tarde.",
+      "numberOfLikes": "Erro ao carregar numero de curtidas",
+      "numberOfLikesDescription": "Ocorreu um erro ao carregar o numero de curtidas. Por favor, tente novamente mais tarde.",
+      "numberOfDislikes": "Erro ao carregar número de descurtidas",
+      "numberOfDislikesDescription": "Ocorreu um erro ao carregar o número de descurtidas. Por favor, tente novamente mais tarde."
     }
   },
   "nutritionalInformationTable": {

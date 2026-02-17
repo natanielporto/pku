@@ -49,15 +49,15 @@ export default function OnboardingScreen() {
 
       if (error) {
         Alert.alert(
-          "Erro",
-          "Não foi possível fazer login com Google. Tente novamente."
+          t("onboarding.error.error"),
+          t("onboarding.error.google")
         );
         console.error(error);
       }
       // O redirecionamento é feito automaticamente pelo AuthContext
     } catch (error) {
-      console.error("Erro ao fazer login com Google:", error);
-      Alert.alert("Erro", "Ocorreu um erro inesperado.");
+      console.error(t("onboarding.error.googleUnexpected"), error);
+      Alert.alert(t("onboarding.error.error"), t("onboarding.error.googleUnexpected"));
     } finally {
       setIsLoadingOAuth(false);
     }
@@ -70,22 +70,21 @@ export default function OnboardingScreen() {
 
       if (error) {
         Alert.alert(
-          "Erro",
-          "Não foi possível fazer login com Facebook. Tente novamente."
+          t("onboarding.error.error"),
+          t("onboarding.error.facebook")
         );
         console.error(error);
       }
       // O redirecionamento é feito automaticamente pelo AuthContext
     } catch (error) {
-      console.error("Erro ao fazer login com Facebook:", error);
-      Alert.alert("Erro", "Ocorreu um erro inesperado.");
+      console.error(t("onboarding.error.facebookUnexpected"), error);
+      Alert.alert(t("onboarding.error.error"), t("onboarding.error.facebookUnexpected"));
     } finally {
       setIsLoadingOAuth(false);
     }
   }
 
   async function onSubmit(data: OnboardingFormData) {
-    console.log("Email:", data.email, "Password:", data.password);
     setIsLoading(true);
     try {
       let result;
@@ -100,10 +99,10 @@ export default function OnboardingScreen() {
 
       if (result.error) {
         const errorMessage = isSignIn
-          ? "Email ou senha incorretos. Tente novamente."
-          : "Não foi possível criar sua conta. Tente novamente.";
+          ? (t("onboarding.error.signIn"))
+          : (t("onboarding.error.signUp"));
 
-        Alert.alert("Erro", errorMessage);
+        Alert.alert(t("onboarding.error.error"), errorMessage);
         console.error(result.error);
         return;
       }
@@ -111,13 +110,13 @@ export default function OnboardingScreen() {
       // O redirecionamento é feito automaticamente pelo AuthContext
       if (!isSignIn) {
         Alert.alert(
-          "Sucesso!",
-          "Conta criada com sucesso! Você já pode começar a usar o app."
+          t("onboarding.success.success"),
+          t("onboarding.success.signUp")
         );
       }
     } catch (error) {
-      console.error("Erro ao autenticar:", error);
-      Alert.alert("Erro", "Ocorreu um erro inesperado.");
+      console.error(t("onboarding.error.authenticationError"), error);
+      Alert.alert(t("onboarding.error.error"), t("onboarding.error.authenticationErrorDescription"));
     } finally {
       setIsLoading(false);
     }

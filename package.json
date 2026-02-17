@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
+    "android": "cross-env EXPO_ANDROID_DEVICE=emulator-5556 expo start --android",
     "emulator:reset": "powershell -ExecutionPolicy Bypass -File scripts/reset-emulator.ps1",
     "ios": "expo start --ios",
     "web": "expo start --web",

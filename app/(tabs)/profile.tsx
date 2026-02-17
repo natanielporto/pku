@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useCallback } from "react";
 import {
   ActivityIndicator,
   Image,
@@ -14,6 +14,7 @@ import { Feather } from "@expo/vector-icons";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "react-i18next";
 import { supabase } from "@/services/supabase";
+import { useFocusEffect } from "expo-router";
 
 export default function ProfileScreen() {
   const { t } = useTranslation();
@@ -70,10 +71,12 @@ export default function ProfileScreen() {
     }
   }
 
-  useEffect(() => {
-    handleNumberOfLikes();
-    handleNumberOfDislikes();
-  }, [user]);
+  useFocusEffect(
+    useCallback(() => {
+      handleNumberOfLikes();
+      handleNumberOfDislikes();
+    }, [user])
+  );
 
   const handleLogout = async () => {
     setIsLoggingOut(true);
@@ -101,7 +104,7 @@ export default function ProfileScreen() {
 
       if (error) {
         console.error(t('account.error.updateName'), error);
-        alert("account.error.updateNameDescription");
+        alert(t("account.error.updateNameDescription"));
         return;
       }
 
