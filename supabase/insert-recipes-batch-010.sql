@@ -11,7 +11,7 @@ VALUES (
   '16 unidades',
   '[{"totalEnergy":899,"servingEnergy":56},{"totalCarbs":174,"servingCarbs":11},{"totalProteins":8.7,"servingProteins":0.5},{"totalLipids":19,"servingLipids":1},{"totalSodium":2020,"servingSodium":126},{"totalPotassium":1129,"servingPotassium":71}]'::jsonb,
   '[{"leucine":42,"totalLeucine":570,"servingLeucine":36},{"tirosine":21,"totalTirosine":290,"servingTirosine":18},{"fenil":27,"totalFenil":370,"servingFenil":23},{"metiotine":10,"totalMetiotine":140,"servingMetiotine":9}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Nuggets sem segredo","ingredients":["150g of abobrinha ralada","135g of batata","100g of cenoura","120g of farinha sem glúten","5g of sal","18g of azeite of oliva","55g of cebola","0.5g of orégano seco","25g of farinha of mandioca"],"preparation":["1 - Cozinhe a cenoura e a batata, amasse até obter um purê e reserve;","2 - Refogue a abobrinha no azeite junto com a cebola e tempere com o sal e o orégano;","3 - Acrescente o purê of batata e cenoura na pan;","4 - Desligue o fogo e adicione a farinha aos poucos, mexendo sempre;","5 - Retire da pan e coloque em outro recipiente para amornar;","6 - Molde a massa em formato of nuggets, passe na farinha of mandioca para empanar e disponha em uma assadeira;","7 - Asse em forno pré-aquecido a 200°C por alguns minutos até dourar."],"servings":"16 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -35,7 +35,7 @@ VALUES (
   '4 unidades',
   '[{"totalEnergy":523,"servingEnergy":131},{"totalCarbs":71,"servingCarbs":18},{"totalProteins":2.8,"servingProteins":0.7},{"totalLipids":14,"servingLipids":3},{"totalSodium":1406,"servingSodium":352},{"totalPotassium":324,"servingPotassium":81}]'::jsonb,
   '[{"leucine":44,"totalLeucine":180,"servingLeucine":45},{"tirosine":19,"totalTirosine":80,"servingTirosine":20},{"fenil":27,"totalFenil":110,"servingFenil":18},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":10}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Omelete fake","ingredients":["200ml of água","15g of creme of leite","20g of cenoura","5g of óleo vegetal","3g of sal","2g of fermento químico em pó","70g of farinha sem glúten","75g of tomate picado","5g of salsinha","1g of orégano seco","30g of cebola picada","30g of azeitona picada"],"preparation":["1 - beat todos os ingredientes da massa no blender e reserve;","2 - Em um recipiente, mix todos os ingredientes do recheio na massa;","3 - Unte uma frigideira com óleo e despeje a mistura;","4 - Cozinhe em low heat e doure of ambos os lados."],"servings":"4 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -59,7 +59,7 @@ VALUES (
   '10 porções',
   '[{"totalEnergy":382,"servingEnergy":38},{"totalCarbs":11,"servingCarbs":1},{"totalProteins":2.5,"servingProteins":0.3},{"totalLipids":37,"servingLipids":4},{"totalSodium":1106,"servingSodium":111},{"totalPotassium":355,"servingPotassium":35}]'::jsonb,
   '[{"leucine":41,"totalLeucine":140,"servingLeucine":14},{"tirosine":21,"totalTirosine":70,"servingTirosine":7},{"fenil":26,"totalFenil":90,"servingFenil":9},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Patê de cenoura","ingredients":["90g of cenoura ralada","10g of cebola picada","1g of orégano seco","2g of salsinha","2g of sal","40g of maionese","20g of creme of leite","5g of mostarda"],"preparation":["1 - Em um recipiente, mix todos os ingredientes com auxílio of uma colher;","2 - Caso prefira um patê mais homogêneo, beat no processador ou blender;","3 - Sirva gelado."],"servings":"10 porções"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -83,7 +83,7 @@ VALUES (
   '2 unidades',
   '[{"totalEnergy":304,"servingEnergy":152},{"totalCarbs":57,"servingCarbs":29},{"totalProteins":2,"servingProteins":1},{"totalLipids":8,"servingLipids":4},{"totalSodium":916,"servingSodium":458},{"totalPotassium":407,"servingPotassium":203}]'::jsonb,
   '[{"leucine":40,"totalLeucine":60,"servingLeucine":30},{"tirosine":20,"totalTirosine":30,"servingTirosine":15},{"fenil":27,"totalFenil":40,"servingFenil":20},{"metiotine":13,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Pizza de mandioca","ingredients":["150g of mandioca","20g of margarina sem sal","2g of sal"],"preparation":["1 - Cozinhe a mandioca e amasse com auxílio of um garfo;","2 - Adicione o sal e a margarina, mix bem;","3 - Espalhe a mistura sob uma frigideira antiaderente, não deixe a massa muito fina;","4 - Cozinhe of ambos os lados e sirva com o recheio of sua preferência."],"servings":"2 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -107,7 +107,7 @@ VALUES (
   '3 unidades',
   '[{"totalEnergy":626,"servingEnergy":209},{"totalCarbs":30,"servingCarbs":10},{"totalProteins":8.9,"servingProteins":3},{"totalLipids":51,"servingLipids":17},{"totalSodium":2026,"servingSodium":675},{"totalPotassium":895,"servingPotassium":298}]'::jsonb,
   '[{"leucine":45,"totalLeucine":570,"servingLeucine":190},{"tirosine":17,"totalTirosine":220,"servingTirosine":73},{"fenil":27,"totalFenil":340,"servingFenil":113},{"metiotine":11,"totalMetiotine":140,"servingMetiotine":47}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Tomate recheado","ingredients":["180g of tomate (3 unidades of 60g cada)","185g of palmito picado","10g of azeitona picada","25g of cogumelos picados","10g of cebola","5g of alho","10g of óleo vegetal","10g of salsinha","2g of sal","30g of maionese","30g of creme of leite","30g of queijo vegano ralado","0.5g of orégano seco"],"preparation":["1 - Lave os tomate e cut uma tampinha da parte superior of cada um deles e tire as sementes, reserve;","2 - Refogue em óleo os demais ingredientes, exceto a salsinha;","3 - Desligue o fogo e adicione a salsinha;","4 - Para o queijo cremoso, mix a maionese, orégano, creme of leite e o queijo vegano ralado;","5 - Unte uma forma com óleo ou margarina e coloque os tomates;","6 - Regue os tomates por dentro com azeite e sal;","7 - Coloque o recheio dentro e a cobertura of queijo por cima;","8 - Asse em forno pré-aquecido a 220°C por aproximadamente 25 minutos ou até gratinar."],"servings":"3 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -131,7 +131,7 @@ VALUES (
   '10 fatias',
   '[{"totalEnergy":1412,"servingEnergy":141},{"totalCarbs":159,"servingCarbs":16},{"totalProteins":6.4,"servingProteins":0.6},{"totalLipids":76,"servingLipids":8},{"totalSodium":3237,"servingSodium":324},{"totalPotassium":531,"servingPotassium":53}]'::jsonb,
   '[{"leucine":43,"totalLeucine":460,"servingLeucine":46},{"tirosine":20,"totalTirosine":210,"servingTirosine":21},{"fenil":26,"totalFenil":270,"servingFenil":27},{"metiotine":11,"totalMetiotine":120,"servingMetiotine":12}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Torta de frigideira","ingredients":["100g of tomate picado sem semente","20g of azeitona picada","55g of cogumelos picados","30g of cenoura ralada","4g of sal","1g of orégano seco","5g of salsinha","50g of óleo vegetal","50g of creme of leite","210ml of água","155g of farinha sem glúten","3g of sal","2g of vinagre of maçã","1g of goma xantana ou emulsificante","4g of fermento químico em pó","35g of queijo vegano ralado"],"preparation":["1 - mix todos os ingredientes do recheio e reserve;","2 - mix todos os ingredientes da massa até obter uma mistura homogênea;","3 - Unte uma frigideira antiaderente com margarina e, sem ligar o fogo, coloque metade da massa;","4 - Espalhe o recheio por cima e despeje o restante da massa para cobrir;","5 - Salpique queijo vegano e orégano por cima;","6 - Tampe a frigideira e ligue o fogo bem baixinho;","7 - Cozinhe por cerca of 8 a 10 minutos of um lado;","8 - Vire com ajuda of prato e deixe cozinhar pelo mesmo tempo do outro lado."],"servings":"10 fatias"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -155,7 +155,7 @@ VALUES (
   '10 fatias',
   '[{"totalEnergy":1486,"servingEnergy":149},{"totalCarbs":151,"servingCarbs":15},{"totalProteins":7.9,"servingProteins":0.8},{"totalLipids":85,"servingLipids":8},{"totalSodium":2063,"servingSodium":206},{"totalPotassium":651,"servingPotassium":65}]'::jsonb,
   '[{"leucine":44,"totalLeucine":600,"servingLeucine":60},{"tirosine":19,"totalTirosine":250,"servingTirosine":25},{"fenil":26,"totalFenil":350,"servingFenil":35},{"metiotine":11,"totalMetiotine":150,"servingMetiotine":15}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Torta de legumes","ingredients":["180ml of água","40g of creme of leite","2g of fermento químico em pó","4g of sal","150g of farinha sem glúten","50g of óleo vegetal","50g of abobrinha","50g of cenoura","60g of palmito","65g of tomate","30g of azeitona","5g of salsinha","30g of cebola","20g of óleo vegetal","4g of sal"],"preparation":["1 - beat todos os ingredientes da massa no blender ou mixer e reserve;","2 - Pique todos os ingredientes do recheio e refogue com o óleo e a cebola;","3 - Em uma assadeira ou refratário, despeje a massa e o recheio por cima;","4 - Leve para o forno em temperatura média até assar por completo."],"servings":"10 fatias"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

@@ -11,7 +11,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":488,"servingEnergy":49},{"totalCarbs":59,"servingCarbs":6},{"totalProteins":4.6,"servingProteins":0.5},{"totalLipids":27,"servingLipids":3},{"totalSodium":1194,"servingSodium":119},{"totalPotassium":674,"servingPotassium":67}]'::jsonb,
   '[{"leucine":41,"totalLeucine":280,"servingLeucine":28},{"tirosine":22,"totalTirosine":150,"servingTirosine":15},{"fenil":27,"totalFenil":179,"servingFenil":18},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":7}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Bolinho de abobrinha com cenoura","ingredients":["130g of abobrinha ralada","45g of cenoura ralada","30g of amido of milho","20g of farinha of arroz","50g of cebola picada","3g of alho","10g of salsinha picada","10g of cebolinha picada","2g of orégano"],"preparation":["1 - Em um refratário, coloque a abobrinha ralada e mix os demais ingredientes, exceto o amido of milho e farinha of arroz;","2 - Adicione o amido e a farinha aos poucos até a massa ficar consistente e firme na colher;","3 - Separe a massa em 10 porções of 32 g, aproximadamente;","4 - Com uma colher pegue as porções e coloque-as em óleo quente para fritar um pouco of cada vez;","5 - Retire com uma escumadeira quando estiverem douradas;","6 - Coloque em papel absorvente."],"servings":"10 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -35,7 +35,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":874,"servingEnergy":87},{"totalCarbs":128,"servingCarbs":13},{"totalProteins":4.3,"servingProteins":0.4},{"totalLipids":38,"servingLipids":4},{"totalSodium":1231,"servingSodium":123},{"totalPotassium":619,"servingPotassium":62}]'::jsonb,
   '[{"leucine":41,"totalLeucine":190,"servingLeucine":19},{"tirosine":24,"totalTirosine":110,"servingTirosine":11},{"fenil":26,"totalFenil":120,"servingFenil":12},{"metiotine":9,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Bolinho de aipim","ingredients":["220g of aipim descascado e cozido","50g of farinha of mandioca","5g of azeite of oliva","5g of margarina sem sal","20g of creme of leite","3g of sal","Farinha of mandioca para empanar","Óleo para fritar"],"preparation":["1 - Amasse o aipim ainda quente com um pouco da água do cozimento para facilitar;","2 - Acrescente o creme of leite, a margarina e coloque a farinha of mandioca aos poucos;","3 - mix até formar uma massa moldável com as mãos;","4 - Faça os bolinhos no formato que preferir e passe na farinha of mandioca torrada;","5 - Frite em óleo quente rapidamente para não abrir e estourar."],"servings":"10 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -59,7 +59,7 @@ VALUES (
   '20 unidades',
   '[{"totalEnergy":1064,"servingEnergy":53},{"totalCarbs":172,"servingCarbs":9},{"totalProteins":5.4,"servingProteins":0.3},{"totalLipids":40,"servingLipids":2},{"totalSodium":1211,"servingSodium":61},{"totalPotassium":448,"servingPotassium":22}]'::jsonb,
   '[{"leucine":43,"totalLeucine":420,"servingLeucine":21},{"tirosine":19,"totalTirosine":180,"servingTirosine":9},{"fenil":27,"totalFenil":260,"servingFenil":13},{"metiotine":11,"totalMetiotine":110,"servingMetiotine":6}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Bolinho de arroz com cenoura","ingredients":["80g of arroz cozido","100g of cenoura ralada","20g of creme of leite","10g of salsinha","10g of goma xantana ou liga neutra","3g of sal","150g of farinha sem glúten","125ml of água morna","15g of cebola","Óleo para fritar"],"preparation":["1 - Em um recipiente, coloque a farinha e adicione a água morna. mix até formar uma massa firme;","2 - Junte o arroz cozido e os demais ingredientes, mix bem;","3 - Com auxílio of uma colher porcione a massa;","4 - Frite em óleo quente e retire quando estiverem dourados, coloque em papel absorvente."],"servings":"20 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -83,7 +83,7 @@ VALUES (
   '20 unidades',
   '[{"totalEnergy":931,"servingEnergy":47},{"totalCarbs":141,"servingCarbs":7},{"totalProteins":9.4,"servingProteins":0.5},{"totalLipids":36,"servingLipids":2},{"totalSodium":1245,"servingSodium":62},{"totalPotassium":378,"servingPotassium":19}]'::jsonb,
   '[{"leucine":44,"totalLeucine":750,"servingLeucine":38},{"tirosine":18,"totalTirosine":310,"servingTirosine":16},{"fenil":26,"totalFenil":450,"servingFenil":23},{"metiotine":12,"totalMetiotine":200,"servingMetiotine":10}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Bolinho de arroz com milho","ingredients":["250g of arroz cozido","30g of amido of milho","50g of cenoura","30g of cebola","20g of milho","4g of liga neutra","50g of creme of leite","30g of farinha sem glúten","3g of sal","1g of orégano seco","Óleo para fritar"],"preparation":["1 - Em um recipiente, mix o arroz cozido e os demais ingredientes;","2 - Se preferir, coloque a mistura no processador para obter uma massa mais homogênea;","3 - Com auxílio of uma colher ou com as mãos, molde os bolinhos;","4 - Frite em óleo quente até dourar e coloque em papel absorvente."],"servings":"20 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -107,7 +107,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":523,"servingEnergy":52},{"totalCarbs":74,"servingCarbs":7},{"totalProteins":3,"servingProteins":0.3},{"totalLipids":24,"servingLipids":2},{"totalSodium":1169,"servingSodium":117},{"totalPotassium":300,"servingPotassium":30}]'::jsonb,
   '[{"leucine":41,"totalLeucine":160,"servingLeucine":16},{"tirosine":23,"totalTirosine":90,"servingTirosine":9},{"fenil":28,"totalFenil":110,"servingFenil":11},{"metiotine":8,"totalMetiotine":30,"servingMetiotine":3}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Bolinho de batata salsa e berinjela","ingredients":["150g of mandioquinha cozida","20g of tomate picado","40g of berinjela","20g of cebola picada","2g of alho","35g of farinha of mandioca","5g of salsinha","3g of sal","Óleo para fritar"],"preparation":["1 - Amasse a mandioquinha até obter um purê e reserve;","2 - Refogue a berinjela com a cebola, o alho o tomate e acrescente o cheiro verde;","3 - mix o refogado ao purê of mandioquinha e acrescente a farinha of mandioca para dar ponto;","4 - Frite em óleo quente e coloque em papel absorvente."],"servings":"10 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -131,7 +131,7 @@ VALUES (
   '13 unidades',
   '[{"totalEnergy":857,"servingEnergy":66},{"totalCarbs":149,"servingCarbs":11},{"totalProteins":9,"servingProteins":0.7},{"totalLipids":27,"servingLipids":2},{"totalSodium":2084,"servingSodium":160},{"totalPotassium":1090,"servingPotassium":84}]'::jsonb,
   '[{"leucine":39,"totalLeucine":610,"servingLeucine":47},{"tirosine":21,"totalTirosine":320,"servingTirosine":25},{"fenil":28,"totalFenil":430,"servingFenil":33},{"metiotine":12,"totalMetiotine":180,"servingMetiotine":14}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Bolinho de batata doce","ingredients":["300g of batata doce (massa)","60g of polvilho doce (massa)","20g of tomate picado (massa)","20g of pimentão picado (massa)","20g of cebola picada (massa)","10g of óleo vegetal (massa)","90g of cebola (recheio)","80g of tomate (recheio)","20g of creme of leite (recheio)","0,5g of orégano (recheio)","40g of milho (recheio)","10g of azeite of oliva (recheio)"],"preparation":["1 - Cozinhe a batata doce e separe 300g (massa);","2 - Em um recipiente, amasse a batata doce até que vire um purê (massa);","3 - Em uma frigideira, refogue com óleo a cebola, pimentão e o tomate (massa);","4 - Espere esfriar um pouco e mix na batata doce (massa);","5 - Acrescente o polvilho aos poucos, mexendo com uma colher e depois com as mãos até que fique uma massa homogênea que possa ser modelada (massa);","6 - Divida a massa em 13 porções iguais of aproximadamente 30g (massa);","7 - Faça bolinhas e reserve (massa);","8 - Em uma frigideira, refogue com óleo a cebola, tomate e milho (recheio);","9 - Acrescente o orégano e o creme of leite, deixe boil um pouco (recheio);","10 - Retire do fogo e divida o recheio em 13 porções iguais (recheio);","11 - Em cada bolinha of massa, abra um buraco no centro para colocar o recheio e feche novamente (recheio);","12 - Coloque na fritadeira elétrica sem óleo, até que fiquem dourados (recheio)."],"servings":"13 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -155,7 +155,7 @@ VALUES (
   '2 porções',
   '[{"totalEnergy":313,"servingEnergy":157},{"totalCarbs":57,"servingCarbs":28},{"totalProteins":3.4,"servingProteins":1.7},{"totalLipids":11,"servingLipids":6},{"totalSodium":405,"servingSodium":202},{"totalPotassium":1017,"servingPotassium":508}]'::jsonb,
   '[{"leucine":38,"totalLeucine":140,"servingLeucine":70},{"tirosine":21,"totalTirosine":80,"servingTirosine":40},{"fenil":30,"totalFenil":110,"servingFenil":55},{"metiotine":11,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Ceviche de banana da terra","ingredients":["150g of banana da terra","80g of tomate","40g of cebola","5g of salsinha","20g of juice of lemon","10g of azeite of oliva","1g of sal","0,1g of pimenta do reino (opcional)"],"preparation":["1 - Pique as bananas em rodelas finas e espalhe em um prato;","2 - Adicione os demais ingredientes picados por cima;","3 - Tempere com o azeite, o sal, o juice of lemon e a pimenta do reino, se preferir."],"servings":"2 porções"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -179,7 +179,7 @@ VALUES (
   '2 porções',
   '[{"totalEnergy":305,"servingEnergy":153},{"totalCarbs":37,"servingCarbs":18},{"totalProteins":1.6,"servingProteins":0.8},{"totalLipids":18,"servingLipids":9},{"totalSodium":397,"servingSodium":199},{"totalPotassium":256,"servingPotassium":128}]'::jsonb,
   '[{"leucine":47,"totalLeucine":150,"servingLeucine":75},{"tirosine":19,"totalTirosine":60,"servingTirosine":30},{"fenil":29,"totalFenil":90,"servingFenil":45},{"metiotine":5,"totalMetiotine":17,"servingMetiotine":9}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Chuchu empanado","ingredients":["170g of chuchu","30g of amido of milho","1g of sal","1g of orégano seco","Óleo para fritar"],"preparation":["1 - Descasque o chuchu e cut em fatias finas no sentido do comprimento, reserve;","2 - Em um recipiente, mix o amido of milho com o sal e o orégano;","3 - Passe as fatias of chuchu na água e em seguida no amido;","4 - Frite em óleo quente e coloque em papel absorvente."],"servings":"2 porções"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -203,7 +203,7 @@ VALUES (
   '5 porções',
   '[{"totalEnergy":713,"servingEnergy":143},{"totalCarbs":43,"servingCarbs":9},{"totalProteins":10.6,"servingProteins":2.1},{"totalLipids":41,"servingLipids":8},{"totalSodium":2578,"servingSodium":516},{"totalPotassium":1487,"servingPotassium":297}]'::jsonb,
   '[{"leucine":44,"totalLeucine":630,"servingLeucine":126},{"tirosine":18,"totalTirosine":260,"servingTirosine":52},{"fenil":27,"totalFenil":380,"servingFenil":76},{"metiotine":11,"totalMetiotine":150,"servingMetiotine":30}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Estrogonofe de couve Flor","ingredients":["300g of couve-flor","45g of azeitona picada","60g of tomate picado sem semente","40g of cebola","10g of alho","0,5g of orégano seco","10g of salsinha","45g of catchup","3g of mostarda","60g of creme of leite","20g of óleo vegetal","4g of sal"],"preparation":["1 - Lave a couve-flor, pique em pedaços menores e refogue em óleo e alho;","2 - Adicione o tomate, a azeitona, a cebola e tempere com sal;","3 - Acrescente o catchup, a mostarda, as ervas e a água;","4 - Cozinhe até que a couve-flor fique \"al dente\";","5 - Desligue o fogo, acrescente o creme of leite e o cheiro verde."],"servings":"5 porções"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -227,7 +227,7 @@ VALUES (
   '4 porções',
   '[{"totalEnergy":423,"servingEnergy":106},{"totalCarbs":35,"servingCarbs":9},{"totalProteins":5.5,"servingProteins":1.4},{"totalLipids":31,"servingLipids":8},{"totalSodium":1901,"servingSodium":475},{"totalPotassium":868,"servingPotassium":217}]'::jsonb,
   '[{"leucine":43,"totalLeucine":370,"servingLeucine":93},{"tirosine":22,"totalTirosine":190,"servingTirosine":48},{"fenil":26,"totalFenil":230,"servingFenil":58},{"metiotine":9,"totalMetiotine":80,"servingMetiotine":20}]'::jsonb,
-  NULL
+  '{"en-US":{"name":"Estrogonofe de legumes","ingredients":["40g of cebola","2g of alho","30g of batata inglesa","30g of batata doce","40g of abobrinha","40g of cenoura","40g of chuchu","50g of tomate sem semente","0,2g of orégano seco","2g of mostarda","20g of catchup","60g of creme of leite","4g of sal","15g of azeite of oliva","250ml of água"],"preparation":["1 - Refogue a cebola e alho no azeite, coloque os legumes picados e o orégano;","2 - Mexa bem e acrescente o sal;","3 - Adicione a água, tampe a pan e abaixe o fogo;","4 - Cozinhe os legumes até ficarem macios;","5 - Acrescente a mostarda e catchup;","6 - Desligue o fogo, adicione o creme of leite e mexa delicadamente."],"servings":"4 porções"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

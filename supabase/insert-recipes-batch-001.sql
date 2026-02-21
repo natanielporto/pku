@@ -11,7 +11,7 @@ VALUES (
   '2 taças',
   '[{"totalEnergy":614,"servingEnergy":307},{"totalCarbs":137,"servingCarbs":69},{"totalProteins":2.2,"servingProteins":1.1},{"totalLipids":8,"servingLipids":6},{"totalSodium":153,"servingSodium":77},{"totalPotassium":75,"servingPotassium":38}]'::jsonb,
   '[{"leucine":44,"totalLeucine":200,"servingLeucine":100},{"tirosine":18,"totalTirosine":80,"servingTirosine":40},{"fenil":27,"totalFenil":120,"servingFenil":60},{"metiotine":11,"totalMetiotine":50,"servingMetiotine":25}]'::jsonb,
-  '{"en-US":{"name":"Yogurt Like Strawberry Drink","ingredients":["480g of rice beverage (rice beverage)","60g of demerara sugar","50g of frozen strawberries","15g of lemon juice","5g of agar-agar"],"preparation":["1 - in a pan, mix 380g of rice beverage together with the sugar and agar-agar, let it boil for 2 minutes stirring constantly;","2 - let it cool in the refrigerator for approximately 1 hour to gel;","3 - cut the strawberries into pieces and beat together with the cold cream, the lemon juice and the rest of the rice beverage with the help of a mixer or blender;","4 - place in cups for serving."],"servings":"2 glasses"}}'::jsonb
+  '{"en-US":{"name":"Bebida de morango tipo iogurte","ingredients":["480g of bebida vegetal a base of arroz","60g of sugar demerara","50g of strawberry frozen","15g of juice of lemon","5g of ágar-ágar"],"preparation":["1 - Em uma pan, mix 380g da bebida vegetal junto com o sugar e o ágar-ágar, deixe boil por uns 2 minutos mexendo sempre;","2 - Leve à refrigerator por aproximadamente uma hora para gel;","3 - cut os morangos em pedaços e beat junto com creme gelado, o juice of lemon e o restante da bebida vegetal com o auxílio of um mixer ou blender;","4 - Coloque em cups para serve."],"servings":"2 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -35,7 +35,7 @@ VALUES (
   '3 taças',
   '[{"totalEnergy":406,"servingEnergy":135},{"totalCarbs":80,"servingCarbs":27},{"totalProteins":1,"servingProteins":0.3},{"totalLipids":10,"servingLipids":3},{"totalSodium":56,"servingSodium":19},{"totalPotassium":47,"servingPotassium":16}]'::jsonb,
   '[{"leucine":45,"totalLeucine":100,"servingLeucine":33},{"tirosine":23,"totalTirosine":50,"servingTirosine":17},{"fenil":23,"totalFenil":50,"servingFenil":17},{"metiotine":9,"totalMetiotine":20,"servingMetiotine":7}]'::jsonb,
-  '{"en-US":{"name":"Vanilla Flan","ingredients":["250ml of water","50g of sugar","40g of cream of milk","30g of vanilla flan powder"],"preparation":["1 - Put all the ingredients in a small pan and bring to low heat, stir until thicken;","2 - Distribute the mixture in cups and chill;","3 - Make a caramel syrup separately, if desired."],"servings":"3 glasses"}}'::jsonb
+  '{"en-US":{"name":"Flan de baunilha","ingredients":["250ml of água","50g of sugar","40g of creme of leite","30g of flan of vanilla em pó"],"preparation":["1 - Coloque todos os ingredientes em uma pan pequena e leve ao low heat, mexa até thicken;","2 - Distribua a mistura em cups e leve para chill;","3 - Faça uma syrup of caramel à parte, se desejar."],"servings":"3 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -59,7 +59,7 @@ VALUES (
   '2 potinhos',
   '[{"totalEnergy":176,"servingEnergy":88},{"totalCarbs":36,"servingCarbs":18},{"totalProteins":0.8,"servingProteins":0.4},{"totalLipids":4,"servingLipids":2},{"totalSodium":7,"servingSodium":3},{"totalPotassium":142,"servingPotassium":71}]'::jsonb,
   '[{"leucine":46,"totalLeucine":60,"servingLeucine":30},{"tirosine":23,"totalTirosine":30,"servingTirosine":15},{"fenil":23,"totalFenil":30,"servingFenil":15},{"metiotine":8,"totalMetiotine":10,"servingMetiotine":5}]'::jsonb,
-  '{"en-US":{"name":"Strawberry Flan","ingredients":["15g of cream of milk","50ml of water","20g of sugar","75g of strawberry","4g of agar-agar"],"preparation":["1 - In a small pan, place the water and agar-agar to boil stirring constantly;","2 - beat the strawberries, the cream of milk, the sugar and the gelatinized water in a cup with the help of a mixer;","3 - Place in individual pots for serving"],"servings":"2 pots"}}'::jsonb
+  '{"en-US":{"name":"Flan de morango","ingredients":["15g of creme of leite","50ml of água","20g of sugar","75g of strawberry","4g of ágar-ágar"],"preparation":["1 - Em uma pan pequena, coloque a água e o ágar-ágar para boil mexendo sempre;","2 - beat os morangos picados, o creme of leite, o sugar e a água gelatinizada em um copo com o auxílio of um mixer;","3 - Disponha em potinhos individuais para serve"],"servings":"2 potinhos"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -83,7 +83,7 @@ VALUES (
   '4 taças',
   '[{"totalEnergy":324,"servingEnergy":81},{"totalCarbs":79,"servingCarbs":20},{"totalProteins":1.1,"servingProteins":0.3},{"totalLipids":0,"servingLipids":0},{"totalSodium":45,"servingSodium":11},{"totalPotassium":1,"servingPotassium":0}]'::jsonb,
   '[{"leucine":45,"totalLeucine":90,"servingLeucine":23},{"tirosine":20,"totalTirosine":40,"servingTirosine":10},{"fenil":30,"totalFenil":60,"servingFenil":15},{"metiotine":5,"totalMetiotine":10,"servingMetiotine":3}]'::jsonb,
-  '{"en-US":{"name":"Chandele Desert Like Fake","ingredients":["400ml of water","40g of demerara sugar","30g of achocolatado em pó","15g of cornstarch","3g of agar-agar"],"preparation":["1 - In a pan, mix all the ingredients and cook until the mixture boils. Let it cool;","2 - beat the mixture in the blender until you get a homogeneous cream;","3 - Place in individual cups and chill."],"servings":"4 glasses"}}'::jsonb
+  '{"en-US":{"name":"Chandele fake","ingredients":["400ml of água","40g of sugar demerara","30g of achocolatado em pó","15g of amido of milho","3g of ágar-ágar"],"preparation":["1 - Em uma pan, mix todos os ingredientes e cozinhe até levantar fervura. Deixe esfriar;","2 - beat a mistura no blender até obter um creme homogêneo;","3 - Disponha em cups individuais e leve à refrigerator."],"servings":"4 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -107,7 +107,7 @@ VALUES (
   '3 taças',
   '[{"totalEnergy":357,"servingEnergy":119},{"totalCarbs":90,"servingCarbs":30},{"totalProteins":2.11,"servingProteins":0.7},{"totalLipids":0,"servingLipids":0},{"totalSodium":27,"servingSodium":9},{"totalPotassium":788,"servingPotassium":263}]'::jsonb,
   '[{"leucine":43,"totalLeucine":130,"servingLeucine":43},{"tirosine":20,"totalTirosine":60,"servingTirosine":20},{"fenil":30,"totalFenil":90,"servingFenil":30},{"metiotine":7,"totalMetiotine":20,"servingMetiotine":7}]'::jsonb,
-  '{"en-US":{"name":"Inhaminho With Jam","ingredients":["100g of peeled and cooked inhame","50g of strawberry frozen","45g of strawberry jam","30g of refined sugar"],"preparation":["1 - Cook the inhame and beat in the blender with the frozen strawberries and the sugar;","2 - In pots make a layer with the cream and place the jam on top;","3 - Chill and serve."],"servings":"3 pots"}}'::jsonb
+  '{"en-US":{"name":"Inhaminho com geléia","ingredients":["100g of inhame descascado e cozido","50g of strawberry frozen","45g of geleia of strawberry","30g of sugar refinado"],"preparation":["1 - Cozinhe o inhame e beat no blender com os morangos e o sugar;","2 - Em potinhos faça uma camada com o creme e coloque a geleia por cima;","3 - Leve para chill e sirva."],"servings":"3 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -131,7 +131,7 @@ VALUES (
   '5 taças',
   '[{"totalEnergy":925,"servingEnergy":185},{"totalCarbs":139,"servingCarbs":28},{"totalProteins":5.3,"servingProteins":1.1},{"totalLipids":43,"servingLipids":9},{"totalSodium":30,"servingSodium":6},{"totalPotassium":777,"servingPotassium":155}]'::jsonb,
   '[{"leucine":43,"totalLeucine":370,"servingLeucine":74},{"tirosine":20,"totalTirosine":170,"servingTirosine":34},{"fenil":28,"totalFenil":240,"servingFenil":48},{"metiotine":9,"totalMetiotine":80,"servingMetiotine":16}]'::jsonb,
-  '{"en-US":{"name":"Fake Yogurt","ingredients":["200g of coconut milk","50ml of water","40g of sugar","20g of strawberry flavor powder","10g of cornstarch","2g of vanilla essence","0,5g of agar-agar"],"preparation":["Mode of preparation of the cream","1 - Em uma pan, mix todos os ingredientes. Leve ao fogo e cozinhe até thicken;","2 - let it cool in the refrigerator until it is chilled.","Mode of preparation of the syrup","3 - in a pan, place the strawberries, the sugar, the water and the agar-agar;","4 - bring to the boil until it thickens;","5 - let it cool in the refrigerator until it is chilled.","Assembly","After the gel, distribute the cream and syrup in 5 individual cups. The syrup can be on top of the cream or below the cream."],"servings":"5 cups"}}'::jsonb
+  '{"en-US":{"name":"Iogurte fake","ingredients":["200g of leite of coco","50ml of água","40g of sugar","20g of pó para preparo of bebida sabor strawberry","10g of amido of milho","2g of essência of vanilla","0,5g of ágar-ágar"],"preparation":["Modo of preparo do creme","1 - Em uma pan, mix todos os ingredientes. Leve ao fogo e cozinhe até thicken;","2 - Leve à refrigerator até chill.","Modo of preparo da syrup","3 - Em uma pan, coloque os morangos picados, o sugar, a água e o ágar-ágar;","4 - Leve ao fogo até adquirir consistência;","5 - Leve à refrigerator até chill.","Montagem","Após gelados, distribua o creme e syrup em 5 cups individuais. A syrup pode ficar por cima do creme ou por baixo do creme."],"servings":"5 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -155,7 +155,7 @@ VALUES (
   '2 copos',
   '[{"totalEnergy":262,"servingEnergy":131},{"totalCarbs":56,"servingCarbs":28},{"totalProteins":2,"servingProteins":1},{"totalLipids":5,"servingLipids":2},{"totalSodium":81,"servingSodium":41},{"totalPotassium":354,"servingPotassium":177}]'::jsonb,
   '[{"leucine":46,"totalLeucine":160,"servingLeucine":80},{"tirosine":20,"totalTirosine":70,"servingTirosine":35},{"fenil":26,"totalFenil":90,"servingFenil":45},{"metiotine":8,"totalMetiotine":30,"servingMetiotine":15}]'::jsonb,
-  '{"en-US":{"name":"Strawberry And Banana Vitamin","ingredients":["250g of rice beverage (rice beverage)","70g of strawberry","60g of silver banana"],"preparation":["1 - in a blender, place the rice beverage, the strawberries and the sliced banana;","2 - beat until you get a homogeneous mixture","3 - serve cold, if desired"],"servings":"2 glasses"}}'::jsonb
+  '{"en-US":{"name":"Vitamina de morango e banana","ingredients":["250g of bebida vegetal a base of arroz","70g of strawberry","60g of banana prata"],"preparation":["1 - No blender, coloque a bebida of arroz, os morangos e banana picados;","2 - beat até obter uma mistura homogênea","3 - Sirva gelado, se preferir"],"servings":"2 copos"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -179,7 +179,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":1122,"servingEnergy":112},{"totalCarbs":191,"servingCarbs":19},{"totalProteins":1.7,"servingProteins":0.2},{"totalLipids":39,"servingLipids":4},{"totalSodium":65,"servingSodium":6},{"totalPotassium":21,"servingPotassium":2}]'::jsonb,
   '[{"leucine":45,"totalLeucine":130,"servingLeucine":13},{"tirosine":21,"totalTirosine":60,"servingTirosine":6},{"fenil":27,"totalFenil":80,"servingFenil":8},{"metiotine":7,"totalMetiotine":20,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Crispy Tapioca Biscuit","ingredients":["80g of tapioca granulated","20g of sugar","20g of chocolate powder","10g of margarine without salt","10g of cream of milk","55ml of hot water","120g of chocolate drops"],"preparation":["1 - mix all the ingredients, except the chocolate drops, and let it hydrate for approximately 10 minutes so that the tapioca becomes softer;","2 - open the dough between butter paper and use a cup to format the cookies;","3 - grease a form with butter and place the cookies;","4 - bake in the oven at 200°C for approximately 20 minutes;","5 - melt the chocolate drops in a water bath;","6 - place the cold cookies in the chocolate and place a piece of butter paper to prevent sticking"],"servings":"10 units"}}'::jsonb
+  '{"en-US":{"name":"Biscoitinho crocante de tapioca","ingredients":["80g of tapioca granulada","20g of sugar","20g of achocolatado","10g of margarina sem sal","10g of creme of leite","55ml of água quente","120g of gotas of chocolate "],"preparation":["1 - mix todos os ingredientes, exceto as gotas of chocolate, e deixe hidratando por cerca of 10 minutos para que a tapioca fique mais macia;","2 - Abra a massa entre papel manteiga e use um copo para formatar os biscoitos;","3 - Unte uma forma com margarina e disponha os biscoitos;","4 - Leve para assar no forno a 200°C por aproximadamente 20 minutos;","5 - Derreta as gotas of chocolate em banho-maria;","6 - Mergulhe os biscoitos já frios no chocolate e coloque sobre um pedaço of papel manteiga para não grudar"],"servings":"10 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -203,7 +203,7 @@ VALUES (
   '40 unidades',
   '[{"totalEnergy":1547,"servingEnergy":39},{"totalCarbs":242,"servingCarbs":6},{"totalProteins":2.1,"servingProteins":0.1},{"totalLipids":62,"servingLipids":2},{"totalSodium":922,"servingSodium":23},{"totalPotassium":71,"servingPotassium":2}]'::jsonb,
   '[{"leucine":46,"totalLeucine":200,"servingLeucine":5},{"tirosine":16,"totalTirosine":70,"servingTirosine":2},{"fenil":26,"totalFenil":110,"servingFenil":3},{"metiotine":12,"totalMetiotine":50,"servingMetiotine":1}]'::jsonb,
-  '{"en-US":{"name":"Coconut Sequilho Biscuit","ingredients":["40g of refined sugar","180g of cornstarch","40g of gluten-free flour","150g of margarine without salt","12g of coconut powder"],"preparation":["1 - in a container, mix all the ingredients and knead with the hands until you get a homogeneous mass;","2 - open the dough between plastic and use a roll to cut in the desired format;","3 - place in a baking sheet;","4 - bake at 180°C for approximately 30 minutes or until the cookies are golden."],"servings":"40 units"}}'::jsonb
+  '{"en-US":{"name":"Sequilho de coco","ingredients":["40g of sugar refinado","180g of amido of milho","40g of farinha sem glúten","150g of margarina sem sal","12g of coco seco ralado"],"preparation":["1 - Em um recipiente, junte todos os ingredientes e amasse com as mãos até obter uma massa homogênea;","2 - Abra a massa por cima of um plástico e com o auxílio of um rolo;","3 - cut no formato que desejar e disponha em uma assadeira;","4 - Asse a 180°C por aproximadamente 30 minutos ou até os biscoitos ficarem dourados."],"servings":"40 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -227,7 +227,7 @@ VALUES (
   '14 unidades',
   '[{"totalEnergy":1770,"servingEnergy":126},{"totalCarbs":339,"servingCarbs":24},{"totalProteins":1.9,"servingProteins":0.1},{"totalLipids":37,"servingLipids":3},{"totalSodium":373,"servingSodium":27},{"totalPotassium":137,"servingPotassium":10}]'::jsonb,
   '[{"leucine":45,"totalLeucine":140,"servingLeucine":10},{"tirosine":19,"totalTirosine":60,"servingTirosine":4},{"fenil":26,"totalFenil":80,"servingFenil":6},{"metiotine":10,"totalMetiotine":30,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Honey Biscuits","ingredients":["60g of refined sugar","15g of chocolate powder","180g of gluten-free flour","80g of cornstarch","5g of cinnamon powder","36g of honey","60g of margarine without salt","14g of vegetable oil","10g of raisins","5g of chemical yeast","8g of apple vinegar"],"preparation":["1 - mix the margerine with the oil and add the dry ingredients;","2 - mix the vinegar with the yeast and add the other ingredients;","3 - knead the dough until it is homogeneous;","4 - open the dough between two plastic and use a roll to cut in the desired format;","5 - bake in the oven pre-heated, not too hot, until it is golden;","6 - let it cool for approximately 15 minutes before serving."],"servings":"14 units"}}'::jsonb
+  '{"en-US":{"name":"Bolachas de mel","ingredients":["60g of sugar refinado","15g of achocolatado em pó","180g of farinha hipoproteica","80g of amido of milho","5g of canela em pó","36g of mel","60g of margarina sem sal","14g of óleo vegetal","10g of uva passa picada","5g fermento químico em pó","8g of vinagre of maçã"],"preparation":["1 - mix a margarina com o óleo e acrescente os ingredientes secos;","2 - mix o vinagre com o fermento e adicione aos demais ingredientes;","3 - Sove a massa até ficar homogênea;","4 - Abra a massa entre dois plásticos com o auxílio of um rolo e cut do formato que desejar;","5 - Asse em forno pré-aquecido, não muito quente, até dourar embaixo;","6 - Deixe esfriar cerca of 15 minutos antes of serve."],"servings":"14 unidades"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
