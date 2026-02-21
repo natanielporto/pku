@@ -1,9 +1,9 @@
 {
   "tabs": {
     "home": "Home",
-    "user": "User",
+    "profile": "Profile",
     "book": "Book",
-    "help": "FAQ",
+    "faq": "FAQ",
     "calculator": "Calculator"
   },
   "home": {

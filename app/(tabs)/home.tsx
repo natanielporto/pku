@@ -6,7 +6,7 @@ import { CategoryCard } from "@/components/organisms/category-card";
 import { useCategoriesWithRecipes } from "@/hooks/useRecipes";
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const {
     data: categories = [],
     isLoading,
@@ -33,6 +33,7 @@ export default function Home() {
 
   return (
     <FlatList
+      key={i18n.language}
       data={categories}
       keyExtractor={(item) => item.category}
       contentContainerStyle={styles.container}

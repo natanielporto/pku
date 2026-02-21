@@ -17,6 +17,7 @@ import { supabase } from "@/services/supabase";
 import { useFocusEffect, router } from "expo-router";
 import i18n from "@/i18n";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 export default function ProfileScreen() {
   const { t } = useTranslation();
@@ -267,10 +268,11 @@ export default function ProfileScreen() {
 
           <View style={styles.infoItem}>
             <Text style={styles.label}>{t('account.language')}</Text>
-            <TouchableOpacity onPress={handleLanguageChange}>
+            <TouchableOpacity onPress={handleLanguageChange} style={styles.languageContainer}>
               <Text style={styles.value}>
-                {i18n.language === "pt" ? "Português" : "English"}
+                {i18n.language === "pt" ? "Português" : "English"} 
               </Text>
+              <MaterialIcons name="change-circle" size={24} color="#0C6941" />
             </TouchableOpacity>
           </View>
         </View>
@@ -433,5 +435,10 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     fontWeight: "600",
+  },
+  languageContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
   },
 });

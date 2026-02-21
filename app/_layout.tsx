@@ -12,8 +12,9 @@ import { useFonts } from "expo-font";
 import { Stack, useRouter, useSegments } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useColorScheme } from "@/components/useColorScheme";
-import { AuthProvider, useAuth } from "@/contexts/AuthContext";
-import "../i18n";
+import { useAuth, AuthProvider } from "@/contexts/AuthContext";
+import i18n from "../i18n";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -54,6 +55,16 @@ export default function RootLayout() {
       SplashScreen.hideAsync();
     }
   }, [loaded]);
+
+  useEffect(() => {
+    const loadLanguage = async () => {
+      const savedLanguage = await AsyncStorage.getItem("language");
+      if (savedLanguage) {
+        i18n.changeLanguage(savedLanguage);
+      }
+    };
+    loadLanguage();
+  }, []);
 
   if (!loaded) {
     return null;
