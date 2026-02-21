@@ -14,7 +14,9 @@ import { Feather } from "@expo/vector-icons";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "react-i18next";
 import { supabase } from "@/services/supabase";
-import { useFocusEffect } from "expo-router";
+import { useFocusEffect, router } from "expo-router";
+import i18n from "@/i18n";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function ProfileScreen() {
   const { t } = useTranslation();
@@ -75,13 +77,14 @@ export default function ProfileScreen() {
     useCallback(() => {
       handleNumberOfLikes();
       handleNumberOfDislikes();
-    }, [user])
+    }, [])
   );
 
   const handleLogout = async () => {
     setIsLoggingOut(true);
     try {
       await signOut();
+      router.replace("/onboarding");
     } catch (error) {
       console.error(t('account.error.logout'), error);
     } finally {
@@ -121,6 +124,11 @@ export default function ProfileScreen() {
   const handleCancelEdit = () => {
     setNewName(profile?.full_name ?? "");
     setIsEditingName(false);
+  };
+
+  const handleLanguageChange = async () => {
+    i18n.changeLanguage(i18n.language === "pt" ? "en" : "pt");
+    await AsyncStorage.setItem("language", i18n.language);
   };
 
   // const handleChangeAvatar = async () => {
@@ -255,6 +263,15 @@ export default function ProfileScreen() {
                 ? new Date(profile.created_at).toLocaleDateString("pt-BR")
                 : "Não disponível"}
             </Text>
+          </View>
+
+          <View style={styles.infoItem}>
+            <Text style={styles.label}>{t('account.language')}</Text>
+            <TouchableOpacity onPress={handleLanguageChange}>
+              <Text style={styles.value}>
+                {i18n.language === "pt" ? "Português" : "English"}
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
 

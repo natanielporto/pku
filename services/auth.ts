@@ -227,6 +227,26 @@ export async function resetPassword(email: string) {
 }
 
 /**
+ * Verifica o OTP (código) enviado por email para recuperação de senha
+ */
+export async function verifyPasswordResetOTP(email: string, token: string) {
+  try {
+    const { data, error } = await supabase.auth.verifyOtp({
+      email,
+      token,
+      type: "recovery",
+    });
+
+    if (error) throw error;
+
+    return { data, error: null };
+  } catch (error) {
+    console.error("❌ Erro ao verificar código de recuperação:", error);
+    return { data: null, error };
+  }
+}
+
+/**
  * Atualizar senha do usuário
  */
 export async function updatePassword(newPassword: string) {

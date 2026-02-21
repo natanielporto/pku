@@ -64,6 +64,7 @@
     "passwordRule3": "1 lowercase letter",
     "passwordRule4": "1 number",
     "passwordRule5": "1 special character",
+    "forgotPassword": "Forgot password?",
     "error": {
       "error": "Error",
       "google": "Error signing in with Google. Please try again.",
@@ -78,7 +79,24 @@
     }, 
     "success": {
       "success": "Success",
-      "signUp": "User created successfully! You can start to use the app."
+      "signUp": "User created successfully! You can start to use the app.",
+      "forgotPassword": "Recovery link sent successfully! Check your email."
+    },
+    "forgotPasswordScreen": {
+      "title": "Reset Password",
+      "subtitle": "Enter your email to receive a recovery code.",
+      "subtitleStep2": "Enter the 6-digit code sent to your email and your new password.",
+      "codeLabel": "Verification Code",
+      "codePlaceholder": "Enter the 6-digit code",
+      "newPasswordLabel": "New Password",
+      "newPasswordPlaceholder": "Enter your new password",
+      "confirmPasswordLabel": "Confirm New Password",
+      "confirmPasswordPlaceholder": "Repeat your new password",
+      "submitStep1": "Send Code",
+      "submitStep2": "Reset Password",
+      "back": "Back",
+      "codeSent": "Code sent to your email!",
+      "invalidCode": "Invalid or expired code."
     }
   },
   "account": {
@@ -89,6 +107,7 @@
     "dislikedRecipies": "Number of disliked recipes",
     "registeredSince": "Registered since",
     "logout": "Logout",
+    "language": "Language",
     "personalize": {
       "typeYourName": "Type your name",
       "notInformed": "Not informed"

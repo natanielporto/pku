@@ -64,6 +64,7 @@
     "passwordRule3": "1 letra minúscula",
     "passwordRule4": "1 número",
     "passwordRule5": "1 caractere especial",
+    "forgotPassword": "Esqueceu sua senha?",
     "error": {
       "error": "Erro",
       "authenticationError": "Falha ao autenticar.",
@@ -76,7 +77,24 @@
     }, 
     "success": {
       "success": "Sucesso",
-      "signUp": "Usuário criado com sucesso! Você já pode começar a usar o app."
+      "signUp": "Usuário criado com sucesso! Você já pode começar a usar o app.",
+      "forgotPassword": "Link de recuperação enviado com sucesso! Verifique seu email."
+    },
+    "forgotPasswordScreen": {
+      "title": "Recuperar Senha",
+      "subtitle": "Digite seu email para receber um código de recuperação.",
+      "subtitleStep2": "Digite o código de 6 dígitos enviado para seu email e sua nova senha.",
+      "codeLabel": "Código de Verificação",
+      "codePlaceholder": "Digite o código de 6 dígitos",
+      "newPasswordLabel": "Nova Senha",
+      "newPasswordPlaceholder": "Digite sua nova senha",
+      "confirmPasswordLabel": "Confirmar Nova Senha",
+      "confirmPasswordPlaceholder": "Repita sua nova senha",
+      "submitStep1": "Enviar Código",
+      "submitStep2": "Redefinir Senha",
+      "back": "Voltar",
+      "codeSent": "Código enviado para seu email!",
+      "invalidCode": "Código inválido ou expirado."
     }
   },
   "account": {
@@ -88,6 +106,7 @@
     "dislikedRecipies": "Numero de receitas que não gostou",
     "registeredSince": "Cadastrado no app desde",
     "logout": "Sair da Conta",
+    "language": "Idioma",
     "personalize": {
       "typeYourName": "Digite seu nome",
       "notInformed": "Não informado"

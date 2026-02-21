@@ -17,7 +17,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { OnboardingFormData, onboardingSchema } from "@/schemas/onboarding";
+import { OnboardingFormData, emailValidationSchema } from "@/schemas/onboarding";
 import {
   signInWithEmail,
   signInWithFacebook,
@@ -25,6 +25,7 @@ import {
   signUpWithEmail,
 } from "@/services/auth";
 import { PasswordRule } from "@/components/molecules/PasswordRule";
+import { router } from "expo-router";
 
 export default function OnboardingScreen() {
   const { t } = useTranslation();
@@ -38,7 +39,7 @@ export default function OnboardingScreen() {
     handleSubmit,
     formState: { errors, isValid },
   } = useForm<OnboardingFormData>({
-    resolver: zodResolver(onboardingSchema),
+    resolver: zodResolver(emailValidationSchema),
     mode: "onChange", // Valida em tempo real
   });
 
@@ -120,6 +121,10 @@ export default function OnboardingScreen() {
     } finally {
       setIsLoading(false);
     }
+  }
+
+  function handleNavigateToForgotPassword() {
+    router.push({pathname: "/forgot-password"});
   }
 
   return (
@@ -297,6 +302,16 @@ export default function OnboardingScreen() {
                 {isSignIn
                   ? t("onboarding.toggleSignUp")
                   : t("onboarding.toggleSignIn")}
+              </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.toggleButton}
+              onPress={() => handleNavigateToForgotPassword()}
+              disabled={isLoading}
+            >
+              <Text style={styles.toggleButtonText}>
+                {t("onboarding.forgotPassword")}
               </Text>
             </TouchableOpacity>
           </View>
