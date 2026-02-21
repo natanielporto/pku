@@ -29,17 +29,7 @@ export const ButtonCard = ({
   const displayText = skipTranslation
     ? category
     : (() => {
-        // Checks if the text looks like a slug (contains hyphens and is in lowercase)
-        // If it's not a slug, it's probably already translated, so use it directly
-        const isSlug = /^[a-z0-9-]+$/.test(category);
-
-        if (!isSlug) {
-          // Already translated, use it directly
-          return category;
-        }
-
-        // It's a slug, try to translate
-        // First try to translate as a category
+        // Try to translate as a category
         let translationKey = `categories.${category}`;
         let translated = t(translationKey);
 

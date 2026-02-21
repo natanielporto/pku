@@ -13,12 +13,13 @@
     "unknownError": "Unknown error"
   },
   "categories": {
-    "drinks-and-creams": "Drinks and Creams",
-    "biscuits-and-crackers": "Biscuits and Crackers",
-    "cakes-and-short-cakes": "Cakes and Short Cakes",
-    "sweets": "Sweets",
-    "pastries": "Pastries",
-    "breads": "Breads"
+    "Bebidas e Cremes": "Drinks and Creams",
+    "Biscoitos e bolachas": "Biscuits and Crackers",
+    "Bolos e bolinhos": "Cakes and Short Cakes",
+    "Doces": "Sweets",
+    "Massas": "Pastries",
+    "Pães": "Breads",
+    "Prato principal e vegetais": "Main Dishes"
   },
   "calculator": {
     "leucine": "Leucine",

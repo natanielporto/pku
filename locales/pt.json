@@ -13,12 +13,13 @@
     "unknownError": "Erro desconhecido"
   },
   "categories": {
-    "drinks-and-creams": "Bebidas e Cremes",
-    "biscuits-and-crackers": "Biscoitos e Bolachas",
-    "cakes-and-short-cakes": "Bolos e Bolinhos",
-    "sweets": "Doces",
-    "pastries": "Massas",
-    "breads": "Pães"
+    "Bebidas e Cremes": "Bebidas e Cremes",
+    "Biscoitos e bolachas": "Biscoitos e bolachas",
+    "Bolos e bolinhos": "Bolos e Bolinhos",
+    "Doces": "Doces",
+    "Massas": "Massas",
+    "Pães": "Pães",
+    "Prato principal e vegetais": "Pratos principais"
   },
   "calculator": {
     "leucine": "Leucina",
