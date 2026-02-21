@@ -120,19 +120,19 @@
       },
       {
         "id": 7,
-        "name": "Vitamina de morango e banana",
+        "name": "Strawberry and banana smoothie",
         "image": "https://images.unsplash.com/photo-1685967836529-b0e8d6938227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "250g of bebida vegetal a base of arroz",
+          "250g of rice based vegetable drink",
           "70g of strawberry",
           "60g of banana prata"
         ],
         "preparation": [
-          "1 - No blender, coloque a bebida of arroz, os morangos e banana picados;",
-          "2 - beat até obter uma mistura homogênea",
-          "3 - Sirva gelado, se preferir"
+          "1 - In a blender, place the rice drink, the strawberries and the banana;",
+          "2 - beat until homogenous",
+          "3 - Serve chilled, if you prefer"
         ],
-        "servings": "2 copos"
+        "servings": "2 cups"
       }
     ]
   },
@@ -142,244 +142,244 @@
     "recipes": [
       {
         "id": 8,
-        "name": "Biscoitinho crocante de tapioca",
+        "name": "Tapioca crunchy cookies",
         "image": "https://images.unsplash.com/photo-1608070735103-35aa01048704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "80g of tapioca granulada",
+          "80g of granulated tapioca",
           "20g of sugar",
-          "20g of achocolatado",
-          "10g of margarina sem sal",
-          "10g of creme of leite",
-          "55ml of água quente",
-          "120g of gotas of chocolate "
+          "20g of chocolate powder",
+          "10g of unsalted margarine",
+          "10g of cream of milk",
+          "55ml of hot water",
+          "120g of chocolate chips"
         ],
         "preparation": [
-          "1 - mix todos os ingredientes, exceto as gotas of chocolate, e deixe hidratando por cerca of 10 minutos para que a tapioca fique mais macia;",
-          "2 - Abra a massa entre papel manteiga e use um copo para formatar os biscoitos;",
-          "3 - Unte uma forma com margarina e disponha os biscoitos;",
-          "4 - Leve para assar no forno a 200°C por aproximadamente 20 minutos;",
-          "5 - Derreta as gotas of chocolate em banho-maria;",
-          "6 - Mergulhe os biscoitos já frios no chocolate e coloque sobre um pedaço of papel manteiga para não grudar"
+          "1 - Mix all the ingredients, except the chocolate chips, and let it hydrate for about 10 minutes so that the tapioca becomes softer;",
+          "2 - Open the dough between parchment paper and use a cup to shape the cookies;",
+          "3 - Grease a baking sheet with margarine and arrange the cookies;",
+          "4 - Bake in the oven at 200°C for approximately 20 minutes;",
+          "5 - Melt the chocolate chips in a double boiler;",
+          "6 - Dip the already cooled cookies in the chocolate and place them on a piece of parchment paper to prevent sticking"
         ],
-        "servings": "10 unidades"
+        "servings": "10 units"
       },
       {
         "id": 9,
-        "name": "Sequilho de coco",
+        "name": "Coconut sequilho",
         "image": "https://images.unsplash.com/photo-1590671886400-8f8088b97cb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "40g of sugar refinado",
-          "180g of amido of milho",
-          "40g of farinha sem glúten",
-          "150g of margarina sem sal",
-          "12g of coco seco ralado"
+          "40g of refined sugar",
+          "180g of cornstarch",
+          "40g of gluten-free flour",
+          "150g of unsalted margarine",
+          "12g of dry shredded coconut"
         ],
         "preparation": [
-          "1 - Em um recipiente, junte todos os ingredientes e amasse com as mãos até obter uma massa homogênea;",
-          "2 - Abra a massa por cima of um plástico e com o auxílio of um rolo;",
-          "3 - cut no formato que desejar e disponha em uma assadeira;",
-          "4 - Asse a 180°C por aproximadamente 30 minutos ou até os biscoitos ficarem dourados."
+          "1 - In a recipient, join all the ingredients and knead with your hands until obtaining a homogeneous dough;",
+          "2 - Open the dough on top of a plastic and with the help of a rolling pin;",
+          "3 - cut in the desired shape and arrange on a baking sheet;",
+          "4 - Bake at 180°C for approximately 30 minutes or until the cookies are golden."
         ],
-        "servings": "40 unidades"
+        "servings": "40 units"
       },
       {
         "id": 10,
-        "name": "Bolachas de mel",
+        "name": "Honey cookies",
         "image": "https://plus.unsplash.com/premium_photo-1661768562001-14933dda60d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "60g of sugar refinado",
-          "15g of achocolatado em pó",
-          "180g of farinha hipoproteica",
-          "80g of amido of milho",
-          "5g of canela em pó",
-          "36g of mel",
-          "60g of margarina sem sal",
-          "14g of óleo vegetal",
-          "10g of uva passa picada",
-          "5g fermento químico em pó",
-          "8g of vinagre of maçã"
+          "60g of refined sugar",
+          "15g of chocolate powder",
+          "180g of low-protein flour",
+          "80g of cornstarch",
+          "5g of cinnamon powder",
+          "36g of honey",
+          "60g of unsalted margarine",
+          "14g of vegetable oil",
+          "10g of chopped raisins",
+          "5g of baking powder",
+          "8g of apple cider vinegar"
         ],
         "preparation": [
-          "1 - mix a margarina com o óleo e acrescente os ingredientes secos;",
-          "2 - mix o vinagre com o fermento e adicione aos demais ingredientes;",
-          "3 - Sove a massa até ficar homogênea;",
-          "4 - Abra a massa entre dois plásticos com o auxílio of um rolo e cut do formato que desejar;",
-          "5 - Asse em forno pré-aquecido, não muito quente, até dourar embaixo;",
-          "6 - Deixe esfriar cerca of 15 minutos antes of serve."
+          "1 - Mix the margarine with the oil and add the dry ingredients;",
+          "2 - Mix the vinegar with the baking powder and add to the other ingredients;",
+          "3 - Knead the dough until it is homogeneous;",
+          "4 - Open the dough between two plastics with the help of a rolling pin and cut into the desired shape;",
+          "5 - Bake in a preheated oven, not too hot, until golden underneath;",
+          "6 - Let it cool for about 15 minutes before serving."
         ],
-        "servings": "14 unidades"
+        "servings": "14 units"
       },
       {
         "id": 11,
-        "name": "Bolachinhas com goiabada",
+        "name": "Cookies with guava paste",
         "image": "https://images.unsplash.com/photo-1498408224175-dc9dc5771027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "100g of farinha sem gluten",
-          "55g of sugar demerara",
-          "50g of margarina sem sal",
-          "30g of creme of leite",
-          "5g of fermento químico em pó",
-          "40g of amido of milho",
-          "5g of emulsificante",
-          "3g of liga neutra",
-          "1g of essência of vanilla",
-          "42g of goiabada em quadradinhos"
+          "100g of gluten-free flour",
+          "55g of demerara sugar",
+          "50g of unsalted margarine",
+          "30g of heavy cream",
+          "5g of baking powder",
+          "40g of cornstarch",
+          "5g of emulsifier",
+          "3g of neutral binder",
+          "1g of vanilla essence",
+          "42g of guava paste cubes"
         ],
         "preparation": [
-          "1 - Em um recipiente coloque todos os ingredientes e mix com uma espátula e depois amasse com as mãos até a massa desgrudar das mãos;",
-          "2 - Coloque a massa entre 2 plásticos e abra-a com o auxílio of um rolo;",
-          "3 - Para fazer beliscões, cut a massa com um cortador redondo, coloque um pedaço of goiabada no meio e junte as laterais;",
-          "4 - Outra opção é moldar a massa em bolinhas e achatar levemente colocando o pedaço of goiabada no centro;",
-          "5 - Disponha os biscoitos em uma assadeira e asse em forno a 180°C por aproximadamente 15 minutos."
+          "1 - In a recipient, place all the ingredients and mix with a spatula and then knead with your hands until the dough comes off your hands;",
+          "2 - Place the dough between 2 plastics and open it with the help of a rolling pin;",
+          "3 - To make pinch cookies, cut the dough with a round cutter, place a piece of guava paste in the middle and join the sides;",
+          "4 - Another option is to shape the dough into balls and flatten them slightly, placing the piece of guava paste in the center;",
+          "5 - Arrange the cookies on a baking sheet and bake in an oven at 180°C for approximately 15 minutes."
         ],
-        "servings": "21 unidades"
+        "servings": "21 units"
       },
       {
         "id": 12,
-        "name": "Cavaquinho sabor orégano",
+        "name": "Oregano flavored cavaquinho",
         "image": "https://plus.unsplash.com/premium_photo-1668622419261-9ca0a4b25f51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "110ml of leite of coco",
-          "50ml of água",
-          "20g of óleo vegetal",
+          "110ml of coconut milk",
+          "50ml of water",
+          "20g of vegetable oil",
           "15g of sugar",
-          "5g of sal",
-          "0,5g of orégano seco",
-          "3g of vinagre of maçã",
-          "5g of emulsificante",
-          "5g of fermento químico em pó",
-          "250g of farinha hipoproteica",
-          "Óleo para fritar os biscoitos"
+          "5g of salt",
+          "0,5g of dried oregano",
+          "3g of apple cider vinegar",
+          "5g of emulsifier",
+          "5g of baking powder",
+          "250g of low-protein flour",
+          "Oil for frying the cookies"
         ],
         "preparation": [
-          "1 - Em um recipiente, adicione os ingredientes e coloque a farinha aos poucos até dar o ponto of sovar;",
-          "2 - Molde os biscoitos e leve para fritar em óleo bem quente, virando para dourar of ambos os lados;",
-          "3 - Retire da pan e envolva em papel absorvente para retirar o excesso of óleo;",
-          "4 - Sirva quente."
+          "1 - In a recipient, add the ingredients and add the flour little by little until it reaches the point of kneading;",
+          "2 - Shape the cookies and fry them in very hot oil, turning them to brown on both sides;",
+          "3 - Remove from the pan and wrap in absorbent paper to remove excess oil;",
+          "4 - Serve hot."
         ],
-        "servings": "30 unidades"
+        "servings": "30 units"
       },
       {
         "id": 13,
-        "name": "Cookie de banana",
+        "name": "Banana cookie",
         "image": "https://images.unsplash.com/photo-1588070141852-b6bed371e15f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "80g of banana nanica",
-          "65g of sugar demerara",
-          "125g of amido of milho",
-          "65g of margarina sem sal",
-          "40g of farinha sem glúten",
-          "1g of essência of vanilla",
-          "10g of fermento químico em pó",
-          "0,5g of canela em pó",
-          "30g of uva passa"
+          "80g of nanica banana",
+          "65g of demerara sugar",
+          "125g of cornstarch",
+          "65g of unsalted margarine",
+          "40g of gluten-free flour",
+          "1g of vanilla essence",
+          "10g of baking powder",
+          "0,5g of cinnamon powder",
+          "30g of raisins"
         ],
         "preparation": [
-          "1 - Amasse a banana e acrescente os demais ingredientes, deixe as uvas passas por último;",
-          "2 - mix com uma colher e depois amasse com as mãos até que a massa fique homogênea;",
-          "3 - Separe a massa em 20 bolinhas;",
-          "4 - Coloque as bolinhas em uma assadeira e achate levemente com um garfo;",
-          "5 - Asse a 200°C por aproximadamente 20 minutos ou até dourar embaixo. "
+          "1 - Mash the banana and add the other ingredients, leaving the raisins for last;",
+          "2 - Mix with a spoon and then knead with your hands until the dough is homogeneous;",
+          "3 - Separate the dough into 20 balls;",
+          "4 - Place the balls on a baking sheet and flatten them slightly with a fork;",
+          "5 - Bake at 200°C for approximately 20 minutes or until golden underneath. "
         ],
-        "servings": "20 unidades"
+        "servings": "20 units"
       },
       {
         "id": 14,
-        "name": "Cookie de café com gotas de chocolate",
+        "name": "Coffee cookie with chocolate chips",
         "image": "https://images.unsplash.com/photo-1589988802149-7f9cb13a468e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "200g of farinha sem gúten",
-          "100g of margarina sem sal",
-          "50g of sugar mascavo",
-          "30g of sugar refinado",
-          "5g of café solúvel em pó",
-          "1g of essência of vanilla",
-          "1g of fermento químico em pó",
-          "1g of bicarbonato of sódio",
-          "50g of gotas of chocolate"
+          "200g of gluten-free flour",
+          "100g of unsalted margarine",
+          "50g of brown sugar",
+          "30g of refined sugar",
+          "5g of instant coffee powder",
+          "1g of vanilla essence",
+          "1g of baking powder",
+          "1g of baking soda",
+          "50g of chocolate chips"
         ],
         "preparation": [
-          "1 - Em um recipiente, coloque o sugar mascavo peneirado, o sugar refinado, o café solúvel peneirado, a essência of vanilla e a margarina, mexa com uma colher até ficar homogêneo. É importante peneirar os ingredientes para evitar que se formem grumos na massa;",
-          "2 - Adicione a farinha, mix com uma colher e depois amasse com as mãos;",
-          "3 - Adicione o fermento, o bicarbonato e por último as gotas of chocolate, evitando manipular demais para não derreter as gotas com o calor das mãos;",
-          "4 - Formate os cookies pegando cerca of 40 gramas da massa, fazendo bolinhas e achatando na palma da mão.",
-          "5 - Coloque em uma forma retangular (não é necessário untar);",
-          "6 - Decore com gotas of chocolate por cima;",
-          "7 - Se o dia estiver muito quente, coloque a forma dentro da refrigerator por uns 15 minutos antes of assar;",
-          "8 - Leve para assar em forno pré-aquecido a 200°C, por aproximadamente 20 minutos;",
-          "9 - Retire e espere esfriar para que os cookies fiquem mais firmes."
+          "1 - In a recipient, place the sifted brown sugar, the sifted refined sugar, the sifted instant coffee powder, the vanilla essence and the margarine, mix with a spoon until homogeneous. It is important to sift the ingredients to prevent lumps from forming in the dough;",
+          "2 - Add the flour, mix with a spoon and then knead with your hands;",
+          "3 - Add the baking powder, the baking soda and finally the chocolate chips, avoiding manipulating too much so as not to melt the chips with the heat of your hands;",
+          "4 - Shape the cookies by taking about 40 grams of the dough, making balls and flattening them in the palm of your hand.",
+          "5 - Place in a rectangular baking sheet (no need to grease);",
+          "6 - Decorate with chocolate chips on top;",
+          "7 - If the day is very hot, place the baking sheet in the refrigerator for about 15 minutes before baking;",
+          "8 - Bake in a preheated oven at 200°C for approximately 20 minutes;",
+          "9 - Remove and let cool so that the cookies become firmer."
         ],
-        "servings": "10 unidades"
+        "servings": "10 units"
       },
       {
         "id": 15,
-        "name": "Cookie de chocolate",
+        "name": "Chocolate cookie",
         "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "50g of chocolate em pó",
-          "60g of farinha sem glúten",
-          "180g of amido of milho",
-          "1g of café solúvel em pó",
-          "30g of sugar refinado",
-          "30g of sugar mascavo",
-          "3g of fermento químico em pó",
-          "150g of margarina sem sal",
-          "20g of gotas e chocolate"
+          "50g of chocolate powder",
+          "60g of gluten-free flour",
+          "180g of cornstarch",
+          "1g of instant coffee powder",
+          "30g of refined sugar",
+          "30g of brown sugar",
+          "3g of baking powder",
+          "150g of unsalted margarine",
+          "20g of chocolate chips"
         ],
         "preparation": [
-          "1 - Em um recipiente, mix todos os ingredientes secos;",
-          "2 - Acrescente a margarina, mix bem e amasse com as mãos até atingir o ponto que seja possível modelar;",
-          "3 - Faça bolinhas, achate e decore com gotas of chocolate;",
-          "4 - Disponha em uma assadeira e asse em forno pré-aquecido a 200°C por aproximadamente 15 a 20 minutos;",
-          "5 - Atenção para não assar demais e os cookies ficarem duros."
+          "1 - In a recipient, mix all the dry ingredients;",
+          "2 - Add the margarine, mix well and knead with your hands until it reaches the point where it is possible to shape;",
+          "3 - Make balls, flatten and decorate with chocolate chips;",
+          "4 - Arrange in a baking sheet and bake in a preheated oven at 200°C for approximately 15 to 20 minutes;",
+          "5 - Be careful not to overbake and make the cookies hard."
         ],
-        "servings": "22 unidades"
+        "servings": "22 units"
       },
       {
         "id": 16,
-        "name": "Sequilho de limão",
+        "name": "Lemon sequilho",
         "image": "https://images.unsplash.com/photo-1424591185129-8a73a1111adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
           "60g of sugar",
-          "160g of amido of milho",
-          "100g of margarina sem sal",
-          "2g of essência of vanilla",
-          "8g of juice of lemon",
-          "5g of raspas of lemon"
+          "160g of cornstarch",
+          "100g of unsalted margarine",
+          "2g of vanilla essence",
+          "8g of lemon juice",
+          "5g of lemon zest"
         ],
         "preparation": [
-          "1 - Pré-aqueça o forno à 200°C.",
-          "2 - mix a margarina com o sugar até que fique homogêneo e adicione o juice of lemon, as raspas of lemon, a essência of vanilla e o amido of milho;",
-          "3 - Com as mãos, amasse bem até formar uma massa;",
-          "4 - Faça bolinhas e passe o garfo levemente por cima para formar um desenho;",
-          "5 - Disponha em uma forma (não é necessário untar) e leve ao freezer por 5 minutos ou até ficarem mais firmes;",
-          "6 - Asse por cerca of 20 a 25 minutos ou até dourar levemente embaixo;",
-          "7 - Retire do forno e espere esfriar."
+          "1 - Preheat the oven to 200°C.",
+          "2 - Mix the margarine with the sugar until it is homogeneous and add the lemon juice, lemon zest, vanilla essence and cornstarch;",
+          "3 - With your hands, knead well until a dough is formed;",
+          "4 - Make balls and pass the fork lightly over them to form a design;",
+          "5 - Place in a baking sheet (no need to grease) and place in the freezer for 5 minutes or until they are firmer;",
+          "6 - Bake for about 20 to 25 minutes or until lightly browned underneath;",
+          "7 - Remove from the oven and let cool."
         ],
-        "servings": "5 unidades"
+        "servings": "5 units"
       },
       {
         "id": 17,
-        "name": "Sequilho de maracujá",
+        "name": "Passion fruit sequilho",
         "image": "https://images.unsplash.com/photo-1612388307727-afe00578ca21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "175g of amido of milho",
-          "100g of margarina sem sal",
-          "60g of sugar refinado",
-          "20g of juice concentrado of maracujá",
-          "1g of essência of vanilla",
-          "Corante alimentício amarelo damasco (opcional)"
+          "175g of cornstarch",
+          "100g of unsalted margarine",
+          "60g of refined sugar",
+          "20g of concentrated passion fruit juice",
+          "1g of vanilla essence",
+          "Apricot yellow food coloring (optional)"
         ],
         "preparation": [
-          "1 - mix bem a margarina com o sugar;",
-          "2 - Adicione a essência, o juice of maracujá e o corante;",
-          "3 - Adicione o amido e amasse com as mãos até que a massa fique homogênea;",
-          "4 - Faça bolinhas of 15 gramas cada e disponha em uma assadeira (não é necessário untar);",
-          "5 - Passe levemente o garfo por cima of cada uma das bolinhas, formando um desenho;",
-          "6 - Leve para assar em forno pré-aquecido a 200°C por 20 a 25 minutos até dourar levemente embaixo;",
-          "7 - Retire do forno e espere esfriar."
+          "1 - Mix the margarine with the sugar well;",
+          "2 - Add the essence, the passion fruit juice and the coloring;",
+          "3 - Add the cornstarch and knead with your hands until the dough is homogeneous;",
+          "4 - Make balls of 15 grams each and place them on a baking sheet (no need to grease);",
+          "5 - Lightly pass the fork over each of the balls, forming a design;",
+          "6 - Bake in a preheated oven at 200°C for 20 to 25 minutes until lightly browned underneath;",
+          "7 - Remove from the oven and let cool."
         ],
-        "servings": "25 unidades"
+        "servings": "25 units"
       }
     ]
   },
@@ -389,311 +389,311 @@
     "recipes": [
       {
         "id": 18,
-        "name": "Bolinho de chuva",
+        "name": "Raindrop cake",
         "image": "https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "160g of farinha sem glúten",
-          "120g of creme of leite",
-          "50ml of água",
-          "100g of sugar refinado",
-          "4g of liga neutra",
-          "10g of fermento químico em pó",
-          "Óleo vegetal para fritar",
-          "Canela em pó e sugar para cobrir (opcional)"
+          "160g of gluten-free flour",
+          "120g of sour cream",
+          "50ml of water",
+          "100g of refined sugar",
+          "4g of neutral binder",
+          "10g of baking powder",
+          "Vegetable oil for frying",
+          "Powdered cinnamon and sugar to cover (optional)"
         ],
         "preparation": [
-          "1 - Em um recipiente mix o creme of leite com a água;",
-          "2 - Acrescente os demais ingredientes até ficar homogêneo. A massa não deve ficar muito mole;",
-          "3 - Em uma pan ou frigideira, aquecer o óleo;",
-          "4 - Pegar a massa com uma colher of chá bem cheia e frite em óleo quente até dourar;",
-          "5 - Passe os bolinhos ainda quentes no sugar e canela, se desejar."
+          "1 - In a recipient mix the sour cream with the water;",
+          "2 - Add the other ingredients until homogeneous. The dough should not be too soft;",
+          "3 - In a pan or frying pan, heat the oil;",
+          "4 - Take the dough with a full teaspoon and fry in hot oil until golden;",
+          "5 - Pass the still hot dumplings in sugar and cinnamon, if desired."
         ],
-        "servings": "20 unidades"
+        "servings": "20 units"
       },
       {
         "id": 19,
-        "name": "Bolo de abacaxi",
+        "name": "Pineapple cake",
         "image": "https://images.unsplash.com/photo-1504802686536-b6a2ca64d77c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "150g of farinha sem glúten",
-          "80g of sugar refinado",
-          "120ml of juice of abacaxi",
-          "10g of emulsificante",
-          "3g of goma xantana ou liga neutra",
-          "15g of óleo vegetal",
-          "10g of fermento químico em pó"
+          "150g of gluten-free flour",
+          "80g of refined sugar",
+          "120ml of pineapple juice",
+          "10g of emulsifier",
+          "3g of xanthan gum or neutral binder",
+          "15g of vegetable oil",
+          "10g of baking powder"
         ],
         "preparation": [
-          "1 - Pré-aqueça o forno a 150°C",
-          "2 - Noliquidificadorbata todosos ingredientes, excetoa farinha e o fermento;",
-          "3 - Em um recipiente a parte, despeje a mistura do blender e adicione a farinha aos poucos com o auxílio of um fuê para não empelotar e até que fique homogêneo;",
-          "4 - Acrescente o fermento e mexa levemente;",
-          "5 - Despeje a massa em uma assadeira untada e leve ao forno ajustado a 180°C até assar por completo. "
+          "1 - Preheat the oven to 150°C",
+          "2 - In a blender, beat all the ingredients except the flour and baking powder;",
+          "3 - In a separate container, pour the blender mixture and add the flour little by little with the help of a whisk to avoid lumps and until it is homogeneous;",
+          "4 - Add the baking powder and stir lightly;",
+          "5 - Pour the batter into a greased baking sheet and place in the oven adjusted to 180°C until fully baked. "
         ],
-        "servings": "10 fatias"
+        "servings": "10 slices"
       },
       {
         "id": 20,
-        "name": "Bolo de banana I",
+        "name": "Banana cake I",
         "image": "https://plus.unsplash.com/premium_photo-1675171527461-b785cb1a7016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "185g of sugar refinado",
-          "38g of óleo vegetal",
-          "185g of farinha sem glúten",
-          "300g of banana nanica",
-          "18g of fermento químico em pó"
+          "185g of refined sugar",
+          "38g of vegetable oil",
+          "185g of gluten-free flour",
+          "300g of nanica banana",
+          "18g of baking powder"
         ],
         "preparation": [
-          "1 - Em uma vasilha, amasse as bananas e mix aos demais ingredientes com o auxílio of um fuê deixando o fermento por último;",
-          "2 - Unte uma forma of bolo inglês com margarina e farinha hipoproteica;",
-          "3 - Despeje a massa na forma;",
-          "4 - Asse em forno pré-aquecido a 180°C até dourar e o palito sair seco ao espetar."
+          "1 - In a bowl, mash the bananas and mix with the other ingredients with the help of a whisk, leaving the baking powder for last;",
+          "2 - Grease a loaf pan with margarine and low-protein flour;",
+          "3 - Pour the batter into the pan;",
+          "4 - Bake in a preheated oven at 180°C until golden and the toothpick comes out clean when inserted."
         ],
-        "servings": "11 fatias"
+        "servings": "11 slices"
       },
       {
         "id": 21,
-        "name": "Bolo de banana II",
+        "name": "Banana cake II",
         "image": "https://plus.unsplash.com/premium_photo-1675171527461-b785cb1a7016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "Ingredientes parte 1",
-          "70g of sugar refinado",
-          "80g of água",
-          "100g of banana em rodelas",
-          "3g of canela em pó",
-          "Ingredientes parte 2",
-          "21g of óleo vegetal",
-          "20g of margarina",
-          "24g of creme of leite",
-          "140g of água",
-          "50g of amido of milho",
-          "140g of farinha sem glúten",
-          "5g of vinagre of maçã",
-          "4g of fermento químico em pó",
-          "5g of bicarbonato of sódio"
+          "Ingredients part 1",
+          "70g of refined sugar",
+          "80g of water",
+          "100g of banana slices",
+          "3g of cinnamon powder",
+          "Ingredients part 2",
+          "21g of vegetable oil",
+          "20g of margarine",
+          "24g of sour cream",
+          "140g of water",
+          "50g of cornstarch",
+          "140g of gluten-free flour",
+          "5g of apple cider vinegar",
+          "4g of baking powder",
+          "5g of baking soda"
         ],
         "preparation": [
-          "1 - Em uma pan, faça uma syrup of caramel com o sugar, adicione a água aos poucos, a canela, mexendo até desmanchar os grumos do sugar. Em seguida, acrescente as rodelas of banana e continue mexendo, deixe cozinhar por 5 minutos em fogo médio; ",
-          "2 - Espere a syrup amornar e beat a mistura no blender junto com o óleo, margarina, sugar e creme of leite, beat até desmanchar as bananas; ",
-          "3 - Despeje a mistura em uma vasilha, adicione o amido of milho e a farinha peneirados para não formar grumos e acrescente a água (deve ser passada nos resíduos da pan que cozinhou as bananas e no blender, assim pegando todo o sabor residual que ficou); ",
-          "4 - mix bem  como auxílio of um fuê atéque amassa fiquehomogênea; ",
-          "5 - Adicione o vinagre, o bicarbonato e o fermento e mix delicadamente; ",
-          "6 - Despeje a massa em uma forma untada com margarina e farinha hipoprotéica (forma of 14,5 cm of diâmetro x 6 cm of altura ou forma of pão of forma); ",
-          "7 - Leve ao forno pré-aquecido a 200°C por cerca of 30 minutos ou até dourar;",
-          "8 - Espere esfriar para cortar e decorar a gosto."
+          "1 - In a pan, make a caramel syrup with the sugar, add the water little by little, the cinnamon, stirring until the sugar lumps dissolve. Then, add the banana slices and continue stirring, let cook for 5 minutes over medium heat; ",
+          "2 - Wait for the syrup to cool slightly and beat the mixture in the blender along with the oil, margarine, sugar and sour cream, beat until the bananas are broken down; ",
+          "3 - Pour the mixture into a bowl, add the cornstarch and flour sifted to avoid lumps and add the water (it should be passed through the residues of the pan that cooked the bananas and in the blender, thus capturing all the residual flavor that remained); ",
+          "4 - Mix well with the help of a whisk until the dough is homogeneous; ",
+          "5 - Add the vinegar, baking soda and baking powder and mix gently; ",
+          "6 - Pour the batter into a pan greased with margarine and low-protein flour (pan of 14.5 cm in diameter x 6 cm in height or loaf pan); ",
+          "7 - Take it to a preheated oven at 200°C for about 30 minutes or until golden;",
+          "8 - Wait for it to cool to cut and decorate to taste."
         ],
-        "servings": "9 fatias"
+        "servings": "9 slices"
       },
       {
         "id": 22,
-        "name": "Bolo de cenoura",
+        "name": "Carrot cake",
         "image": "https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "60g of cenoura ralada",
-          "70g of farinha sem glúten",
-          "60g of amido of milho",
-          "70g of óleo of canola",
-          "50ml of água",
-          "5g of fermento químico em pó"
+          "60g of grated carrot",
+          "70g of gluten-free flour",
+          "60g of cornstarch",
+          "70g of canola oil",
+          "50ml of water",
+          "5g of baking powder"
         ],
         "preparation": [
-          "1 - beat todos os ingredientes no blender, exceto o fermento;",
-          "2 - Adicione o fermento e mix delicadamente com o auxílio of uma colher;",
-          "3 - Disponha a massa em forminhas of cupcake ou em uma forma pequena of aproximadamente 20 centímetros of diâmetro untada com margarina e farinha hipoprotéica ou spray antiaderente;",
-          "4 - Asse em forno médio até o palito sair seco. "
+          "1 - beat all the ingredients in the blender, except the baking powder;",
+          "2 - Add the baking powder and mix gently with the help of a spoon;",
+          "3 - Pour the batter into cupcake liners or a small pan of approximately 20 centimeters in diameter greased with margarine and low-protein flour or non-stick spray;",
+          "4 - Bake in a preheated oven at 200°C for about 30 minutes or until golden;"
         ],
-        "servings": "8 fatias"
+        "servings": "8 slices"
       },
       {
         "id": 23,
-        "name": "Bolo de cenoura com chocolate",
+        "name": "Carrot cake with chocolate",
         "image": "https://images.unsplash.com/photo-1583592655160-47e0406b49c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "100ml of leite of coco",
-          "180g of sugar refinado",
-          "100g of farinha hipoproteica",
-          "10g of fermento químico em pó",
-          "235g of cenoura crua ralada",
-          "80g of óleo vegetal",
-          "1g of sal",
-          "1g of ágar-ágar",
-          "0,5g of goma xantana ou liga neutra",
-          "15g of achocolatado em pó",
-          "15g of gotas of chocolate"
+          "100ml of coconut milk",
+          "180g of refined sugar",
+          "100g of low-protein flour",
+          "10g of baking powder",
+          "235g of grated raw carrot",
+          "80g of vegetable oil",
+          "1g of salt",
+          "1g of agar-agar",
+          "0,5g of xanthan gum or neutral binder",
+          "15g of chocolate powder",
+          "15g of chocolate chips"
         ],
         "preparation": [
-          "1 - beat no blender todos os ingredientes, com exceção da farinha e do fermento;",
-          "2 - Em um recipiente, coloque a mistura do blender e mix com a farinha, depois acrescente o fermento e mexa levemente;",
-          "3 - Separe a massa em duas porções iguais e em uma das partes adicione o achocolatado e as gotas of chocolate;",
-          "4 - Unte uma forma pequena com margarina e farinha hipoprotéica e despeje a massa branca e em seguida a massa of chocolate;",
-          "5 - Com o auxílio of um garfo mix levemente as massas, formando um desenho;",
-          "6 - Asse em forno pré-aquecido a 180- 200° por aproximadamente 45 minutos ou até dourar."
+          "1 - beat on the blender all the ingredients, except the flour and baking powder;",
+          "2 - In a container, place the blender mixture and mix with the flour, then add the baking powder and mix gently;",
+          "3 - Separate the batter into two equal portions and in one of the parts add the chocolate powder and chocolate chips;",
+          "4 - Grease a small pan with margarine and low-protein flour and pour the white batter and then the chocolate batter;",
+          "5 - With the help of a fork, mix the batters lightly, forming a design;",
+          "6 - Bake in a preheated oven at 180-200°C for approximately 45 minutes or until golden."
         ],
-        "servings": "12 fatias"
+        "servings": "12 slices"
       },
       {
         "id": 24,
-        "name": "Bolo de chocolate I",
+        "name": "Chocolate cake I",
         "image": "https://images.unsplash.com/photo-1609105772057-3fa55ed2ceb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "100g of farinha hipoproteica",
-          "25g of amido of milho",
-          "50g of sugar refinado",
-          "25g of sugar mascavo",
-          "25g of achocolatado",
-          "4g of fermento químico em pó",
-          "2g of bicarbonato of sódio",
-          "125ml of água",
-          "40g of óleo vegetal",
-          "4g of vinagre of maçã",
-          "10g of confeitos para decorar"
+          "100g of low-protein flour",
+          "25g of cornstarch",
+          "50g of refined sugar",
+          "25g of brown sugar",
+          "25g of chocolate powder",
+          "4g of baking powder",
+          "2g of baking soda",
+          "125ml of water",
+          "40g of vegetable oil",
+          "4g of apple cider vinegar",
+          "10g of sprinkles for decorating"
         ],
         "preparation": [
-          "1 - Em um recipiente, peneire os ingredientes secos exceto o fermento e o bicarbonato of sódio;",
-          "2 - Adicione a água, óleo e o vinagre;",
-          "3 - Misturar bem com um fuê até que fique homogêneo;",
-          "4 - Colocar em uma forma tipo pudim, untada com margarina e farinha hipoprotéica;",
-          "5 - Asse em forno pré-aquecido por aproximadamente 40 min ou até que o palito saia seco."
+          "1 - In a container, sift the dry ingredients except the baking powder and baking soda;",
+          "2 - Add the water, oil and vinegar;",
+          "3 - Mix well with a whisk until homogeneous;",
+          "4 - Place in a bundt pan, greased with margarine and low-protein flour;",
+          "5 - Bake in a preheated oven for approximately 40 min or until the toothpick comes out clean."
         ],
-        "servings": "8 fatias"
+        "servings": "8 slices"
       },
       {
         "id": 25,
-        "name": "Bolo de chocolate II",
+        "name": "Chocolate cake II",
         "image": "https://images.unsplash.com/photo-1520186097747-fd67de8ef2db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "300g of farinha sem glúten",
-          "70g of sugar orgânico",
-          "100g of sugar mascavo",
-          "40g of achocolatado em pó",
-          "250ml of água",
-          "80g of óleo vegetal",
-          "15g of fermento químico em pó",
-          "6g of vinagre of maçã"
+          "300g of gluten-free flour",
+          "70g of organic sugar",
+          "100g of brown sugar",
+          "40g of chocolate powder",
+          "250ml of water",
+          "80g of vegetable oil",
+          "15g of baking powder",
+          "6g of apple cider vinegar"
         ],
         "preparation": [
-          "1 - Em um recipiente mix todos os ingredientes secos;",
-          "2 - Acrescente a água, o óleo, o vinagre e por fim o fermento;",
-          "3 - mix bem com o auxílio of um fuê até a massa ficar homogênea;",
-          "4 - Unte uma forma of pudim com margarina e farinha hipoprotéica;",
-          "5 - Leve para assar em forno pré-aquecido a 200°C;",
-          "6 - Retire do forno quando o palito sair seco após testado na massa."
+          "1 - In a container, mix all the dry ingredients;",
+          "2 - Add the water, oil, vinegar and finally the baking powder;",
+          "3 - mix well with the help of a whisk until homogeneous;",
+          "4 - Place in a bundt pan, greased with margarine and low-protein flour;",
+          "5 - Bake in a preheated oven at 200°C;",
+          "6 - Remove from the oven when the toothpick comes out clean after testing the batter."
         ],
-        "servings": "20 fatias"
+        "servings": "20 slices"
       },
       {
         "id": 26,
-        "name": "Bolo de laranja e mandioca",
+        "name": "Orange and cassava cake",
         "image": "https://images.unsplash.com/photo-1515754164677-ec9796621bcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "140g of sugar refinado",
-          "30g of amido of milho",
-          "100g of mandioca crua",
-          "5g fermento químico para bolo",
-          "5g of emulsificante",
-          "140g of gomos of laranja pêra descascada",
-          "1g of raspas of laranja"
+          "140g of refined sugar",
+          "30g of cornstarch",
+          "100g of raw cassava",
+          "5g of baking powder",
+          "5g of emulsifier",
+          "140g of peeled orange segments",
+          "1g of orange zest"
         ],
         "preparation": [
-          "1 - Em um blender, beat a laranja descascada junto com a mandioca e o sugar;",
-          "2 - Adicione o emulsificante, o amido e por último o fermento com as raspas da laranja;",
-          "3 - Disponha a massa em uma forma untada;",
-          "4 - Asse em forno pré-aquecido a 200°C por 25 minutos;",
-          "5 - Desenforme quando estiver frio e se gostar aplique a cobertura abaixo",
-          "Cobertura of sugar e juice of lemon",
-          "1 - mix os dois ingredientes e espalhe a cobertura por cima do bolo;",
-          "2 - Decore com raspas da casca do lemon."
+          "1 - In a blender, beat the peeled orange along with the cassava and sugar;",
+          "2 - Add the emulsifier, the cornstarch and finally the baking powder with the orange zest;",
+          "3 - Place the batter in a greased pan;",
+          "4 - Bake in a preheated oven at 200°C for 25 minutes;",
+          "5 - Unmold when cool and if you like, apply the frosting below",
+          "Frosting of sugar and lemon juice",
+          "1 - mix the two ingredients and spread the frosting over the cake;",
+          "2 - Decorate with lemon zest."
         ],
-        "servings": "12 fatias"
+        "servings": "12 slices"
       },
       {
         "id": 27,
-        "name": "Bolo fofinho de laranja",
+        "name": "Fluffy orange cake",
         "image": "https://images.unsplash.com/photo-1475855841503-917d97ca77b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "100g of sugar refinado",
-          "140g of farinha sem glúten",
-          "100ml of juice of laranja",
-          "40g of creme of leite",
-          "5g of liga neutra",
-          "10g of fermento químico em pó"
+          "100g of refined sugar",
+          "140g of gluten-free flour",
+          "100ml of orange juice",
+          "40g of cream of milk",
+          "5g of neutral stabilizer",
+          "10g of baking powder"
         ],
         "preparation": [
-          "1 - Em um recipiente, mix o juice of laranja, o creme of leite, o óleo e liga neutra;",
-          "2 - Adicione a farinha, o sugar e mix bem até ficar homogêneo. Adicione o fermento e mix delicadamente;",
-          "3 - Transfira a massa para forminhas of cupcake untadas;",
-          "4 - Leve ao forno a 180°C por aproximadamente 35 minutos ou até que esteja assado por completo."
+          "1 - In a container, mix the orange juice, the cream of milk, the oil and the neutral stabilizer;",
+          "2 - Add the flour, the sugar and mix well until homogeneous. Add the baking powder and mix gently;",
+          "3 - Transfer the batter to greased cupcake liners;",
+          "4 - Bake in an oven at 180°C for approximately 35 minutes or until completely baked."
         ],
-        "servings": "10 unidades"
+        "servings": "10 units"
       },
       {
         "id": 28,
-        "name": "Bolo mesclado",
+        "name": "Marble cake",
         "image": "https://images.unsplash.com/photo-1608266400306-3e699423dc53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "160g of sugar cristal",
-          "170ml of água",
-          "60g of creme of leite",
-          "240g of farinha sem glúten",
-          "10g of fermento químico em pó",
-          "15g of achocolatado em pó",
-          "10g of óleo of coco"
+          "160g of crystal sugar",
+          "170ml of water",
+          "60g of cream of milk",
+          "240g of gluten-free flour",
+          "10g of baking powder",
+          "15g of chocolate powder",
+          "10g of coconut oil"
         ],
         "preparation": [
-          "1 - Coloque todos os ingredientes na batedeira, exceto o fermento, e beat até obter uma massa homogênea;",
-          "2 - Retire da batedeira e acrescente o fermento, misturando delicadamente;",
-          "3 - Divida a massa em duas partes e em uma delas, coloque o achocolatado;",
-          "4 - Em uma assadeira untada, coloque a massa branca e por cima o restante da massa of chocolate;",
-          "5 - Leve para assar em forno pré- aquecido a 180°C por aproximadamente 40 minutos ou até que esteja assado por completo. "
+          "1 - Put all the ingredients in the mixer, except the baking powder, and beat until you get a homogeneous batter;",
+          "2 - Remove from the mixer and add the baking powder, mixing gently;",
+          "3 - Divide the batter into two parts and in one of them, add the chocolate powder;",
+          "4 - In a greased pan, place the white batter and on top the rest of the chocolate batter;",
+          "5 - Bake in a preheated oven at 180°C for approximately 40 minutes or until completely baked. "
         ],
-        "servings": "15 fatias"
+        "servings": "15 slices"
       },
       {
         "id": 29,
-        "name": "Muffin de coco com chocolate",
+        "name": "Coconut and chocolate muffin",
         "image": "https://plus.unsplash.com/premium_photo-1671405925124-8a3192adec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "100g of farinha sem glúten",
-          "180g of bebida vegetal a base of arroz",
-          "100g of amido of milho",
-          "35g of margarina sem sal",
-          "2g of essência of vanilla",
-          "10g of fermento químico em pó",
-          "25g of gotas of chocolate",
-          "145g of sugar demerara",
-          "45g of leite of coco",
-          "7g of emulsificante",
-          "5g of liga neutra"
+          "100g of gluten-free flour",
+          "180g of rice-based vegetable drink",
+          "100g of cornstarch",
+          "35g of unsalted margarine",
+          "2g of vanilla essence",
+          "10g of baking powder",
+          "25g of chocolate chips",
+          "145g of demerara sugar",
+          "45g of coconut milk",
+          "7g of emulsifier",
+          "5g of neutral stabilizer"
         ],
         "preparation": [
-          "1 - Em um recipiente, mix todos os ingredientes secos, exceto o fermento;",
-          "2 - Acrescente os demais ingredientes, deixando o fermento e o chocolate para o final;",
-          "3 - Disponha a massa em forminhas of cupcake",
-          "4 - Asse em forno pré-aquecido a 200°C por aproximadamente 20 a 25 minutos. "
+          "1 - In a container, mix all the dry ingredients, except the baking powder;",
+          "2 - Add the other ingredients, leaving the baking powder and chocolate for last;",
+          "3 - Place the batter in cupcake liners",
+          "4 - Bake in a preheated oven at 200°C for approximately 20 to 25 minutes. "
         ],
-        "servings": "10 unidades"
+        "servings": "10 units"
       },
       {
         "id": 30,
-        "name": "Muffin de chocolate e banana",
+        "name": "Chocolate and banana muffin",
         "image": "https://images.unsplash.com/photo-1663904458739-5e2ed09582b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
         "ingredients": [
-          "90g of farinha sem glúten",
-          "10g of achocolatado",
-          "30g of sugar orgânico",
-          "6g óleo vegetal",
-          "60g of creme of leite",
-          "3g of fermento químico em pó",
+          "90g of gluten-free flour",
+          "10g of chocolate powder",
+          "30g of organic sugar",
+          "6g of vegetable oil",
+          "60g of cream of milk",
+          "3g of baking powder",
           "150g of banana prata"
         ],
         "preparation": [
-          "1 - Em um recipiente, mix todos os ingredientes, exceto o achocolatado e o fermento;",
-          "2 - Adicione o fermento e mexa delicadamente;",
-          "3 - Divida a massa em duas partes iguais e em uma delas adicione o achocolatado;",
-          "4 - Disponha a massa em uma forma of pão of forma ou forminhas of cupcake, colocando a massa branca embaixo e a massa of chocolate por cima;",
-          "5 - Asse em forno pré-aquecido a 180°C por aproximadamente 40 minutos ou até o palito sair limpo. "
+          "1 - In a container, mix all the ingredients, except the chocolate powder and the baking powder;",
+          "2 - Add the baking powder and mix gently;",
+          "3 - Divide the batter into two equal parts and in one of them, add the chocolate powder;",
+          "4 - Place the batter in a loaf pan or cupcake liners, placing the white batter on the bottom and the chocolate batter on top;",
+          "5 - Bake in a preheated oven at 180°C for approximately 40 minutes or until the toothpick comes out clean. "
         ],
-        "servings": "6 unidades"
+        "servings": "6 units"
       }
     ]
   },
