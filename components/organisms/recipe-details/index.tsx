@@ -13,8 +13,8 @@ import { Feather } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { FullRecipe } from "@/types/RecipeTypes/recipe";
 import { Title } from "../../atoms/Title/Title";
-import { Table } from "../../molecules/Table";
-import { Chart } from "../pie-chart";
+import { Table as NutritionalInformationTable } from "../../molecules/Table";
+import { Chart as NutritionalInformationChart } from "../pie-chart";
 import { styles } from "./styles";
 import { supabase } from "@/services/supabase";
 
@@ -233,7 +233,7 @@ export function RecipeDetail({ recipe, category }: Props) {
                 style={styles.backButton}
               >
                 <Feather name="arrow-left" size={16} color="#888" />
-                <Title title={category} />
+                <Title title={t(`categories.${category}`)} />
               </TouchableOpacity>
             </View>
             <View style={styles.imageContainer}>
@@ -327,10 +327,10 @@ export function RecipeDetail({ recipe, category }: Props) {
               ))}
             </View>
             <View style={styles.tableContainer}>
-              <Table nutritionalInformation={recipe.nutritionalInformation} />
+              <NutritionalInformationTable nutritionalInformation={recipe.nutritionalInformation} />
             </View>
             <View style={styles.chartContainer}>
-              <Chart graphInformation={recipe.graphInformation} />
+              <NutritionalInformationChart graphInformation={recipe.graphInformation} />
             </View>
           </ScrollView>
         </View>
