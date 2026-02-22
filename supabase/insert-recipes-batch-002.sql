@@ -11,7 +11,7 @@ VALUES (
   '21 unidades',
   '[{"totalEnergy":1113,"servingEnergy":53},{"totalCarbs":214,"servingCarbs":10},{"totalProteins":2.1,"servingProteins":0.1},{"totalLipids":27,"servingLipids":1},{"totalSodium":315,"servingSodium":15},{"totalPotassium":107,"servingPotassium":5}]'::jsonb,
   '[{"leucine":45,"totalLeucine":140,"servingLeucine":10},{"tirosine":19,"totalTirosine":60,"servingTirosine":4},{"fenil":26,"totalFenil":80,"servingFenil":6},{"metiotine":10,"totalMetiotine":30,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Bolachinhas com goiabada","ingredients":["100g of farinha sem gluten","55g of sugar demerara","50g of margarina sem sal","30g of creme of leite","5g of fermento químico em pó","40g of amido of milho","5g of emulsificante","3g of liga neutra","1g of essência of vanilla","42g of goiabada em quadradinhos"],"preparation":["1 - Em um recipiente coloque todos os ingredientes e mix com uma espátula e depois amasse com as mãos até a massa desgrudar das mãos;","2 - Coloque a massa entre 2 plásticos e abra-a com o auxílio of um rolo;","3 - Para fazer beliscões, cut a massa com um cortador redondo, coloque um pedaço of goiabada no meio e junte as laterais;","4 - Outra opção é moldar a massa em bolinhas e achatar levemente colocando o pedaço of goiabada no centro;","5 - Disponha os biscoitos em uma assadeira e asse em forno a 180°C por aproximadamente 15 minutos."],"servings":"21 unidades"}}'::jsonb
+  '{"en-US":{"name":"Cookies with guava paste","ingredients":["100g of gluten-free flour","55g of demerara sugar","50g of unsalted margarine","30g of heavy cream","5g of baking powder","40g of cornstarch","5g of emulsifier","3g of neutral binder","1g of vanilla essence","42g of guava paste cubes"],"preparation":["1 - In a recipient, place all the ingredients and mix with a spatula and then knead with your hands until the dough comes off your hands;","2 - Place the dough between 2 plastics and open it with the help of a rolling pin;","3 - To make pinch cookies, cut the dough with a round cutter, place a piece of guava paste in the middle and join the sides;","4 - Another option is to shape the dough into balls and flatten them slightly, placing the piece of guava paste in the center;","5 - Arrange the cookies on a baking sheet and bake in an oven at 180°C for approximately 15 minutes."],"servings":"21 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -22,6 +22,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -35,7 +36,7 @@ VALUES (
   '30 unidades',
   '[{"totalEnergy":1636,"servingEnergy":55},{"totalCarbs":230,"servingCarbs":8},{"totalProteins":3.5,"servingProteins":0.1},{"totalLipids":81,"servingLipids":3},{"totalSodium":1952,"servingSodium":65},{"totalPotassium":246,"servingPotassium":8}]'::jsonb,
   '[{"leucine":52,"totalLeucine":260,"servingLeucine":9},{"tirosine":2,"totalTirosine":11,"servingTirosine":2},{"fenil":32,"totalFenil":160,"servingFenil":5},{"metiotine":14,"totalMetiotine":70,"servingMetiotine":0}]'::jsonb,
-  '{"en-US":{"name":"Cavaquinho sabor orégano","ingredients":["110ml of leite of coco","50ml of água","20g of óleo vegetal","15g of sugar","5g of sal","0,5g of orégano seco","3g of vinagre of maçã","5g of emulsificante","5g of fermento químico em pó","250g of farinha hipoproteica","Óleo para fritar os biscoitos"],"preparation":["1 - Em um recipiente, adicione os ingredientes e coloque a farinha aos poucos até dar o ponto of sovar;","2 - Molde os biscoitos e leve para fritar em óleo bem quente, virando para dourar of ambos os lados;","3 - Retire da pan e envolva em papel absorvente para retirar o excesso of óleo;","4 - Sirva quente."],"servings":"30 unidades"}}'::jsonb
+  '{"en-US":{"name":"Oregano flavored cavaquinho","ingredients":["110ml of coconut milk","50ml of water","20g of vegetable oil","15g of sugar","5g of salt","0,5g of dried oregano","3g of apple cider vinegar","5g of emulsifier","5g of baking powder","250g of low-protein flour","Oil for frying the cookies"],"preparation":["1 - In a recipient, add the ingredients and add the flour little by little until it reaches the point of kneading;","2 - Shape the cookies and fry them in very hot oil, turning them to brown on both sides;","3 - Remove from the pan and wrap in absorbent paper to remove excess oil;","4 - Serve hot."],"servings":"30 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -46,6 +47,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -59,7 +61,7 @@ VALUES (
   '20 unidades',
   '[{"totalEnergy":1527,"servingEnergy":76},{"totalCarbs":256,"servingCarbs":13},{"totalProteins":2.3,"servingProteins":0.1},{"totalLipids":25,"servingLipids":1},{"totalSodium":411,"servingSodium":21},{"totalPotassium":573,"servingPotassium":29}]'::jsonb,
   '[{"leucine":50,"totalLeucine":160,"servingLeucine":8},{"tirosine":16,"totalTirosine":50,"servingTirosine":3},{"fenil":25,"totalFenil":80,"servingFenil":4},{"metiotine":9,"totalMetiotine":30,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Cookie de banana","ingredients":["80g of banana nanica","65g of sugar demerara","125g of amido of milho","65g of margarina sem sal","40g of farinha sem glúten","1g of essência of vanilla","10g of fermento químico em pó","0,5g of canela em pó","30g of uva passa"],"preparation":["1 - Amasse a banana e acrescente os demais ingredientes, deixe as uvas passas por último;","2 - mix com uma colher e depois amasse com as mãos até que a massa fique homogênea;","3 - Separe a massa em 20 bolinhas;","4 - Coloque as bolinhas em uma assadeira e achate levemente com um garfo;","5 - Asse a 200°C por aproximadamente 20 minutos ou até dourar embaixo. "],"servings":"20 unidades"}}'::jsonb
+  '{"en-US":{"name":"Banana cookie","ingredients":["80g of nanica banana","65g of demerara sugar","125g of cornstarch","65g of unsalted margarine","40g of gluten-free flour","1g of vanilla essence","10g of baking powder","0,5g of cinnamon powder","30g of raisins"],"preparation":["1 - Mash the banana and add the other ingredients, leaving the raisins for last;","2 - Mix with a spoon and then knead with your hands until the dough is homogeneous;","3 - Separate the dough into 20 balls;","4 - Place the balls on a baking sheet and flatten them slightly with a fork;","5 - Bake at 200°C for approximately 20 minutes or until golden underneath. "],"servings":"20 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -70,6 +72,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -83,7 +86,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":1623,"servingEnergy":162},{"totalCarbs":286,"servingCarbs":29},{"totalProteins":3,"servingProteins":0.3},{"totalLipids":53,"servingLipids":5},{"totalSodium":622,"servingSodium":62},{"totalPotassium":352,"servingPotassium":35}]'::jsonb,
   '[{"leucine":44,"totalLeucine":250,"servingLeucine":25},{"tirosine":18,"totalTirosine":100,"servingTirosine":10},{"fenil":27,"totalFenil":150,"servingFenil":15},{"metiotine":11,"totalMetiotine":60,"servingMetiotine":6}]'::jsonb,
-  '{"en-US":{"name":"Cookie de café com gotas de chocolate","ingredients":["200g of farinha sem gúten","100g of margarina sem sal","50g of sugar mascavo","30g of sugar refinado","5g of café solúvel em pó","1g of essência of vanilla","1g of fermento químico em pó","1g of bicarbonato of sódio","50g of gotas of chocolate"],"preparation":["1 - Em um recipiente, coloque o sugar mascavo peneirado, o sugar refinado, o café solúvel peneirado, a essência of vanilla e a margarina, mexa com uma colher até ficar homogêneo. É importante peneirar os ingredientes para evitar que se formem grumos na massa;","2 - Adicione a farinha, mix com uma colher e depois amasse com as mãos;","3 - Adicione o fermento, o bicarbonato e por último as gotas of chocolate, evitando manipular demais para não derreter as gotas com o calor das mãos;","4 - Formate os cookies pegando cerca of 40 gramas da massa, fazendo bolinhas e achatando na palma da mão.","5 - Coloque em uma forma retangular (não é necessário untar);","6 - Decore com gotas of chocolate por cima;","7 - Se o dia estiver muito quente, coloque a forma dentro da refrigerator por uns 15 minutos antes of assar;","8 - Leve para assar em forno pré-aquecido a 200°C, por aproximadamente 20 minutos;","9 - Retire e espere esfriar para que os cookies fiquem mais firmes."],"servings":"10 unidades"}}'::jsonb
+  '{"en-US":{"name":"Coffee cookie with chocolate chips","ingredients":["200g of gluten-free flour","100g of unsalted margarine","50g of brown sugar","30g of refined sugar","5g of instant coffee powder","1g of vanilla essence","1g of baking powder","1g of baking soda","50g of chocolate chips"],"preparation":["1 - In a recipient, place the sifted brown sugar, the sifted refined sugar, the sifted instant coffee powder, the vanilla essence and the margarine, mix with a spoon until homogeneous. It is important to sift the ingredients to prevent lumps from forming in the dough;","2 - Add the flour, mix with a spoon and then knead with your hands;","3 - Add the baking powder, the baking soda and finally the chocolate chips, avoiding manipulating too much so as not to melt the chips with the heat of your hands;","4 - Shape the cookies by taking about 40 grams of the dough, making balls and flattening them in the palm of your hand.","5 - Place in a rectangular baking sheet (no need to grease);","6 - Decorate with chocolate chips on top;","7 - If the day is very hot, place the baking sheet in the refrigerator for about 15 minutes before baking;","8 - Bake in a preheated oven at 200°C for approximately 20 minutes;","9 - Remove and let cool so that the cookies become firmer."],"servings":"10 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -94,6 +97,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -107,7 +111,7 @@ VALUES (
   '22 unidades',
   '[{"totalEnergy":1921,"servingEnergy":87},{"totalCarbs":331,"servingCarbs":15},{"totalProteins":7.8,"servingProteins":0.4},{"totalLipids":65,"servingLipids":3},{"totalSodium":960,"servingSodium":44},{"totalPotassium":423,"servingPotassium":19}]'::jsonb,
   '[{"leucine":42,"totalLeucine":570,"servingLeucine":26},{"tirosine":22,"totalTirosine":290,"servingTirosine":13},{"fenil":28,"totalFenil":380,"servingFenil":17},{"metiotine":8,"totalMetiotine":110,"servingMetiotine":5}]'::jsonb,
-  '{"en-US":{"name":"Cookie de chocolate","ingredients":["50g of chocolate em pó","60g of farinha sem glúten","180g of amido of milho","1g of café solúvel em pó","30g of sugar refinado","30g of sugar mascavo","3g of fermento químico em pó","150g of margarina sem sal","20g of gotas e chocolate"],"preparation":["1 - Em um recipiente, mix todos os ingredientes secos;","2 - Acrescente a margarina, mix bem e amasse com as mãos até atingir o ponto que seja possível modelar;","3 - Faça bolinhas, achate e decore com gotas of chocolate;","4 - Disponha em uma assadeira e asse em forno pré-aquecido a 200°C por aproximadamente 15 a 20 minutos;","5 - Atenção para não assar demais e os cookies ficarem duros."],"servings":"22 unidades"}}'::jsonb
+  '{"en-US":{"name":"Chocolate cookie","ingredients":["50g of chocolate powder","60g of gluten-free flour","180g of cornstarch","1g of instant coffee powder","30g of refined sugar","30g of brown sugar","3g of baking powder","150g of unsalted margarine","20g of chocolate chips"],"preparation":["1 - In a recipient, mix all the dry ingredients;","2 - Add the margarine, mix well and knead with your hands until it reaches the point where it is possible to shape;","3 - Make balls, flatten and decorate with chocolate chips;","4 - Arrange in a baking sheet and bake in a preheated oven at 200°C for approximately 15 to 20 minutes;","5 - Be careful not to overbake and make the cookies hard."],"servings":"22 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -118,6 +122,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -131,7 +136,7 @@ VALUES (
   '5 unidades',
   '[{"totalEnergy":1172,"servingEnergy":234},{"totalCarbs":207,"servingCarbs":41},{"totalProteins":0.5,"servingProteins":0.1},{"totalLipids":36,"servingLipids":7},{"totalSodium":615,"servingSodium":123},{"totalPotassium":18,"servingPotassium":4}]'::jsonb,
   '[{"leucine":55,"totalLeucine":60,"servingLeucine":12},{"tirosine":18,"totalTirosine":20,"servingTirosine":4},{"fenil":18,"totalFenil":20,"servingFenil":4},{"metiotine":9,"totalMetiotine":10,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Sequilho de limão","ingredients":["60g of sugar","160g of amido of milho","100g of margarina sem sal","2g of essência of vanilla","8g of juice of lemon","5g of raspas of lemon"],"preparation":["1 - Pré-aqueça o forno à 200°C.","2 - mix a margarina com o sugar até que fique homogêneo e adicione o juice of lemon, as raspas of lemon, a essência of vanilla e o amido of milho;","3 - Com as mãos, amasse bem até formar uma massa;","4 - Faça bolinhas e passe o garfo levemente por cima para formar um desenho;","5 - Disponha em uma forma (não é necessário untar) e leve ao freezer por 5 minutos ou até ficarem mais firmes;","6 - Asse por cerca of 20 a 25 minutos ou até dourar levemente embaixo;","7 - Retire do forno e espere esfriar."],"servings":"5 unidades"}}'::jsonb
+  '{"en-US":{"name":"Lemon sequilho","ingredients":["60g of sugar","160g of cornstarch","100g of unsalted margarine","2g of vanilla essence","8g of lemon juice","5g of lemon zest"],"preparation":["1 - Preheat the oven to 200°C.","2 - Mix the margarine with the sugar until it is homogeneous and add the lemon juice, lemon zest, vanilla essence and cornstarch;","3 - With your hands, knead well until a dough is formed;","4 - Make balls and pass the fork lightly over them to form a design;","5 - Place in a baking sheet (no need to grease) and place in the freezer for 5 minutes or until they are firmer;","6 - Bake for about 20 to 25 minutes or until lightly browned underneath;","7 - Remove from the oven and let cool."],"servings":"5 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -142,6 +147,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -155,7 +161,7 @@ VALUES (
   '25 unidades',
   '[{"totalEnergy":1239,"servingEnergy":50},{"totalCarbs":222,"servingCarbs":9},{"totalProteins":0.9,"servingProteins":0.04},{"totalLipids":36,"servingLipids":1},{"totalSodium":617,"servingSodium":25},{"totalPotassium":9,"servingPotassium":0}]'::jsonb,
   '[{"leucine":47,"totalLeucine":80,"servingLeucine":3},{"tirosine":18,"totalTirosine":30,"servingTirosine":1},{"fenil":23,"totalFenil":40,"servingFenil":2},{"metiotine":12,"totalMetiotine":20,"servingMetiotine":1}]'::jsonb,
-  '{"en-US":{"name":"Sequilho de maracujá","ingredients":["175g of amido of milho","100g of margarina sem sal","60g of sugar refinado","20g of juice concentrado of maracujá","1g of essência of vanilla","Corante alimentício amarelo damasco (opcional)"],"preparation":["1 - mix bem a margarina com o sugar;","2 - Adicione a essência, o juice of maracujá e o corante;","3 - Adicione o amido e amasse com as mãos até que a massa fique homogênea;","4 - Faça bolinhas of 15 gramas cada e disponha em uma assadeira (não é necessário untar);","5 - Passe levemente o garfo por cima of cada uma das bolinhas, formando um desenho;","6 - Leve para assar em forno pré-aquecido a 200°C por 20 a 25 minutos até dourar levemente embaixo;","7 - Retire do forno e espere esfriar."],"servings":"25 unidades"}}'::jsonb
+  '{"en-US":{"name":"Passion fruit sequilho","ingredients":["175g of cornstarch","100g of unsalted margarine","60g of refined sugar","20g of concentrated passion fruit juice","1g of vanilla essence","Apricot yellow food coloring (optional)"],"preparation":["1 - Mix the margarine with the sugar well;","2 - Add the essence, the passion fruit juice and the coloring;","3 - Add the cornstarch and knead with your hands until the dough is homogeneous;","4 - Make balls of 15 grams each and place them on a baking sheet (no need to grease);","5 - Lightly pass the fork over each of the balls, forming a design;","6 - Bake in a preheated oven at 200°C for 20 to 25 minutes until lightly browned underneath;","7 - Remove from the oven and let cool."],"servings":"25 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -166,6 +172,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -179,7 +186,7 @@ VALUES (
   '20 unidades',
   '[{"totalEnergy":1289,"servingEnergy":64},{"totalCarbs":247,"servingCarbs":12},{"totalProteins":4.6,"servingProteins":0.2},{"totalLipids":33,"servingLipids":2},{"totalSodium":45,"servingSodium":2},{"totalPotassium":139,"servingPotassium":7}]'::jsonb,
   '[{"leucine":51,"totalLeucine":450,"servingLeucine":23},{"tirosine":22,"totalTirosine":200,"servingTirosine":10},{"fenil":26,"totalFenil":230,"servingFenil":12},{"metiotine":1,"totalMetiotine":12,"servingMetiotine":1}]'::jsonb,
-  '{"en-US":{"name":"Bolinho de chuva","ingredients":["160g of farinha sem glúten","120g of creme of leite","50ml of água","100g of sugar refinado","4g of liga neutra","10g of fermento químico em pó","Óleo vegetal para fritar","Canela em pó e sugar para cobrir (opcional)"],"preparation":["1 - Em um recipiente mix o creme of leite com a água;","2 - Acrescente os demais ingredientes até ficar homogêneo. A massa não deve ficar muito mole;","3 - Em uma pan ou frigideira, aquecer o óleo;","4 - Pegar a massa com uma colher of chá bem cheia e frite em óleo quente até dourar;","5 - Passe os bolinhos ainda quentes no sugar e canela, se desejar."],"servings":"20 unidades"}}'::jsonb
+  '{"en-US":{"name":"Raindrop cake","ingredients":["160g of gluten-free flour","120g of sour cream","50ml of water","100g of refined sugar","4g of neutral binder","10g of baking powder","Vegetable oil for frying","Powdered cinnamon and sugar to cover (optional)"],"preparation":["1 - In a recipient mix the sour cream with the water;","2 - Add the other ingredients until homogeneous. The dough should not be too soft;","3 - In a pan or frying pan, heat the oil;","4 - Take the dough with a full teaspoon and fry in hot oil until golden;","5 - Pass the still hot dumplings in sugar and cinnamon, if desired."],"servings":"20 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -190,6 +197,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -203,7 +211,7 @@ VALUES (
   '10 fatias',
   '[{"totalEnergy":1060,"servingEnergy":106},{"totalCarbs":226,"servingCarbs":23},{"totalProteins":1.9,"servingProteins":0.2},{"totalLipids":18,"servingLipids":2},{"totalSodium":2,"servingSodium":0},{"totalPotassium":115,"servingPotassium":11}]'::jsonb,
   '[{"leucine":42,"totalLeucine":160,"servingLeucine":16},{"tirosine":19,"totalTirosine":70,"servingTirosine":7},{"fenil":26,"totalFenil":100,"servingFenil":10},{"metiotine":13,"totalMetiotine":50,"servingMetiotine":5}]'::jsonb,
-  '{"en-US":{"name":"Bolo de abacaxi","ingredients":["150g of farinha sem glúten","80g of sugar refinado","120ml of juice of abacaxi","10g of emulsificante","3g of goma xantana ou liga neutra","15g of óleo vegetal","10g of fermento químico em pó"],"preparation":["1 - Pré-aqueça o forno a 150°C","2 - Noliquidificadorbata todosos ingredientes, excetoa farinha e o fermento;","3 - Em um recipiente a parte, despeje a mistura do blender e adicione a farinha aos poucos com o auxílio of um fuê para não empelotar e até que fique homogêneo;","4 - Acrescente o fermento e mexa levemente;","5 - Despeje a massa em uma assadeira untada e leve ao forno ajustado a 180°C até assar por completo. "],"servings":"10 fatias"}}'::jsonb
+  '{"en-US":{"name":"Pineapple cake","ingredients":["150g of gluten-free flour","80g of refined sugar","120ml of pineapple juice","10g of emulsifier","3g of xanthan gum or neutral binder","15g of vegetable oil","10g of baking powder"],"preparation":["1 - Preheat the oven to 150°C","2 - In a blender, beat all the ingredients except the flour and baking powder;","3 - In a separate container, pour the blender mixture and add the flour little by little with the help of a whisk to avoid lumps and until it is homogeneous;","4 - Add the baking powder and stir lightly;","5 - Pour the batter into a greased baking sheet and place in the oven adjusted to 180°C until fully baked. "],"servings":"10 slices"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -214,6 +222,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -227,7 +236,7 @@ VALUES (
   '11 fatias',
   '[{"totalEnergy":2070,"servingEnergy":184},{"totalCarbs":419,"servingCarbs":38},{"totalProteins":4.9,"servingProteins":0.45},{"totalLipids":43,"servingLipids":3.9},{"totalSodium":4.9,"servingSodium":0.4},{"totalPotassium":1192,"servingPotassium":108}]'::jsonb,
   '[{"leucine":47,"totalLeucine":390,"servingLeucine":35.5},{"tirosine":17,"totalTirosine":140,"servingTirosine":12.7},{"fenil":26,"totalFenil":220,"servingFenil":20},{"metiotine":10,"totalMetiotine":80,"servingMetiotine":7.3}]'::jsonb,
-  '{"en-US":{"name":"Bolo de banana I","ingredients":["185g of sugar refinado","38g of óleo vegetal","185g of farinha sem glúten","300g of banana nanica","18g of fermento químico em pó"],"preparation":["1 - Em uma vasilha, amasse as bananas e mix aos demais ingredientes com o auxílio of um fuê deixando o fermento por último;","2 - Unte uma forma of bolo inglês com margarina e farinha hipoproteica;","3 - Despeje a massa na forma;","4 - Asse em forno pré-aquecido a 180°C até dourar e o palito sair seco ao espetar."],"servings":"11 fatias"}}'::jsonb
+  '{"en-US":{"name":"Banana cake I","ingredients":["185g of refined sugar","38g of vegetable oil","185g of gluten-free flour","300g of nanica banana","18g of baking powder"],"preparation":["1 - In a bowl, mash the bananas and mix with the other ingredients with the help of a whisk, leaving the baking powder for last;","2 - Grease a loaf pan with margarine and low-protein flour;","3 - Pour the batter into the pan;","4 - Bake in a preheated oven at 180°C until golden and the toothpick comes out clean when inserted."],"servings":"11 slices"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -238,4 +247,5 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();

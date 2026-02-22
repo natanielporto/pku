@@ -41,45 +41,57 @@ let sql = `-- INSERT statements for recipes table
 // Opção 1: Todos de uma vez
 const allInserts = [];
 
-recipesData.forEach((categoryData, catIndex) => {
-  const category = categoryData.category;
-
-  categoryData.recipes.forEach((recipe, recipeIndex) => {
-    const nutritionalInfo = recipe.nutritionalInformation
-      ? toJsonSql(recipe.nutritionalInformation)
-      : "NULL";
-
-    const graphInfo = recipe.graphInformation
-      ? toJsonSql(recipe.graphInformation)
-      : "NULL";
-
-    // Busca tradução correspondente
-    let translations = "NULL";
+// Cria um mapa de traduções por ID para busca rápida e segura
+    const enMap = new Map();
     if (recipesEn) {
-      const recipeEn = recipesEn[catIndex]?.recipes?.[recipeIndex];
-      if (
-        recipeEn &&
-        (recipeEn.name || recipeEn.ingredients || recipeEn.preparation)
-      ) {
-        const translation = {
-          "en-US": {
-            name: recipeEn.name || recipe.name,
-            ingredients: recipeEn.ingredients || recipe.ingredients,
-            preparation: recipeEn.preparation || recipe.preparation,
-            servings: recipeEn.servings || recipe.servings,
-          },
-        };
-        translations = toJsonSql(translation);
-      }
+      recipesEn.forEach((cat) => {
+        cat.recipes.forEach((r) => {
+          if (r.id) enMap.set(r.id, r);
+        });
+      });
     }
 
-    // Valida se o ID existe
-    if (recipe.id === undefined || recipe.id === null) {
-      console.warn(`⚠️  Receita sem ID ignorada: ${recipe.name} (categoria: ${category})`);
-      return; // Pula esta receita
-    }
+    recipesData.forEach((categoryData, catIndex) => {
+      const category = categoryData.category;
 
-    allInserts.push(`INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
+      categoryData.recipes.forEach((recipe, recipeIndex) => {
+        const nutritionalInfo = recipe.nutritionalInformation
+          ? toJsonSql(recipe.nutritionalInformation)
+          : "NULL";
+
+        const graphInfo = recipe.graphInformation
+          ? toJsonSql(recipe.graphInformation)
+          : "NULL";
+
+        // Busca tradução correspondente por ID
+        let translations = "NULL";
+        if (recipesEn) {
+          const recipeEn = enMap.get(recipe.id);
+          if (
+            recipeEn &&
+            (recipeEn.name || recipeEn.ingredients || recipeEn.preparation)
+          ) {
+            const translation = {
+              "en-US": {
+                name: recipeEn.name || recipe.name,
+                ingredients: recipeEn.ingredients || recipe.ingredients,
+                preparation: recipeEn.preparation || recipe.preparation,
+                servings: recipeEn.servings || recipe.servings,
+              },
+            };
+            translations = toJsonSql(translation);
+          }
+        }
+
+        // Valida se o ID existe
+        if (recipe.id === undefined || recipe.id === null) {
+          console.warn(
+            `⚠️  Receita sem ID ignorada: ${recipe.name} (categoria: ${category})`
+          );
+          return; // Pula esta receita
+        }
+
+        allInserts.push(`INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   ${recipe.id},
   '${escapeSqlString(recipe.name)}',
@@ -101,9 +113,10 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();`);
-  });
-});
+      });
+    });
 
 // Salva versão completa (todos de uma vez)
 const allInsertsPath = path.join(

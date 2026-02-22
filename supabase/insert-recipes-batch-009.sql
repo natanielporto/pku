@@ -11,7 +11,7 @@ VALUES (
   '6 porções',
   '[{"totalEnergy":1178,"servingEnergy":196},{"totalCarbs":160,"servingCarbs":27},{"totalProteins":5.2,"servingProteins":0.9},{"totalLipids":19,"servingLipids":3},{"totalSodium":1770,"servingSodium":295},{"totalPotassium":637,"servingPotassium":106}]'::jsonb,
   '[{"leucine":38,"totalLeucine":270,"servingLeucine":45},{"tirosine":28,"totalTirosine":200,"servingTirosine":33},{"fenil":28,"totalFenil":200,"servingFenil":33},{"metiotine":6,"totalMetiotine":40,"servingMetiotine":7}]'::jsonb,
-  '{"en-US":{"name":"Farofa","ingredients":["50g of cenoura ralada","80g of tomate sem semente","40g of cebola ralada","5g of salsinha","25g of azeitona picada","4g of sal","15g of óleo vegetal","25g of uva passa preta","25g of farinha of mandioca torrada"],"preparation":["1 - Em uma pan, refogue a cebola no óleo e acrescente a cenoura e o tomate;","2 - Deixe murchar e acrescente os demais ingredientes, exceto a farinha;","3 - Adicione a farinha e cozinhe por alguns minutos."],"servings":"6 porções"}}'::jsonb
+  '{"en-US":{"name":"Farofa","ingredients":["50g of grated carrot","80g of tomato without seeds","40g of grated onion","5g of parsley","25g of chopped olives","4g of salt","15g of vegetable oil","25g of black raisins","25g of toasted cassava flour"],"preparation":["1 - In a pan, sauté the onion in oil and add the carrot and tomato;","2 - Let it wilt and add the other ingredients, except the flour;","3 - Add the flour and cook for a few minutes."],"servings":"6 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -22,6 +22,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -35,7 +36,7 @@ VALUES (
   '15 unidades',
   '[{"totalEnergy":924,"servingEnergy":62},{"totalCarbs":185,"servingCarbs":12},{"totalProteins":11.4,"servingProteins":0.8},{"totalLipids":14,"servingLipids":1},{"totalSodium":2131,"servingSodium":142},{"totalPotassium":2114,"servingPotassium":141}]'::jsonb,
   '[{"leucine":40,"totalLeucine":591,"servingLeucine":39},{"tirosine":24,"totalTirosine":358,"servingTirosine":24},{"fenil":28,"totalFenil":412,"servingFenil":27},{"metiotine":8,"totalMetiotine":117,"servingMetiotine":8}]'::jsonb,
-  '{"en-US":{"name":"Hambúrguer de legumes","ingredients":["300g of cenoura ralada","280g of abobrinha ralada","100g of beterraba ralada","80g of cebola picada","12g of óleo vegetal","150g of farinha of mandioca","200ml of água","5g of sal"],"preparation":["1 - Em uma pan, refogue os legumes com a cebola e o óleo até ficarem bem macios;","2 - Acrescente a água e a farinha of mandioca e mexa para thicken em low heat;","3 - Deixe cozinhar bastante. Espere esfriar e modele os hambúrgueres;","4 - Divida a massa em quinze porções iguais."],"servings":"15 unidades"}}'::jsonb
+  '{"en-US":{"name":"Vegetable burger","ingredients":["300g of grated carrot","280g of grated zucchini","100g of grated beetroot","80g of chopped onion","12g of vegetable oil","150g of cassava flour","200ml of water","5g of salt"],"preparation":["1 - In a pan, sauté the vegetables with the onion and oil until they are tender;","2 - Add the water and cassava flour and stir to thicken over low heat;","3 - Let it cook well. Wait for it to cool and shape the burgers;","4 - Divide the dough into fifteen equal portions."],"servings":"15 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -46,6 +47,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -59,7 +61,7 @@ VALUES (
   '6 unidades',
   '[{"totalEnergy":645,"servingEnergy":108},{"totalCarbs":131,"servingCarbs":22},{"totalProteins":6.8,"servingProteins":1.1},{"totalLipids":11,"servingLipids":2},{"totalSodium":1178,"servingSodium":196},{"totalPotassium":770,"servingPotassium":128}]'::jsonb,
   '[{"leucine":43,"totalLeucine":300,"servingLeucine":50},{"tirosine":19,"totalTirosine":130,"servingTirosine":22},{"fenil":29,"totalFenil":200,"servingFenil":33},{"metiotine":9,"totalMetiotine":62,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Hambúrguer de berinjela","ingredients":["280g of berinjela","60g of cebola","5g of alho","5g of salsinha","100g of farinha sem glúten","15g of farinha hipoproteica","5g of goma xantana ou liga neutra","3g of sal","0,5g of orégano seco ou chimichurri","10g of óleo vegetal"],"preparation":["1 - cut a berinjela em cubos pequenos, deixe of molho em água com sal por duas horas, escorra;","2 - Refogue a cebola até ficar macia, adicione o alho, a berinjela e a liga neutra ou goma xantana, e cozinhe;","3 - No processador, beat a mistura;","4 - Adicione as farinhas e a salsinha;","5 - Leve à refrigerator até ficar completamente frio;","6 - Abra a massa entre dois plásticos;","7 - Com um copo, modele os hambúrgueres no tamanho desejado;","8 - Grelhe em uma frigideira com um fio of óleo;","9 - É possível congelar, e ao usar, deixe na refrigerator um pouco antes of grelhar."],"servings":"6 unidades"}}'::jsonb
+  '{"en-US":{"name":"Eggplant burger","ingredients":["280g of eggplant","60g of onion","5g of garlic","5g of parsley","100g of gluten-free flour","15g of low-protein flour","5g of xanthan gum or neutral binder","3g of salt","0,5g of dried oregano or chimichurri","10g of vegetable oil"],"preparation":["1 - Cut the eggplant into small cubes, let it soak in salt water for two hours, drain;","2 - Sauté the onion until tender, add the garlic, eggplant and neutral binder or xanthan gum, and cook;","3 - In a food processor, blend the mixture;","4 - Add the flours and parsley;","5 - Refrigerate until completely cold;","6 - Roll out the dough between two plastics;","7 - With a glass, shape the burgers to the desired size;","8 - Grill in a pan with a drizzle of oil;","9 - It is possible to freeze, and when using, let it rest in the refrigerator for a while before grilling."],"servings":"6 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -70,6 +72,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -83,7 +86,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":281,"servingEnergy":28},{"totalCarbs":64,"servingCarbs":6},{"totalProteins":7.1,"servingProteins":0.7},{"totalLipids":2,"servingLipids":0},{"totalSodium":869,"servingSodium":87},{"totalPotassium":978,"servingPotassium":98}]'::jsonb,
   '[{"leucine":45,"totalLeucine":430,"servingLeucine":43},{"tirosine":17,"totalTirosine":160,"servingTirosine":16},{"fenil":27,"totalFenil":260,"servingFenil":26},{"metiotine":11,"totalMetiotine":100,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Hambúrguer de couve Flor","ingredients":["300g of couve-flor","5g of alho","15g of cebola","3g of cebolinha","3g of salsinha","50g of farinha sem glúten","3g of liga neutra","2g of sal"],"preparation":["1 - Lave e cozinhe a couve-flor até ficar bem macia;","2 - Amasse a couve-flor e refogue em uma pan com os demais temperos;","3 - Acrescente a liga neutra, o sal e a farinha aos poucos;","4 - Mexa em low heat até formar uma massa mais seca;","5 - Espere esfriar e molde os hambúrgueres;","6 - Grelhe rapidamente na frigideira com um fio of óleo."],"servings":"10 unidades"}}'::jsonb
+  '{"en-US":{"name":"Cauliflower burger","ingredients":["300g of cauliflower","5g of garlic","15g of onion","3g of chives","3g of parsley","50g of gluten-free flour","3g of neutral binder","2g of salt"],"preparation":["1 - Wash and cook the cauliflower until it is very tender;","2 - Mash the cauliflower and sauté in a pan with the other seasonings;","3 - Add the neutral binder, salt and flour little by little;","4 - Stir over low heat until a drier dough forms;","5 - Let it cool and shape the burgers;","6 - Grill quickly in a pan with a drizzle of oil."],"servings":"10 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -94,6 +97,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -107,7 +111,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":419,"servingEnergy":42},{"totalCarbs":65,"servingCarbs":6},{"totalProteins":4.4,"servingProteins":0.4},{"totalLipids":16,"servingLipids":2},{"totalSodium":1948,"servingSodium":195},{"totalPotassium":710,"servingPotassium":71}]'::jsonb,
   '[{"leucine":43,"totalLeucine":270,"servingLeucine":27},{"tirosine":22,"totalTirosine":140,"servingTirosine":14},{"fenil":29,"totalFenil":180,"servingFenil":18},{"metiotine":6,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
-  '{"en-US":{"name":"Kibe de berinjela","ingredients":["300g of polpa of berinjela","30g of cebola","2g of hortelã","5g of sal","50g of farinha of mandioca crua","0,2g of pimenta do reino","8g of juice of lemon","15g of azeite of oliva"],"preparation":["1 - cut as berinjelas no sentido do comprimento, dividindo em duas partes;","2 - Disponha em uma assadeira e faça um quadriculado com a faca em cada uma delas;","3 - Tempere com pimenta do reino, sal e azeite;","4 - Leve ao forno até que amoleça, aproximadamente 40 minutos;","5 - Raspe a polpa com uma colher e pese 300g, reserve;","6 - Amasse ou beat a polpa of berinjela no mixer com os demais ingredientes, exceto a farinha;","7 - Acrescente a farinha até obter uma massa moldável;","8 - Modele em formato of kibe;","9 - Asse em forno pré-aquecido a 200°C até que fique mais sequinho."],"servings":"10 unidades"}}'::jsonb
+  '{"en-US":{"name":"Eggplant kibe","ingredients":["300g of eggplant pulp","30g of onion","2g of mint","5g of salt","50g of raw cassava flour","0,2g of black pepper","8g of juice of lemon","15g of olive oil"],"preparation":["1 - Cut the eggplants lengthwise, dividing them into two parts;","2 - Arrange them in a baking dish and make a crosshatch pattern with a knife on each one;","3 - Season with black pepper, salt and olive oil;","4 - Bake until soft, approximately 40 minutes;","5 - Scrape the pulp with a spoon and weigh 300g, reserve;","6 - Mash or blend the eggplant pulp in a mixer with the other ingredients, except the flour;","7 - Add the flour until a moldable dough is obtained;","8 - Shape into kibe form;","9 - Bake in a preheated oven at 200°C until it becomes drier."],"servings":"10 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -118,6 +122,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -131,7 +136,7 @@ VALUES (
   '2 porções',
   '[{"totalEnergy":386,"servingEnergy":193},{"totalCarbs":50,"servingCarbs":25},{"totalProteins":1.9,"servingProteins":0.9},{"totalLipids":20,"servingLipids":10},{"totalSodium":794,"servingSodium":397},{"totalPotassium":366,"servingPotassium":183}]'::jsonb,
   '[{"leucine":43,"totalLeucine":60,"servingLeucine":30},{"tirosine":14,"totalTirosine":20,"servingTirosine":10},{"fenil":29,"totalFenil":40,"servingFenil":20},{"metiotine":14,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Mandioca frita cremosa","ingredients":["130g of mandioca","3g of sal","5g of cebolinha","Óleo para fritar"],"preparation":["1 - Cozinhe a mandioca e coloque em um refratário, amassando um pouco;","2 - Deixe na refrigerator por 20 minutos;","3 - cut a mandioca em cubos;","4 - Frite em óleo bem quente e tempere."],"servings":"2 porções"}}'::jsonb
+  '{"en-US":{"name":"Creamy fried cassava","ingredients":["130g of cassava","3g of salt","5g of chives","Oil for frying"],"preparation":["1 - Cook the cassava and place it in a baking dish, mashing it a little;","2 - Let it rest in the refrigerator for 20 minutes;","3 - Cut the cassava into cubes;","4 - Fry in very hot oil and season."],"servings":"2 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -142,6 +147,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -155,7 +161,7 @@ VALUES (
   '3 porções',
   '[{"totalEnergy":147,"servingEnergy":49},{"totalCarbs":13,"servingCarbs":4},{"totalProteins":2.6,"servingProteins":0.9},{"totalLipids":10,"servingLipids":3},{"totalSodium":1196,"servingSodium":399},{"totalPotassium":550,"servingPotassium":183}]'::jsonb,
   '[{"leucine":41,"totalLeucine":120,"servingLeucine":40},{"tirosine":21,"totalTirosine":60,"servingTirosine":20},{"fenil":28,"totalFenil":80,"servingFenil":27},{"metiotine":10,"totalMetiotine":30,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Molho de legumes","ingredients":["60g of abobrinha crua","20g of brócolis cru","50g of tomate cru","60g of cenoura crua","10g of azeite of oliva","2g of alho","15g of cebola","3g of sal","40ml of água para cozinhar"],"preparation":["1 - Pique os legumes e reserve;","2 - Refogue a cebola e o alho no azeite e adicione os legumes e o sal;","3 - Adicione a água e deixe cozinhar até ficarem macios;","4 - À parte, cozinhe macarrão ou utilize arroz já pronto;","5 - Utilize uma porção do molho of legumes e mix em uma porção of macarrão ou arroz."],"servings":"3 porções"}}'::jsonb
+  '{"en-US":{"name":"Vegetable sauce","ingredients":["60g of raw zucchini","20g of raw broccoli","50g of raw tomato","60g of raw carrot","10g of olive oil","2g of garlic","15g of onion","3g of salt","40ml of water for cooking"],"preparation":["1 - Chop the vegetables and set aside;","2 - Sauté the onion and garlic in the olive oil and add the vegetables and salt;","3 - Add the water and let it cook until tender;","4 - Separately, cook pasta or use already cooked rice;","5 - Use a portion of the vegetable sauce and mix with a portion of pasta or rice."],"servings":"3 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -166,6 +172,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -179,7 +186,7 @@ VALUES (
   '3 porções',
   '[{"totalEnergy":261,"servingEnergy":87},{"totalCarbs":29,"servingCarbs":10},{"totalProteins":4.8,"servingProteins":1.6},{"totalLipids":17,"servingLipids":6},{"totalSodium":1208,"servingSodium":403},{"totalPotassium":113,"servingPotassium":38}]'::jsonb,
   '[{"leucine":42,"totalLeucine":180,"servingLeucine":60},{"tirosine":19,"totalTirosine":80,"servingTirosine":27},{"fenil":30,"totalFenil":130,"servingFenil":43},{"metiotine":9,"totalMetiotine":40,"servingMetiotine":13}]'::jsonb,
-  '{"en-US":{"name":"Molho de tomate caseiro","ingredients":["480g of tomate sem casca","15g of azeite of oliva","10g of alho","2g of manjericão fresco","3g of sugar","3g of sal","0,1g of pimenta do reino"],"preparation":["1 - cut os tomates em cruz na parte of baixo e coloque em água fervente para retirar a pele;","2 - Coloque a mais do que a quantidade indicada, pois ao tirar a pele vai reduzir;","3 - Retire da água quente e coloque no gelo para soltar a pele;","4 - cut ao meio para retirar as sementes, se desejar;","5 - Pique os tomates já pelados;","6 - Refogue no azeite com alho, sugar, o sal e a pimenta;","7 - beat com um mixer e deixe apurar;","8 - Adicione o manjericão fresco para finalizar."],"servings":"3 porções"}}'::jsonb
+  '{"en-US":{"name":"Homemade tomato sauce","ingredients":["480g of tomato without skin","15g of olive oil","10g of garlic","2g of fresh basil","3g of sugar","3g of salt","0,1g of black pepper"],"preparation":["1 - cut the tomatoes in a cross on the bottom part and place them in boiling water to remove the skin;","2 - Put more than the indicated quantity, because when removing the skin it will reduce;","3 - Remove from hot water and place in ice to loosen the skin;","4 - cut in half to remove the seeds, if desired;","5 - Chop the already peeled tomatoes;","6 - Sauté in olive oil with garlic, sugar, salt and pepper;","7 - beat with a mixer and let it cook;","8 - Add the fresh basil to finish."],"servings":"3 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -190,6 +197,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -203,7 +211,7 @@ VALUES (
   '2 porções',
   '[{"totalEnergy":595,"servingEnergy":297},{"totalCarbs":109,"servingCarbs":54},{"totalProteins":3.3,"servingProteins":1.7},{"totalLipids":17,"servingLipids":8},{"totalSodium":1280,"servingSodium":640},{"totalPotassium":173,"servingPotassium":86}]'::jsonb,
   '[{"leucine":43,"totalLeucine":230,"servingLeucine":115},{"tirosine":19,"totalTirosine":100,"servingTirosine":50},{"fenil":27,"totalFenil":140,"servingFenil":70},{"metiotine":11,"totalMetiotine":60,"servingMetiotine":30}]'::jsonb,
-  '{"en-US":{"name":"Nhoque de batata salsa","ingredients":["250g of mandioquinha cozida","50g of farinha sem glúten","20g of maionese","4g of fermento químico em pó","5g of salsinha","3g of sal"],"preparation":["1 - Amasse a mandioquinha cozida com um garfo ou espremedor of batata até obter um purê;","2 - Acrescente os demais ingredientes, deixe a farinha por último;","3 - Amasse bem até ficar uma massa lisa;","4 - Faça bolinhas e depois rolinhos para cortar em formato of nhoque;","5 - Cozinhe o nhoque na água fervente;","6 - Retire com uma escumadeira quando subirem à superfície;","7 - Sirva com margarina ou molho of tomate e polvilhe salsinha por cima."],"servings":"2 porções"}}'::jsonb
+  '{"en-US":{"name":"Potato gnocchi","ingredients":["250g of cooked potato","50g of gluten-free flour","20g of mayonnaise","4g of chemical baking powder","5g of parsley","3g of salt"],"preparation":["1 - Mash the cooked potato with a fork or potato masher until you get a puree;","2 - Add the other ingredients, leaving the flour for last;","3 - Mash well until you get a smooth dough;","4 - Make balls and then rolls to cut into gnocchi shape;","5 - Cook the gnocchi in boiling water;","6 - Remove with a slotted spoon when they rise to the surface;","7 - Serve with margarine or tomato sauce and sprinkle with parsley."],"servings":"2 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -214,6 +222,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -227,7 +236,7 @@ VALUES (
   '2 porções',
   '[{"totalEnergy":488,"servingEnergy":244},{"totalCarbs":102,"servingCarbs":51},{"totalProteins":6.9,"servingProteins":3.4},{"totalLipids":6,"servingLipids":3},{"totalSodium":1276,"servingSodium":638},{"totalPotassium":1341,"servingPotassium":670}]'::jsonb,
   '[{"leucine":40,"totalLeucine":370,"servingLeucine":185},{"tirosine":20,"totalTirosine":190,"servingTirosine":95},{"fenil":28,"totalFenil":260,"servingFenil":130},{"metiotine":12,"totalMetiotine":110,"servingMetiotine":55}]'::jsonb,
-  '{"en-US":{"name":"Nhoque três tubérculos","ingredients":["80g of batata inglesa","70g of batata doce","100g of mandioca","15g of margarina sem sal","3g of sal","50g of farinha hipoproteica","80g of tomate","50g of cebola","3g of sal (molho)"],"preparation":["1 - Descasque e cozinhe os tubérculos até ficarem macios;","2 - Escorra bem e com o auxílio of um garfo amasse até obter um purê e adicione a margarina;","3 - Deixe esfriar, adicione o sal e a farinha até dar ponto na massa;","4 - Faça bolinhas com a massa;","5 - Cozinhe em uma pan com água fervente e um fio of óleo até que venham a superfície;","6 - Escorra com o auxílio of uma escumadeira;","7 - Pique o tomate em pedaços pequenos;","8 - Em uma pan, refogue com a cebola, tempere e deixe apurar;","9 - Sirva com molho of tomate."],"servings":"2 porções"}}'::jsonb
+  '{"en-US":{"name":"Three tuber gnocchi","ingredients":["80g of english potato","70g of sweet potato","100g of cassava","15g of unsalted margarine","3g of salt","50g of low-protein flour","80g of tomato","50g of onion","3g of salt (sauce)"],"preparation":["1 - Peel and cook the tubers until tender;","2 - Drain well and with the help of a fork mash until you get a puree and add the margarine;","3 - Let it cool, add the salt and flour until the dough is firm;","4 - Make small balls with the dough;","5 - Cook in a pan with boiling water and a drizzle of oil until they rise to the surface;","6 - Drain with the help of a slotted spoon;","7 - Chop the tomato into small pieces;","8 - In a pan, sauté with the onion, season and let it cook;","9 - Serve with tomato sauce."],"servings":"2 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -238,4 +247,5 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();

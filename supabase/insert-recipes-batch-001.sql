@@ -11,7 +11,7 @@ VALUES (
   '2 taças',
   '[{"totalEnergy":614,"servingEnergy":307},{"totalCarbs":137,"servingCarbs":69},{"totalProteins":2.2,"servingProteins":1.1},{"totalLipids":8,"servingLipids":6},{"totalSodium":153,"servingSodium":77},{"totalPotassium":75,"servingPotassium":38}]'::jsonb,
   '[{"leucine":44,"totalLeucine":200,"servingLeucine":100},{"tirosine":18,"totalTirosine":80,"servingTirosine":40},{"fenil":27,"totalFenil":120,"servingFenil":60},{"metiotine":11,"totalMetiotine":50,"servingMetiotine":25}]'::jsonb,
-  '{"en-US":{"name":"Bebida de morango tipo iogurte","ingredients":["480g of bebida vegetal a base of arroz","60g of sugar demerara","50g of strawberry frozen","15g of juice of lemon","5g of ágar-ágar"],"preparation":["1 - Em uma pan, mix 380g da bebida vegetal junto com o sugar e o ágar-ágar, deixe boil por uns 2 minutos mexendo sempre;","2 - Leve à refrigerator por aproximadamente uma hora para gel;","3 - cut os morangos em pedaços e beat junto com creme gelado, o juice of lemon e o restante da bebida vegetal com o auxílio of um mixer ou blender;","4 - Coloque em cups para serve."],"servings":"2 cups"}}'::jsonb
+  '{"en-US":{"name":"Yogurt type strawberry drink","ingredients":["480g of vegetable drink base of rice","60g of demerara sugar","50g of frozen strawberries","15g of lemon juice","5g of agar-agar"],"preparation":["1 - In a pan, mix 380g of vegetable drink base of rice with the sugar and agar-agar, let it boil for about 2 minutes stirring always;","2 - Let it cool in the refrigerator for about an hour;","3 - cut the strawberries into pieces and beat together with frozen strawberries, the lemon juice and the rest of the vegetable drink with the help of a mixer or blender;","4 - Place in cups to serve."],"servings":"2 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -22,6 +22,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -35,7 +36,7 @@ VALUES (
   '3 taças',
   '[{"totalEnergy":406,"servingEnergy":135},{"totalCarbs":80,"servingCarbs":27},{"totalProteins":1,"servingProteins":0.3},{"totalLipids":10,"servingLipids":3},{"totalSodium":56,"servingSodium":19},{"totalPotassium":47,"servingPotassium":16}]'::jsonb,
   '[{"leucine":45,"totalLeucine":100,"servingLeucine":33},{"tirosine":23,"totalTirosine":50,"servingTirosine":17},{"fenil":23,"totalFenil":50,"servingFenil":17},{"metiotine":9,"totalMetiotine":20,"servingMetiotine":7}]'::jsonb,
-  '{"en-US":{"name":"Flan de baunilha","ingredients":["250ml of água","50g of sugar","40g of creme of leite","30g of flan of vanilla em pó"],"preparation":["1 - Coloque todos os ingredientes em uma pan pequena e leve ao low heat, mexa até thicken;","2 - Distribua a mistura em cups e leve para chill;","3 - Faça uma syrup of caramel à parte, se desejar."],"servings":"3 cups"}}'::jsonb
+  '{"en-US":{"name":"Vanilla flan","ingredients":["250ml of water","50g of sugar","40g of milk cream","30g of vanilla powder"],"preparation":["1 - In a pan, mix all the ingredients and heat on low heat, stir until thicken;","2 - Distribute the mixture in cups and let it chill;","3 - Make a caramel syrup, if desired."],"servings":"3 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -46,6 +47,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -59,7 +61,7 @@ VALUES (
   '2 potinhos',
   '[{"totalEnergy":176,"servingEnergy":88},{"totalCarbs":36,"servingCarbs":18},{"totalProteins":0.8,"servingProteins":0.4},{"totalLipids":4,"servingLipids":2},{"totalSodium":7,"servingSodium":3},{"totalPotassium":142,"servingPotassium":71}]'::jsonb,
   '[{"leucine":46,"totalLeucine":60,"servingLeucine":30},{"tirosine":23,"totalTirosine":30,"servingTirosine":15},{"fenil":23,"totalFenil":30,"servingFenil":15},{"metiotine":8,"totalMetiotine":10,"servingMetiotine":5}]'::jsonb,
-  '{"en-US":{"name":"Flan de morango","ingredients":["15g of creme of leite","50ml of água","20g of sugar","75g of strawberry","4g of ágar-ágar"],"preparation":["1 - Em uma pan pequena, coloque a água e o ágar-ágar para boil mexendo sempre;","2 - beat os morangos picados, o creme of leite, o sugar e a água gelatinizada em um copo com o auxílio of um mixer;","3 - Disponha em potinhos individuais para serve"],"servings":"2 potinhos"}}'::jsonb
+  '{"en-US":{"name":"Strawberry flan","ingredients":["15g of milk cream","50ml of water","20g of sugar","75g of frozen strawberries","4g of agar-agar"],"preparation":["1 - In a pan, mix the water and agar-agar and heat on low heat, stir until thicken;","2 - beat the frozen strawberries, the milk cream, the sugar and the gelatinized water in a cup with the help of a mixer;","3 - Distribute in cups and let it chill"],"servings":"2 potinhos"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -70,6 +72,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -83,7 +86,7 @@ VALUES (
   '4 taças',
   '[{"totalEnergy":324,"servingEnergy":81},{"totalCarbs":79,"servingCarbs":20},{"totalProteins":1.1,"servingProteins":0.3},{"totalLipids":0,"servingLipids":0},{"totalSodium":45,"servingSodium":11},{"totalPotassium":1,"servingPotassium":0}]'::jsonb,
   '[{"leucine":45,"totalLeucine":90,"servingLeucine":23},{"tirosine":20,"totalTirosine":40,"servingTirosine":10},{"fenil":30,"totalFenil":60,"servingFenil":15},{"metiotine":5,"totalMetiotine":10,"servingMetiotine":3}]'::jsonb,
-  '{"en-US":{"name":"Chandele fake","ingredients":["400ml of água","40g of sugar demerara","30g of achocolatado em pó","15g of amido of milho","3g of ágar-ágar"],"preparation":["1 - Em uma pan, mix todos os ingredientes e cozinhe até levantar fervura. Deixe esfriar;","2 - beat a mistura no blender até obter um creme homogêneo;","3 - Disponha em cups individuais e leve à refrigerator."],"servings":"4 cups"}}'::jsonb
+  '{"en-US":{"name":"Fake chocolate pudding","ingredients":["400ml of water","40g of demerara sugar","30g of cocoa powder","15g of cornstarch","3g of agar-agar"],"preparation":["1 - In a pan, mix all the ingredients and heat on low heat untill boiling temperature, stir until thicken;","2 - beat the mixture in a blender until homogenous;","3 - Distribute in cups and let it chill in the refrigerator."],"servings":"4 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -94,6 +97,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -107,7 +111,7 @@ VALUES (
   '3 taças',
   '[{"totalEnergy":357,"servingEnergy":119},{"totalCarbs":90,"servingCarbs":30},{"totalProteins":2.11,"servingProteins":0.7},{"totalLipids":0,"servingLipids":0},{"totalSodium":27,"servingSodium":9},{"totalPotassium":788,"servingPotassium":263}]'::jsonb,
   '[{"leucine":43,"totalLeucine":130,"servingLeucine":43},{"tirosine":20,"totalTirosine":60,"servingTirosine":20},{"fenil":30,"totalFenil":90,"servingFenil":30},{"metiotine":7,"totalMetiotine":20,"servingMetiotine":7}]'::jsonb,
-  '{"en-US":{"name":"Inhaminho com geléia","ingredients":["100g of inhame descascado e cozido","50g of strawberry frozen","45g of geleia of strawberry","30g of sugar refinado"],"preparation":["1 - Cozinhe o inhame e beat no blender com os morangos e o sugar;","2 - Em potinhos faça uma camada com o creme e coloque a geleia por cima;","3 - Leve para chill e sirva."],"servings":"3 cups"}}'::jsonb
+  '{"en-US":{"name":"Yam jam","ingredients":["100g of yam without peeling and cooked","50g of frozen strawberries","45g of strawberry jam","30g of refined sugar"],"preparation":["1 - Cook the yam and beat in a blender with the strawberries and the sugar;","2 - In cups make a layer with the yam and put the jam on top;","3 - Chill and serve."],"servings":"3 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -118,6 +122,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -131,7 +136,7 @@ VALUES (
   '5 taças',
   '[{"totalEnergy":925,"servingEnergy":185},{"totalCarbs":139,"servingCarbs":28},{"totalProteins":5.3,"servingProteins":1.1},{"totalLipids":43,"servingLipids":9},{"totalSodium":30,"servingSodium":6},{"totalPotassium":777,"servingPotassium":155}]'::jsonb,
   '[{"leucine":43,"totalLeucine":370,"servingLeucine":74},{"tirosine":20,"totalTirosine":170,"servingTirosine":34},{"fenil":28,"totalFenil":240,"servingFenil":48},{"metiotine":9,"totalMetiotine":80,"servingMetiotine":16}]'::jsonb,
-  '{"en-US":{"name":"Iogurte fake","ingredients":["200g of leite of coco","50ml of água","40g of sugar","20g of pó para preparo of bebida sabor strawberry","10g of amido of milho","2g of essência of vanilla","0,5g of ágar-ágar"],"preparation":["Modo of preparo do creme","1 - Em uma pan, mix todos os ingredientes. Leve ao fogo e cozinhe até thicken;","2 - Leve à refrigerator até chill.","Modo of preparo da syrup","3 - Em uma pan, coloque os morangos picados, o sugar, a água e o ágar-ágar;","4 - Leve ao fogo até adquirir consistência;","5 - Leve à refrigerator até chill.","Montagem","Após gelados, distribua o creme e syrup em 5 cups individuais. A syrup pode ficar por cima do creme ou por baixo do creme."],"servings":"5 cups"}}'::jsonb
+  '{"en-US":{"name":"Fake Yogurt","ingredients":["200g of coconut milk","50ml of water","40g of sugar","20g of strawberry drink powder","10g of cornstarch","2g of vanilla essence","0,5g of agar-agar"],"preparation":["Preparation of the cream","1 - In a pan, mix all the ingredients. Heat on low heat until thicken;","2 - Let it cool in the refrigerator for about an hour;","Preparation of the syrup","3 - In a pan, place the strawberries, the sugar, the water and the agar-agar;","4 - Heat until consistency;","5 - Let it cool in the refrigerator for about an hour;","Assembly","After everything is chilled, distribute the cream and syrup in 5 cups individually. The syrup can be on top of the cream or below the cream."],"servings":"5 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -142,6 +147,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -155,7 +161,7 @@ VALUES (
   '2 copos',
   '[{"totalEnergy":262,"servingEnergy":131},{"totalCarbs":56,"servingCarbs":28},{"totalProteins":2,"servingProteins":1},{"totalLipids":5,"servingLipids":2},{"totalSodium":81,"servingSodium":41},{"totalPotassium":354,"servingPotassium":177}]'::jsonb,
   '[{"leucine":46,"totalLeucine":160,"servingLeucine":80},{"tirosine":20,"totalTirosine":70,"servingTirosine":35},{"fenil":26,"totalFenil":90,"servingFenil":45},{"metiotine":8,"totalMetiotine":30,"servingMetiotine":15}]'::jsonb,
-  '{"en-US":{"name":"Vitamina de morango e banana","ingredients":["250g of bebida vegetal a base of arroz","70g of strawberry","60g of banana prata"],"preparation":["1 - No blender, coloque a bebida of arroz, os morangos e banana picados;","2 - beat até obter uma mistura homogênea","3 - Sirva gelado, se preferir"],"servings":"2 copos"}}'::jsonb
+  '{"en-US":{"name":"Strawberry and banana smoothie","ingredients":["250g of rice based vegetable drink","70g of strawberry","60g of banana prata"],"preparation":["1 - In a blender, place the rice drink, the strawberries and the banana;","2 - beat until homogenous","3 - Serve chilled, if you prefer"],"servings":"2 cups"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -166,6 +172,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -179,7 +186,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":1122,"servingEnergy":112},{"totalCarbs":191,"servingCarbs":19},{"totalProteins":1.7,"servingProteins":0.2},{"totalLipids":39,"servingLipids":4},{"totalSodium":65,"servingSodium":6},{"totalPotassium":21,"servingPotassium":2}]'::jsonb,
   '[{"leucine":45,"totalLeucine":130,"servingLeucine":13},{"tirosine":21,"totalTirosine":60,"servingTirosine":6},{"fenil":27,"totalFenil":80,"servingFenil":8},{"metiotine":7,"totalMetiotine":20,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Biscoitinho crocante de tapioca","ingredients":["80g of tapioca granulada","20g of sugar","20g of achocolatado","10g of margarina sem sal","10g of creme of leite","55ml of água quente","120g of gotas of chocolate "],"preparation":["1 - mix todos os ingredientes, exceto as gotas of chocolate, e deixe hidratando por cerca of 10 minutos para que a tapioca fique mais macia;","2 - Abra a massa entre papel manteiga e use um copo para formatar os biscoitos;","3 - Unte uma forma com margarina e disponha os biscoitos;","4 - Leve para assar no forno a 200°C por aproximadamente 20 minutos;","5 - Derreta as gotas of chocolate em banho-maria;","6 - Mergulhe os biscoitos já frios no chocolate e coloque sobre um pedaço of papel manteiga para não grudar"],"servings":"10 unidades"}}'::jsonb
+  '{"en-US":{"name":"Tapioca crunchy cookies","ingredients":["80g of granulated tapioca","20g of sugar","20g of chocolate powder","10g of unsalted margarine","10g of cream of milk","55ml of hot water","120g of chocolate chips"],"preparation":["1 - Mix all the ingredients, except the chocolate chips, and let it hydrate for about 10 minutes so that the tapioca becomes softer;","2 - Open the dough between parchment paper and use a cup to shape the cookies;","3 - Grease a baking sheet with margarine and arrange the cookies;","4 - Bake in the oven at 200°C for approximately 20 minutes;","5 - Melt the chocolate chips in a double boiler;","6 - Dip the already cooled cookies in the chocolate and place them on a piece of parchment paper to prevent sticking"],"servings":"10 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -190,6 +197,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -203,7 +211,7 @@ VALUES (
   '40 unidades',
   '[{"totalEnergy":1547,"servingEnergy":39},{"totalCarbs":242,"servingCarbs":6},{"totalProteins":2.1,"servingProteins":0.1},{"totalLipids":62,"servingLipids":2},{"totalSodium":922,"servingSodium":23},{"totalPotassium":71,"servingPotassium":2}]'::jsonb,
   '[{"leucine":46,"totalLeucine":200,"servingLeucine":5},{"tirosine":16,"totalTirosine":70,"servingTirosine":2},{"fenil":26,"totalFenil":110,"servingFenil":3},{"metiotine":12,"totalMetiotine":50,"servingMetiotine":1}]'::jsonb,
-  '{"en-US":{"name":"Sequilho de coco","ingredients":["40g of sugar refinado","180g of amido of milho","40g of farinha sem glúten","150g of margarina sem sal","12g of coco seco ralado"],"preparation":["1 - Em um recipiente, junte todos os ingredientes e amasse com as mãos até obter uma massa homogênea;","2 - Abra a massa por cima of um plástico e com o auxílio of um rolo;","3 - cut no formato que desejar e disponha em uma assadeira;","4 - Asse a 180°C por aproximadamente 30 minutos ou até os biscoitos ficarem dourados."],"servings":"40 unidades"}}'::jsonb
+  '{"en-US":{"name":"Coconut sequilho","ingredients":["40g of refined sugar","180g of cornstarch","40g of gluten-free flour","150g of unsalted margarine","12g of dry shredded coconut"],"preparation":["1 - In a recipient, join all the ingredients and knead with your hands until obtaining a homogeneous dough;","2 - Open the dough on top of a plastic and with the help of a rolling pin;","3 - cut in the desired shape and arrange on a baking sheet;","4 - Bake at 180°C for approximately 30 minutes or until the cookies are golden."],"servings":"40 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -214,6 +222,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -227,7 +236,7 @@ VALUES (
   '14 unidades',
   '[{"totalEnergy":1770,"servingEnergy":126},{"totalCarbs":339,"servingCarbs":24},{"totalProteins":1.9,"servingProteins":0.1},{"totalLipids":37,"servingLipids":3},{"totalSodium":373,"servingSodium":27},{"totalPotassium":137,"servingPotassium":10}]'::jsonb,
   '[{"leucine":45,"totalLeucine":140,"servingLeucine":10},{"tirosine":19,"totalTirosine":60,"servingTirosine":4},{"fenil":26,"totalFenil":80,"servingFenil":6},{"metiotine":10,"totalMetiotine":30,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Bolachas de mel","ingredients":["60g of sugar refinado","15g of achocolatado em pó","180g of farinha hipoproteica","80g of amido of milho","5g of canela em pó","36g of mel","60g of margarina sem sal","14g of óleo vegetal","10g of uva passa picada","5g fermento químico em pó","8g of vinagre of maçã"],"preparation":["1 - mix a margarina com o óleo e acrescente os ingredientes secos;","2 - mix o vinagre com o fermento e adicione aos demais ingredientes;","3 - Sove a massa até ficar homogênea;","4 - Abra a massa entre dois plásticos com o auxílio of um rolo e cut do formato que desejar;","5 - Asse em forno pré-aquecido, não muito quente, até dourar embaixo;","6 - Deixe esfriar cerca of 15 minutos antes of serve."],"servings":"14 unidades"}}'::jsonb
+  '{"en-US":{"name":"Honey cookies","ingredients":["60g of refined sugar","15g of chocolate powder","180g of low-protein flour","80g of cornstarch","5g of cinnamon powder","36g of honey","60g of unsalted margarine","14g of vegetable oil","10g of chopped raisins","5g of baking powder","8g of apple cider vinegar"],"preparation":["1 - Mix the margarine with the oil and add the dry ingredients;","2 - Mix the vinegar with the baking powder and add to the other ingredients;","3 - Knead the dough until it is homogeneous;","4 - Open the dough between two plastics with the help of a rolling pin and cut into the desired shape;","5 - Bake in a preheated oven, not too hot, until golden underneath;","6 - Let it cool for about 15 minutes before serving."],"servings":"14 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -238,4 +247,5 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();

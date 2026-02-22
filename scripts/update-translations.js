@@ -44,31 +44,39 @@ let sql = `-- Update translations for existing recipes
 
 `;
 
-const updates = [];
+    // Cria um mapa de traduções por ID para busca rápida e segura
+    const enMap = new Map();
+    if (recipesEn) {
+      recipesEn.forEach((cat) => {
+        cat.recipes.forEach((r) => {
+          if (r.id) enMap.set(r.id, r);
+        });
+      });
+    }
 
-recipesPt.forEach((categoryData, catIndex) => {
-  categoryData.recipes.forEach((recipePt, recipeIndex) => {
-    const recipeEn = recipesEn?.[catIndex]?.recipes?.[recipeIndex];
+    recipesPt.forEach((categoryData, catIndex) => {
+      categoryData.recipes.forEach((recipePt, recipeIndex) => {
+        const recipeEn = enMap.get(recipePt.id);
 
-    if (
-      recipeEn &&
-      (recipeEn.name || recipeEn.ingredients || recipeEn.preparation)
-    ) {
-      const translation = {
-        "en-US": {
-          name: recipeEn.name || recipePt.name,
-          ingredients: recipeEn.ingredients || recipePt.ingredients,
-          preparation: recipeEn.preparation || recipePt.preparation,
-          servings: recipeEn.servings || recipePt.servings,
-        },
-      };
+        if (
+          recipeEn &&
+          (recipeEn.name || recipeEn.ingredients || recipeEn.preparation)
+        ) {
+          const translation = {
+            "en-US": {
+              name: recipeEn.name || recipePt.name,
+              ingredients: recipeEn.ingredients || recipePt.ingredients,
+              preparation: recipeEn.preparation || recipePt.preparation,
+              servings: recipeEn.servings || recipePt.servings,
+            },
+          };
 
-      updates.push(`UPDATE recipes
+          updates.push(`UPDATE recipes
 SET translations = ${toJsonSql(translation)}
 WHERE id = ${recipePt.id};`);
-    }
-  });
-});
+        }
+      });
+    });
 
 if (updates.length > 0) {
   sql += updates.join("\n\n");

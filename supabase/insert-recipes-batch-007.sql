@@ -11,7 +11,7 @@ VALUES (
   '30 unidades',
   '[{"totalEnergy":2021,"servingEnergy":67},{"totalCarbs":561,"servingCarbs":19},{"totalProteins":4.7,"servingProteins":0.2},{"totalLipids":2,"servingLipids":0},{"totalSodium":3110,"servingSodium":104},{"totalPotassium":288,"servingPotassium":10}]'::jsonb,
   '[{"leucine":42,"totalLeucine":170,"servingLeucine":6},{"tirosine":20,"totalTirosine":80,"servingTirosine":3},{"fenil":28,"totalFenil":110,"servingFenil":4},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":1}]'::jsonb,
-  '{"en-US":{"name":"Pãozinho de mandioquinha","ingredients":["400g of mandioquinha","400g of polvilho doce","100g of polvilho azedo","250ml of água quente"],"preparation":["1 - Cozinhe a mandioquinha e amasse até obter um purê;","2 - Adicione os polvilhos e adicione a água aos poucos;","3 - mix bem e depois amasse com as mãos até formar uma massa firme e homogênea;","4 - Faça bolinhas e disponha em uma assadeira;","5 - Asse em forno pré-aquecido a 200°C até crescer igual pãozinho of queijo convencional e dourar levemente."],"servings":"30 unidades"}}'::jsonb
+  '{"en-US":{"name":"Cassava bread rolls","ingredients":["400g of cassava","400g of sweet tapioca starch","100g of sour tapioca starch","250ml of warm water"],"preparation":["1 - Cook the cassava and mash until it becomes a puree;","2 - Add the tapioca starches and add the water little by little;","3 - Mix well and then knead with your hands until it forms a firm and homogeneous dough;","4 - Make balls and place them on a baking sheet;","5 - Bake in a preheated oven at 200°C until it rises like conventional cheese bread and browns lightly."],"servings":"30 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -22,6 +22,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -35,7 +36,7 @@ VALUES (
   '20 unidades',
   '[{"totalEnergy":1832,"servingEnergy":92},{"totalCarbs":360,"servingCarbs":18},{"totalProteins":5.7,"servingProteins":0.3},{"totalLipids":41,"servingLipids":2},{"totalSodium":1606,"servingSodium":80},{"totalPotassium":1003,"servingPotassium":50}]'::jsonb,
   '[{"leucine":41,"totalLeucine":140,"servingLeucine":7},{"tirosine":18,"totalTirosine":60,"servingTirosine":3},{"fenil":29,"totalFenil":100,"servingFenil":5},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Pãozinho de beijo","ingredients":["200g of polvilho doce","50g of polvilho azedo","360g of mandioca cozida","100ml of água","40g of óleo vegetal","5g of fermento químico em pó","4g of sal","0,5g of orégano seco"],"preparation":["1 - Amasse a mandioca cozida ainda quente até obter um purê e reserve;","2 - Em uma pan ferva a água, o óleo e o sal;","3 - Em outro recipiente misturar os polvilhos e adicione a água temperada;","4 - mix bem e adicione o purê of mandioca aos poucos, até obter uma massa lisa que não grude nas mãos;","5 - Faça bolinhas e disponha em uma assadeira untada com margarina;","6 - Asse em forno pré-aquecido a 180°C até dourar."],"servings":"20 unidades"}}'::jsonb
+  '{"en-US":{"name":"Kiss bread rolls","ingredients":["200g of sweet tapioca starch","50g of sour tapioca starch","360g of cooked cassava","100ml of water","40g of vegetable oil","5g of chemical baking powder","4g of salt","0,5g of dried oregano"],"preparation":["1 - Mash the cooked cassava while still hot until it becomes a puree and set aside;","2 - In a pan, boil the water, oil, and salt;","3 - In another container, mix the tapioca starches and add the seasoned water;","4 - Mix well and add the cassava puree little by little, until you get a smooth dough that doesn''t stick to your hands;","5 - Make balls and place them on a greased baking sheet;","6 - Bake in a preheated oven at 180°C until golden."],"servings":"20 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -46,6 +47,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -59,7 +61,7 @@ VALUES (
   '14 fatias',
   '[{"totalEnergy":1707,"servingEnergy":122},{"totalCarbs":309,"servingCarbs":22},{"totalProteins":13.1,"servingProteins":0.9},{"totalLipids":42,"servingLipids":3},{"totalSodium":2632,"servingSodium":188},{"totalPotassium":70,"servingPotassium":5}]'::jsonb,
   '[{"leucine":44,"totalLeucine":1170,"servingLeucine":84},{"tirosine":19,"totalTirosine":490,"servingTirosine":35},{"fenil":26,"totalFenil":680,"servingFenil":49},{"metiotine":11,"totalMetiotine":300,"servingMetiotine":21}]'::jsonb,
-  '{"en-US":{"name":"Pão sem glúten","ingredients":["300g of farinha sem glúten","65g of sugar orgânico","7g of fermento biológico seco","5g of emulsificante","2g of liga neutra","75g of margarina sem sal","60g of creme of leite","190ml of água","3g of sal"],"preparation":["1 - Em um recipiente, mix bem a farinha, o sugar o emulsificante, a liga neutra e o fermento, reserve;","2 - Aqueça a margarina junto com o creme of leite no micro-ondas por 25 segundos;","3 - Adicione essa mistura à massa anterior e mexa com o auxílio of um fuê;","4 - Adicione a água morna aos poucos até a massa ficar em ponto of sovar, não muito é mole;","5 - Coloque a massa na batedeira e beat em velocidade mínima por 5 minutos;","6 - Disponha a massa em forma of bolo inglês e deixe crescer por 20 minutos;","7 - Asse em forno pré-aquecido a 230°C por aproximadamente 35 minutos ou até que fique assado por completo."],"servings":"14 fatias"}}'::jsonb
+  '{"en-US":{"name":"Gluten-free bread","ingredients":["300g of gluten-free flour","65g of organic sugar","7g of dry biological yeast","5g of emulsifier","2g of neutral binder","75g of unsalted margarine","60g of creme of leite","190ml of water","3g of salt"],"preparation":["1 - In a container, mix well the flour, sugar, emulsifier, neutral binder and yeast, set aside;","2 - Heat the margarine together with the creme of leite in the microwave for 25 seconds;","3 - Add this mixture to the previous dough and mix with the help of a whisk;","4 - Add the warm water little by little until the dough is ready to knead, not too soft;","5 - Place the dough in the mixer and beat at minimum speed for 5 minutes;","6 - Arrange the dough in a loaf pan and let it rise for 20 minutes;","7 - Bake in a preheated oven at 230°C for approximately 35 minutes or until fully baked."],"servings":"14 slices"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -70,6 +72,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -83,7 +86,7 @@ VALUES (
   '2 porções',
   '[{"totalEnergy":886,"servingEnergy":443},{"totalCarbs":45,"servingCarbs":22},{"totalProteins":1.5,"servingProteins":0.7},{"totalLipids":79,"servingLipids":40},{"totalSodium":1172,"servingSodium":586},{"totalPotassium":507,"servingPotassium":254}]'::jsonb,
   '[{"leucine":45,"totalLeucine":90,"servingLeucine":45},{"tirosine":20,"totalTirosine":40,"servingTirosine":20},{"fenil":25,"totalFenil":50,"servingFenil":25},{"metiotine":10,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Abobrinha crocante","ingredients":["200g of abobrinha","40g of amido of milho","1g of orégano seco","3g of sal","Óleo para fritar"],"preparation":["1 - Lave e cut as abobrinhas em rodelas, reserve;","2 - Em um recipiente, mix o amido of milho com o sal e o orégano;","3 - Passe as rodelas of abobrinha nessa mistura;","4 - Frite em óleo quente e coloque em papel absorvente."],"servings":"2 porções"}}'::jsonb
+  '{"en-US":{"name":"Crispy zucchini","ingredients":["200g of zucchini","40g of cornstarch","1g of dried oregano","3g of salt","Oil for frying"],"preparation":["1 - Wash and cut the zucchini into slices, set aside;","2 - In a container, mix the cornstarch with the salt and oregano;","3 - Pass the zucchini slices through this mixture;","4 - Fry in hot oil and place on absorbent paper."],"servings":"2 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -94,6 +97,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -107,7 +111,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":309,"servingEnergy":31},{"totalCarbs":62,"servingCarbs":6},{"totalProteins":4.1,"servingProteins":0.4},{"totalLipids":5,"servingLipids":0},{"totalSodium":1562,"servingSodium":156},{"totalPotassium":549,"servingPotassium":55}]'::jsonb,
   '[{"leucine":42,"totalLeucine":240,"servingLeucine":24},{"tirosine":23,"totalTirosine":130,"servingTirosine":13},{"fenil":28,"totalFenil":160,"servingFenil":16},{"metiotine":7,"totalMetiotine":40,"servingMetiotine":4}]'::jsonb,
-  '{"en-US":{"name":"Almôndegas de berinjela","ingredients":["200g of berinjela sem casca","30g of cebola","10g of alho","50g of farinha of mandioca","5g of salsinha","10g of azeite of oliva","4g of sal","0,5g of orégano seco"],"preparation":["1 - cut a berinjela em pedaços bem pequenos e deixe of molho na água;","2 - Em uma pan, refogue o alho e a cebola no azeite;","3 - Escorra a berinjela e junte à pan, acerte o sal;","4 - Tampe a pan e abaixe o fogo, a berinjela vai soltar água que será necessário para o cozimento, mexa of vez em quando até secar a água e a berinjela estiver molinha;","5 - Se necessário coloque mais um pouco of água;","6 - Adicione a salsinha e desligue o fogo;","7 - Deixe esfriar e amasse bem o garfo até ficar bem triturado;","8 - Coloque a farinha of mandioca até ficar no ponto of conseguir moldar em bolinhas;","9 - Disponha em uma assadeira e asse em forno pré-aquecido até dourar."],"servings":"10 unidades"}}'::jsonb
+  '{"en-US":{"name":"Eggplant meatballs","ingredients":["200g of eggplant without skin","30g of onion","10g of garlic","50g of cassava flour","5g of parsley","10g of olive oil","4g of salt","0,5g of dried oregano"],"preparation":["1 - cut the eggplant into very small pieces and let it soak in water;","2 - In a pan, sauté the garlic and onion in olive oil;","3 - Drain the eggplant and add it to the pan, season with salt;","4 - Cover the pan and lower the heat, the eggplant will release water that will be necessary for cooking, stir occasionally until the water dries up and the eggplant is tender;","5 - If necessary, add a little more water;","6 - Add the parsley and turn off the heat;","7 - Let it cool and mash well with a fork until it is well ground;","8 - Add the cassava flour until it is in the right consistency to be shaped into balls;","9 - Arrange in a baking sheet and bake in a preheated oven until golden."],"servings":"10 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -118,6 +122,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -131,7 +136,7 @@ VALUES (
   '8 unidades',
   '[{"totalEnergy":980,"servingEnergy":122},{"totalCarbs":104,"servingCarbs":13},{"totalProteins":13.1,"servingProteins":1.6},{"totalLipids":59,"servingLipids":7},{"totalSodium":1574,"servingSodium":197},{"totalPotassium":2763,"servingPotassium":345}]'::jsonb,
   '[{"leucine":40,"totalLeucine":860,"servingLeucine":108},{"tirosine":23,"totalTirosine":510,"servingTirosine":64},{"fenil":27,"totalFenil":590,"servingFenil":74},{"metiotine":10,"totalMetiotine":220,"servingMetiotine":28}]'::jsonb,
-  '{"en-US":{"name":"Batata recheada","ingredients":["490g of batatas grandes","5g of alho amassado","3g of sal","50g of queijo vegano","60g of creme of leite","40g of maionese","1g of orégano"],"preparation":["1 - Lave as batatas, cut as duas extremidades para que as batatas fiquem em pé e cut-as ao meio ou longitudinalmente, se preferir;","2 - Em uma pan of pressão, cozinhe por cerca of 10 minutos após começar a chiar;","3 - Com as batatas ainda quentes, retire o centro preservando o fundo e laterais;","4 - Amasse a porção retirada das batatas e tempere com a margarina, alho, creme of leite, sal e ervas a gosto;","5 - Disponha as batatas em um refratário, salpique sal e coloque o purê temperado dentro das batatas;","6 - À parte, mix os ingredientes do gratinado of queijo e coloque por cima das batatas;","7 - Leve ao forno a 200°C até gratinar."],"servings":"8 unidades"}}'::jsonb
+  '{"en-US":{"name":"Stuffed potato","ingredients":["490g of large potatoes","5g of mashed garlic","3g of salt","50g of vegan cheese","60g of cream of leite","40g of mayonnaise","1g of oregano"],"preparation":["1 - Wash the potatoes, cut the two ends so that the potatoes stand upright and cut them in half or lengthwise, if you prefer;","2 - In a pressure cooker, cook for about 10 minutes after it starts to hiss;","3 - With the potatoes still hot, remove the center preserving the bottom and sides;","4 - Mash the portion removed from the potatoes and season with margarine, garlic, cream of leite, salt and herbs to taste;","5 - Arrange the potatoes in a baking dish, sprinkle with salt and place the seasoned puree inside the potatoes;","6 - Separately, mix the cheese gratin ingredients and place them on top of the potatoes;","7 - Bake in a preheated oven at 200°C until golden."],"servings":"8 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -142,6 +147,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -155,7 +161,7 @@ VALUES (
   '2 porções',
   '[{"totalEnergy":325,"servingEnergy":162},{"totalCarbs":43,"servingCarbs":22},{"totalProteins":5.5,"servingProteins":2.8},{"totalLipids":16,"servingLipids":8},{"totalSodium":1184,"servingSodium":592},{"totalPotassium":1330,"servingPotassium":665}]'::jsonb,
   '[{"leucine":39,"totalLeucine":300,"servingLeucine":150},{"tirosine":23,"totalTirosine":180,"servingTirosine":90},{"fenil":28,"totalFenil":220,"servingFenil":110},{"metiotine":10,"totalMetiotine":80,"servingMetiotine":40}]'::jsonb,
-  '{"en-US":{"name":"Batatas ao forno","ingredients":["200g of batata","90g of tomate cereja","15g of azeite of oliva","8g of alho","1g of alecrim ou orégano seco","0,5g of páprica picante","2g of sal"],"preparation":["1 - Em uma pan com água e sal, pré cozinhe as batatas já cortadas;","2 - Disponha as batatas em um refratário e adicione os tomates, alho, alecrim e a páprica;","3 - Asse em forno pré-aquecido a 200°C até que fiquem douradas."],"servings":"2 porções"}}'::jsonb
+  '{"en-US":{"name":"Baked potatoes","ingredients":["200g of potato","90g of cherry tomato","15g of olive oil","8g of garlic","1g of rosemary or dried oregano","0,5g of hot paprika","2g of salt"],"preparation":["1 - In a pan with water and salt, pre-cook the potatoes already cut;","2 - Arrange the potatoes in a baking dish and add the tomatoes, garlic, rosemary and paprika;","3 - Bake in a preheated oven at 200°C until golden."],"servings":"2 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -166,6 +172,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -179,7 +186,7 @@ VALUES (
   '2 porções',
   '[{"totalEnergy":687,"servingEnergy":344},{"totalCarbs":83,"servingCarbs":41},{"totalProteins":3.4,"servingProteins":1.7},{"totalLipids":39,"servingLipids":19},{"totalSodium":1178,"servingSodium":589},{"totalPotassium":653,"servingPotassium":327}]'::jsonb,
   '[{"leucine":46,"totalLeucine":230,"servingLeucine":115},{"tirosine":18,"totalTirosine":90,"servingTirosine":45},{"fenil":28,"totalFenil":140,"servingFenil":70},{"metiotine":8,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
-  '{"en-US":{"name":"Berinjela à milanesa","ingredients":["300g of berinjela","70g of amido of milho","5g of sal","2g of orégano seco ou chimichurri","Óleo para fritar"],"preparation":["1 - Pique a berinjela e deixe of molho na água com o vinagre;","2 - Retire da água e tempere a berinjela com sal e chimichurri ou orégano;","3 - Empane com o amido of milho;","4 - Frite no óleo bem quente e coloque em papel absorvente."],"servings":"2 porções"}}'::jsonb
+  '{"en-US":{"name":"Breaded eggplant","ingredients":["300g of eggplant","70g of cornstarch","5g of salt","2g of dried oregano or chimichurri","Oil for frying"],"preparation":["1 - Chop the eggplant and let it soak in water with vinegar;","2 - Remove from water and season the eggplant with salt and chimichurri or oregano;","3 - Coat with cornstarch;","4 - Fry in hot oil and place on absorbent paper."],"servings":"2 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -190,6 +197,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -203,7 +211,7 @@ VALUES (
   '4 porções',
   '[{"totalEnergy":1161,"servingEnergy":290},{"totalCarbs":61,"servingCarbs":15},{"totalProteins":4.9,"servingProteins":1.2},{"totalLipids":103,"servingLipids":26},{"totalSodium":2070,"servingSodium":518},{"totalPotassium":860,"servingPotassium":215}]'::jsonb,
   '[{"leucine":41,"totalLeucine":250,"servingLeucine":63},{"tirosine":23,"totalTirosine":140,"servingTirosine":35},{"fenil":29,"totalFenil":180,"servingFenil":45},{"metiotine":7,"totalMetiotine":40,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Berinjela à parmegiana","ingredients":["240g of tomate pelado","5g of azeite of oliva","5g of alho","3g of sal","140g of berinjela","35g of farinha of mandioca torrada","40g of queijo tipo mussarela vegano","2g of sal","200g of óleo vegetal para fritar"],"preparation":["1 - Lave a berinjela, cut-a em rodelas of aproximadamente 1 cm e deixe of molho na água;","2 - mix o sal na farinha of mandioca e retire as fatias of berinjela da água;","3 - Uma a uma, passe as fatias of berinjela dos dois lados na farinha of mandioca;","4 - Frite-as em óleo bem quente e reserve (utilizar 200g of óleo para fritura em imersão);","5 - beat os tomates com o alho, sal e azeite e coloque em uma pan em low heat até boil;","6 - Em uma travessa of vidro, coloque um pouco of molho, e coloque as rodelas of berinjela em cima, cubra com o restante do molho;","7 - Rale o queijo na parte mais grossa do ralador e distribua por cima da preparação;","8 - Leve ao forno até derreter o queijo, sirva quente."],"servings":"4 porções"}}'::jsonb
+  '{"en-US":{"name":"Eggplant parmigiana","ingredients":["240g of peeled tomato","5g of olive oil","5g of garlic","3g of salt","140g of eggplant","35g of toasted cassava flour","40g of vegan mozzarella cheese","2g of salt","200g of vegetable oil for frying"],"preparation":["1 - Wash the eggplant, cut it into slices of approximately 1 cm and let it soak in water;","2 - Mix the salt in the cassava flour and remove the eggplant slices from the water;","3 - One by one, pass the eggplant slices on both sides through the cassava flour;","4 - Fry them in very hot oil and set aside (use 200g of oil for deep frying);","5 - Beat the tomatoes with the garlic, salt and olive oil and place in a pan over low heat until it boils;","6 - In a glass dish, place a little sauce, and place the eggplant slices on top, cover with the rest of the sauce;","7 - Grate the cheese on the thickest part of the grater and distribute it over the preparation;","8 - Bake in the oven until the cheese melts, serve hot."],"servings":"4 servings"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -214,6 +222,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -227,7 +236,7 @@ VALUES (
   '5 unidades',
   '[{"totalEnergy":445,"servingEnergy":89},{"totalCarbs":46,"servingCarbs":9},{"totalProteins":2.9,"servingProteins":0.6},{"totalLipids":27,"servingLipids":5},{"totalSodium":1168,"servingSodium":234},{"totalPotassium":423,"servingPotassium":85}]'::jsonb,
   '[{"leucine":40,"totalLeucine":170,"servingLeucine":34},{"tirosine":24,"totalTirosine":100,"servingTirosine":20},{"fenil":26,"totalFenil":110,"servingFenil":22},{"metiotine":10,"totalMetiotine":40,"servingMetiotine":8}]'::jsonb,
-  '{"en-US":{"name":"Bife de abobrinha","ingredients":["150g of abobrinha","30g of cebola","1g of alho","6g of óleo vegetal","2g of orégano","30g of farinha of mandioca","3g of sal","15g of farinha of mandioca para empanar","Óleo para fritar"],"preparation":["1 - Refogue a abobrinha no óleo com os demais temperos até que fique transparente;","2 - Adicione a farinha of mandioca ainda com a pan no fogo;","3 - Mexa vigorosamente por 3 minutos para que a farinha incorpore bem;","4 - Espere esfriar e molde os hambúrgueres com as mãos untadas of óleo;","5 - Passe na farinha of mandioca para empanar;","6 - Frite em fogo médio e coloque em papel absorvente."],"servings":"5 unidades"}}'::jsonb
+  '{"en-US":{"name":"Zucchini steak","ingredients":["150g of zucchini","30g of onion","1g of garlic","6g of vegetable oil","2g of oregano","30g of cassava flour","3g of salt","15g of cassava flour for breading","Oil for frying"],"preparation":["1 - Sauté the zucchini in oil with the other seasonings until it becomes transparent;","2 - Add the cassava flour while the pan is still on the heat;","3 - Stir vigorously for 3 minutes so that the flour incorporates well;","4 - Let it cool and shape the burgers with oiled hands;","5 - Pass through the cassava flour to bread;","6 - Fry over medium heat and place on absorbent paper."],"servings":"5 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -238,4 +247,5 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();

@@ -11,7 +11,7 @@ VALUES (
   '10 fatias',
   '[{"totalEnergy":1425,"servingEnergy":143},{"totalCarbs":181,"servingCarbs":18},{"totalProteins":7.8,"servingProteins":0.8},{"totalLipids":81,"servingLipids":8},{"totalSodium":78,"servingSodium":8},{"totalPotassium":641,"servingPotassium":64}]'::jsonb,
   '[{"leucine":43,"totalLeucine":660,"servingLeucine":66},{"tirosine":20,"totalTirosine":300,"servingTirosine":30},{"fenil":26,"totalFenil":390,"servingFenil":39},{"metiotine":11,"totalMetiotine":170,"servingMetiotine":17}]'::jsonb,
-  '{"en-US":{"name":"Pudim de tapioca","ingredients":["100ml of água","160g of sugar refinado","200g of leite of coco diluído em 100ml of água","100g of tapioca desidratada","25g of margarina sem sal","30g of amido of milho","125g of creme of leite","10g of coco ralado","10g of pó para preparo of flan sabor vanilla"],"preparation":["Modo of preparo da syrup","1 - Em uma pan, derreta o quanto baste of sugar e faça um caramel;","2 - Envolva uma forma com a syrup of caramel ainda quente e reserve.","Modo of preparo do pudim","1 - Em uma vasilha, coloque a tapioca of molho no leite of coco diluído em água por alguns minutos;","2 - beat no blender a tapioca já hidratada com os demais ingredientes, exceto o coco ralado;","3 - Adicione o coco na mistura e coloque na forma caramelizada;","4 - Asse em banho maria no forno ou pan por aproximadamente 40 minutos."],"servings":"10 fatias"}}'::jsonb
+  '{"en-US":{"name":"Tapioca Pudding","ingredients":["100ml of water","160g of refined sugar","200g of coconut milk diluted in 100ml of water","100g of dehydrated tapioca","25g of unsalted margarine","30g of cornstarch","125g of cream of milk","10g of grated coconut","10g of vanilla flan mix"],"preparation":["Method of preparing the syrup","1 - In a pan, melt the sugar and make a caramel;","2 - Coat a mold with the still hot caramel syrup and set aside.","Method of preparing the pudding","1 - In a bowl, soak the tapioca in the coconut milk diluted in water for a few minutes;","2 - beat the already hydrated tapioca with the other ingredients in a blender, except the grated coconut;","3 - Add the coconut to the mixture and place it in the caramelized mold;","4 - Bake in a water bath in the oven or pan for approximately 40 minutes."],"servings":"10 slices"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -22,6 +22,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -35,7 +36,7 @@ VALUES (
   '18 unidades',
   '[{"totalEnergy":1956,"servingEnergy":109},{"totalCarbs":298,"servingCarbs":17},{"totalProteins":7.4,"servingProteins":0.4},{"totalLipids":81,"servingLipids":4},{"totalSodium":2583,"servingSodium":144},{"totalPotassium":1100,"servingPotassium":61}]'::jsonb,
   '[{"leucine":40,"totalLeucine":280,"servingLeucine":16},{"tirosine":23,"totalTirosine":160,"servingTirosine":9},{"fenil":27,"totalFenil":190,"servingFenil":11},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":4}]'::jsonb,
-  '{"en-US":{"name":"Coxinha de mandioca","ingredients":["500ml of água","400g of mandioca","100g of farinha hipoproteica","70g of farinha of mandioca","25g of margarina sem sal","6g of sal","1g of páprica doce","1g of orégano seco"],"preparation":["1 - Cozinhe a mandioca, amasse até obter um purê e reserve;","2 - Em uma pan, ferva a água com a margarina, o sal, a páprica e o orégano;","3 - Acrescente o purê of mandioca e dissolva bem até ficar uma massa homogênea;","4 - Acrescente a farinha hipoproteica e cozinhe por 5 minutos, mexendo sempre;","5 - Retire a massa da pan e coloque em uma bancada, amasse com auxílio of uma colher e depois com as mãos até ficar bem lisinha e firme. Deixar esfriar para moldar;","6 - Recheie com legumes cozidos e temperados a gosto;","7 - Para empanar passe na água e em seguida na farinha of mandioca peneirada;","8 - Frite em óleo quente e coloque em papel absorvente."],"servings":"18 unidades"}}'::jsonb
+  '{"en-US":{"name":"Cassava Coxinha","ingredients":["500ml of water","400g of cassava","100g of low protein flour","70g of cassava flour","25g of unsalted margarine","6g of salt","1g of sweet paprika","1g of dried oregano"],"preparation":["1 - Cook the cassava, mash until you get a puree and set aside;","2 - In a pan, boil the water with the margarine, salt, paprika and oregano;","3 - Add the cassava puree and dissolve well until it becomes a homogeneous mass;","4 - Add the low protein flour and cook for 5 minutes, stirring constantly;","5 - Remove the dough from the pan and place it on a counter, knead with the help of a spoon and then with your hands until it is smooth and firm. Let it cool to mold;","6 - Fill with cooked and seasoned vegetables to taste;","7 - To bread, pass in water and then in sifted cassava flour;","8 - Fry in hot oil and place on absorbent paper."],"servings":"18 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -46,6 +47,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -59,7 +61,7 @@ VALUES (
   '6 unidades',
   '[{"totalEnergy":569,"servingEnergy":95},{"totalCarbs":85,"servingCarbs":14},{"totalProteins":0.6,"servingProteins":0.1},{"totalLipids":26,"servingLipids":4},{"totalSodium":1583,"servingSodium":264},{"totalPotassium":9,"servingPotassium":1}]'::jsonb,
   '[{"leucine":45,"totalLeucine":40,"servingLeucine":7},{"tirosine":22,"totalTirosine":20,"servingTirosine":3},{"fenil":22,"totalFenil":20,"servingFenil":3},{"metiotine":11,"totalMetiotine":10,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Massa para torta ou empada","ingredients":["100g of farinha hipoproteica","70g of margarina sem sal","5g of emulsificante","3g of sal","1g of fermento químico em pó","0,5g of açafrão em pó"],"preparation":["1 - mix todos os ingredientes, exceto a farinha;","2 - Adicione a farinha aos poucos até dar o ponto da massa, que deve ficar parecida com massa of pastel;","3 - Coloque em forminhas e recheie com legumes a gosto;","4 - Leve ao forno pré-aquecido a 200°C até dourarem."],"servings":"6 unidades"}}'::jsonb
+  '{"en-US":{"name":"Pie or Empada Dough","ingredients":["100g of low protein flour","70g of unsalted margarine","5g of emulsifier","3g of salt","1g of chemical baking powder","0,5g of turmeric powder"],"preparation":["1 - Mix all ingredients, except the flour;","2 - Add the flour little by little until the dough is ready, which should be similar to pastry dough;","3 - Place in small molds and fill with vegetables to taste;","4 - Bake in a preheated oven at 200°C until golden."],"servings":"6 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -70,6 +72,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -83,7 +86,7 @@ VALUES (
   '5 unidades',
   '[{"totalEnergy":716,"servingEnergy":236},{"totalCarbs":126,"servingCarbs":42},{"totalProteins":2.8,"servingProteins":0.9},{"totalLipids":22,"servingLipids":7},{"totalSodium":1139,"servingSodium":380},{"totalPotassium":0,"servingPotassium":0}]'::jsonb,
   '[{"leucine":44,"totalLeucine":270,"servingLeucine":90},{"tirosine":18,"totalTirosine":110,"servingTirosine":37},{"fenil":26,"totalFenil":160,"servingFenil":53},{"metiotine":12,"totalMetiotine":70,"servingMetiotine":23}]'::jsonb,
-  '{"en-US":{"name":"Massa para empadinha","ingredients":["140g of farinha sem glúten","1g of goma xantana","2g of sal","2g of sugar refinado","60g of margarina sem sal","40ml of água"],"preparation":["1 - Em um recipiente, mix todos os ingredientes até obter uma massa lisa que não grude nas mãos;","2 - Abra a massa com o auxílio of um rolo e disponha em forminhas individuais;","3 - Recheie com o recheio of sua preferência;","4 - Leve ao forno pré-aquecido a 180°C por aproximadamente 20 minutos."],"servings":"5 unidades"}}'::jsonb
+  '{"en-US":{"name":"Empadinha Dough","ingredients":["140g of gluten-free flour","1g of xanthan gum","2g of salt","2g of refined sugar","60g of unsalted margarine","40ml of water"],"preparation":["1 - In a container, mix all ingredients until you get a smooth dough that doesn''t stick to your hands;","2 - Roll out the dough with the help of a rolling pin and place it in individual molds;","3 - Fill with the filling of your choice;","4 - Bake in a preheated oven at 180°C for approximately 20 minutes."],"servings":"5 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -94,6 +97,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -107,7 +111,7 @@ VALUES (
   '2 unidades',
   '[{"totalEnergy":196,"servingEnergy":39},{"totalCarbs":77,"servingCarbs":38},{"totalProteins":1.5,"servingProteins":0.7},{"totalLipids":9,"servingLipids":5},{"totalSodium":9,"servingSodium":5},{"totalPotassium":24,"servingPotassium":12}]'::jsonb,
   '[{"leucine":46,"totalLeucine":150,"servingLeucine":75},{"tirosine":18,"totalTirosine":60,"servingTirosine":30},{"fenil":24,"totalFenil":80,"servingFenil":40},{"metiotine":12,"totalMetiotine":40,"servingMetiotine":20}]'::jsonb,
-  '{"en-US":{"name":"Panqueca docinha","ingredients":["40ml of água morna","20g of creme of leite","50g of farinha sem glúten","4g of óleo vegetal","5g of fermento químico em pó","30g of sugar refinado"],"preparation":["1 - Em um recipiente, mix todos os ingredientes e beat com o auxílio of um fuê ou mixer até que fique uma massa homogênea;","2 - Pegue porções da massa com uma concha e coloque em uma frigideira pré-aquecida e untada com óleo;","3 - Doure a massa of ambos os lados","4 - Recheie a gosto."],"servings":"2 unidades"}}'::jsonb
+  '{"en-US":{"name":"Sweet Pancake","ingredients":["40ml of warm water","20g of cream of milk","50g of gluten-free flour","4g of vegetable oil","5g of chemical baking powder","30g of refined sugar"],"preparation":["1 - In a container, mix all ingredients and beat with the help of a whisk or mixer until you get a homogeneous dough;","2 - Take portions of the dough with a ladle and place them in a preheated and oiled pan;","3 - Brown the dough on both sides","4 - Fill to taste."],"servings":"2 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -118,6 +122,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -131,7 +136,7 @@ VALUES (
   '3 unidades',
   '[{"totalEnergy":355,"servingEnergy":118},{"totalCarbs":63,"servingCarbs":21},{"totalProteins":1.3,"servingProteins":0.4},{"totalLipids":11,"servingLipids":4},{"totalSodium":788,"servingSodium":263},{"totalPotassium":82,"servingPotassium":27}]'::jsonb,
   '[{"leucine":44,"totalLeucine":110,"servingLeucine":37},{"tirosine":20,"totalTirosine":50,"servingTirosine":17},{"fenil":24,"totalFenil":60,"servingFenil":20},{"metiotine":12,"totalMetiotine":30,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Panqueca de cenoura","ingredients":["200ml of água","15g of creme of leite","6g of óleo vegetal","2g of sal","3g of fermento químico em pó 20g of cenoura","70g of farinha sem glúten"],"preparation":["1 - beat todos os ingredientes no blender e reserve;","2 - Unte uma frigideira com um fio of óleo e leve ao fogo até aquecer;","3 - Divida a massa em 3 porções iguais e com auxílio of uma concha pegue uma porção of massa e coloque na frigideira, gire a frigideira para espalhar bem a massa;","4 - Abaixe o fogo e deixe dourar por baixo, em seguida vire do outro lado e deixe dourar;","5 - Repita o processo com toda massa;","6 - Recheie a gosto."],"servings":"3 unidades"}}'::jsonb
+  '{"en-US":{"name":"Carrot Pancake","ingredients":["200ml of water","15g of cream of milk","6g of vegetable oil","2g of salt","3g of chemical baking powder","20g of carrot","70g of gluten-free flour"],"preparation":["1 - Beat all ingredients in a blender and set aside;","2 - Grease a pan with a drizzle of oil and heat until warm;","3 - Divide the dough into 3 equal portions and with the help of a ladle take a portion of dough and place it in the pan, turn the pan to spread the dough well;","4 - Lower the heat and let it brown underneath, then turn it over and let it brown;","5 - Repeat the process with all the dough;","6 - Fill to taste."],"servings":"3 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -142,6 +147,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -155,7 +161,7 @@ VALUES (
   '10 unidades',
   '[{"totalEnergy":833,"servingEnergy":83},{"totalCarbs":186,"servingCarbs":19},{"totalProteins":4.7,"servingProteins":0.5},{"totalLipids":8,"servingLipids":1},{"totalSodium":1201,"servingSodium":120},{"totalPotassium":619,"servingPotassium":62}]'::jsonb,
   '[{"leucine":43,"totalLeucine":250,"servingLeucine":25},{"tirosine":19,"totalTirosine":110,"servingTirosine":11},{"fenil":26,"totalFenil":150,"servingFenil":15},{"metiotine":12,"totalMetiotine":70,"servingMetiotine":7}]'::jsonb,
-  '{"en-US":{"name":"Massa para pastel","ingredients":["220g of mandioca","120g of farinha sem glúten","20g of creme of leite","3g of sal"],"preparation":["1 - Cozinhe a mandioca e passe no espremedor ou amasse bem com o garfo ainda quente;","2 - Em um recipiente, coloque o purê of mandioca, acrescente o creme of leite, o sal e os poucos a farinha até obter uma massa homogênea;","3 - Abra a massa com o auxílio of um rolo e molde os pastéis;","4 - Coloque o recheio of sua preferência;","5 - Asse em forno pré-aquecido por aproxi- madamente 20 minutos."],"servings":"10 unidades"}}'::jsonb
+  '{"en-US":{"name":"Pastel Dough","ingredients":["220g of cassava","120g of gluten-free flour","20g of cream of milk","3g of salt"],"preparation":["1 - Cook the cassava and pass it through a sieve or mash it well with a fork while still hot;","2 - In a container, place the cassava puree, add the cream of milk, salt and gradually add the flour until you get a homogeneous dough;","3 - Roll out the dough with the help of a rolling pin and shape the pastels;","4 - Place the filling of your choice;","5 - Bake in a preheated oven for approximately 20 minutes."],"servings":"10 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -166,6 +172,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -179,7 +186,7 @@ VALUES (
   '5 unidades',
   '[{"totalEnergy":856,"servingEnergy":171},{"totalCarbs":130,"servingCarbs":26},{"totalProteins":3,"servingProteins":0.6},{"totalLipids":37,"servingLipids":7},{"totalSodium":610,"servingSodium":122},{"totalPotassium":62,"servingPotassium":12}]'::jsonb,
   '[{"leucine":44,"totalLeucine":280,"servingLeucine":56},{"tirosine":19,"totalTirosine":120,"servingTirosine":24},{"fenil":25,"totalFenil":160,"servingFenil":32},{"metiotine":12,"totalMetiotine":80,"servingMetiotine":16}]'::jsonb,
-  '{"en-US":{"name":"Pastel Catarina","ingredients":["30ml of água morna","40g of creme of leite","30g of maionese","3g of mostarda","6g of vinagre of maçã","2g of sal","150g of farinha sem glúten"],"preparation":["1 - Em um recipiente mix todos os ingredientes, exceto a farinha;","2 - mix bem e acrescente a farinha aos poucos até a massa desgrudar das mãos;","3 - Abra a massa com o auxílio of um rolo e cut em círculos;","4 - Recheie a gosto e dobre os meio, fechando bem as laterais;","5 - Leve para assar ou fritar até ficar mais crocante."],"servings":"5 unidades"}}'::jsonb
+  '{"en-US":{"name":"Catarina Pastel","ingredients":["30ml of warm water","40g of cream of milk","30g of mayonnaise","3g of mustard","6g of apple cider vinegar","2g of salt","150g of gluten-free flour"],"preparation":["1 - In a container, mix all ingredients, except the flour;","2 - Mix well and gradually add the flour until the dough comes off your hands;","3 - Roll out the dough with the help of a rolling pin and cut into circles;","4 - Fill to taste and fold in half, closing the sides well;","5 - Bake or fry until crispy."],"servings":"5 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -190,6 +197,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -203,7 +211,7 @@ VALUES (
   '2 unidades',
   '[{"totalEnergy":957,"servingEnergy":479},{"totalCarbs":163,"servingCarbs":82},{"totalProteins":1.7,"servingProteins":0.9},{"totalLipids":31,"servingLipids":16},{"totalSodium":1465,"servingSodium":733},{"totalPotassium":74,"servingPotassium":37}]'::jsonb,
   '[{"leucine":47,"totalLeucine":158,"servingLeucine":79},{"tirosine":21,"totalTirosine":70,"servingTirosine":35},{"fenil":23,"totalFenil":79,"servingFenil":40},{"metiotine":9,"totalMetiotine":31,"servingMetiotine":15}]'::jsonb,
-  '{"en-US":{"name":"Massa para pizza","ingredients":["90g of farinha hipoproteica","90g of amido of milho","50ml of água morna","30g of creme of leite","30g of maionese","4g of fermento químico para bolo","3g of sal"],"preparation":["1 - Em um recipiente, coloque a farinha, o amido of milho e o fermento e reserve;","2 - mix o creme of leite com a água e despeje na mistura seca;","3 - mix com uma colher até dar o ponto of amassar com as mãos;","4 - Abra a massa e divida em duas porções em formato of pizza;","5 - Adicione o recheio desejado e asse em forno pré-aquecido a 200°C por aproximadamente 25 minutos."],"servings":"2 unidades"}}'::jsonb
+  '{"en-US":{"name":"Pizza Dough","ingredients":["90g of low-protein flour","90g of corn starch","50ml of warm water","30g of cream of milk","30g of mayonnaise","4g of chemical baking powder","3g of salt"],"preparation":["1 - In a container, place the flour, corn starch and baking powder and set aside;","2 - Mix the cream of milk with the water and pour into the dry mixture;","3 - Mix with a spoon until it reaches the point of kneading with your hands;","4 - Roll out the dough and divide it into two portions in the shape of a pizza;","5 - Add the desired filling and bake in a preheated oven at 200°C for approximately 25 minutes."],"servings":"2 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -214,6 +222,7 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
@@ -227,7 +236,7 @@ VALUES (
   '8 unidades',
   '[{"totalEnergy":694,"servingEnergy":87},{"totalCarbs":145,"servingCarbs":18},{"totalProteins":3.6,"servingProteins":0.4},{"totalLipids":11,"servingLipids":1},{"totalSodium":1623,"servingSodium":203},{"totalPotassium":85,"servingPotassium":11}]'::jsonb,
   '[{"leucine":44,"totalLeucine":330,"servingLeucine":41},{"tirosine":19,"totalTirosine":140,"servingTirosine":18},{"fenil":27,"totalFenil":200,"servingFenil":25},{"metiotine":10,"totalMetiotine":80,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Ravioli de espinafre","ingredients":["Ingredientes do recheio","40g of mandioquinha","10g of margarina sem sal","2g of sal","1g of salsinha ou cebolinha","Ingredientes da massa","150g of farinha sem glúten 100ml of água","7g of banha","10g of espinafre cru","5g of CMC ou goma xantana","2g of sal"],"preparation":["Modo of preparo do recheio","1 - Descasque e cozinhe a mandioquinha até ficarem macias;","2 - Amasse até virar um purê e adicione os demais ingredientes, reserve.","Modo of preparo da massa","1 - Lave as folhas of espinafre;","2 - Triture no blender com o mínimo of água possível;","3 - Em uma tigela, coloque a farinha, o CMC ou goma xantana, o sal e a banha;","4 - Faça uma farofinha e aos poucos adicione o conteúdo do blender até obter uma massa lisa e homogênea.","Montagem","1 - Abra a massa com o auxílio of rolo;","2 - Disponha o recheio, dobre a massa e cut do formato of sua preferência;","3 - Cozinhe em água fervente com um fio of óleo;","4 - Retire da água quando começarem a boiar;","5 - Sirva com o molho of sua preferência."],"servings":"8 unidades"}}'::jsonb
+  '{"en-US":{"name":"Spinach Ravioli","ingredients":["Filling ingredients","40g of mandioquinha","10g of unsalted margarine","2g of salt","1g of parsley or chives","Dough ingredients","150g of gluten-free flour 100ml of water","7g of lard","10g of raw spinach","5g of CMC or xanthan gum","2g of salt"],"preparation":["Filling preparation method","1 - Peel and cook the mandioquinha until soft;","2 - Mash until it becomes a puree and add the other ingredients, set aside.","Dough preparation method","1 - Wash the spinach leaves;","2 - Blend with the minimum amount of water possible;","3 - In a bowl, place the flour, CMC or xanthan gum, salt and lard;","4 - Make a crumble and gradually add the contents of the blender until you get a smooth and homogeneous dough.","Assembly","1 - Roll out the dough with the help of a rolling pin;","2 - Place the filling, fold the dough and cut into the shape of your choice;","3 - Cook in boiling water with a drizzle of oil;","4 - Remove from water when they start to float;","5 - Serve with the sauce of your choice."],"servings":"8 units"}}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -238,4 +247,5 @@ ON CONFLICT (id) DO UPDATE SET
   servings = EXCLUDED.servings,
   nutritional_information = EXCLUDED.nutritional_information,
   graph_information = EXCLUDED.graph_information,
+  translations = EXCLUDED.translations,
   updated_at = NOW();
