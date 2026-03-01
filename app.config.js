@@ -2,12 +2,12 @@ import "dotenv/config";
 
 export default {
   expo: {
-    name: "mrpku-new",
-    slug: "mrpku-new",
+    name: "mrpku",
+    slug: "mrpku",
     version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/images/icon.png",
-    scheme: "mrpkunew",
+    scheme: "mrpku",
     userInterfaceStyle: "automatic",
     newArchEnabled: true,
     // Deep linking configuration for OAuth
@@ -17,7 +17,7 @@ export default {
         autoVerify: true,
         data: [
           {
-            scheme: "mrpkunew",
+            scheme: "mrpku",
             host: "auth",
             pathPrefix: "/callback",
           },
@@ -26,9 +26,8 @@ export default {
       },
     ],
     splash: {
-      image: "./assets/images/splash-icon.png",
-      resizeMode: "contain",
-      backgroundColor: "#ffffff",
+      image: null,
+      backgroundColor: "#0C6941",
     },
     extra: {
       SUPA_URL: process.env.SUPA_URL || "",
@@ -41,7 +40,7 @@ export default {
     android: {
       adaptiveIcon: {
         foregroundImage: "./assets/images/adaptive-icon.png",
-        backgroundColor: "#ffffff",
+        backgroundColor: "#0C6941",
       },
       edgeToEdgeEnabled: true,
       predictiveBackGestureEnabled: false,
