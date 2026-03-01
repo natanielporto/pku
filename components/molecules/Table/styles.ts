@@ -1,3 +1,4 @@
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -32,7 +33,7 @@ export const styles = StyleSheet.create({
     paddingRight: 8,
   },
   rowWhite: {
-    backgroundColor: "white",
+    backgroundColor: Colors.base.white,
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",

@@ -1,3 +1,4 @@
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -8,9 +9,9 @@ export const styles = StyleSheet.create({
   },
   passwordRuleText: {
     fontSize: 12,
-    color: "#666",
+    color: Colors.gray.dark,
   },
   passwordRuleTextValid: {
-    color: "#0C6941",
+    color: Colors.green.primary,
   },
 });

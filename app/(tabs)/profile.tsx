@@ -18,6 +18,7 @@ import { useFocusEffect, router } from "expo-router";
 import i18n from "@/i18n";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import Colors from "@/constants/Colors";
 
 export default function ProfileScreen() {
   const { t } = useTranslation();
@@ -146,7 +147,7 @@ export default function ProfileScreen() {
 
   const renderAvatarContent = () => {
     if (isUploadingAvatar) {
-      return <ActivityIndicator size="large" color="#0C6941" />;
+      return <ActivityIndicator size="large" color={Colors.green.primary} />;
     }
 
     if (profile?.avatar_url && profile.avatar_url.trim() !== "") {
@@ -155,14 +156,14 @@ export default function ProfileScreen() {
       );
     }
 
-    return <Feather name="user" size={60} color="#0C6941" />;
+    return <Feather name="user" size={60} color={Colors.green.primary} />;
   };
 
   if (loading) {
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#0C6941" />
+          <ActivityIndicator size="large" color={Colors.green.primary} />
           <Text style={styles.loadingText}>{t('account.loadingProfile')}</Text>
         </View>
       </SafeAreaView>
@@ -180,7 +181,7 @@ export default function ProfileScreen() {
           >
             <View style={styles.avatarCircle}>{renderAvatarContent()}</View>
             {/* <View style={styles.avatarOverlay}>
-              <Feather name="camera" size={24} color="#fff" />
+              <Feather name="camera" size={24} color={Colors.base.white} />
             </View> */}
           </TouchableOpacity>
           <Text style={styles.title}>{t('account.myProfile')}</Text>
@@ -202,7 +203,7 @@ export default function ProfileScreen() {
                     styles.value,
                     {
                       fontSize: 16,
-                      backgroundColor: "#e8f5e9",
+                      backgroundColor: Colors.green.light,
                       padding: 10,
                       borderRadius: 10,
                       width: "100%",
@@ -226,7 +227,7 @@ export default function ProfileScreen() {
                   style={styles.cancelButton}
                   disabled={isSavingName}
                 >
-                  <Feather name="x" size={20} color="#d32f2f" />
+                  <Feather name="x" size={20} color={Colors.base.red} />
                 </TouchableOpacity>
                 <TouchableOpacity
                   onPress={handleSaveName}
@@ -234,15 +235,15 @@ export default function ProfileScreen() {
                   disabled={isSavingName}
                 >
                   {isSavingName ? (
-                    <ActivityIndicator size="small" color="#fff" />
+                    <ActivityIndicator size="small" color={Colors.base.white} />
                   ) : (
-                    <Feather name="check" size={20} color="#fff" />
+                    <Feather name="check" size={20} color={Colors.base.white} />
                   )}
                 </TouchableOpacity>
               </View>
             ) : (
               <TouchableOpacity onPress={handleEditName}>
-                <Feather name="edit" size={20} color="#0C6941" />
+                <Feather name="edit" size={20} color={Colors.green.primary} />
               </TouchableOpacity>
             )}
           </View>
@@ -272,7 +273,7 @@ export default function ProfileScreen() {
               <Text style={styles.value}>
                 {i18n.language === "pt" ? "Português" : "English"} 
               </Text>
-              <MaterialIcons name="change-circle" size={24} color="#0C6941" />
+              <MaterialIcons name="change-circle" size={24} color={Colors.green.primary} />
             </TouchableOpacity>
           </View>
         </View>
@@ -283,10 +284,10 @@ export default function ProfileScreen() {
           disabled={isLoggingOut}
         >
           {isLoggingOut ? (
-            <ActivityIndicator color="#fff" />
+            <ActivityIndicator color={Colors.base.white} />
           ) : (
             <>
-              <Feather name="log-out" size={20} color="#fff" />
+              <Feather name="log-out" size={20} color={Colors.base.white} />
               <Text style={styles.logoutButtonText}>{t('account.logout')}</Text>
             </>
           )}
@@ -299,7 +300,7 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: Colors.gray.mediumLight,
   },
   loadingContainer: {
     flex: 1,
@@ -309,7 +310,7 @@ const styles = StyleSheet.create({
   loadingText: {
     marginTop: 16,
     fontSize: 16,
-    color: "#666",
+    color: Colors.gray.dark,
   },
   content: {
     padding: 20,
@@ -330,7 +331,7 @@ const styles = StyleSheet.create({
     width: 120,
     height: 120,
     borderRadius: 60,
-    backgroundColor: "#e8f5e9",
+    backgroundColor: Colors.green.light,
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",
@@ -344,31 +345,31 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 0,
     right: 0,
-    backgroundColor: "#0C6941",
+    backgroundColor: Colors.green.primary,
     borderRadius: 20,
     width: 40,
     height: 40,
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 3,
-    borderColor: "#fff",
+    borderColor: Colors.base.white,
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#0C6941",
+    color: Colors.green.primary,
     marginBottom: 4,
   },
   subtitle: {
     fontSize: 14,
-    color: "#666",
+    color: Colors.gray.dark,
   },
   infoSection: {
-    backgroundColor: "#fff",
+    backgroundColor: Colors.base.white,
     borderRadius: 12,
     padding: 20,
     marginBottom: 20,
-    shadowColor: "#000",
+    shadowColor: Colors.base.black,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
@@ -395,7 +396,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: "#ffebee",
+    backgroundColor: Colors.base.redLight,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -403,27 +404,27 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: "#0C6941",
+    backgroundColor: Colors.green.primary,
     justifyContent: "center",
     alignItems: "center",
   },
   label: {
     fontSize: 14,
-    color: "#666",
+    color: Colors.gray.dark,
     marginBottom: 4,
     fontWeight: "600",
   },
   value: {
     fontSize: 16,
-    color: "#333",
+    color: Colors.gray.extraDark,
   },
   valueSmall: {
     fontSize: 12,
-    color: "#999",
+    color: Colors.gray.lightDark,
     fontFamily: "monospace",
   },
   logoutButton: {
-    backgroundColor: "#d32f2f",
+    backgroundColor: Colors.base.red,
     borderRadius: 12,
     padding: 16,
     flexDirection: "row",
@@ -432,7 +433,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   logoutButtonText: {
-    color: "#fff",
+    color: Colors.base.white,
     fontSize: 16,
     fontWeight: "600",
   },

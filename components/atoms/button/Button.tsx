@@ -1,3 +1,4 @@
+import Colors from "@/constants/Colors";
 import React from "react";
 import { Text, TouchableOpacity, StyleSheet } from "react-native";
 
@@ -22,7 +23,7 @@ export function Button({
       style={customClass ?? styles.defaultClass}
       accessibilityLabel={accessibilityLabel}
     >
-      <Text className="font-bold" style={{ color: color ?? "#f0f0f0" }}>
+      <Text className="font-bold" style={{ color: color ??Colors.gray.background }}>
         {action}
       </Text>
     </TouchableOpacity>
@@ -31,8 +32,8 @@ export function Button({
 
 const styles = StyleSheet.create({
   defaultClass: {
-    backgroundColor: "yellow",
-    boxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    backgroundColor: Colors.base.yellow,
+    boxShadow: `0 1px 2px 0 ${Colors.transparent.black.light}`,
     width: 120,
     height: 40,
     borderRadius: 24,

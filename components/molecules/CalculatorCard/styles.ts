@@ -1,8 +1,9 @@
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   card: {
-    backgroundColor: "#f0fdf4",
+    backgroundColor: Colors.green.light,
     justifyContent: "center",
     alignItems: "center",
     height: 128,
@@ -24,22 +25,22 @@ export const styles = StyleSheet.create({
     width: 256,
     borderRadius: 16,
     textAlign: "center",
-    backgroundColor: "#fafafa",
+    backgroundColor: Colors.gray.background,
   },
   cardDescription: {
     fontSize: 12,
-    color: "gray",
+    color: Colors.gray.dark,
     textAlign: "center",
     marginHorizontal: 80,
     position: "absolute",
-    backgroundColor: "#fafafa",
+    backgroundColor: Colors.gray.light,
     padding: 8,
     borderRadius: 16,
     zIndex: 1000,
     left: 0,
     right: 0,
     marginVertical: 8,
-    shadowColor: "#000",
+    shadowColor: Colors.base.black,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
     shadowRadius: 2,

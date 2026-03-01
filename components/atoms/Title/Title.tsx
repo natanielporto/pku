@@ -1,3 +1,4 @@
+import Colors from "@/constants/Colors";
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 
@@ -24,6 +25,6 @@ export function Title({ title, underline = false, customClass }: Props) {
 const styles = StyleSheet.create({
   underline: {
     borderBottomWidth: 2,
-    borderBottomColor: "green",
+    borderBottomColor: Colors.green.primary,
   },
 });

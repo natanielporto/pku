@@ -1,9 +1,10 @@
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "#f0f0f0",
+    backgroundColor: Colors.gray.background,
     paddingVertical: 0,
   },
   container: {
@@ -54,7 +55,7 @@ export const styles = StyleSheet.create({
   skeleton: {
     width: "100%",
     height: "100%",
-    backgroundColor: "#e0e0e0",
+    backgroundColor: Colors.gray.medium,
     borderRadius: 16,
   },
   scrollView: {
@@ -63,17 +64,17 @@ export const styles = StyleSheet.create({
     marginBottom: 8,
   },
   ingredientsContainer: {
-    backgroundColor: "#f0f0f0",
+    backgroundColor: Colors.gray.background,
     borderRadius: 16,
     marginTop: 8,
   },
   servingsContainer: {
     marginTop: 8,
-    backgroundColor: "white",
+    backgroundColor: Colors.base.white,
     paddingInline: 16,
   },
   preparationContainer: {
-    backgroundColor: "#f0f0f0",
+    backgroundColor: Colors.gray.background,
     paddingTop: 8,
     borderRadius: 16,
   },
@@ -84,7 +85,7 @@ export const styles = StyleSheet.create({
   textWhite: {
     paddingInline: 16,
     marginBottom: 4,
-    backgroundColor: "#fff",
+    backgroundColor: Colors.base.white,
   },
   tableContainer: {
     marginVertical: 8,
@@ -98,7 +99,7 @@ export const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: "green",
+    backgroundColor: Colors.green.primary,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -109,7 +110,7 @@ export const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: "gray",
+    backgroundColor: Colors.gray.mediumDark,
     justifyContent: "center",
     alignItems: "center",
     opacity: 0.3,
@@ -121,7 +122,7 @@ export const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: "red",
+    backgroundColor: Colors.base.red,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -132,7 +133,7 @@ export const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: "gray",
+    backgroundColor: Colors.gray.mediumDark,
     justifyContent: "center",
     alignItems: "center",
     opacity: 0.3,
@@ -142,8 +143,8 @@ export const styles = StyleSheet.create({
     top: 16,
     left: 16,
     fontWeight: "bold",
-    color: "white",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    color: Colors.base.white,
+    backgroundColor: Colors.transparent.black.light,
     padding: 8,
     borderRadius: 8,
   },

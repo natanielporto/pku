@@ -1,6 +1,7 @@
 import React, { JSX } from "react";
 import { ColorValue } from "react-native";
 import { LinearGradient as Gradient } from "expo-linear-gradient";
+import Colors from "@/constants/Colors";
 
 interface LinearGradientProps {
   children: JSX.Element;
@@ -9,7 +10,7 @@ interface LinearGradientProps {
 
 export function LinearGradient({
   children,
-  colors = ["#0c6941", "#8bdfbb"],
+  colors = [Colors.green.gradient.start, Colors.green.gradient.end],
 }: Readonly<LinearGradientProps>) {
   return (
     <Gradient

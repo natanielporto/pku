@@ -1,3 +1,4 @@
+import Colors from "@/constants/Colors";
 import { ScrollViewStyleReset } from "expo-router/html";
 
 // This file is web-only and used to configure the root HTML for every
@@ -36,6 +37,6 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #000;
+    background-color: ${Colors.base.black};
   }
 }`;

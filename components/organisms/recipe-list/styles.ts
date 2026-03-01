@@ -1,3 +1,4 @@
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -24,11 +25,11 @@ export const styles = StyleSheet.create({
   loadingText: {
     marginTop: 12,
     fontSize: 16,
-    color: "#666",
+    color: Colors.gray.dark,
   },
   errorText: {
     fontSize: 16,
-    color: "#d32f2f",
+    color: Colors.base.red,
     textAlign: "center",
   },
   scrollView: {

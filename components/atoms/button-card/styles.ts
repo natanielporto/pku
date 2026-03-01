@@ -1,3 +1,4 @@
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -6,12 +7,12 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     borderRadius: 24,
-    backgroundColor: "#f0fdf4", // green-50
+    backgroundColor: Colors.green.light,
     height: 140,
     width: "93%",
     alignSelf: "center",
     position: "relative",
-    shadowColor: "#000",
+    shadowColor: Colors.base.black,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
@@ -37,7 +38,7 @@ export const styles = StyleSheet.create({
     marginRight: 32,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f0f0f0",
+    backgroundColor: Colors.gray.background,
     zIndex: 1,
   },
   image: {

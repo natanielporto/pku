@@ -15,7 +15,7 @@ export function FaqDropdown({ question, answer }: Readonly<FaqDropdownProps>) {
   return (
     <View style={styles.container}>
       <Pressable onPress={() => setOpen(!open)}>
-        <View style={styles.questionContainer}>
+        <View style={open ? styles.questionContainerOpen : styles.questionContainerClosed}>
           <Text style={styles.questionText}>{question}</Text>
           <View style={styles.iconContainer}>
             <MaterialCommunityIcons
@@ -32,6 +32,7 @@ export function FaqDropdown({ question, answer }: Readonly<FaqDropdownProps>) {
           entering={FadeIn.duration(300)}
           exiting={FadeOut.duration(50)}
           style={styles.answerContainer}
+          onPress={() => setOpen(false)}
         >
           <Text style={styles.answerText}>{answer}</Text>
         </Animated.Text>

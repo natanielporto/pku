@@ -13,6 +13,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { Title } from "@/components/atoms/Title/Title";
 import { RecipeCard } from "@/components/organisms/recipe-card";
 import { useRecipesByCategory } from "@/hooks/useRecipes";
+import Colors from "@/constants/Colors";
 
 export default function RecipeListScreen() {
   const { category } = useLocalSearchParams<{ category: string }>();
@@ -33,12 +34,12 @@ export default function RecipeListScreen() {
       <View style={styles.container}>
         <View style={styles.headerRow}>
           <TouchableOpacity onPress={handleGoBack} style={styles.backButton}>
-            <Feather name="arrow-left" size={16} color="#888" />
+            <Feather name="arrow-left" size={16} color={Colors.gray.text} />
             <Title title={t(`tabs.home`)} />
           </TouchableOpacity>
         </View>
         <View style={styles.centerContainer}>
-          <ActivityIndicator size="large" color="#007AFF" />
+          <ActivityIndicator size="large" color={Colors.base.blue} />
           <Text style={styles.loadingText}>{t("home.loadingRecipes")}</Text>
         </View>
       </View>
@@ -50,7 +51,7 @@ export default function RecipeListScreen() {
       <View style={styles.container}>
         <View style={styles.headerRow}>
           <TouchableOpacity onPress={handleGoBack} style={styles.backButton}>
-            <Feather name="arrow-left" size={16} color="#888" />
+            <Feather name="arrow-left" size={16} color={Colors.gray.text} />
             <Title title={t(`tabs.home`)} />
           </TouchableOpacity>
         </View>
@@ -68,7 +69,7 @@ export default function RecipeListScreen() {
     <View>
       <View style={styles.headerRow}>
         <TouchableOpacity onPress={handleGoBack} style={styles.backButton}>
-          <Feather name="arrow-left" size={16} color="#888" />
+          <Feather name="arrow-left" size={16} color={Colors.gray.text} />
           <Title title={t(`tabs.home`)} />
         </TouchableOpacity>
       </View>
@@ -89,7 +90,7 @@ export default function RecipeListScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f9f9f9",
+    backgroundColor: Colors.gray.light,
   },
   centerContainer: {
     flex: 1,
@@ -100,15 +101,15 @@ const styles = StyleSheet.create({
   loadingText: {
     marginTop: 12,
     fontSize: 16,
-    color: "#666",
+    color: Colors.gray.dark,
   },
   errorText: {
     fontSize: 16,
-    color: "#d32f2f",
+    color: Colors.base.red,
     textAlign: "center",
   },
   backText: {
-    color: "#888",
+    color: Colors.gray.text,
   },
   itemContainer: {
     marginBottom: 8,

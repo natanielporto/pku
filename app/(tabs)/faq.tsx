@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { View } from "react-native";
+import { ScrollView } from "react-native";
 import { FaqDropdown } from "@/components/molecules/faq-dropdown";
 
 export default function FaqScreen() {
@@ -29,10 +29,10 @@ export default function FaqScreen() {
   ];
 
   return (
-    <View>
+    <ScrollView style={{ height: "100%", marginBottom: 16 }}>
       {sampleFaq.map((faq) => (
         <FaqDropdown key={faq.question} {...faq} />
       ))}
-    </View>
+    </ScrollView>
   );
 }

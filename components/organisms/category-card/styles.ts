@@ -1,4 +1,5 @@
 // components/organisms/category-card/styles.ts
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -7,8 +8,8 @@ export const styles = StyleSheet.create({
     borderRadius: 16,
     marginBottom: 16,
     overflow: "hidden",
-    backgroundColor: "#f0f0f0",
-    shadowColor: "#000",
+    backgroundColor: Colors.gray.background,
+    shadowColor: Colors.base.black,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
@@ -21,18 +22,18 @@ export const styles = StyleSheet.create({
   },
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    backgroundColor: Colors.transparent.black.medium,
     justifyContent: "flex-end",
     padding: 16,
   },
   categoryName: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "#f0f0f0",
+    color: Colors.gray.background,
     marginBottom: 4,
   },
   recipeCount: {
     fontSize: 14,
-    color: "#e0e0e0",
+    color: Colors.gray.medium,
   },
 });

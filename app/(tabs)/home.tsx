@@ -4,6 +4,7 @@ import { ActivityIndicator, FlatList, StyleSheet, Text } from "react-native";
 import { View } from "@/components/Themed";
 import { CategoryCard } from "@/components/organisms/category-card";
 import { useCategoriesWithRecipes } from "@/hooks/useRecipes";
+import Colors from "@/constants/Colors";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -58,29 +59,29 @@ const styles = StyleSheet.create({
   loadingText: {
     marginTop: 12,
     fontSize: 16,
-    color: "#666",
+    color: Colors.gray.dark,
   },
   errorText: {
     fontSize: 16,
-    color: "#d32f2f",
+    color: Colors.base.red,
     textAlign: "center",
     marginBottom: 16,
   },
   testButton: {
-    backgroundColor: "#007AFF",
+    backgroundColor: Colors.base.blue,
     padding: 12,
     margin: 8,
     borderRadius: 8,
     alignItems: "center",
   },
   testButtonText: {
-    color: "#fff",
+    color: Colors.base.white,
     fontSize: 14,
     fontWeight: "600",
   },
   container: {
     paddingTop: 8,
-    backgroundColor: "#f0f0f0",
+    backgroundColor: Colors.gray.background,
   },
   itemContainer: {
     marginBottom: 8,

@@ -25,6 +25,7 @@ import {
 } from "@/schemas/onboarding";
 import { resetPassword, updatePassword, verifyPasswordResetOTP } from "@/services/auth";
 import { PasswordRule } from "@/components/molecules/PasswordRule";
+import Colors from "@/constants/Colors";
 
 export default function ForgotPasswordScreen() {
   const { t } = useTranslation();
@@ -224,7 +225,7 @@ export default function ForgotPasswordScreen() {
                             <Feather
                               name={showPassword ? "eye" : "eye-off"}
                               size={20}
-                              color="#666"
+                              color={Colors.gray.dark}
                             />
                           </TouchableOpacity>
                         </View>
@@ -295,7 +296,7 @@ export default function ForgotPasswordScreen() {
                             <Feather
                               name={showConfirmPassword ? "eye" : "eye-off"}
                               size={20}
-                              color="#666"
+                              color={Colors.gray.dark}
                             />
                           </TouchableOpacity>
                         </View>
@@ -324,7 +325,7 @@ export default function ForgotPasswordScreen() {
               disabled={isLoading || (step === 1 && !formStep1.formState.isValid) || (step === 2 && !formStep2.formState.isValid)}
             >
               {isLoading ? (
-                <ActivityIndicator color="#fff" />
+                <ActivityIndicator color={Colors.base.white} />
               ) : (
                 <Text style={styles.buttonText}>
                   {step === 1 
@@ -371,13 +372,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: "bold",
-    color: "#0C6941",
+    color: Colors.green.primary,
     textAlign: "center",
     marginBottom: 12,
   },
   subtitle: {
     fontSize: 16,
-    color: "#666",
+    color: Colors.gray.dark,
     textAlign: "center",
     marginBottom: 40,
   },
@@ -387,24 +388,24 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#333",
+    color: Colors.gray.extraDark,
     marginBottom: 8,
   },
   input: {
-    backgroundColor: "#fff",
+    backgroundColor: Colors.base.white,
     borderRadius: 12,
     padding: 16,
     fontSize: 16,
     borderWidth: 1,
-    borderColor: "#e0e0e0",
+    borderColor: Colors.gray.medium,
   },
   passwordContainer: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: Colors.base.white,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: "#e0e0e0",
+    borderColor: Colors.gray.medium,
   },
   passwordInput: {
     flex: 1,
@@ -416,7 +417,7 @@ const styles = StyleSheet.create({
     paddingLeft: 8,
   },
   button: {
-    backgroundColor: "#0C6941",
+    backgroundColor: Colors.green.primary,
     borderRadius: 12,
     padding: 16,
     alignItems: "center",
@@ -424,11 +425,11 @@ const styles = StyleSheet.create({
     minHeight: 52,
   },
   buttonDisabled: {
-    backgroundColor: "#ccc",
+    backgroundColor: Colors.gray.mediumDark,
     opacity: 0.6,
   },
   buttonText: {
-    color: "#fff",
+    color: Colors.base.white,
     fontSize: 16,
     fontWeight: "600",
   },
@@ -438,15 +439,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   toggleButtonText: {
-    color: "#0C6941",
+    color: Colors.green.primary,
     fontSize: 14,
     fontWeight: "600",
   },
   inputError: {
-    borderColor: "#d32f2f",
+    borderColor: Colors.base.red,
   },
   errorText: {
-    color: "#d32f2f",
+    color: Colors.base.red,
     fontSize: 12,
     marginTop: 4,
     marginLeft: 4,
