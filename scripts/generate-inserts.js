@@ -53,6 +53,7 @@ const allInserts = [];
 
     recipesData.forEach((categoryData, catIndex) => {
       const category = categoryData.category;
+      const categoryImage = categoryData.image;
 
       categoryData.recipes.forEach((recipe, recipeIndex) => {
         const nutritionalInfo = recipe.nutritionalInformation
@@ -62,6 +63,13 @@ const allInserts = [];
         const graphInfo = recipe.graphInformation
           ? toJsonSql(recipe.graphInformation)
           : "NULL";
+
+        // Se for a primeira receita da categoria, e a categoria tiver uma imagem, usamos ela
+        // Isso garante que o fetchCategoriesWithRecipes sempre encontre a imagem certa
+        // ao buscar a primeira receita de cada categoria.
+        const effectiveImage = (recipeIndex === 0 && categoryImage) 
+          ? categoryImage 
+          : (recipe.image || "");
 
         // Busca tradução correspondente por ID
         let translations = "NULL";
@@ -96,7 +104,7 @@ VALUES (
   ${recipe.id},
   '${escapeSqlString(recipe.name)}',
   '${escapeSqlString(category)}',
-  '${escapeSqlString(recipe.image || "")}',
+  '${escapeSqlString(effectiveImage)}',
   ${toJsonSql(recipe.ingredients)},
   ${toJsonSql(recipe.preparation)},
   '${escapeSqlString(recipe.servings || "")}',

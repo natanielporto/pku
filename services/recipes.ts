@@ -139,34 +139,36 @@ export async function fetchCategoriesWithRecipes(): Promise<
     recipes: (FullRecipe & { category: string })[];
   }>
 > {
-  const recipes = await fetchAllRecipes();
+  console.log("🔍 Buscando categorias do Supabase...");
+  
+  // Primeiro, buscamos as categorias únicas e uma imagem para cada
+  // No Supabase/PostgreSQL, podemos usar NOT NULL e um agrupamento ou select distinct
+  // Para simplificar e garantir que temos uma imagem, buscamos o primeiro registro de cada categoria
+  const { data: categoriesData, error } = await supabase
+    .from("recipes")
+    .select("category, image")
+    .not("category", "is", null)
+    .order("id", { ascending: true });
 
-  // Agrupa receitas por categoria
-  const categoryMap = new Map<
-    string,
-    {
-      category: string;
-      image: string;
-      recipes: (FullRecipe & { category: string })[];
+  if (error) {
+    console.error("❌ Erro ao buscar categorias:", error);
+    throw new Error(`Erro ao buscar categorias: ${error.message}`);
+  }
+
+  // Agrupa para pegar uma imagem única por categoria
+  const categoryMap = new Map<string, string>();
+  categoriesData?.forEach(item => {
+    if (item.category && !categoryMap.has(item.category)) {
+      categoryMap.set(item.category, item.image || "");
     }
-  >();
-
-  recipes.forEach((recipe) => {
-    // Mapeia o nome da categoria do banco para o formato esperado
-    const categoryKey = recipe.category || "unknown";
-
-    if (!categoryMap.has(categoryKey)) {
-      // Usa a primeira imagem de receita da categoria como imagem da categoria
-      const firstRecipe = recipes.find((r) => r.category === categoryKey);
-      categoryMap.set(categoryKey, {
-        category: categoryKey,
-        image: firstRecipe?.image || "",
-        recipes: [],
-      });
-    }
-
-    categoryMap.get(categoryKey)!.recipes.push(recipe);
   });
 
-  return Array.from(categoryMap.values());
+  // Retorna no formato esperado pelo frontend
+  // Nota: O campo 'recipes' agora virá vazio inicialmente ou pode ser removido 
+  // se o Home não precisar das receitas imediatamente (mais eficiente)
+  return Array.from(categoryMap.entries()).map(([category, image]) => ({
+    category,
+    image,
+    recipes: [], // As receitas serão carregadas na recipe-list por categoria
+  }));
 }

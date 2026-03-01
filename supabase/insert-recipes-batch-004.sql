@@ -5,7 +5,7 @@ VALUES (
   31,
   'Beijinho de tapioca sabor limão',
   'Doces',
-  'https://images.unsplash.com/photo-1630953899439-e1b44977d777?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["60g de açúcar refinado","26g de tapioca desidratada","30g de coco seco ralado","45g de leite de coco","6g de margarina sem sal","3g de suco de limão"]'::jsonb,
   '["1 - Em uma panela, misture todos os ingredientes;","2 - Leve ao fogo, mexendo sempre, e cozinhe até desgrudar do fundo da panela;","3 - Deixe esfriar e formate os docinhos."]'::jsonb,
   '10 unidades',

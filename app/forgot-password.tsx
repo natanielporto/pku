@@ -425,7 +425,7 @@ const styles = StyleSheet.create({
     minHeight: 52,
   },
   buttonDisabled: {
-    backgroundColor: Colors.gray.mediumDark,
+    backgroundColor: Colors.gray.medium,
     opacity: 0.6,
   },
   buttonText: {

@@ -90,7 +90,7 @@ export default function RecipeListScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.gray.light,
+    backgroundColor: Colors.gray.medium,
   },
   centerContainer: {
     flex: 1,

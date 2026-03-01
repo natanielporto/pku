@@ -300,7 +300,7 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.gray.mediumLight,
+    backgroundColor: Colors.gray.medium,
   },
   loadingContainer: {
     flex: 1,
@@ -317,19 +317,19 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    marginBottom: 30,
+    marginBottom: 16,
     paddingVertical: 20,
   },
   avatarContainer: {
-    width: 120,
-    height: 120,
+    width: 100,
+    height: 100,
     marginBottom: 16,
     position: "relative",
     overflow: "visible",
   },
   avatarCircle: {
-    width: 120,
-    height: 120,
+    width: 100,
+    height: 100,
     borderRadius: 60,
     backgroundColor: Colors.green.light,
     justifyContent: "center",

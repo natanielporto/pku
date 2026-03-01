@@ -1,14 +1,14 @@
 -- INSERT statements for recipes table
 -- Generated from recipes.json
 -- Total recipes: 97
--- Generated at: 2026-02-22T13:59:41.601Z
+-- Generated at: 2026-03-01T20:41:36.681Z
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   1,
   'Bebida de morango tipo iogurte',
   'Bebidas e Cremes',
-  'https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+  'https://images.unsplash.com/photo-1583898350727-9bf2e476c242?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["480g de bebida vegetal a base de arroz","60g de açúcar demerara","50g de morango congelado","15g de suco de limão","5g de ágar-ágar"]'::jsonb,
   '["1 - Em uma panela, misture 380g da bebida vegetal junto com o açúcar e o ágar-ágar, deixe ferver por uns 2 minutos mexendo sempre;","2 - Leve à geladeira por aproximadamente uma hora para gelatinizar;","3 - Corte os morangos em pedaços e bata junto com creme gelado, o suco de limão e o restante da bebida vegetal com o auxílio de um mixer ou liquidificador;","4 - Coloque em tacinhas para servir."]'::jsonb,
   '2 taças',
@@ -183,7 +183,7 @@ VALUES (
   8,
   'Biscoitinho crocante de tapioca',
   'Biscoitos e bolachas',
-  'https://images.unsplash.com/photo-1608070735103-35aa01048704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+  'https://images.unsplash.com/photo-1582231640551-2103f0b3f4bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["80g de tapioca granulada","20g de açúcar","20g de achocolatado","10g de margarina sem sal","10g de creme de leite","55ml de água quente","120g de gotas de chocolate "]'::jsonb,
   '["1 - Misture todos os ingredientes, exceto as gotas de chocolate, e deixe hidratando por cerca de 10 minutos para que a tapioca fique mais macia;","2 - Abra a massa entre papel manteiga e use um copo para formatar os biscoitos;","3 - Unte uma forma com margarina e disponha os biscoitos;","4 - Leve para assar no forno a 200°C por aproximadamente 20 minutos;","5 - Derreta as gotas de chocolate em banho-maria;","6 - Mergulhe os biscoitos já frios no chocolate e coloque sobre um pedaço de papel manteiga para não grudar"]'::jsonb,
   '10 unidades',
@@ -433,7 +433,7 @@ VALUES (
   18,
   'Bolinho de chuva',
   'Bolos e bolinhos',
-  'https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+  'https://images.unsplash.com/photo-1552056413-b8b5eed0170b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["160g de farinha sem glúten","120g de creme de leite","50ml de água","100g de açúcar refinado","4g de liga neutra","10g de fermento químico em pó","Óleo vegetal para fritar","Canela em pó e açúcar para cobrir (opcional)"]'::jsonb,
   '["1 - Em um recipiente misture o creme de leite com a água;","2 - Acrescente os demais ingredientes até ficar homogêneo. A massa não deve ficar muito mole;","3 - Em uma panela ou frigideira, aquecer o óleo;","4 - Pegar a massa com uma colher de chá bem cheia e frite em óleo quente até dourar;","5 - Passe os bolinhos ainda quentes no açúcar e canela, se desejar."]'::jsonb,
   '20 unidades',
@@ -758,7 +758,7 @@ VALUES (
   31,
   'Beijinho de tapioca sabor limão',
   'Doces',
-  'https://images.unsplash.com/photo-1630953899439-e1b44977d777?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["60g de açúcar refinado","26g de tapioca desidratada","30g de coco seco ralado","45g de leite de coco","6g de margarina sem sal","3g de suco de limão"]'::jsonb,
   '["1 - Em uma panela, misture todos os ingredientes;","2 - Leve ao fogo, mexendo sempre, e cozinhe até desgrudar do fundo da panela;","3 - Deixe esfriar e formate os docinhos."]'::jsonb,
   '10 unidades',
@@ -1033,7 +1033,7 @@ VALUES (
   42,
   'Coxinha de mandioca',
   'Massas',
-  'https://media.istockphoto.com/id/1358848345/pt/foto/traditional-fried-coxinha-on-a-black-plate-on-a-slate-background-brazilian-snack.jpg?s=2048x2048&w=is&k=20&c=i7PQjoXNiDKa8HNLqN3HVCWKjcyQp3ZBRvnp7XMdhsM=',
+  'https://plus.unsplash.com/premium_photo-1666174324534-36844f5afc7e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["500ml de água","400g de mandioca","100g de farinha hipoproteica","70g de farinha de mandioca","25g de margarina sem sal","6g de sal","1g de páprica doce","1g de orégano seco"]'::jsonb,
   '["1 - Cozinhe a mandioca, amasse até obter um purê e reserve;","2 - Em uma panela, ferva a água com a margarina, o sal, a páprica e o orégano;","3 - Acrescente o purê de mandioca e dissolva bem até ficar uma massa homogênea;","4 - Acrescente a farinha hipoproteica e cozinhe por 5 minutos, mexendo sempre;","5 - Retire a massa da panela e coloque em uma bancada, amasse com auxílio de uma colher e depois com as mãos até ficar bem lisinha e firme. Deixar esfriar para moldar;","6 - Recheie com legumes cozidos e temperados a gosto;","7 - Para empanar passe na água e em seguida na farinha de mandioca peneirada;","8 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
   '18 unidades',
@@ -1308,7 +1308,7 @@ VALUES (
   53,
   'Pãezinhos de ervas finas',
   'Pães',
-  'https://images.unsplash.com/photo-1536919011766-09449b44af40?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["130g de tapioca hidratada","250g de batata cozida","5g de óleo vegetal","6g de sal","3g de fermento químico em pó","15ml de água","0,5g de ervas secas (orégano, alecrim)"]'::jsonb,
   '["1 - Amasse a batata até obter um purê;","2 - Em um recipiente, misture o purê com os demais ingredientes;","3 - Amasse até obter uma massa moldável;","4 - Enrole em bolinhas com as mãos ou no formato que desejar;","5 - Disponha em uma assadeira untada;","6 - Asse em forno pré-aquecido a 200° C por aproximadamente 40 minutos."]'::jsonb,
   '20 unidades',
@@ -1583,7 +1583,7 @@ VALUES (
   64,
   'Abobrinha crocante',
   'Prato principal e vegetais',
-  'https://images.unsplash.com/photo-1593978756010-bbb0f3314cf6?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1723361750187-4ae34fc0dde2?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["200g de abobrinha","40g de amido de milho","1g de orégano seco","3g de sal","Óleo para fritar"]'::jsonb,
   '["1 - Lave e corte as abobrinhas em rodelas, reserve;","2 - Em um recipiente, misture o amido de milho com o sal e o orégano;","3 - Passe as rodelas de abobrinha nessa mistura;","4 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
   '2 porções',

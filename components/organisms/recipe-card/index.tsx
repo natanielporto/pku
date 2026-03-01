@@ -18,7 +18,7 @@ export function RecipeCard({ recipe, ad = false, category }: Props) {
       router.push({
         pathname: "/(tabs)/recipe-details",
         params: {
-          recipe: JSON.stringify(recipe),
+          id: String(recipe.id),
           category: category || recipe.category || "",
         },
       });

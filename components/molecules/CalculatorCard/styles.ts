@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     marginHorizontal: 80,
     position: "absolute",
-    backgroundColor: Colors.gray.light,
+    backgroundColor: Colors.gray.medium,
     padding: 8,
     borderRadius: 16,
     zIndex: 1000,
