@@ -80,13 +80,13 @@ VALUES (
   64,
   'Abobrinha crocante',
   'Prato principal e vegetais',
-  'https://images.unsplash.com/photo-1723361750187-4ae34fc0dde2?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1593978756010-bbb0f3314cf6?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["200g de abobrinha","40g de amido de milho","1g de orégano seco","3g de sal","Óleo para fritar"]'::jsonb,
   '["1 - Lave e corte as abobrinhas em rodelas, reserve;","2 - Em um recipiente, misture o amido de milho com o sal e o orégano;","3 - Passe as rodelas de abobrinha nessa mistura;","4 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":886,"servingEnergy":443},{"totalCarbs":45,"servingCarbs":22},{"totalProteins":1.5,"servingProteins":0.7},{"totalLipids":79,"servingLipids":40},{"totalSodium":1172,"servingSodium":586},{"totalPotassium":507,"servingPotassium":254}]'::jsonb,
   '[{"leucine":45,"totalLeucine":90,"servingLeucine":45},{"tirosine":20,"totalTirosine":40,"servingTirosine":20},{"fenil":25,"totalFenil":50,"servingFenil":25},{"metiotine":10,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Crispy zucchini","ingredients":["200g of zucchini","40g of cornstarch","1g of dried oregano","3g of salt","Oil for frying"],"preparation":["1 - Wash and cut the zucchini into slices, set aside;","2 - In a container, mix the cornstarch with the salt and oregano;","3 - Pass the zucchini slices through this mixture;","4 - Fry in hot oil and place on absorbent paper."],"servings":"2 servings"}}'::jsonb
+  '{"en-US":{"name":"Crispy zucchini","ingredients":["200g of zucchini","40g of cornstarch","1g of dried oregano","3g of salt","Oil for frying"],"preparation":["1 - Wash and cut the zucchini into slices, set aside;","2 - In a container, mix the cornstarch with the salt and oregano;","3 - Pass the zucchini slices through this mixture;","4 - Fry in hot oil and place on absorbent paper."],"servings":"2 servings"},"category_image":"https://images.unsplash.com/photo-1723361750187-4ae34fc0dde2?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

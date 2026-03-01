@@ -180,13 +180,13 @@ VALUES (
   18,
   'Bolinho de chuva',
   'Bolos e bolinhos',
-  'https://images.unsplash.com/photo-1552056413-b8b5eed0170b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+  'https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["160g de farinha sem glúten","120g de creme de leite","50ml de água","100g de açúcar refinado","4g de liga neutra","10g de fermento químico em pó","Óleo vegetal para fritar","Canela em pó e açúcar para cobrir (opcional)"]'::jsonb,
   '["1 - Em um recipiente misture o creme de leite com a água;","2 - Acrescente os demais ingredientes até ficar homogêneo. A massa não deve ficar muito mole;","3 - Em uma panela ou frigideira, aquecer o óleo;","4 - Pegar a massa com uma colher de chá bem cheia e frite em óleo quente até dourar;","5 - Passe os bolinhos ainda quentes no açúcar e canela, se desejar."]'::jsonb,
   '20 unidades',
   '[{"totalEnergy":1289,"servingEnergy":64},{"totalCarbs":247,"servingCarbs":12},{"totalProteins":4.6,"servingProteins":0.2},{"totalLipids":33,"servingLipids":2},{"totalSodium":45,"servingSodium":2},{"totalPotassium":139,"servingPotassium":7}]'::jsonb,
   '[{"leucine":51,"totalLeucine":450,"servingLeucine":23},{"tirosine":22,"totalTirosine":200,"servingTirosine":10},{"fenil":26,"totalFenil":230,"servingFenil":12},{"metiotine":1,"totalMetiotine":12,"servingMetiotine":1}]'::jsonb,
-  '{"en-US":{"name":"Raindrop cake","ingredients":["160g of gluten-free flour","120g of sour cream","50ml of water","100g of refined sugar","4g of neutral binder","10g of baking powder","Vegetable oil for frying","Powdered cinnamon and sugar to cover (optional)"],"preparation":["1 - In a recipient mix the sour cream with the water;","2 - Add the other ingredients until homogeneous. The dough should not be too soft;","3 - In a pan or frying pan, heat the oil;","4 - Take the dough with a full teaspoon and fry in hot oil until golden;","5 - Pass the still hot dumplings in sugar and cinnamon, if desired."],"servings":"20 units"}}'::jsonb
+  '{"en-US":{"name":"Raindrop cake","ingredients":["160g of gluten-free flour","120g of sour cream","50ml of water","100g of refined sugar","4g of neutral binder","10g of baking powder","Vegetable oil for frying","Powdered cinnamon and sugar to cover (optional)"],"preparation":["1 - In a recipient mix the sour cream with the water;","2 - Add the other ingredients until homogeneous. The dough should not be too soft;","3 - In a pan or frying pan, heat the oil;","4 - Take the dough with a full teaspoon and fry in hot oil until golden;","5 - Pass the still hot dumplings in sugar and cinnamon, if desired."],"servings":"20 units"},"category_image":"https://images.unsplash.com/photo-1552056413-b8b5eed0170b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

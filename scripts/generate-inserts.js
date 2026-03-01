@@ -64,22 +64,15 @@ const allInserts = [];
           ? toJsonSql(recipe.graphInformation)
           : "NULL";
 
-        // Se for a primeira receita da categoria, e a categoria tiver uma imagem, usamos ela
-        // Isso garante que o fetchCategoriesWithRecipes sempre encontre a imagem certa
-        // ao buscar a primeira receita de cada categoria.
-        const effectiveImage = (recipeIndex === 0 && categoryImage) 
-          ? categoryImage 
-          : (recipe.image || "");
-
         // Busca tradução correspondente por ID
-        let translations = "NULL";
+        let translationsObj = null;
         if (recipesEn) {
           const recipeEn = enMap.get(recipe.id);
           if (
             recipeEn &&
             (recipeEn.name || recipeEn.ingredients || recipeEn.preparation)
           ) {
-            const translation = {
+            translationsObj = {
               "en-US": {
                 name: recipeEn.name || recipe.name,
                 ingredients: recipeEn.ingredients || recipe.ingredients,
@@ -87,9 +80,17 @@ const allInserts = [];
                 servings: recipeEn.servings || recipe.servings,
               },
             };
-            translations = toJsonSql(translation);
           }
         }
+
+        // Se for a primeira receita da categoria, e a categoria tiver uma imagem, 
+        // guardamos a imagem da categoria no metadado (translations) para não sobrescrever a imagem original da receita
+        if (recipeIndex === 0 && categoryImage) {
+          translationsObj = translationsObj || {};
+          translationsObj.category_image = categoryImage;
+        }
+
+        const translationsSql = translationsObj ? toJsonSql(translationsObj) : "NULL";
 
         // Valida se o ID existe
         if (recipe.id === undefined || recipe.id === null) {
@@ -104,13 +105,13 @@ VALUES (
   ${recipe.id},
   '${escapeSqlString(recipe.name)}',
   '${escapeSqlString(category)}',
-  '${escapeSqlString(effectiveImage)}',
+  '${escapeSqlString(recipe.image || "")}',
   ${toJsonSql(recipe.ingredients)},
   ${toJsonSql(recipe.preparation)},
   '${escapeSqlString(recipe.servings || "")}',
   ${nutritionalInfo},
   ${graphInfo},
-  ${translations}
+  ${translationsSql}
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

@@ -143,10 +143,10 @@ export async function fetchCategoriesWithRecipes(): Promise<
   
   // Primeiro, buscamos as categorias únicas e uma imagem para cada
   // No Supabase/PostgreSQL, podemos usar NOT NULL e um agrupamento ou select distinct
-  // Para simplificar e garantir que temos uma imagem, buscamos o primeiro registro de cada categoria
+  // Para garantir que pegamos a imagem correta da categoria, incluímos o campo translations
   const { data: categoriesData, error } = await supabase
     .from("recipes")
-    .select("category, image")
+    .select("category, image, translations")
     .not("category", "is", null)
     .order("id", { ascending: true });
 
@@ -159,7 +159,10 @@ export async function fetchCategoriesWithRecipes(): Promise<
   const categoryMap = new Map<string, string>();
   categoriesData?.forEach(item => {
     if (item.category && !categoryMap.has(item.category)) {
-      categoryMap.set(item.category, item.image || "");
+      // Priorizamos a imagem de categoria guardada no metadata (translations)
+      const translations = item.translations as any;
+      const categoryImage = translations?.category_image || item.image;
+      categoryMap.set(item.category, categoryImage || "");
     }
   });
 

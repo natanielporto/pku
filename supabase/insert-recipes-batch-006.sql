@@ -55,13 +55,13 @@ VALUES (
   53,
   'Pãezinhos de ervas finas',
   'Pães',
-  'https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1536919011766-09449b44af40?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["130g de tapioca hidratada","250g de batata cozida","5g de óleo vegetal","6g de sal","3g de fermento químico em pó","15ml de água","0,5g de ervas secas (orégano, alecrim)"]'::jsonb,
   '["1 - Amasse a batata até obter um purê;","2 - Em um recipiente, misture o purê com os demais ingredientes;","3 - Amasse até obter uma massa moldável;","4 - Enrole em bolinhas com as mãos ou no formato que desejar;","5 - Disponha em uma assadeira untada;","6 - Asse em forno pré-aquecido a 200° C por aproximadamente 40 minutos."]'::jsonb,
   '20 unidades',
   '[{"totalEnergy":733,"servingEnergy":37},{"totalCarbs":167,"servingCarbs":8},{"totalProteins":4.7,"servingProteins":0.2},{"totalLipids":5,"servingLipids":0},{"totalSodium":2341,"servingSodium":117},{"totalPotassium":843,"servingPotassium":42}]'::jsonb,
   '[{"leucine":38,"totalLeucine":260,"servingLeucine":13},{"tirosine":24,"totalTirosine":160,"servingTirosine":8},{"fenil":28,"totalFenil":190,"servingFenil":10},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":4}]'::jsonb,
-  '{"en-US":{"name":"Fine herbs bread rolls","ingredients":["130g of hydrated tapioca","250g of cooked potato","5g of vegetable oil","6g of salt","3g of chemical baking powder","15ml of water","0,5g of dried herbs (oregano, rosemary)"],"preparation":["1 - Mash the potato until it becomes a puree;","2 - In a bowl, mix the puree with the other ingredients;","3 - Knead until you get a moldable dough;","4 - Roll into balls with your hands or in the shape you desire;","5 - Place on a greased baking sheet;","6 - Bake in a preheated oven at 200° C for approximately 40 minutes."],"servings":"20 units"}}'::jsonb
+  '{"en-US":{"name":"Fine herbs bread rolls","ingredients":["130g of hydrated tapioca","250g of cooked potato","5g of vegetable oil","6g of salt","3g of chemical baking powder","15ml of water","0,5g of dried herbs (oregano, rosemary)"],"preparation":["1 - Mash the potato until it becomes a puree;","2 - In a bowl, mix the puree with the other ingredients;","3 - Knead until you get a moldable dough;","4 - Roll into balls with your hands or in the shape you desire;","5 - Place on a greased baking sheet;","6 - Bake in a preheated oven at 200° C for approximately 40 minutes."],"servings":"20 units"},"category_image":"https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

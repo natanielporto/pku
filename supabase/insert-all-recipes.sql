@@ -1,20 +1,20 @@
 -- INSERT statements for recipes table
 -- Generated from recipes.json
 -- Total recipes: 97
--- Generated at: 2026-03-01T20:41:36.681Z
+-- Generated at: 2026-03-01T21:12:48.517Z
 
 INSERT INTO recipes (id, name, category, image, ingredients, preparation, servings, nutritional_information, graph_information, translations)
 VALUES (
   1,
   'Bebida de morango tipo iogurte',
   'Bebidas e Cremes',
-  'https://images.unsplash.com/photo-1583898350727-9bf2e476c242?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+  'https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["480g de bebida vegetal a base de arroz","60g de açúcar demerara","50g de morango congelado","15g de suco de limão","5g de ágar-ágar"]'::jsonb,
   '["1 - Em uma panela, misture 380g da bebida vegetal junto com o açúcar e o ágar-ágar, deixe ferver por uns 2 minutos mexendo sempre;","2 - Leve à geladeira por aproximadamente uma hora para gelatinizar;","3 - Corte os morangos em pedaços e bata junto com creme gelado, o suco de limão e o restante da bebida vegetal com o auxílio de um mixer ou liquidificador;","4 - Coloque em tacinhas para servir."]'::jsonb,
   '2 taças',
   '[{"totalEnergy":614,"servingEnergy":307},{"totalCarbs":137,"servingCarbs":69},{"totalProteins":2.2,"servingProteins":1.1},{"totalLipids":8,"servingLipids":6},{"totalSodium":153,"servingSodium":77},{"totalPotassium":75,"servingPotassium":38}]'::jsonb,
   '[{"leucine":44,"totalLeucine":200,"servingLeucine":100},{"tirosine":18,"totalTirosine":80,"servingTirosine":40},{"fenil":27,"totalFenil":120,"servingFenil":60},{"metiotine":11,"totalMetiotine":50,"servingMetiotine":25}]'::jsonb,
-  '{"en-US":{"name":"Yogurt type strawberry drink","ingredients":["480g of vegetable drink base of rice","60g of demerara sugar","50g of frozen strawberries","15g of lemon juice","5g of agar-agar"],"preparation":["1 - In a pan, mix 380g of vegetable drink base of rice with the sugar and agar-agar, let it boil for about 2 minutes stirring always;","2 - Let it cool in the refrigerator for about an hour;","3 - cut the strawberries into pieces and beat together with frozen strawberries, the lemon juice and the rest of the vegetable drink with the help of a mixer or blender;","4 - Place in cups to serve."],"servings":"2 cups"}}'::jsonb
+  '{"en-US":{"name":"Yogurt type strawberry drink","ingredients":["480g of vegetable drink base of rice","60g of demerara sugar","50g of frozen strawberries","15g of lemon juice","5g of agar-agar"],"preparation":["1 - In a pan, mix 380g of vegetable drink base of rice with the sugar and agar-agar, let it boil for about 2 minutes stirring always;","2 - Let it cool in the refrigerator for about an hour;","3 - cut the strawberries into pieces and beat together with frozen strawberries, the lemon juice and the rest of the vegetable drink with the help of a mixer or blender;","4 - Place in cups to serve."],"servings":"2 cups"},"category_image":"https://images.unsplash.com/photo-1583898350727-9bf2e476c242?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -183,13 +183,13 @@ VALUES (
   8,
   'Biscoitinho crocante de tapioca',
   'Biscoitos e bolachas',
-  'https://images.unsplash.com/photo-1582231640551-2103f0b3f4bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+  'https://images.unsplash.com/photo-1608070735103-35aa01048704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["80g de tapioca granulada","20g de açúcar","20g de achocolatado","10g de margarina sem sal","10g de creme de leite","55ml de água quente","120g de gotas de chocolate "]'::jsonb,
   '["1 - Misture todos os ingredientes, exceto as gotas de chocolate, e deixe hidratando por cerca de 10 minutos para que a tapioca fique mais macia;","2 - Abra a massa entre papel manteiga e use um copo para formatar os biscoitos;","3 - Unte uma forma com margarina e disponha os biscoitos;","4 - Leve para assar no forno a 200°C por aproximadamente 20 minutos;","5 - Derreta as gotas de chocolate em banho-maria;","6 - Mergulhe os biscoitos já frios no chocolate e coloque sobre um pedaço de papel manteiga para não grudar"]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":1122,"servingEnergy":112},{"totalCarbs":191,"servingCarbs":19},{"totalProteins":1.7,"servingProteins":0.2},{"totalLipids":39,"servingLipids":4},{"totalSodium":65,"servingSodium":6},{"totalPotassium":21,"servingPotassium":2}]'::jsonb,
   '[{"leucine":45,"totalLeucine":130,"servingLeucine":13},{"tirosine":21,"totalTirosine":60,"servingTirosine":6},{"fenil":27,"totalFenil":80,"servingFenil":8},{"metiotine":7,"totalMetiotine":20,"servingMetiotine":2}]'::jsonb,
-  '{"en-US":{"name":"Tapioca crunchy cookies","ingredients":["80g of granulated tapioca","20g of sugar","20g of chocolate powder","10g of unsalted margarine","10g of cream of milk","55ml of hot water","120g of chocolate chips"],"preparation":["1 - Mix all the ingredients, except the chocolate chips, and let it hydrate for about 10 minutes so that the tapioca becomes softer;","2 - Open the dough between parchment paper and use a cup to shape the cookies;","3 - Grease a baking sheet with margarine and arrange the cookies;","4 - Bake in the oven at 200°C for approximately 20 minutes;","5 - Melt the chocolate chips in a double boiler;","6 - Dip the already cooled cookies in the chocolate and place them on a piece of parchment paper to prevent sticking"],"servings":"10 units"}}'::jsonb
+  '{"en-US":{"name":"Tapioca crunchy cookies","ingredients":["80g of granulated tapioca","20g of sugar","20g of chocolate powder","10g of unsalted margarine","10g of cream of milk","55ml of hot water","120g of chocolate chips"],"preparation":["1 - Mix all the ingredients, except the chocolate chips, and let it hydrate for about 10 minutes so that the tapioca becomes softer;","2 - Open the dough between parchment paper and use a cup to shape the cookies;","3 - Grease a baking sheet with margarine and arrange the cookies;","4 - Bake in the oven at 200°C for approximately 20 minutes;","5 - Melt the chocolate chips in a double boiler;","6 - Dip the already cooled cookies in the chocolate and place them on a piece of parchment paper to prevent sticking"],"servings":"10 units"},"category_image":"https://images.unsplash.com/photo-1582231640551-2103f0b3f4bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -433,13 +433,13 @@ VALUES (
   18,
   'Bolinho de chuva',
   'Bolos e bolinhos',
-  'https://images.unsplash.com/photo-1552056413-b8b5eed0170b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+  'https://images.unsplash.com/photo-1552417656-f5c5bbb00244?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
   '["160g de farinha sem glúten","120g de creme de leite","50ml de água","100g de açúcar refinado","4g de liga neutra","10g de fermento químico em pó","Óleo vegetal para fritar","Canela em pó e açúcar para cobrir (opcional)"]'::jsonb,
   '["1 - Em um recipiente misture o creme de leite com a água;","2 - Acrescente os demais ingredientes até ficar homogêneo. A massa não deve ficar muito mole;","3 - Em uma panela ou frigideira, aquecer o óleo;","4 - Pegar a massa com uma colher de chá bem cheia e frite em óleo quente até dourar;","5 - Passe os bolinhos ainda quentes no açúcar e canela, se desejar."]'::jsonb,
   '20 unidades',
   '[{"totalEnergy":1289,"servingEnergy":64},{"totalCarbs":247,"servingCarbs":12},{"totalProteins":4.6,"servingProteins":0.2},{"totalLipids":33,"servingLipids":2},{"totalSodium":45,"servingSodium":2},{"totalPotassium":139,"servingPotassium":7}]'::jsonb,
   '[{"leucine":51,"totalLeucine":450,"servingLeucine":23},{"tirosine":22,"totalTirosine":200,"servingTirosine":10},{"fenil":26,"totalFenil":230,"servingFenil":12},{"metiotine":1,"totalMetiotine":12,"servingMetiotine":1}]'::jsonb,
-  '{"en-US":{"name":"Raindrop cake","ingredients":["160g of gluten-free flour","120g of sour cream","50ml of water","100g of refined sugar","4g of neutral binder","10g of baking powder","Vegetable oil for frying","Powdered cinnamon and sugar to cover (optional)"],"preparation":["1 - In a recipient mix the sour cream with the water;","2 - Add the other ingredients until homogeneous. The dough should not be too soft;","3 - In a pan or frying pan, heat the oil;","4 - Take the dough with a full teaspoon and fry in hot oil until golden;","5 - Pass the still hot dumplings in sugar and cinnamon, if desired."],"servings":"20 units"}}'::jsonb
+  '{"en-US":{"name":"Raindrop cake","ingredients":["160g of gluten-free flour","120g of sour cream","50ml of water","100g of refined sugar","4g of neutral binder","10g of baking powder","Vegetable oil for frying","Powdered cinnamon and sugar to cover (optional)"],"preparation":["1 - In a recipient mix the sour cream with the water;","2 - Add the other ingredients until homogeneous. The dough should not be too soft;","3 - In a pan or frying pan, heat the oil;","4 - Take the dough with a full teaspoon and fry in hot oil until golden;","5 - Pass the still hot dumplings in sugar and cinnamon, if desired."],"servings":"20 units"},"category_image":"https://images.unsplash.com/photo-1552056413-b8b5eed0170b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -758,13 +758,13 @@ VALUES (
   31,
   'Beijinho de tapioca sabor limão',
   'Doces',
-  'https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1630953899439-e1b44977d777?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["60g de açúcar refinado","26g de tapioca desidratada","30g de coco seco ralado","45g de leite de coco","6g de margarina sem sal","3g de suco de limão"]'::jsonb,
   '["1 - Em uma panela, misture todos os ingredientes;","2 - Leve ao fogo, mexendo sempre, e cozinhe até desgrudar do fundo da panela;","3 - Deixe esfriar e formate os docinhos."]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":633,"servingEnergy":63},{"totalCarbs":92,"servingCarbs":9},{"totalProteins":3,"servingProteins":0.3},{"totalLipids":31,"servingLipids":3},{"totalSodium":54,"servingSodium":5},{"totalPotassium":269,"servingPotassium":27}]'::jsonb,
   '[{"leucine":42,"totalLeucine":220,"servingLeucine":22},{"tirosine":17,"totalTirosine":90,"servingTirosine":9},{"fenil":29,"totalFenil":150,"servingFenil":15},{"metiotine":12,"totalMetiotine":60,"servingMetiotine":6}]'::jsonb,
-  '{"en-US":{"name":"Lemon flavored tapioca kisses","ingredients":["60g of refined sugar","26g of dehydrated tapioca","30g of grated dry coconut","45g of coconut milk","6g of unsalted margarine","3g of lemon juice"],"preparation":["1 - In a pan, mix all the ingredients;","2 - Cook over heat, stirring constantly, until it comes away from the bottom of the pan;","3 - Let cool and shape the sweets."],"servings":"10 units"}}'::jsonb
+  '{"en-US":{"name":"Lemon flavored tapioca kisses","ingredients":["60g of refined sugar","26g of dehydrated tapioca","30g of grated dry coconut","45g of coconut milk","6g of unsalted margarine","3g of lemon juice"],"preparation":["1 - In a pan, mix all the ingredients;","2 - Cook over heat, stirring constantly, until it comes away from the bottom of the pan;","3 - Let cool and shape the sweets."],"servings":"10 units"},"category_image":"https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -1033,13 +1033,13 @@ VALUES (
   42,
   'Coxinha de mandioca',
   'Massas',
-  'https://plus.unsplash.com/premium_photo-1666174324534-36844f5afc7e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://media.istockphoto.com/id/1358848345/pt/foto/traditional-fried-coxinha-on-a-black-plate-on-a-slate-background-brazilian-snack.jpg?s=2048x2048&w=is&k=20&c=i7PQjoXNiDKa8HNLqN3HVCWKjcyQp3ZBRvnp7XMdhsM=',
   '["500ml de água","400g de mandioca","100g de farinha hipoproteica","70g de farinha de mandioca","25g de margarina sem sal","6g de sal","1g de páprica doce","1g de orégano seco"]'::jsonb,
   '["1 - Cozinhe a mandioca, amasse até obter um purê e reserve;","2 - Em uma panela, ferva a água com a margarina, o sal, a páprica e o orégano;","3 - Acrescente o purê de mandioca e dissolva bem até ficar uma massa homogênea;","4 - Acrescente a farinha hipoproteica e cozinhe por 5 minutos, mexendo sempre;","5 - Retire a massa da panela e coloque em uma bancada, amasse com auxílio de uma colher e depois com as mãos até ficar bem lisinha e firme. Deixar esfriar para moldar;","6 - Recheie com legumes cozidos e temperados a gosto;","7 - Para empanar passe na água e em seguida na farinha de mandioca peneirada;","8 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
   '18 unidades',
   '[{"totalEnergy":1956,"servingEnergy":109},{"totalCarbs":298,"servingCarbs":17},{"totalProteins":7.4,"servingProteins":0.4},{"totalLipids":81,"servingLipids":4},{"totalSodium":2583,"servingSodium":144},{"totalPotassium":1100,"servingPotassium":61}]'::jsonb,
   '[{"leucine":40,"totalLeucine":280,"servingLeucine":16},{"tirosine":23,"totalTirosine":160,"servingTirosine":9},{"fenil":27,"totalFenil":190,"servingFenil":11},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":4}]'::jsonb,
-  '{"en-US":{"name":"Cassava Coxinha","ingredients":["500ml of water","400g of cassava","100g of low protein flour","70g of cassava flour","25g of unsalted margarine","6g of salt","1g of sweet paprika","1g of dried oregano"],"preparation":["1 - Cook the cassava, mash until you get a puree and set aside;","2 - In a pan, boil the water with the margarine, salt, paprika and oregano;","3 - Add the cassava puree and dissolve well until it becomes a homogeneous mass;","4 - Add the low protein flour and cook for 5 minutes, stirring constantly;","5 - Remove the dough from the pan and place it on a counter, knead with the help of a spoon and then with your hands until it is smooth and firm. Let it cool to mold;","6 - Fill with cooked and seasoned vegetables to taste;","7 - To bread, pass in water and then in sifted cassava flour;","8 - Fry in hot oil and place on absorbent paper."],"servings":"18 units"}}'::jsonb
+  '{"en-US":{"name":"Cassava Coxinha","ingredients":["500ml of water","400g of cassava","100g of low protein flour","70g of cassava flour","25g of unsalted margarine","6g of salt","1g of sweet paprika","1g of dried oregano"],"preparation":["1 - Cook the cassava, mash until you get a puree and set aside;","2 - In a pan, boil the water with the margarine, salt, paprika and oregano;","3 - Add the cassava puree and dissolve well until it becomes a homogeneous mass;","4 - Add the low protein flour and cook for 5 minutes, stirring constantly;","5 - Remove the dough from the pan and place it on a counter, knead with the help of a spoon and then with your hands until it is smooth and firm. Let it cool to mold;","6 - Fill with cooked and seasoned vegetables to taste;","7 - To bread, pass in water and then in sifted cassava flour;","8 - Fry in hot oil and place on absorbent paper."],"servings":"18 units"},"category_image":"https://plus.unsplash.com/premium_photo-1666174324534-36844f5afc7e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -1308,13 +1308,13 @@ VALUES (
   53,
   'Pãezinhos de ervas finas',
   'Pães',
-  'https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1536919011766-09449b44af40?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["130g de tapioca hidratada","250g de batata cozida","5g de óleo vegetal","6g de sal","3g de fermento químico em pó","15ml de água","0,5g de ervas secas (orégano, alecrim)"]'::jsonb,
   '["1 - Amasse a batata até obter um purê;","2 - Em um recipiente, misture o purê com os demais ingredientes;","3 - Amasse até obter uma massa moldável;","4 - Enrole em bolinhas com as mãos ou no formato que desejar;","5 - Disponha em uma assadeira untada;","6 - Asse em forno pré-aquecido a 200° C por aproximadamente 40 minutos."]'::jsonb,
   '20 unidades',
   '[{"totalEnergy":733,"servingEnergy":37},{"totalCarbs":167,"servingCarbs":8},{"totalProteins":4.7,"servingProteins":0.2},{"totalLipids":5,"servingLipids":0},{"totalSodium":2341,"servingSodium":117},{"totalPotassium":843,"servingPotassium":42}]'::jsonb,
   '[{"leucine":38,"totalLeucine":260,"servingLeucine":13},{"tirosine":24,"totalTirosine":160,"servingTirosine":8},{"fenil":28,"totalFenil":190,"servingFenil":10},{"metiotine":10,"totalMetiotine":70,"servingMetiotine":4}]'::jsonb,
-  '{"en-US":{"name":"Fine herbs bread rolls","ingredients":["130g of hydrated tapioca","250g of cooked potato","5g of vegetable oil","6g of salt","3g of chemical baking powder","15ml of water","0,5g of dried herbs (oregano, rosemary)"],"preparation":["1 - Mash the potato until it becomes a puree;","2 - In a bowl, mix the puree with the other ingredients;","3 - Knead until you get a moldable dough;","4 - Roll into balls with your hands or in the shape you desire;","5 - Place on a greased baking sheet;","6 - Bake in a preheated oven at 200° C for approximately 40 minutes."],"servings":"20 units"}}'::jsonb
+  '{"en-US":{"name":"Fine herbs bread rolls","ingredients":["130g of hydrated tapioca","250g of cooked potato","5g of vegetable oil","6g of salt","3g of chemical baking powder","15ml of water","0,5g of dried herbs (oregano, rosemary)"],"preparation":["1 - Mash the potato until it becomes a puree;","2 - In a bowl, mix the puree with the other ingredients;","3 - Knead until you get a moldable dough;","4 - Roll into balls with your hands or in the shape you desire;","5 - Place on a greased baking sheet;","6 - Bake in a preheated oven at 200° C for approximately 40 minutes."],"servings":"20 units"},"category_image":"https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
@@ -1583,13 +1583,13 @@ VALUES (
   64,
   'Abobrinha crocante',
   'Prato principal e vegetais',
-  'https://images.unsplash.com/photo-1723361750187-4ae34fc0dde2?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1593978756010-bbb0f3314cf6?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["200g de abobrinha","40g de amido de milho","1g de orégano seco","3g de sal","Óleo para fritar"]'::jsonb,
   '["1 - Lave e corte as abobrinhas em rodelas, reserve;","2 - Em um recipiente, misture o amido de milho com o sal e o orégano;","3 - Passe as rodelas de abobrinha nessa mistura;","4 - Frite em óleo quente e coloque em papel absorvente."]'::jsonb,
   '2 porções',
   '[{"totalEnergy":886,"servingEnergy":443},{"totalCarbs":45,"servingCarbs":22},{"totalProteins":1.5,"servingProteins":0.7},{"totalLipids":79,"servingLipids":40},{"totalSodium":1172,"servingSodium":586},{"totalPotassium":507,"servingPotassium":254}]'::jsonb,
   '[{"leucine":45,"totalLeucine":90,"servingLeucine":45},{"tirosine":20,"totalTirosine":40,"servingTirosine":20},{"fenil":25,"totalFenil":50,"servingFenil":25},{"metiotine":10,"totalMetiotine":20,"servingMetiotine":10}]'::jsonb,
-  '{"en-US":{"name":"Crispy zucchini","ingredients":["200g of zucchini","40g of cornstarch","1g of dried oregano","3g of salt","Oil for frying"],"preparation":["1 - Wash and cut the zucchini into slices, set aside;","2 - In a container, mix the cornstarch with the salt and oregano;","3 - Pass the zucchini slices through this mixture;","4 - Fry in hot oil and place on absorbent paper."],"servings":"2 servings"}}'::jsonb
+  '{"en-US":{"name":"Crispy zucchini","ingredients":["200g of zucchini","40g of cornstarch","1g of dried oregano","3g of salt","Oil for frying"],"preparation":["1 - Wash and cut the zucchini into slices, set aside;","2 - In a container, mix the cornstarch with the salt and oregano;","3 - Pass the zucchini slices through this mixture;","4 - Fry in hot oil and place on absorbent paper."],"servings":"2 servings"},"category_image":"https://images.unsplash.com/photo-1723361750187-4ae34fc0dde2?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,

@@ -5,13 +5,13 @@ VALUES (
   31,
   'Beijinho de tapioca sabor limão',
   'Doces',
-  'https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1630953899439-e1b44977d777?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   '["60g de açúcar refinado","26g de tapioca desidratada","30g de coco seco ralado","45g de leite de coco","6g de margarina sem sal","3g de suco de limão"]'::jsonb,
   '["1 - Em uma panela, misture todos os ingredientes;","2 - Leve ao fogo, mexendo sempre, e cozinhe até desgrudar do fundo da panela;","3 - Deixe esfriar e formate os docinhos."]'::jsonb,
   '10 unidades',
   '[{"totalEnergy":633,"servingEnergy":63},{"totalCarbs":92,"servingCarbs":9},{"totalProteins":3,"servingProteins":0.3},{"totalLipids":31,"servingLipids":3},{"totalSodium":54,"servingSodium":5},{"totalPotassium":269,"servingPotassium":27}]'::jsonb,
   '[{"leucine":42,"totalLeucine":220,"servingLeucine":22},{"tirosine":17,"totalTirosine":90,"servingTirosine":9},{"fenil":29,"totalFenil":150,"servingFenil":15},{"metiotine":12,"totalMetiotine":60,"servingMetiotine":6}]'::jsonb,
-  '{"en-US":{"name":"Lemon flavored tapioca kisses","ingredients":["60g of refined sugar","26g of dehydrated tapioca","30g of grated dry coconut","45g of coconut milk","6g of unsalted margarine","3g of lemon juice"],"preparation":["1 - In a pan, mix all the ingredients;","2 - Cook over heat, stirring constantly, until it comes away from the bottom of the pan;","3 - Let cool and shape the sweets."],"servings":"10 units"}}'::jsonb
+  '{"en-US":{"name":"Lemon flavored tapioca kisses","ingredients":["60g of refined sugar","26g of dehydrated tapioca","30g of grated dry coconut","45g of coconut milk","6g of unsalted margarine","3g of lemon juice"],"preparation":["1 - In a pan, mix all the ingredients;","2 - Cook over heat, stirring constantly, until it comes away from the bottom of the pan;","3 - Let cool and shape the sweets."],"servings":"10 units"},"category_image":"https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}'::jsonb
 )
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
