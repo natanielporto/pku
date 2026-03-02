@@ -13,6 +13,7 @@ import { Stack, useRouter, useSegments } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useColorScheme } from "@/components/useColorScheme";
 import { useAuth, AuthProvider } from "@/contexts/AuthContext";
+import { View } from "react-native";
 import i18n from "../i18n";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -67,7 +68,7 @@ export default function RootLayout() {
   }, []);
 
   if (!loaded) {
-    return null;
+    return <View style={{ flex: 1, backgroundColor: "#0C6941" }} />;
   }
 
   return <RootLayoutNav />;
@@ -111,7 +112,7 @@ function Navigation() {
   }, [user, loading, segments]);
 
   if (loading) {
-    return null; // Mostra splash enquanto verifica autenticação
+    return <View style={{ flex: 1, backgroundColor: "#0C6941" }} />;
   }
 
   return (

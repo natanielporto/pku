@@ -26,8 +26,8 @@ export default {
       },
     ],
     splash: {
-      image: null,
       backgroundColor: "#0C6941",
+      resizeMode: "contain",
     },
     extra: {
       SUPA_URL: process.env.SUPA_URL || "",
@@ -50,7 +50,17 @@ export default {
       output: "static",
       favicon: "./assets/images/favicon.png",
     },
-    plugins: ["expo-router"],
+    plugins: [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          backgroundColor: "#0C6941",
+          image: null,
+          resizeMode: "contain",
+        },
+      ],
+    ],
     experiments: {
       typedRoutes: true,
     },
